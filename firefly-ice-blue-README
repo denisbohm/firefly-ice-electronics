@@ -1,0 +1,72 @@
+Contact: Denis Bohm
+denis@fireflydesign.com
+(650) 814-1714
+
+July 12, 2013
+Customer: Firefly Design LLC
+Board: Firefly Ice Blue 1.2.0
+Number of Layers: 4
+Dimensions: 34mm x 34mm
+PCB Thickness: 0.031"
+Micro Vias L1-L2
+Tented Vias
+ENIG
+RoHS Compliant
+Lead Free Processing
+
+Plated Slots:
+There are 2 slots for mounting the USB connector (J1).  These slots should
+be plated through.  The finished slot size is 0.6 mm x 1.1 mm with a radius
+of 0.3 mm.  Please see page 3 of the ZX62WD1-B-5PC specification:
+http://media.digikey.com/PDF/Data%20Sheets/Hirose%20PDFs/ZX62WD1-B-5PC_Specs.pdf
+
+Changes to 1.2.0 from revision 1.1.0:
+1) USB connector J1 has changed.  The new connector requires plated through
+oval mounting holes.  (See above.)
+2) Capactior & Resistor footprints have changed to conform to Vishay documents.
+3) 0402 LED footprints have changed.
+4) Some component locations and orientations have changed.
+5) Added two new fiducials on opposite side of each board (top right, and
+bottom left).
+6) Removed stop mask for vias so they will be tented.
+7) Added milling layer *.mill for connector slots and panel cutouts.
+8) All layers have changed.
+
+Files:
+
+firefly-ice-blue.sch - Eagle 6 schematic file
+firefly-ice-blue.brd - Eagle 6 board file
+firefly-ice-blue.xls - bill of materials
+
+firefly-ice-blue-schematic.pdf - schematic
+firefly-ice-blue-top-diagram.pdf - top (component) side assembly diagram
+firefly-ice-blue-bottom-diagram.pdf - bottom side assembly diagram
+firefly-ice-blue-centroid.csv - surface mount centroid placement data
+
+Gerbers
+firefly-ice-blue.L1 - top (component) side
+firefly-ice-blue.L2 - middle layer (ground)
+firefly-ice-blue.L3 - middle layer (power)
+firefly-ice-blue.L4 - bottom side
+
+firefly-ice-blue.slk - top (component) side silk
+firefly-ice-blue.smt - top (component) side solder mask
+firefly-ice-blue.tps - top (component) side stencil
+
+firefly-ice-blue.bsk - bottom side silk
+firefly-ice-blue.smb - bottom side solder mask
+firefly-ice-blue.bps - bottom side stencil
+
+firefly-ice-blue.oln - outline
+
+firefly-ice-blue.drd - Excellon drill
+firefly-ice-blue.dri - tool list
+
+firefly-ice-blue.mill - milling data
+
+Notes:
+1) The design is done with Eagle 6 (files are of type sch, brd, and lib)..
+2) The tDocu shows all reference designators and orientation for assembly of the top side.
+3) The bDocu shows all reference designators and orientation for assembly of the bottom side.
+4) DRC rules and CAM setup are from Sunstone Circuits.  For CAM setup use tsilk for top side silk and bsilk for bottom side silk.
+5) Centroid file generator is from Screaming Circuits.
