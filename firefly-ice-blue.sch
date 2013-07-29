@@ -5922,8 +5922,8 @@ Source: http://www.vishay.com/docs/45017/vjsoldfo.pdf</description>
 <pin name="RC" x="5.08" y="5.08" visible="off" length="short" direction="pas" rot="R180"/>
 <text x="2.54" y="6.35" size="1.778" layer="95">&gt;NAME</text>
 <text x="-2.54" y="6.35" size="1.27" layer="94">R</text>
-<text x="-2.54" y="1.27" size="1.27" layer="94">G</text>
-<text x="-2.54" y="-3.81" size="1.27" layer="94">B</text>
+<text x="-2.54" y="-3.81" size="1.27" layer="94">G</text>
+<text x="-2.54" y="1.27" size="1.27" layer="94">B</text>
 <polygon width="0.1524" layer="94">
 <vertex x="0.254" y="-8.128"/>
 <vertex x="1.016" y="-8.382"/>
@@ -8921,6 +8921,7 @@ Source: http://www.vishay.com/docs/45017/vjsoldfo.pdf</description>
 <part name="U4" library="firefly" deviceset="MAG3110" device="">
 <attribute name="MANUFACTURER" value="Freescale Semiconductor"/>
 <attribute name="ORDERING-CODE" value="MAG3110FCR1"/>
+<attribute name="VARIANTS" value="magnetometer"/>
 </part>
 <part name="V7" library="firefly" deviceset="GND" device=""/>
 <part name="R9" library="firefly" deviceset="R-US_" device="R0201" value="4.7k">
@@ -8930,25 +8931,30 @@ Source: http://www.vishay.com/docs/45017/vjsoldfo.pdf</description>
 <part name="C12" library="firefly" deviceset="C-US" device="C0201" value="100nF">
 <attribute name="MANUFACTURER" value="Murata"/>
 <attribute name="ORDERING-CODE" value="GRM033R60J104KE19D"/>
+<attribute name="VARIANTS" value="magnetometer"/>
 </part>
 <part name="V15" library="firefly" deviceset="GND" device=""/>
 <part name="C13" library="firefly" deviceset="C-US" device="C0201" value="100nF">
 <attribute name="MANUFACTURER" value="Murata"/>
 <attribute name="ORDERING-CODE" value="GRM033R60J104KE19D"/>
+<attribute name="VARIANTS" value="magnetometer"/>
 </part>
 <part name="V16" library="firefly" deviceset="GND" device=""/>
 <part name="C14" library="firefly" deviceset="C-US" device="C0201" value="1uF">
 <attribute name="MANUFACTURER" value="TDK Corporation"/>
 <attribute name="ORDERING-CODE" value="C0603X5R0J105M030BC"/>
+<attribute name="VARIANTS" value="magnetometer"/>
 </part>
 <part name="V71" library="firefly" deviceset="GND" device=""/>
 <part name="C16" library="firefly" deviceset="C-US" device="C0201" value="100nF">
 <attribute name="MANUFACTURER" value="Murata"/>
 <attribute name="ORDERING-CODE" value="GRM033R60J104KE19D"/>
+<attribute name="VARIANTS" value="magnetometer"/>
 </part>
 <part name="C17" library="firefly" deviceset="C-US" device="C0201" value="100nF">
 <attribute name="MANUFACTURER" value="Murata"/>
 <attribute name="ORDERING-CODE" value="GRM033R60J104KE19D"/>
+<attribute name="VARIANTS" value="magnetometer"/>
 </part>
 <part name="V72" library="firefly" deviceset="GND" device=""/>
 <part name="V74" library="firefly" deviceset="GND" device=""/>
@@ -9154,25 +9160,28 @@ Source: http://www.vishay.com/docs/45017/vjsoldfo.pdf</description>
 <part name="U5" library="firefly" deviceset="AS3661" device="WL-CSP-25">
 <attribute name="MANUFACTURER" value="Texas Instruments"/>
 <attribute name="ORDERING-CODE" value="LP5523TMX/NOPB"/>
+<attribute name="VARIANTS" value="color"/>
 </part>
 <part name="C50" library="firefly" deviceset="C-US" device="C0201" value="1uF">
 <attribute name="MANUFACTURER" value="TDK Corporation"/>
 <attribute name="ORDERING-CODE" value="C0603X5R0J105M030BC"/>
-<attribute name="VARIANTS" value="low-power"/>
+<attribute name="VARIANTS" value="color"/>
 </part>
 <part name="C52" library="firefly" deviceset="C-US" device="C0201" value="1uF">
 <attribute name="MANUFACTURER" value="TDK Corporation"/>
 <attribute name="ORDERING-CODE" value="C0603X5R0J105M030BC"/>
-<attribute name="VARIANTS" value="low-power"/>
+<attribute name="VARIANTS" value="color"/>
 </part>
 <part name="V94" library="firefly" deviceset="GND" device=""/>
 <part name="C53" library="firefly" deviceset="C-US" device="C0201" value="470nF">
-<attribute name="MANUFACTURER" value="Samsung Electro-Mechanics America, Inc"/>
-<attribute name="ORDERING-CODE" value="CL03A474KQ3NNNC"/>
+<attribute name="MANUFACTURER" value="TDK Corporation"/>
+<attribute name="ORDERING-CODE" value="C0603X5R0J474M"/>
+<attribute name="VARIANTS" value="color"/>
 </part>
 <part name="C54" library="firefly" deviceset="C-US" device="C0201" value="470nF">
-<attribute name="MANUFACTURER" value="Samsung Electro-Mechanics America, Inc"/>
-<attribute name="ORDERING-CODE" value="CL03A474KQ3NNNC"/>
+<attribute name="MANUFACTURER" value="TDK Corporation"/>
+<attribute name="ORDERING-CODE" value="C0603X5R0J474M"/>
+<attribute name="VARIANTS" value="color"/>
 </part>
 <part name="V95" library="firefly" deviceset="GND" device=""/>
 <part name="V96" library="firefly" deviceset="GND" device=""/>
@@ -9214,6 +9223,7 @@ Source: http://www.vishay.com/docs/45017/vjsoldfo.pdf</description>
 <part name="U10" library="firefly" deviceset="STM6519" device="">
 <attribute name="MANUFACTURER" value="STMicroelectronics"/>
 <attribute name="ORDERING-CODE" value="STM6519AHARUB6F"/>
+<attribute name="VARIANTS" value="failsafe"/>
 </part>
 <part name="V53" library="firefly" deviceset="GND" device=""/>
 <part name="R4" library="firefly" deviceset="R-US_" device="R0201" value="1M">
@@ -9244,22 +9254,25 @@ Source: http://www.vishay.com/docs/45017/vjsoldfo.pdf</description>
 <attribute name="ORDERING-CODE" value="ADP151ACBZ-1.8-R7"/>
 </part>
 <part name="J2" library="firefly" deviceset="CON-6" device="SOCKET" value="CON-6SOCKET">
-<attribute name="DNS" value="true"/>
 <attribute name="MANUFACTURER" value="Harwin Inc"/>
 <attribute name="ORDERING-CODE" value="M40-3100345R"/>
+<attribute name="VARIANTS" value="expansion"/>
 </part>
 <part name="USBID" library="firefly" deviceset="TARGET-PIN" device=""/>
 <part name="D1" library="firefly" deviceset="LED-RGB" device="">
 <attribute name="MANUFACTURER" value="Rohm Semiconductor"/>
 <attribute name="ORDERING-CODE" value="SMLP36RGB1W3"/>
+<attribute name="VARIANTS" value="color"/>
 </part>
 <part name="D3" library="firefly" deviceset="LED-RGB" device="">
 <attribute name="MANUFACTURER" value="Rohm Semiconductor"/>
 <attribute name="ORDERING-CODE" value="SMLP36RGB1W3"/>
+<attribute name="VARIANTS" value="color"/>
 </part>
 <part name="D2" library="firefly" deviceset="LED-RGB" device="">
 <attribute name="MANUFACTURER" value="Rohm Semiconductor"/>
 <attribute name="ORDERING-CODE" value="SMLP36RGB1W3"/>
+<attribute name="VARIANTS" value="color"/>
 </part>
 <part name="V68" library="firefly" deviceset="GND" device=""/>
 </parts>
@@ -10719,6 +10732,7 @@ Source: http://www.vishay.com/docs/45017/vjsoldfo.pdf</description>
 <instance part="U4" gate="G$1" x="134.62" y="101.6">
 <attribute name="MANUFACTURER" x="134.62" y="101.6" size="1.778" layer="96" display="off"/>
 <attribute name="ORDERING-CODE" x="134.62" y="101.6" size="1.778" layer="96" display="off"/>
+<attribute name="VARIANTS" x="134.62" y="101.6" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="V7" gate="GND" x="137.16" y="73.66"/>
 <instance part="R9" gate="G$1" x="99.06" y="114.3" rot="R90">
@@ -10728,25 +10742,30 @@ Source: http://www.vishay.com/docs/45017/vjsoldfo.pdf</description>
 <instance part="C12" gate="G$1" x="116.84" y="129.54">
 <attribute name="MANUFACTURER" x="116.84" y="129.54" size="1.778" layer="96" display="off"/>
 <attribute name="ORDERING-CODE" x="116.84" y="129.54" size="1.778" layer="96" display="off"/>
+<attribute name="VARIANTS" x="116.84" y="129.54" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="V15" gate="GND" x="116.84" y="119.38"/>
 <instance part="C13" gate="G$1" x="152.4" y="129.54">
 <attribute name="MANUFACTURER" x="152.4" y="129.54" size="1.778" layer="96" display="off"/>
 <attribute name="ORDERING-CODE" x="152.4" y="129.54" size="1.778" layer="96" display="off"/>
+<attribute name="VARIANTS" x="152.4" y="129.54" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="V16" gate="GND" x="152.4" y="119.38"/>
 <instance part="C14" gate="G$1" x="165.1" y="129.54">
 <attribute name="MANUFACTURER" x="165.1" y="129.54" size="1.778" layer="96" display="off"/>
 <attribute name="ORDERING-CODE" x="165.1" y="129.54" size="1.778" layer="96" display="off"/>
+<attribute name="VARIANTS" x="165.1" y="129.54" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="V71" gate="GND" x="165.1" y="119.38"/>
 <instance part="C16" gate="G$1" x="154.94" y="93.98">
 <attribute name="MANUFACTURER" x="154.94" y="93.98" size="1.778" layer="96" display="off"/>
 <attribute name="ORDERING-CODE" x="154.94" y="93.98" size="1.778" layer="96" display="off"/>
+<attribute name="VARIANTS" x="154.94" y="93.98" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="C17" gate="G$1" x="167.64" y="93.98">
 <attribute name="MANUFACTURER" x="167.64" y="93.98" size="1.778" layer="96" display="off"/>
 <attribute name="ORDERING-CODE" x="167.64" y="93.98" size="1.778" layer="96" display="off"/>
+<attribute name="VARIANTS" x="167.64" y="93.98" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="V72" gate="GND" x="154.94" y="83.82"/>
 <instance part="V74" gate="GND" x="167.64" y="83.82"/>
@@ -10754,7 +10773,7 @@ Source: http://www.vishay.com/docs/45017/vjsoldfo.pdf</description>
 <instance part="J2" gate="G$1" x="134.62" y="177.8">
 <attribute name="ORDERING-CODE" x="134.62" y="177.8" size="1.778" layer="96" display="off"/>
 <attribute name="MANUFACTURER" x="134.62" y="177.8" size="1.778" layer="96" display="off"/>
-<attribute name="DNS" x="134.62" y="177.8" size="1.778" layer="96" display="off"/>
+<attribute name="VARIANTS" x="134.62" y="177.8" size="1.778" layer="96" display="off"/>
 </instance>
 </instances>
 <busses>
@@ -11024,6 +11043,7 @@ Source: http://www.vishay.com/docs/45017/vjsoldfo.pdf</description>
 <instance part="U5" gate="G$1" x="93.98" y="149.86">
 <attribute name="MANUFACTURER" x="93.98" y="149.86" size="1.778" layer="96" display="off"/>
 <attribute name="ORDERING-CODE" x="93.98" y="149.86" size="1.778" layer="96" display="off"/>
+<attribute name="VARIANTS" x="93.98" y="149.86" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="C50" gate="G$1" x="60.96" y="182.88">
 <attribute name="MANUFACTURER" x="60.96" y="182.88" size="1.778" layer="96" display="off"/>
@@ -11039,24 +11059,29 @@ Source: http://www.vishay.com/docs/45017/vjsoldfo.pdf</description>
 <instance part="C53" gate="G$1" x="83.82" y="193.04" rot="R90">
 <attribute name="ORDERING-CODE" x="83.82" y="193.04" size="1.778" layer="96" rot="R90" display="off"/>
 <attribute name="MANUFACTURER" x="83.82" y="193.04" size="1.778" layer="96" rot="R90" display="off"/>
+<attribute name="VARIANTS" x="83.82" y="193.04" size="1.778" layer="96" rot="R90" display="off"/>
 </instance>
 <instance part="C54" gate="G$1" x="101.6" y="193.04" rot="R90">
 <attribute name="ORDERING-CODE" x="101.6" y="193.04" size="1.778" layer="96" rot="R90" display="off"/>
 <attribute name="MANUFACTURER" x="101.6" y="193.04" size="1.778" layer="96" rot="R90" display="off"/>
+<attribute name="VARIANTS" x="101.6" y="193.04" size="1.778" layer="96" rot="R90" display="off"/>
 </instance>
 <instance part="V95" gate="GND" x="68.58" y="119.38"/>
 <instance part="V96" gate="GND" x="68.58" y="139.7"/>
 <instance part="D1" gate="G$1" x="124.46" y="129.54">
 <attribute name="ORDERING-CODE" x="124.46" y="129.54" size="1.778" layer="96" display="off"/>
 <attribute name="MANUFACTURER" x="124.46" y="129.54" size="1.778" layer="96" display="off"/>
+<attribute name="VARIANTS" x="124.46" y="129.54" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="D3" gate="G$1" x="124.46" y="160.02">
 <attribute name="ORDERING-CODE" x="124.46" y="160.02" size="1.778" layer="96" display="off"/>
 <attribute name="MANUFACTURER" x="124.46" y="160.02" size="1.778" layer="96" display="off"/>
+<attribute name="VARIANTS" x="124.46" y="160.02" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="D2" gate="G$1" x="124.46" y="144.78">
 <attribute name="ORDERING-CODE" x="124.46" y="144.78" size="1.778" layer="96" display="off"/>
 <attribute name="MANUFACTURER" x="124.46" y="144.78" size="1.778" layer="96" display="off"/>
+<attribute name="VARIANTS" x="124.46" y="144.78" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="V68" gate="GND" x="132.08" y="119.38"/>
 </instances>
@@ -11559,6 +11584,7 @@ Source: http://www.vishay.com/docs/45017/vjsoldfo.pdf</description>
 <instance part="U10" gate="G$1" x="60.96" y="114.3">
 <attribute name="ORDERING-CODE" x="60.96" y="114.3" size="1.778" layer="96" display="off"/>
 <attribute name="MANUFACTURER" x="60.96" y="114.3" size="1.778" layer="96" display="off"/>
+<attribute name="VARIANTS" x="60.96" y="114.3" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="R4" gate="G$1" x="210.82" y="81.28" rot="R270">
 <attribute name="MANUFACTURER" x="210.82" y="81.28" size="1.778" layer="96" rot="R270" display="off"/>

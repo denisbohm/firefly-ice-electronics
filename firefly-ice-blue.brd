@@ -28,15 +28,15 @@
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
-<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
@@ -133,6 +133,8 @@
 <text x="12.954" y="33.02" size="0.4" layer="51">PTH</text>
 <text x="20.193" y="33.02" size="0.4" layer="51">PTH</text>
 <text x="17.526" y="32.766" size="0.5" layer="52" rot="MR0">J1</text>
+<circle x="24" y="31" radius="0.58" width="0" layer="29"/>
+<circle x="10" y="3" radius="0.58" width="0" layer="29"/>
 </plain>
 <libraries>
 <library name="firefly">
@@ -1536,6 +1538,7 @@ This Sunstone Circuits 4 Layer .DRU has been set to cover our minimum requiremen
 <element name="U4" library="firefly" package="DFN10-2X2" value="MAG3110" x="8.001" y="9.652">
 <attribute name="MANUFACTURER" value="Freescale Semiconductor" x="8.001" y="9.652" size="1.778" layer="27" display="off"/>
 <attribute name="ORDERING-CODE" value="MAG3110FCR1" x="8.001" y="9.652" size="1.778" layer="27" display="off"/>
+<attribute name="VARIANTS" value="magnetometer" x="8.001" y="9.652" size="1.778" layer="27" display="off"/>
 </element>
 <element name="R9" library="firefly" package="R0201" value="4.7k" x="12.065" y="7.874" rot="R270">
 <attribute name="MANUFACTURER" value="Panasonic Electronic Components" x="12.065" y="7.874" size="1.778" layer="27" rot="R270" display="off"/>
@@ -1544,22 +1547,27 @@ This Sunstone Circuits 4 Layer .DRU has been set to cover our minimum requiremen
 <element name="C12" library="firefly" package="C0201" value="100nF" x="11.43" y="9.779">
 <attribute name="MANUFACTURER" value="Murata" x="11.43" y="9.779" size="1.778" layer="27" display="off"/>
 <attribute name="ORDERING-CODE" value="GRM033R60J104KE19D" x="11.43" y="9.779" size="1.778" layer="27" display="off"/>
+<attribute name="VARIANTS" value="magnetometer" x="11.43" y="9.779" size="1.778" layer="27" display="off"/>
 </element>
 <element name="C13" library="firefly" package="C0201" value="100nF" x="4.064" y="9.906" rot="R270">
 <attribute name="MANUFACTURER" value="Murata" x="4.064" y="9.906" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="ORDERING-CODE" value="GRM033R60J104KE19D" x="4.064" y="9.906" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="VARIANTS" value="magnetometer" x="4.064" y="9.906" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="C14" library="firefly" package="C0201" value="1uF" x="4.826" y="9.906" rot="R270">
 <attribute name="MANUFACTURER" value="TDK Corporation" x="4.826" y="9.906" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="ORDERING-CODE" value="C0603X5R0J105M030BC" x="4.826" y="9.906" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="VARIANTS" value="magnetometer" x="4.826" y="9.906" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="C16" library="firefly" package="C0201" value="100nF" x="4.699" y="10.795" rot="R180">
 <attribute name="MANUFACTURER" value="Murata" x="4.699" y="10.795" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="ORDERING-CODE" value="GRM033R60J104KE19D" x="4.699" y="10.795" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="VARIANTS" value="magnetometer" x="4.699" y="10.795" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="C17" library="firefly" package="C0201" value="100nF" x="4.699" y="9.017" rot="R180">
 <attribute name="MANUFACTURER" value="Murata" x="4.699" y="9.017" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="ORDERING-CODE" value="GRM033R60J104KE19D" x="4.699" y="9.017" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="VARIANTS" value="magnetometer" x="4.699" y="9.017" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="U7" library="firefly" package="DFN8" value="MCP73832DFN8" x="30.861" y="16.891" rot="R270">
 <attribute name="MANUFACTURER" value="Microchip" x="30.861" y="16.891" size="1.778" layer="27" rot="R270" display="off"/>
@@ -1732,24 +1740,27 @@ This Sunstone Circuits 4 Layer .DRU has been set to cover our minimum requiremen
 <element name="U5" library="firefly" package="WL-CSP-25" value="AS3661WL-CSP-25" x="4.7" y="16.9">
 <attribute name="MANUFACTURER" value="Texas Instruments" x="4.7" y="16.9" size="1.778" layer="27" display="off"/>
 <attribute name="ORDERING-CODE" value="LP5523TMX/NOPB" x="4.7" y="16.9" size="1.778" layer="27" display="off"/>
+<attribute name="VARIANTS" value="color" x="4.7" y="16.9" size="1.778" layer="27" display="off"/>
 </element>
 <element name="C50" library="firefly" package="C0201" value="1uF" x="6.35" y="16.51" rot="R270">
-<attribute name="VARIANTS" value="low-power" x="6.35" y="16.51" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="VARIANTS" value="color" x="6.35" y="16.51" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MANUFACTURER" value="TDK Corporation" x="6.35" y="16.51" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="ORDERING-CODE" value="C0603X5R0J105M030BC" x="6.35" y="16.51" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="C52" library="firefly" package="C0201" value="1uF" x="4.572" y="18.923" rot="R90">
-<attribute name="VARIANTS" value="low-power" x="4.572" y="18.923" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="VARIANTS" value="color" x="4.572" y="18.923" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MANUFACTURER" value="TDK Corporation" x="4.572" y="18.923" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="ORDERING-CODE" value="C0603X5R0J105M030BC" x="4.572" y="18.923" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="C53" library="firefly" package="C0201" value="470nF" x="6.35" y="18.161" rot="R90">
-<attribute name="ORDERING-CODE" value="CL03A474KQ3NNNC" x="6.35" y="18.161" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MANUFACTURER" value="Samsung Electro-Mechanics America, Inc" x="6.35" y="18.161" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="ORDERING-CODE" value="C0603X5R0J474M" x="6.35" y="18.161" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MANUFACTURER" value="TDK Corporation" x="6.35" y="18.161" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="VARIANTS" value="color" x="6.35" y="18.161" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="C54" library="firefly" package="C0201" value="470nF" x="5.461" y="18.796" rot="R180">
-<attribute name="ORDERING-CODE" value="CL03A474KQ3NNNC" x="5.461" y="18.796" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MANUFACTURER" value="Samsung Electro-Mechanics America, Inc" x="5.461" y="18.796" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="ORDERING-CODE" value="C0603X5R0J474M" x="5.461" y="18.796" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MANUFACTURER" value="TDK Corporation" x="5.461" y="18.796" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="VARIANTS" value="color" x="5.461" y="18.796" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="U16" library="firefly" package="WLBGA-8" value="MEMORY-SPIWLBGA-8" x="5.588" y="21.717" rot="R180">
 <attribute name="ORDERING-CODE" value="W25Q16DWBYIG" x="5.588" y="21.717" size="1.778" layer="27" rot="R180" display="off"/>
@@ -1781,6 +1792,7 @@ This Sunstone Circuits 4 Layer .DRU has been set to cover our minimum requiremen
 <element name="U10" library="firefly" package="UDFN6" value="STM6519" x="26.289" y="25.781">
 <attribute name="ORDERING-CODE" value="STM6519AHARUB6F" x="26.289" y="25.781" size="1.778" layer="27" display="off"/>
 <attribute name="MANUFACTURER" value="STMicroelectronics" x="26.289" y="25.781" size="1.778" layer="27" display="off"/>
+<attribute name="VARIANTS" value="failsafe" x="26.289" y="25.781" size="1.778" layer="27" display="off"/>
 </element>
 <element name="R4" library="firefly" package="R0201" value="1M" x="22.86" y="17.526" rot="R270">
 <attribute name="VARIANTS" value="efficient-power" x="22.86" y="17.526" size="1.778" layer="27" rot="R270" display="off"/>
@@ -1806,20 +1818,23 @@ This Sunstone Circuits 4 Layer .DRU has been set to cover our minimum requiremen
 <element name="J2" library="firefly" package="M40-3100345R" value="CON-6SOCKET" x="10.414" y="4.826" rot="MR180">
 <attribute name="MANUFACTURER" value="Harwin Inc" x="10.414" y="4.826" size="1.778" layer="28" rot="MR180" display="off"/>
 <attribute name="ORDERING-CODE" value="M40-3100345R" x="10.414" y="4.826" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="DNS" value="true" x="10.414" y="4.826" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="VARIANTS" value="expansion" x="10.414" y="4.826" size="1.778" layer="28" rot="MR180" display="off"/>
 </element>
 <element name="USBID" library="firefly" package="TARGET-PIN-1MM" value="TARGET-PIN" x="22.987" y="26.543" rot="R180"/>
 <element name="D1" library="firefly" package="SMLP36" value="LED-RGB" x="2" y="14.4" rot="R280">
 <attribute name="ORDERING-CODE" value="SMLP36RGB1W3" x="2" y="14.4" size="1.778" layer="27" rot="R280" display="off"/>
 <attribute name="MANUFACTURER" value="Rohm Semiconductor" x="2" y="14.4" size="1.778" layer="27" rot="R280" display="off"/>
+<attribute name="VARIANTS" value="color" x="2" y="14.4" size="1.778" layer="27" rot="R280" display="off"/>
 </element>
 <element name="D3" library="firefly" package="SMLP36" value="LED-RGB" x="2" y="19.6" rot="R260">
 <attribute name="ORDERING-CODE" value="SMLP36RGB1W3" x="2" y="19.6" size="1.778" layer="27" rot="R260" display="off"/>
 <attribute name="MANUFACTURER" value="Rohm Semiconductor" x="2" y="19.6" size="1.778" layer="27" rot="R260" display="off"/>
+<attribute name="VARIANTS" value="color" x="2" y="19.6" size="1.778" layer="27" rot="R260" display="off"/>
 </element>
 <element name="D2" library="firefly" package="SMLP36" value="LED-RGB" x="1.8" y="17" rot="R270">
 <attribute name="ORDERING-CODE" value="SMLP36RGB1W3" x="1.8" y="17" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MANUFACTURER" value="Rohm Semiconductor" x="1.8" y="17" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="VARIANTS" value="color" x="1.8" y="17" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 </elements>
 <signals>
