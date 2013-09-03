@@ -3182,6 +3182,7 @@ Source: http://www.vishay.com/docs/45017/vjsoldfo.pdf</description>
 <rectangle x1="-0.1001" y1="-0.4001" x2="0.1001" y2="0.4001" layer="35"/>
 <smd name="1" x="-0.95" y="0" dx="0.9" dy="1.3" layer="1"/>
 <smd name="2" x="0.95" y="0" dx="0.9" dy="1.3" layer="1"/>
+<text x="-0.3" y="0.8" size="0.4064" layer="51">&gt;Name</text>
 </package>
 <package name="SOD-123F">
 <wire x1="-1.8" y1="-0.8" x2="-1.8" y2="0.8" width="0.127" layer="51"/>
@@ -4967,6 +4968,10 @@ Source: WE-TPC 744053220.pdf</description>
 <text x="-1" y="1" size="1.27" layer="25">&gt;Name</text>
 <text x="-4" y="2.3" size="0.4" layer="51">PTH</text>
 <text x="3" y="2.3" size="0.4" layer="51">PTH</text>
+<wire x1="-3.61" y1="1.1" x2="-3.61" y2="1.6" width="1" layer="2"/>
+<wire x1="-3.61" y1="1.1" x2="-3.61" y2="1.6" width="1" layer="15"/>
+<wire x1="3.59" y1="1.1" x2="3.59" y2="1.6" width="1" layer="2"/>
+<wire x1="3.59" y1="1.1" x2="3.59" y2="1.6" width="1" layer="15"/>
 </package>
 <package name="UDFN-8">
 <circle x="-1.2" y="0.7" radius="0.1" width="0.127" layer="51"/>
@@ -8672,7 +8677,7 @@ Source: http://www.vishay.com/docs/45017/vjsoldfo.pdf</description>
 </part>
 <part name="C25" library="firefly" deviceset="C-US" device="C0402" value="10uF">
 <attribute name="MANUFACTURER" value="Samsung Electro-Mechanics America, Inc"/>
-<attribute name="ORDERING-CODE" value="CL05A106MQ5NUNC"/>
+<attribute name="ORDERING-CODE" value="CL05A106MP5NUNC"/>
 </part>
 <part name="C26" library="firefly" deviceset="C-US" device="C0201" value="100nF">
 <attribute name="MANUFACTURER" value="Murata"/>
@@ -8986,7 +8991,7 @@ Source: http://www.vishay.com/docs/45017/vjsoldfo.pdf</description>
 </part>
 <part name="C18" library="firefly" deviceset="C-US" device="C0402" value="10uF">
 <attribute name="MANUFACTURER" value="Samsung Electro-Mechanics America, Inc"/>
-<attribute name="ORDERING-CODE" value="CL05A106MQ5NUNC"/>
+<attribute name="ORDERING-CODE" value="CL05A106MP5NUNC"/>
 <attribute name="VARIANTS" value="efficient-power"/>
 </part>
 <part name="V5" library="firefly" deviceset="GND" device=""/>
@@ -9261,20 +9266,25 @@ Source: http://www.vishay.com/docs/45017/vjsoldfo.pdf</description>
 <part name="USBID" library="firefly" deviceset="TARGET-PIN" device=""/>
 <part name="D1" library="firefly" deviceset="LED-RGB" device="">
 <attribute name="MANUFACTURER" value="Rohm Semiconductor"/>
-<attribute name="ORDERING-CODE" value="SMLP36RGB1W3"/>
+<attribute name="ORDERING-CODE" value="SMLP36RGB2W3"/>
 <attribute name="VARIANTS" value="color"/>
 </part>
 <part name="D3" library="firefly" deviceset="LED-RGB" device="">
 <attribute name="MANUFACTURER" value="Rohm Semiconductor"/>
-<attribute name="ORDERING-CODE" value="SMLP36RGB1W3"/>
+<attribute name="ORDERING-CODE" value="SMLP36RGB2W3"/>
 <attribute name="VARIANTS" value="color"/>
 </part>
 <part name="D2" library="firefly" deviceset="LED-RGB" device="">
 <attribute name="MANUFACTURER" value="Rohm Semiconductor"/>
-<attribute name="ORDERING-CODE" value="SMLP36RGB1W3"/>
+<attribute name="ORDERING-CODE" value="SMLP36RGB2W3"/>
 <attribute name="VARIANTS" value="color"/>
 </part>
 <part name="V68" library="firefly" deviceset="GND" device=""/>
+<part name="R7" library="firefly" deviceset="R-US_" device="R0201" value="100k">
+<attribute name="MANUFACTURER" value="Yageo"/>
+<attribute name="ORDERING-CODE" value="RC0201FR-07100KL"/>
+<attribute name="VARIANTS" value="efficient-power"/>
+</part>
 </parts>
 <sheets>
 <sheet>
@@ -9792,16 +9802,18 @@ Source: http://www.vishay.com/docs/45017/vjsoldfo.pdf</description>
 </net>
 <net name="US0_MISO" class="0">
 <segment>
-<pinref part="U1" gate="E" pin="PE10/TIM1_CC0#1/US0_TX#0"/>
-<wire x1="68.58" y1="312.42" x2="50.8" y2="312.42" width="0.1524" layer="91"/>
-<label x="50.8" y="312.42" size="1.778" layer="95"/>
+<wire x1="66.04" y1="309.88" x2="50.8" y2="309.88" width="0.1524" layer="91"/>
+<label x="50.8" y="309.88" size="1.778" layer="95"/>
+<pinref part="U1" gate="E" pin="PE11/LES_ALTEX5/TIM1_CC1#1/US0_RX#0"/>
+<wire x1="66.04" y1="309.88" x2="68.58" y2="309.88" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="US0_MOSI" class="0">
 <segment>
-<pinref part="U1" gate="E" pin="PE11/LES_ALTEX5/TIM1_CC1#1/US0_RX#0"/>
-<wire x1="68.58" y1="309.88" x2="50.8" y2="309.88" width="0.1524" layer="91"/>
-<label x="50.8" y="309.88" size="1.778" layer="95"/>
+<wire x1="66.04" y1="312.42" x2="50.8" y2="312.42" width="0.1524" layer="91"/>
+<label x="50.8" y="312.42" size="1.778" layer="95"/>
+<pinref part="U1" gate="E" pin="PE10/TIM1_CC0#1/US0_TX#0"/>
+<wire x1="66.04" y1="312.42" x2="68.58" y2="312.42" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="NRF_REQN" class="0">
@@ -10483,28 +10495,27 @@ Source: http://www.vishay.com/docs/45017/vjsoldfo.pdf</description>
 </sheet>
 <sheet>
 <plain>
-<text x="170.18" y="132.08" size="1.778" layer="91">add MEM_CSN pull-up to powered bus? -denis</text>
 </plain>
 <instances>
 <instance part="FRAME7" gate="G$1" x="0" y="0"/>
 <instance part="FRAME7" gate="G$2" x="172.72" y="0"/>
-<instance part="U16" gate="G$1" x="142.24" y="121.92">
-<attribute name="ORDERING-CODE" x="142.24" y="121.92" size="1.778" layer="96" display="off"/>
-<attribute name="MANUFACTURER" x="142.24" y="121.92" size="1.778" layer="96" display="off"/>
-<attribute name="DISTRIBUTOR" x="142.24" y="121.92" size="1.778" layer="96" display="off"/>
+<instance part="U16" gate="G$1" x="147.32" y="121.92">
+<attribute name="ORDERING-CODE" x="147.32" y="121.92" size="1.778" layer="96" display="off"/>
+<attribute name="MANUFACTURER" x="147.32" y="121.92" size="1.778" layer="96" display="off"/>
+<attribute name="DISTRIBUTOR" x="147.32" y="121.92" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="U$3" gate="G$1" x="124.46" y="86.36"/>
-<instance part="C55" gate="G$1" x="127" y="152.4">
-<attribute name="ORDERING-CODE" x="127" y="152.4" size="1.778" layer="96" display="off"/>
-<attribute name="MANUFACTURER" x="127" y="152.4" size="1.778" layer="96" display="off"/>
+<instance part="U$3" gate="G$1" x="147.32" y="78.74"/>
+<instance part="C55" gate="G$1" x="132.08" y="152.4">
+<attribute name="ORDERING-CODE" x="132.08" y="152.4" size="1.778" layer="96" display="off"/>
+<attribute name="MANUFACTURER" x="132.08" y="152.4" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="V97" gate="GND" x="127" y="142.24"/>
-<instance part="V98" gate="GND" x="142.24" y="96.52"/>
-<instance part="U18" gate="G$1" x="121.92" y="66.04">
-<attribute name="ORDERING-CODE" x="121.92" y="66.04" size="1.778" layer="96" display="off"/>
-<attribute name="MANUFACTURER" x="121.92" y="66.04" size="1.778" layer="96" display="off"/>
+<instance part="V97" gate="GND" x="132.08" y="142.24"/>
+<instance part="V98" gate="GND" x="147.32" y="96.52"/>
+<instance part="U18" gate="G$1" x="144.78" y="58.42">
+<attribute name="ORDERING-CODE" x="144.78" y="58.42" size="1.778" layer="96" display="off"/>
+<attribute name="MANUFACTURER" x="144.78" y="58.42" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="V64" gate="GND" x="121.92" y="43.18"/>
+<instance part="V64" gate="GND" x="144.78" y="35.56"/>
 <instance part="V69" gate="GND" x="86.36" y="132.08"/>
 <instance part="C11" gate="G$1" x="60.96" y="152.4">
 <attribute name="MANUFACTURER" x="60.96" y="152.4" size="1.778" layer="96" display="off"/>
@@ -10521,6 +10532,11 @@ Source: http://www.vishay.com/docs/45017/vjsoldfo.pdf</description>
 <attribute name="ORDERING-CODE" x="86.36" y="154.94" size="1.778" layer="96" display="off"/>
 <attribute name="MANUFACTURER" x="86.36" y="154.94" size="1.778" layer="96" display="off"/>
 </instance>
+<instance part="R7" gate="G$1" x="119.38" y="149.86" rot="R270">
+<attribute name="MANUFACTURER" x="119.38" y="149.86" size="1.778" layer="96" rot="R270" display="off"/>
+<attribute name="ORDERING-CODE" x="119.38" y="149.86" size="1.778" layer="96" rot="R270" display="off"/>
+<attribute name="VARIANTS" x="119.38" y="149.86" size="1.778" layer="96" rot="R270" display="off"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -10529,12 +10545,12 @@ Source: http://www.vishay.com/docs/45017/vjsoldfo.pdf</description>
 <segment>
 <pinref part="C55" gate="G$1" pin="2"/>
 <pinref part="V97" gate="GND" pin="GND"/>
-<wire x1="127" y1="144.78" x2="127" y2="147.32" width="0.1524" layer="91"/>
+<wire x1="132.08" y1="144.78" x2="132.08" y2="147.32" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U16" gate="G$1" pin="GND"/>
 <pinref part="V98" gate="GND" pin="GND"/>
-<wire x1="142.24" y1="101.6" x2="142.24" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="147.32" y1="101.6" x2="147.32" y2="99.06" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="V69" gate="GND" pin="GND"/>
@@ -10554,7 +10570,7 @@ Source: http://www.vishay.com/docs/45017/vjsoldfo.pdf</description>
 <segment>
 <pinref part="U18" gate="G$1" pin="GND"/>
 <pinref part="V64" gate="GND" pin="GND"/>
-<wire x1="121.92" y1="48.26" x2="121.92" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="144.78" y1="40.64" x2="144.78" y2="38.1" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="VCC" class="0">
@@ -10570,33 +10586,33 @@ Source: http://www.vishay.com/docs/45017/vjsoldfo.pdf</description>
 <segment>
 <pinref part="U$3" gate="G$1" pin="VCC"/>
 <pinref part="U18" gate="G$1" pin="VCCB"/>
-<wire x1="124.46" y1="86.36" x2="124.46" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="147.32" y1="78.74" x2="147.32" y2="76.2" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="MEM_CSN" class="0">
 <segment>
-<wire x1="162.56" y1="66.04" x2="144.78" y2="66.04" width="0.1524" layer="91"/>
-<label x="149.86" y="66.04" size="1.778" layer="95"/>
+<wire x1="185.42" y1="58.42" x2="167.64" y2="58.42" width="0.1524" layer="91"/>
+<label x="172.72" y="58.42" size="1.778" layer="95"/>
 <pinref part="U18" gate="G$1" pin="B3"/>
-<wire x1="144.78" y1="66.04" x2="142.24" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="167.64" y1="58.42" x2="165.1" y2="58.42" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="SPI0_V+" class="0">
 <segment>
 <pinref part="C55" gate="G$1" pin="1"/>
 <pinref part="U16" gate="G$1" pin="VCC"/>
-<wire x1="142.24" y1="157.48" x2="142.24" y2="142.24" width="0.1524" layer="91"/>
-<wire x1="142.24" y1="157.48" x2="127" y2="157.48" width="0.1524" layer="91"/>
-<wire x1="127" y1="157.48" x2="127" y2="154.94" width="0.1524" layer="91"/>
-<junction x="142.24" y="157.48"/>
+<wire x1="147.32" y1="157.48" x2="147.32" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="147.32" y1="157.48" x2="132.08" y2="157.48" width="0.1524" layer="91"/>
+<wire x1="132.08" y1="157.48" x2="132.08" y2="154.94" width="0.1524" layer="91"/>
+<junction x="147.32" y="157.48"/>
 <pinref part="U16" gate="G$1" pin="!WP"/>
-<wire x1="162.56" y1="114.3" x2="165.1" y2="114.3" width="0.1524" layer="91"/>
-<wire x1="165.1" y1="114.3" x2="165.1" y2="119.38" width="0.1524" layer="91"/>
-<wire x1="165.1" y1="119.38" x2="165.1" y2="157.48" width="0.1524" layer="91"/>
-<wire x1="165.1" y1="157.48" x2="142.24" y2="157.48" width="0.1524" layer="91"/>
+<wire x1="167.64" y1="114.3" x2="170.18" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="170.18" y1="114.3" x2="170.18" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="170.18" y1="119.38" x2="170.18" y2="157.48" width="0.1524" layer="91"/>
+<wire x1="170.18" y1="157.48" x2="147.32" y2="157.48" width="0.1524" layer="91"/>
 <pinref part="U16" gate="G$1" pin="!HOLD"/>
-<wire x1="162.56" y1="119.38" x2="165.1" y2="119.38" width="0.1524" layer="91"/>
-<junction x="165.1" y="119.38"/>
+<wire x1="167.64" y1="119.38" x2="170.18" y2="119.38" width="0.1524" layer="91"/>
+<junction x="170.18" y="119.38"/>
 <pinref part="C36" gate="G$1" pin="1"/>
 <wire x1="104.14" y1="154.94" x2="104.14" y2="157.48" width="0.1524" layer="91"/>
 <wire x1="101.6" y1="157.48" x2="104.14" y2="157.48" width="0.1524" layer="91"/>
@@ -10604,17 +10620,22 @@ Source: http://www.vishay.com/docs/45017/vjsoldfo.pdf</description>
 <label x="106.68" y="157.48" size="1.778" layer="95"/>
 <wire x1="104.14" y1="157.48" x2="119.38" y2="157.48" width="0.1524" layer="91"/>
 <junction x="104.14" y="157.48"/>
-<junction x="127" y="157.48"/>
+<junction x="132.08" y="157.48"/>
 <pinref part="U18" gate="G$1" pin="VCCA"/>
-<wire x1="119.38" y1="157.48" x2="127" y2="157.48" width="0.1524" layer="91"/>
-<wire x1="119.38" y1="83.82" x2="119.38" y2="86.36" width="0.1524" layer="91"/>
-<junction x="119.38" y="157.48"/>
+<wire x1="119.38" y1="157.48" x2="124.46" y2="157.48" width="0.1524" layer="91"/>
+<wire x1="124.46" y1="157.48" x2="132.08" y2="157.48" width="0.1524" layer="91"/>
+<wire x1="142.24" y1="76.2" x2="142.24" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="142.24" y1="78.74" x2="124.46" y2="78.74" width="0.1524" layer="91"/>
+<junction x="124.46" y="157.48"/>
 <pinref part="U18" gate="G$1" pin="OE"/>
-<wire x1="119.38" y1="86.36" x2="119.38" y2="157.48" width="0.1524" layer="91"/>
-<wire x1="101.6" y1="55.88" x2="78.74" y2="55.88" width="0.1524" layer="91"/>
-<wire x1="78.74" y1="55.88" x2="78.74" y2="86.36" width="0.1524" layer="91"/>
-<wire x1="78.74" y1="86.36" x2="119.38" y2="86.36" width="0.1524" layer="91"/>
-<junction x="119.38" y="86.36"/>
+<wire x1="124.46" y1="78.74" x2="124.46" y2="157.48" width="0.1524" layer="91"/>
+<wire x1="124.46" y1="48.26" x2="121.92" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="121.92" y1="48.26" x2="121.92" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="121.92" y1="78.74" x2="124.46" y2="78.74" width="0.1524" layer="91"/>
+<junction x="124.46" y="78.74"/>
+<pinref part="R7" gate="G$1" pin="1"/>
+<wire x1="119.38" y1="154.94" x2="119.38" y2="157.48" width="0.1524" layer="91"/>
+<junction x="119.38" y="157.48"/>
 </segment>
 </net>
 <net name="US0_PWR" class="0">
@@ -10628,66 +10649,69 @@ Source: http://www.vishay.com/docs/45017/vjsoldfo.pdf</description>
 </net>
 <net name="US0_MISO" class="0">
 <segment>
-<wire x1="162.56" y1="60.96" x2="144.78" y2="60.96" width="0.1524" layer="91"/>
-<label x="149.86" y="60.96" size="1.778" layer="95"/>
+<wire x1="185.42" y1="53.34" x2="167.64" y2="53.34" width="0.1524" layer="91"/>
+<label x="172.72" y="53.34" size="1.778" layer="95"/>
 <pinref part="U18" gate="G$1" pin="B4"/>
-<wire x1="144.78" y1="60.96" x2="142.24" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="167.64" y1="53.34" x2="165.1" y2="53.34" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="US0_MOSI" class="0">
 <segment>
-<wire x1="162.56" y1="76.2" x2="144.78" y2="76.2" width="0.1524" layer="91"/>
-<label x="149.86" y="76.2" size="1.778" layer="95"/>
+<wire x1="185.42" y1="68.58" x2="167.64" y2="68.58" width="0.1524" layer="91"/>
+<label x="172.72" y="68.58" size="1.778" layer="95"/>
 <pinref part="U18" gate="G$1" pin="B1"/>
-<wire x1="144.78" y1="76.2" x2="142.24" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="167.64" y1="68.58" x2="165.1" y2="68.58" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="US0_CLK" class="0">
 <segment>
-<wire x1="162.56" y1="71.12" x2="144.78" y2="71.12" width="0.1524" layer="91"/>
-<label x="149.86" y="71.12" size="1.778" layer="95"/>
+<wire x1="185.42" y1="63.5" x2="167.64" y2="63.5" width="0.1524" layer="91"/>
+<label x="172.72" y="63.5" size="1.778" layer="95"/>
 <pinref part="U18" gate="G$1" pin="B2"/>
-<wire x1="144.78" y1="71.12" x2="142.24" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="167.64" y1="63.5" x2="165.1" y2="63.5" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="SPI0_CLK" class="0">
 <segment>
 <pinref part="U16" gate="G$1" pin="CLK"/>
-<wire x1="121.92" y1="119.38" x2="93.98" y2="119.38" width="0.1524" layer="91"/>
-<wire x1="93.98" y1="119.38" x2="93.98" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="127" y1="119.38" x2="93.98" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="93.98" y1="119.38" x2="93.98" y2="63.5" width="0.1524" layer="91"/>
 <pinref part="U18" gate="G$1" pin="A2"/>
-<wire x1="93.98" y1="71.12" x2="101.6" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="93.98" y1="63.5" x2="124.46" y2="63.5" width="0.1524" layer="91"/>
 <label x="101.6" y="119.38" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SPI0_MOSI" class="0">
 <segment>
 <pinref part="U18" gate="G$1" pin="A1"/>
-<wire x1="101.6" y1="76.2" x2="99.06" y2="76.2" width="0.1524" layer="91"/>
-<wire x1="99.06" y1="76.2" x2="99.06" y2="124.46" width="0.1524" layer="91"/>
+<wire x1="124.46" y1="68.58" x2="99.06" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="99.06" y1="68.58" x2="99.06" y2="124.46" width="0.1524" layer="91"/>
 <pinref part="U16" gate="G$1" pin="DI"/>
-<wire x1="99.06" y1="124.46" x2="121.92" y2="124.46" width="0.1524" layer="91"/>
+<wire x1="99.06" y1="124.46" x2="127" y2="124.46" width="0.1524" layer="91"/>
 <label x="101.6" y="124.46" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SPI0_CSN" class="0">
 <segment>
 <pinref part="U18" gate="G$1" pin="A3"/>
-<wire x1="101.6" y1="66.04" x2="88.9" y2="66.04" width="0.1524" layer="91"/>
-<wire x1="88.9" y1="66.04" x2="88.9" y2="68.58" width="0.1524" layer="91"/>
-<wire x1="88.9" y1="68.58" x2="88.9" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="124.46" y1="58.42" x2="88.9" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="58.42" x2="88.9" y2="114.3" width="0.1524" layer="91"/>
 <pinref part="U16" gate="G$1" pin="!CS"/>
-<wire x1="88.9" y1="114.3" x2="121.92" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="114.3" x2="119.38" y2="114.3" width="0.1524" layer="91"/>
 <label x="101.6" y="114.3" size="1.778" layer="95"/>
+<pinref part="R7" gate="G$1" pin="2"/>
+<wire x1="119.38" y1="114.3" x2="127" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="119.38" y1="144.78" x2="119.38" y2="114.3" width="0.1524" layer="91"/>
+<junction x="119.38" y="114.3"/>
 </segment>
 </net>
 <net name="SPI0_MISO" class="0">
 <segment>
 <pinref part="U18" gate="G$1" pin="A4"/>
-<wire x1="101.6" y1="60.96" x2="83.82" y2="60.96" width="0.1524" layer="91"/>
-<wire x1="83.82" y1="60.96" x2="83.82" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="124.46" y1="53.34" x2="83.82" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="53.34" x2="83.82" y2="129.54" width="0.1524" layer="91"/>
 <pinref part="U16" gate="G$1" pin="DO"/>
-<wire x1="83.82" y1="129.54" x2="121.92" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="129.54" x2="127" y2="129.54" width="0.1524" layer="91"/>
 <label x="101.6" y="129.54" size="1.778" layer="95"/>
 </segment>
 </net>
