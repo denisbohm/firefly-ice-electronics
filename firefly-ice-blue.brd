@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.127" unitdist="mm" unit="mm" style="lines" multiple="10" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.127" unitdist="mm" unit="mil" style="lines" multiple="10" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
 <layer number="2" name="Route2" color="11" fill="1" visible="no" active="yes"/>
@@ -24,10 +24,10 @@
 <layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
 <layer number="15" name="Route15" color="13" fill="1" visible="no" active="yes"/>
 <layer number="16" name="Bottom" color="3" fill="1" visible="no" active="yes"/>
-<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="no" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="no" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="yes"/>
-<layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="20" name="Dimension" color="15" fill="1" visible="no" active="yes"/>
 <layer number="21" name="tPlace" color="7" fill="1" visible="no" active="yes"/>
 <layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
@@ -53,12 +53,12 @@
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
-<layer number="46" name="Milling" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="46" name="Milling" color="7" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="1" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="7" fill="1" visible="no" active="no"/>
@@ -83,12 +83,14 @@
 <layer number="110" name="fp0" color="7" fill="1" visible="no" active="yes"/>
 <layer number="116" name="Patch_BOT" color="9" fill="4" visible="no" active="yes"/>
 <layer number="118" name="Rect_Pads" color="8" fill="1" visible="no" active="yes"/>
-<layer number="121" name="tSilk" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="121" name="tSilk" color="7" fill="1" visible="no" active="yes"/>
 <layer number="122" name="bSilk" color="7" fill="1" visible="no" active="yes"/>
 <layer number="123" name="tTestmark" color="7" fill="1" visible="no" active="yes"/>
 <layer number="124" name="bTestmark" color="7" fill="1" visible="no" active="yes"/>
 <layer number="131" name="tAdjust" color="7" fill="1" visible="no" active="yes"/>
 <layer number="132" name="bAdjust" color="7" fill="1" visible="no" active="yes"/>
+<layer number="151" name="_tDocu" color="7" fill="1" visible="no" active="yes"/>
+<layer number="152" name="_bDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="200" name="200bmp" color="7" fill="1" visible="no" active="yes"/>
 <layer number="201" name="201bmp" color="7" fill="1" visible="no" active="yes"/>
 <layer number="202" name="202bmp" color="7" fill="1" visible="no" active="yes"/>
@@ -112,8 +114,6 @@
 <text x="24.343" y="30.285" size="1.778" layer="121">-</text>
 <text x="25.899" y="29.396" size="1.778" layer="122">+</text>
 <text x="24.343" y="30.285" size="1.778" layer="122">-</text>
-<circle x="11.5" y="25.003" radius="0.1581125" width="0.1524" layer="51"/>
-<text x="11.9" y="24.703" size="0.5" layer="51">U1</text>
 <circle x="17" y="17" radius="16" width="0.1524" layer="49"/>
 <wire x1="12.8873" y1="33.495" x2="21.1127" y2="33.495" width="0" layer="20" curve="332"/>
 <wire x1="21.1127" y1="33.495" x2="12.8873" y2="33.495" width="0" layer="20"/>
@@ -132,9 +132,641 @@
 <circle x="10" y="3" radius="0.5" width="0" layer="1"/>
 <text x="12.954" y="33.02" size="0.4" layer="51">PTH</text>
 <text x="20.193" y="33.02" size="0.4" layer="51">PTH</text>
-<text x="17.526" y="32.766" size="0.5" layer="52" rot="MR0">J1</text>
 <circle x="24" y="31" radius="0.58" width="0" layer="29"/>
 <circle x="10" y="3" radius="0.58" width="0" layer="29"/>
+<text x="19.658" y="3.021" size="0.254" layer="151" rot="R180">A1</text>
+<wire x1="21.657996875" y1="1.721003125" x2="20.857996875" y2="1.721003125" width="0.127" layer="151"/>
+<wire x1="20.857996875" y1="1.721003125" x2="20.857996875" y2="4.120996875" width="0.127" layer="151"/>
+<wire x1="20.857996875" y1="4.120996875" x2="21.657996875" y2="4.120996875" width="0.127" layer="151"/>
+<wire x1="21.657996875" y1="4.120996875" x2="21.657996875" y2="1.721003125" width="0.127" layer="151"/>
+<wire x1="17.458003125" y1="1.721003125" x2="17.458003125" y2="4.120996875" width="0.127" layer="151"/>
+<wire x1="20.857996875" y1="1.721003125" x2="17.458003125" y2="1.721003125" width="0.127" layer="151"/>
+<wire x1="20.857996875" y1="4.120996875" x2="17.458003125" y2="4.120996875" width="0.127" layer="151"/>
+<text x="28.594" y="28.612996875" size="0.254" layer="151" rot="R180">BAT1</text>
+<circle x="28.194" y="27.813" radius="0.4" width="0.127" layer="151"/>
+<text x="15.059" y="9.317" size="0.254" layer="151" rot="R270">C1</text>
+<rectangle x1="15.419" y1="9.219" x2="15.569" y2="9.519" layer="151" rot="R270"/>
+<rectangle x1="15.419" y1="8.769" x2="15.569" y2="9.069" layer="151" rot="R270"/>
+<rectangle x1="15.469" y1="9.119" x2="15.769" y2="9.169" layer="151" rot="R270"/>
+<rectangle x1="15.219" y1="9.119" x2="15.519" y2="9.169" layer="151" rot="R270"/>
+<text x="8.817" y="12.781" size="0.254" layer="151" rot="R90">C2</text>
+<rectangle x1="8.942" y1="12.706" x2="9.092" y2="13.006" layer="151" rot="R90"/>
+<rectangle x1="8.942" y1="13.156" x2="9.092" y2="13.456" layer="151" rot="R90"/>
+<rectangle x1="8.742" y1="13.056" x2="9.042" y2="13.106" layer="151" rot="R90"/>
+<rectangle x1="8.992" y1="13.056" x2="9.292" y2="13.106" layer="151" rot="R90"/>
+<text x="24.938" y="15.802" size="0.254" layer="151" rot="R180">C3</text>
+<rectangle x1="24.788" y1="15.852" x2="24.938" y2="16.152" layer="151" rot="R180"/>
+<rectangle x1="24.338" y1="15.852" x2="24.488" y2="16.152" layer="151" rot="R180"/>
+<rectangle x1="24.488" y1="15.852" x2="24.788" y2="15.902" layer="151" rot="R180"/>
+<rectangle x1="24.488" y1="16.102" x2="24.788" y2="16.152" layer="151" rot="R180"/>
+<text x="29.953" y="19.639" size="0.254" layer="151" rot="R90">C4</text>
+<wire x1="30.128996875" y1="19.693990625" x2="30.128996875" y2="20.184009375" width="0.1524" layer="151"/>
+<wire x1="30.577003125" y1="20.184009375" x2="30.577003125" y2="19.693990625" width="0.1524" layer="151"/>
+<rectangle x1="30.20785" y1="19.23505" x2="30.50785" y2="19.83495" layer="151" rot="R90"/>
+<rectangle x1="30.20785" y1="20.04785" x2="30.50785" y2="20.64775" layer="151" rot="R90"/>
+<text x="31.096" y="19.639" size="0.254" layer="151" rot="R90">C5</text>
+<wire x1="31.271996875" y1="19.693990625" x2="31.271996875" y2="20.184009375" width="0.1524" layer="151"/>
+<wire x1="31.720003125" y1="20.184009375" x2="31.720003125" y2="19.693990625" width="0.1524" layer="151"/>
+<rectangle x1="31.35085" y1="19.23505" x2="31.65085" y2="19.83495" layer="151" rot="R90"/>
+<rectangle x1="31.35085" y1="20.04785" x2="31.65085" y2="20.64775" layer="151" rot="R90"/>
+<text x="27.894" y="7.82" size="0.254" layer="151">C6</text>
+<rectangle x1="27.894" y1="7.47" x2="28.044" y2="7.77" layer="151"/>
+<rectangle x1="28.344" y1="7.47" x2="28.494" y2="7.77" layer="151"/>
+<rectangle x1="28.044" y1="7.72" x2="28.344" y2="7.77" layer="151"/>
+<rectangle x1="28.044" y1="7.47" x2="28.344" y2="7.52" layer="151"/>
+<text x="28.121" y="6.49000625" size="0.254" layer="151" rot="R90">C7</text>
+<rectangle x1="28.246" y1="6.415" x2="28.396" y2="6.715" layer="151" rot="R90"/>
+<rectangle x1="28.246" y1="6.865" x2="28.396" y2="7.165" layer="151" rot="R90"/>
+<rectangle x1="28.046" y1="6.765" x2="28.346" y2="6.815" layer="151" rot="R90"/>
+<rectangle x1="28.296" y1="6.765" x2="28.596" y2="6.815" layer="151" rot="R90"/>
+<text x="21.036" y="23.441" size="0.254" layer="151">C8</text>
+<rectangle x1="20.909" y1="23.726" x2="21.059" y2="24.026" layer="151"/>
+<rectangle x1="21.359" y1="23.726" x2="21.509" y2="24.026" layer="151"/>
+<rectangle x1="21.059" y1="23.976" x2="21.359" y2="24.026" layer="151"/>
+<rectangle x1="21.059" y1="23.726" x2="21.359" y2="23.776" layer="151"/>
+<text x="27.359" y="25.227" size="0.254" layer="151" rot="R90">C9</text>
+<rectangle x1="27.484" y1="25.152" x2="27.634" y2="25.452" layer="151" rot="R90"/>
+<rectangle x1="27.484" y1="25.602" x2="27.634" y2="25.902" layer="151" rot="R90"/>
+<rectangle x1="27.284" y1="25.502" x2="27.584" y2="25.552" layer="151" rot="R90"/>
+<rectangle x1="27.534" y1="25.502" x2="27.834" y2="25.552" layer="151" rot="R90"/>
+<text x="8.201" y="14.651" size="0.254" layer="151" rot="R270">C10</text>
+<rectangle x1="8.561" y1="14.426" x2="8.711" y2="14.726" layer="151" rot="R270"/>
+<rectangle x1="8.561" y1="13.976" x2="8.711" y2="14.276" layer="151" rot="R270"/>
+<rectangle x1="8.611" y1="14.326" x2="8.911" y2="14.376" layer="151" rot="R270"/>
+<rectangle x1="8.361" y1="14.326" x2="8.661" y2="14.376" layer="151" rot="R270"/>
+<text x="6.023" y="23.576" size="0.254" layer="151" rot="R90">C11</text>
+<rectangle x1="5.513" y1="23.501" x2="5.663" y2="23.801" layer="151" rot="R90"/>
+<rectangle x1="5.513" y1="23.951" x2="5.663" y2="24.251" layer="151" rot="R90"/>
+<rectangle x1="5.313" y1="23.851" x2="5.613" y2="23.901" layer="151" rot="R90"/>
+<rectangle x1="5.563" y1="23.851" x2="5.863" y2="23.901" layer="151" rot="R90"/>
+<text x="11.13" y="9.979" size="0.254" layer="151">C12</text>
+<rectangle x1="11.13" y1="9.629" x2="11.28" y2="9.929" layer="151"/>
+<rectangle x1="11.58" y1="9.629" x2="11.73" y2="9.929" layer="151"/>
+<rectangle x1="11.28" y1="9.879" x2="11.58" y2="9.929" layer="151"/>
+<rectangle x1="11.28" y1="9.629" x2="11.58" y2="9.679" layer="151"/>
+<text x="4.264" y="10.206" size="0.254" layer="151" rot="R270">C13</text>
+<rectangle x1="3.989" y1="9.981" x2="4.139" y2="10.281" layer="151" rot="R270"/>
+<rectangle x1="3.989" y1="9.531" x2="4.139" y2="9.831" layer="151" rot="R270"/>
+<rectangle x1="4.039" y1="9.881" x2="4.339" y2="9.931" layer="151" rot="R270"/>
+<rectangle x1="3.789" y1="9.881" x2="4.089" y2="9.931" layer="151" rot="R270"/>
+<text x="5.026" y="10.206" size="0.254" layer="151" rot="R270">C14</text>
+<rectangle x1="4.751" y1="9.981" x2="4.901" y2="10.281" layer="151" rot="R270"/>
+<rectangle x1="4.751" y1="9.531" x2="4.901" y2="9.831" layer="151" rot="R270"/>
+<rectangle x1="4.801" y1="9.881" x2="5.101" y2="9.931" layer="151" rot="R270"/>
+<rectangle x1="4.551" y1="9.881" x2="4.851" y2="9.931" layer="151" rot="R270"/>
+<text x="18.242" y="28.086" size="0.254" layer="151">C15</text>
+<wire x1="18.296990625" y1="27.910003125" x2="18.787009375" y2="27.910003125" width="0.1524" layer="151"/>
+<wire x1="18.787009375" y1="27.461996875" x2="18.296990625" y2="27.461996875" width="0.1524" layer="151"/>
+<rectangle x1="17.988" y1="27.3812" x2="18.288" y2="27.9811" layer="151"/>
+<rectangle x1="18.8008" y1="27.3812" x2="19.1008" y2="27.9811" layer="151"/>
+<text x="4.999" y="10.595" size="0.254" layer="151" rot="R180">C16</text>
+<rectangle x1="4.849" y1="10.645" x2="4.999" y2="10.945" layer="151" rot="R180"/>
+<rectangle x1="4.399" y1="10.645" x2="4.549" y2="10.945" layer="151" rot="R180"/>
+<rectangle x1="4.549" y1="10.645" x2="4.849" y2="10.695" layer="151" rot="R180"/>
+<rectangle x1="4.549" y1="10.895" x2="4.849" y2="10.945" layer="151" rot="R180"/>
+<text x="4.999" y="8.817" size="0.254" layer="151" rot="R180">C17</text>
+<rectangle x1="4.849" y1="8.867" x2="4.999" y2="9.167" layer="151" rot="R180"/>
+<rectangle x1="4.399" y1="8.867" x2="4.549" y2="9.167" layer="151" rot="R180"/>
+<rectangle x1="4.549" y1="8.867" x2="4.849" y2="8.917" layer="151" rot="R180"/>
+<rectangle x1="4.549" y1="9.117" x2="4.849" y2="9.167" layer="151" rot="R180"/>
+<text x="26.462" y="23.349" size="0.254" layer="151" rot="R180">C18</text>
+<wire x1="26.407009375" y1="22.508996875" x2="25.916990625" y2="22.508996875" width="0.1524" layer="151"/>
+<wire x1="25.916990625" y1="22.957003125" x2="26.407009375" y2="22.957003125" width="0.1524" layer="151"/>
+<rectangle x1="26.416" y1="22.4379" x2="26.716" y2="23.0378" layer="151" rot="R180"/>
+<rectangle x1="25.6032" y1="22.4379" x2="25.9032" y2="23.0378" layer="151" rot="R180"/>
+<text x="26.308" y="18.577" size="0.254" layer="151" rot="R180">C19</text>
+<wire x1="26.26400625" y1="18.744996875" x2="25.55199375" y2="18.744996875" width="0.1016" layer="151"/>
+<wire x1="26.26400625" y1="19.595996875" x2="25.55199375" y2="19.595996875" width="0.1016" layer="151"/>
+<rectangle x1="26.2461" y1="18.6969" x2="26.7462" y2="19.6469" layer="151" rot="R180"/>
+<rectangle x1="25.0777" y1="18.6969" x2="25.5778" y2="19.6469" layer="151" rot="R180"/>
+<text x="28.24" y="18.342" size="0.254" layer="151" rot="R180">C20</text>
+<rectangle x1="28.09" y1="17.757" x2="28.24" y2="18.057" layer="151" rot="R180"/>
+<rectangle x1="27.64" y1="17.757" x2="27.79" y2="18.057" layer="151" rot="R180"/>
+<rectangle x1="27.79" y1="17.757" x2="28.09" y2="17.807" layer="151" rot="R180"/>
+<rectangle x1="27.79" y1="18.007" x2="28.09" y2="18.057" layer="151" rot="R180"/>
+<text x="26.497" y="18.107" size="0.254" layer="151">C21</text>
+<rectangle x1="26.497" y1="17.757" x2="26.647" y2="18.057" layer="151"/>
+<rectangle x1="26.947" y1="17.757" x2="27.097" y2="18.057" layer="151"/>
+<rectangle x1="26.647" y1="18.007" x2="26.947" y2="18.057" layer="151"/>
+<rectangle x1="26.647" y1="17.757" x2="26.947" y2="17.807" layer="151"/>
+<text x="13.897" y="12.654" size="0.254" layer="151" rot="R90">C22</text>
+<rectangle x1="14.022" y1="12.579" x2="14.172" y2="12.879" layer="151" rot="R90"/>
+<rectangle x1="14.022" y1="13.029" x2="14.172" y2="13.329" layer="151" rot="R90"/>
+<rectangle x1="13.822" y1="12.929" x2="14.122" y2="12.979" layer="151" rot="R90"/>
+<rectangle x1="14.072" y1="12.929" x2="14.372" y2="12.979" layer="151" rot="R90"/>
+<text x="15.294" y="7.32" size="0.254" layer="151" rot="R90">C23</text>
+<rectangle x1="15.419" y1="7.245" x2="15.569" y2="7.545" layer="151" rot="R90"/>
+<rectangle x1="15.419" y1="7.695" x2="15.569" y2="7.995" layer="151" rot="R90"/>
+<rectangle x1="15.219" y1="7.595" x2="15.519" y2="7.645" layer="151" rot="R90"/>
+<rectangle x1="15.469" y1="7.595" x2="15.769" y2="7.645" layer="151" rot="R90"/>
+<text x="20.909" y="21.155" size="0.254" layer="151">C24</text>
+<rectangle x1="20.909" y1="20.805" x2="21.059" y2="21.105" layer="151"/>
+<rectangle x1="21.359" y1="20.805" x2="21.509" y2="21.105" layer="151"/>
+<rectangle x1="21.059" y1="21.055" x2="21.359" y2="21.105" layer="151"/>
+<rectangle x1="21.059" y1="20.805" x2="21.359" y2="20.855" layer="151"/>
+<text x="23.133" y="20.747" size="0.254" layer="151" rot="R270">C25</text>
+<wire x1="22.957003125" y1="20.692009375" x2="22.957003125" y2="20.201990625" width="0.1524" layer="151"/>
+<wire x1="22.508996875" y1="20.201990625" x2="22.508996875" y2="20.692009375" width="0.1524" layer="151"/>
+<rectangle x1="22.57815" y1="20.55105" x2="22.87815" y2="21.15095" layer="151" rot="R270"/>
+<rectangle x1="22.57815" y1="19.73825" x2="22.87815" y2="20.33815" layer="151" rot="R270"/>
+<text x="21.917" y="20.366" size="0.254" layer="151" rot="R270">C26</text>
+<rectangle x1="21.642" y1="20.141" x2="21.792" y2="20.441" layer="151" rot="R270"/>
+<rectangle x1="21.642" y1="19.691" x2="21.792" y2="19.991" layer="151" rot="R270"/>
+<rectangle x1="21.692" y1="20.041" x2="21.992" y2="20.091" layer="151" rot="R270"/>
+<rectangle x1="21.442" y1="20.041" x2="21.742" y2="20.091" layer="151" rot="R270"/>
+<text x="16.329" y="16.048" size="0.254" layer="151" rot="R270">C27</text>
+<rectangle x1="16.054" y1="15.823" x2="16.204" y2="16.123" layer="151" rot="R270"/>
+<rectangle x1="16.054" y1="15.373" x2="16.204" y2="15.673" layer="151" rot="R270"/>
+<rectangle x1="16.104" y1="15.723" x2="16.404" y2="15.773" layer="151" rot="R270"/>
+<rectangle x1="15.854" y1="15.723" x2="16.154" y2="15.773" layer="151" rot="R270"/>
+<text x="16.056" y="26.497" size="0.254" layer="151" rot="R90">C28</text>
+<rectangle x1="16.181" y1="26.422" x2="16.331" y2="26.722" layer="151" rot="R90"/>
+<rectangle x1="16.181" y1="26.872" x2="16.331" y2="27.172" layer="151" rot="R90"/>
+<rectangle x1="15.981" y1="26.772" x2="16.281" y2="26.822" layer="151" rot="R90"/>
+<rectangle x1="16.231" y1="26.772" x2="16.531" y2="26.822" layer="151" rot="R90"/>
+<text x="10.333" y="21.39" size="0.254" layer="151" rot="R180">C29</text>
+<rectangle x1="10.183" y1="21.44" x2="10.333" y2="21.74" layer="151" rot="R180"/>
+<rectangle x1="9.733" y1="21.44" x2="9.883" y2="21.74" layer="151" rot="R180"/>
+<rectangle x1="9.883" y1="21.44" x2="10.183" y2="21.49" layer="151" rot="R180"/>
+<rectangle x1="9.883" y1="21.69" x2="10.183" y2="21.74" layer="151" rot="R180"/>
+<text x="17.091" y="16.048" size="0.254" layer="151" rot="R270">C30</text>
+<rectangle x1="16.816" y1="15.823" x2="16.966" y2="16.123" layer="151" rot="R270"/>
+<rectangle x1="16.816" y1="15.373" x2="16.966" y2="15.673" layer="151" rot="R270"/>
+<rectangle x1="16.866" y1="15.723" x2="17.166" y2="15.773" layer="151" rot="R270"/>
+<rectangle x1="16.616" y1="15.723" x2="16.916" y2="15.773" layer="151" rot="R270"/>
+<text x="15.059" y="16.048" size="0.254" layer="151" rot="R270">C31</text>
+<rectangle x1="14.784" y1="15.823" x2="14.934" y2="16.123" layer="151" rot="R270"/>
+<rectangle x1="14.784" y1="15.373" x2="14.934" y2="15.673" layer="151" rot="R270"/>
+<rectangle x1="14.834" y1="15.723" x2="15.134" y2="15.773" layer="151" rot="R270"/>
+<rectangle x1="14.584" y1="15.723" x2="14.884" y2="15.773" layer="151" rot="R270"/>
+<text x="7.293" y="16.591" size="0.254" layer="151" rot="R90">C32</text>
+<rectangle x1="7.418" y1="16.516" x2="7.568" y2="16.816" layer="151" rot="R90"/>
+<rectangle x1="7.418" y1="16.966" x2="7.568" y2="17.266" layer="151" rot="R90"/>
+<rectangle x1="7.218" y1="16.866" x2="7.518" y2="16.916" layer="151" rot="R90"/>
+<rectangle x1="7.468" y1="16.866" x2="7.768" y2="16.916" layer="151" rot="R90"/>
+<text x="7.693" y="18.715" size="0.254" layer="151" rot="R270">C33</text>
+<rectangle x1="7.418" y1="18.49" x2="7.568" y2="18.79" layer="151" rot="R270"/>
+<rectangle x1="7.418" y1="18.04" x2="7.568" y2="18.34" layer="151" rot="R270"/>
+<rectangle x1="7.468" y1="18.39" x2="7.768" y2="18.44" layer="151" rot="R270"/>
+<rectangle x1="7.218" y1="18.39" x2="7.518" y2="18.44" layer="151" rot="R270"/>
+<text x="29.799" y="9.725" size="0.254" layer="151">C34</text>
+<rectangle x1="29.799" y1="9.375" x2="29.949" y2="9.675" layer="151"/>
+<rectangle x1="30.249" y1="9.375" x2="30.399" y2="9.675" layer="151"/>
+<rectangle x1="29.949" y1="9.625" x2="30.249" y2="9.675" layer="151"/>
+<rectangle x1="29.949" y1="9.375" x2="30.249" y2="9.425" layer="151"/>
+<text x="29.926" y="13.535" size="0.254" layer="151">C35</text>
+<rectangle x1="29.926" y1="13.185" x2="30.076" y2="13.485" layer="151"/>
+<rectangle x1="30.376" y1="13.185" x2="30.526" y2="13.485" layer="151"/>
+<rectangle x1="30.076" y1="13.435" x2="30.376" y2="13.485" layer="151"/>
+<rectangle x1="30.076" y1="13.185" x2="30.376" y2="13.235" layer="151"/>
+<text x="3.864" y="23.576" size="0.254" layer="151" rot="R90">C36</text>
+<rectangle x1="3.989" y1="23.501" x2="4.139" y2="23.801" layer="151" rot="R90"/>
+<rectangle x1="3.989" y1="23.951" x2="4.139" y2="24.251" layer="151" rot="R90"/>
+<rectangle x1="3.789" y1="23.851" x2="4.089" y2="23.901" layer="151" rot="R90"/>
+<rectangle x1="4.039" y1="23.851" x2="4.339" y2="23.901" layer="151" rot="R90"/>
+<text x="28.021" y="13.916" size="0.254" layer="151">C39</text>
+<rectangle x1="28.021" y1="13.566" x2="28.171" y2="13.866" layer="151"/>
+<rectangle x1="28.471" y1="13.566" x2="28.621" y2="13.866" layer="151"/>
+<rectangle x1="28.171" y1="13.816" x2="28.471" y2="13.866" layer="151"/>
+<rectangle x1="28.171" y1="13.566" x2="28.471" y2="13.616" layer="151"/>
+<text x="25.2" y="14.559" size="0.254" layer="151" rot="R90">C40</text>
+<rectangle x1="25.325" y1="14.484" x2="25.475" y2="14.784" layer="151" rot="R90"/>
+<rectangle x1="25.325" y1="14.934" x2="25.475" y2="15.234" layer="151" rot="R90"/>
+<rectangle x1="25.125" y1="14.834" x2="25.425" y2="14.884" layer="151" rot="R90"/>
+<rectangle x1="25.375" y1="14.834" x2="25.675" y2="14.884" layer="151" rot="R90"/>
+<text x="25.962" y="14.559" size="0.254" layer="151" rot="R90">C41</text>
+<rectangle x1="26.087" y1="14.484" x2="26.237" y2="14.784" layer="151" rot="R90"/>
+<rectangle x1="26.087" y1="14.934" x2="26.237" y2="15.234" layer="151" rot="R90"/>
+<rectangle x1="25.887" y1="14.834" x2="26.187" y2="14.884" layer="151" rot="R90"/>
+<rectangle x1="26.137" y1="14.834" x2="26.437" y2="14.884" layer="151" rot="R90"/>
+<text x="26.724" y="14.559" size="0.254" layer="151" rot="R90">C42</text>
+<rectangle x1="26.849" y1="14.484" x2="26.999" y2="14.784" layer="151" rot="R90"/>
+<rectangle x1="26.849" y1="14.934" x2="26.999" y2="15.234" layer="151" rot="R90"/>
+<rectangle x1="26.649" y1="14.834" x2="26.949" y2="14.884" layer="151" rot="R90"/>
+<rectangle x1="26.899" y1="14.834" x2="27.199" y2="14.884" layer="151" rot="R90"/>
+<text x="22.279" y="14.559" size="0.254" layer="151" rot="R90">C43</text>
+<rectangle x1="22.404" y1="14.484" x2="22.554" y2="14.784" layer="151" rot="R90"/>
+<rectangle x1="22.404" y1="14.934" x2="22.554" y2="15.234" layer="151" rot="R90"/>
+<rectangle x1="22.204" y1="14.834" x2="22.504" y2="14.884" layer="151" rot="R90"/>
+<rectangle x1="22.454" y1="14.834" x2="22.754" y2="14.884" layer="151" rot="R90"/>
+<text x="24.176" y="7.674" size="0.254" layer="151" rot="R180">C44</text>
+<rectangle x1="24.026" y1="7.724" x2="24.176" y2="8.024" layer="151" rot="R180"/>
+<rectangle x1="23.576" y1="7.724" x2="23.726" y2="8.024" layer="151" rot="R180"/>
+<rectangle x1="23.726" y1="7.724" x2="24.026" y2="7.774" layer="151" rot="R180"/>
+<rectangle x1="23.726" y1="7.974" x2="24.026" y2="8.024" layer="151" rot="R180"/>
+<text x="24.176" y="7.039" size="0.254" layer="151" rot="R180">C45</text>
+<rectangle x1="24.026" y1="7.089" x2="24.176" y2="7.389" layer="151" rot="R180"/>
+<rectangle x1="23.576" y1="7.089" x2="23.726" y2="7.389" layer="151" rot="R180"/>
+<rectangle x1="23.726" y1="7.089" x2="24.026" y2="7.139" layer="151" rot="R180"/>
+<rectangle x1="23.726" y1="7.339" x2="24.026" y2="7.389" layer="151" rot="R180"/>
+<text x="28.148" y="8.455" size="0.254" layer="151">C46</text>
+<rectangle x1="28.148" y1="8.105" x2="28.298" y2="8.405" layer="151"/>
+<rectangle x1="28.598" y1="8.105" x2="28.748" y2="8.405" layer="151"/>
+<rectangle x1="28.298" y1="8.355" x2="28.598" y2="8.405" layer="151"/>
+<rectangle x1="28.298" y1="8.105" x2="28.598" y2="8.155" layer="151"/>
+<text x="27.132" y="8.455" size="0.254" layer="151">C47</text>
+<rectangle x1="27.132" y1="8.105" x2="27.282" y2="8.405" layer="151"/>
+<rectangle x1="27.582" y1="8.105" x2="27.732" y2="8.405" layer="151"/>
+<rectangle x1="27.282" y1="8.355" x2="27.582" y2="8.405" layer="151"/>
+<rectangle x1="27.282" y1="8.105" x2="27.582" y2="8.155" layer="151"/>
+<text x="17.345" y="13.381" size="0.254" layer="151" rot="R270">C48</text>
+<rectangle x1="17.07" y1="13.156" x2="17.22" y2="13.456" layer="151" rot="R270"/>
+<rectangle x1="17.07" y1="12.706" x2="17.22" y2="13.006" layer="151" rot="R270"/>
+<rectangle x1="17.12" y1="13.056" x2="17.42" y2="13.106" layer="151" rot="R270"/>
+<rectangle x1="16.87" y1="13.056" x2="17.17" y2="13.106" layer="151" rot="R270"/>
+<text x="6.55" y="16.81" size="0.254" layer="151" rot="R270">C50</text>
+<rectangle x1="6.275" y1="16.585" x2="6.425" y2="16.885" layer="151" rot="R270"/>
+<rectangle x1="6.275" y1="16.135" x2="6.425" y2="16.435" layer="151" rot="R270"/>
+<rectangle x1="6.325" y1="16.485" x2="6.625" y2="16.535" layer="151" rot="R270"/>
+<rectangle x1="6.075" y1="16.485" x2="6.375" y2="16.535" layer="151" rot="R270"/>
+<text x="28.74599375" y="23.600003125" size="0.5" layer="152" rot="MR270">C51</text>
+<wire x1="28.958996875" y1="23.965003125" x2="28.958996875" y2="22.035009375" width="0.1016" layer="152"/>
+<wire x1="30.533009375" y1="23.965003125" x2="30.533009375" y2="22.035009375" width="0.1016" layer="152"/>
+<rectangle x1="29.37185" y1="23.47675" x2="30.12195" y2="25.17675" layer="152" rot="R270"/>
+<rectangle x1="29.37005" y1="20.82325" x2="30.12015" y2="22.52325" layer="152" rot="R270"/>
+<text x="4.872" y="18.596" size="0.254" layer="151" rot="R180">C52</text>
+<rectangle x1="4.722" y1="18.646" x2="4.872" y2="18.946" layer="151" rot="R180"/>
+<rectangle x1="4.272" y1="18.646" x2="4.422" y2="18.946" layer="151" rot="R180"/>
+<rectangle x1="4.422" y1="18.646" x2="4.722" y2="18.696" layer="151" rot="R180"/>
+<rectangle x1="4.422" y1="18.896" x2="4.722" y2="18.946" layer="151" rot="R180"/>
+<text x="6.785" y="17.861" size="0.254" layer="151" rot="R90">C53</text>
+<rectangle x1="6.275" y1="17.786" x2="6.425" y2="18.086" layer="151" rot="R90"/>
+<rectangle x1="6.275" y1="18.236" x2="6.425" y2="18.536" layer="151" rot="R90"/>
+<rectangle x1="6.075" y1="18.136" x2="6.375" y2="18.186" layer="151" rot="R90"/>
+<rectangle x1="6.325" y1="18.136" x2="6.625" y2="18.186" layer="151" rot="R90"/>
+<text x="5.761" y="18.596" size="0.254" layer="151" rot="R180">C54</text>
+<rectangle x1="5.611" y1="18.646" x2="5.761" y2="18.946" layer="151" rot="R180"/>
+<rectangle x1="5.161" y1="18.646" x2="5.311" y2="18.946" layer="151" rot="R180"/>
+<rectangle x1="5.311" y1="18.646" x2="5.611" y2="18.696" layer="151" rot="R180"/>
+<rectangle x1="5.311" y1="18.896" x2="5.611" y2="18.946" layer="151" rot="R180"/>
+<text x="3.991" y="21.798" size="0.254" layer="151" rot="R90">C55</text>
+<rectangle x1="4.116" y1="21.723" x2="4.266" y2="22.023" layer="151" rot="R90"/>
+<rectangle x1="4.116" y1="22.173" x2="4.266" y2="22.473" layer="151" rot="R90"/>
+<rectangle x1="3.916" y1="22.073" x2="4.216" y2="22.123" layer="151" rot="R90"/>
+<rectangle x1="4.166" y1="22.073" x2="4.466" y2="22.123" layer="151" rot="R90"/>
+<text x="3.0074625" y="12.124740625" size="0.254" layer="151" rot="R290">D0</text>
+<wire x1="2.66580625" y1="11.89395625" x2="2.546275" y2="11.63761875" width="0.0500125" layer="151"/>
+<wire x1="2.546275" y1="11.63761875" x2="2.92214375" y2="11.774425" width="0.0500125" layer="151"/>
+<wire x1="2.92214375" y1="11.774425" x2="2.66580625" y2="11.89395625" width="0.0500125" layer="151"/>
+<wire x1="2.526309375" y1="11.47605" x2="2.35871875" y2="11.9365" width="0.0500125" layer="151"/>
+<wire x1="3.04315" y1="11.6641625" x2="2.875559375" y2="12.1246125" width="0.0500125" layer="151"/>
+<wire x1="2.477871875" y1="11.825553125" x2="2.853740625" y2="11.962384375" width="0.0500125" layer="151"/>
+<rectangle x1="2.69273125" y1="11.122071875" x2="2.99273125" y2="11.721971875" layer="151" rot="R110"/>
+<rectangle x1="2.4147375" y1="11.885853125" x2="2.7147375" y2="12.485753125" layer="151" rot="R110"/>
+<text x="2.73893125" y="14.725725" size="0.254" layer="151" rot="R280">D1</text>
+<wire x1="2.162225" y1="14.631696875" x2="1.80304375" y2="14.365275" width="0.127" layer="151"/>
+<wire x1="1.80304375" y1="14.365275" x2="2.23169375" y2="14.237765625" width="0.127" layer="151"/>
+<wire x1="2.23169375" y1="14.237765625" x2="2.162225" y2="14.631696875" width="0.127" layer="151"/>
+<wire x1="1.368678125" y1="15.1010125" x2="1.646503125" y2="13.525321875" width="0.127" layer="151"/>
+<wire x1="1.646503125" y1="13.525321875" x2="2.6313125" y2="13.69898125" width="0.127" layer="151"/>
+<wire x1="2.6313125" y1="13.69898125" x2="2.3534875" y2="15.274671875" width="0.127" layer="151"/>
+<wire x1="2.3534875" y1="15.274671875" x2="1.368678125" y2="15.1010125" width="0.127" layer="151"/>
+<text x="2.534996875" y="17.318990625" size="0.254" layer="151" rot="R270">D2</text>
+<wire x1="1.999996875" y1="17.199990625" x2="1.599996875" y2="16.999990625" width="0.127" layer="151"/>
+<wire x1="1.599996875" y1="16.999990625" x2="1.999996875" y2="16.799990625" width="0.127" layer="151"/>
+<wire x1="1.999996875" y1="16.799990625" x2="1.999996875" y2="17.199990625" width="0.127" layer="151"/>
+<wire x1="1.299996875" y1="17.799990625" x2="1.299996875" y2="16.19999375" width="0.127" layer="151"/>
+<wire x1="1.299996875" y1="16.19999375" x2="2.299996875" y2="16.19999375" width="0.127" layer="151"/>
+<wire x1="2.299996875" y1="16.19999375" x2="2.299996875" y2="17.799990625" width="0.127" layer="151"/>
+<wire x1="2.299996875" y1="17.799990625" x2="1.299996875" y2="17.799990625" width="0.127" layer="151"/>
+<text x="2.7280375" y="19.76399375" size="0.254" layer="151" rot="R260">D3</text>
+<wire x1="2.23169375" y1="19.762240625" x2="1.80304375" y2="19.634734375" width="0.127" layer="151"/>
+<wire x1="1.80304375" y1="19.634734375" x2="2.162225" y2="19.3683125" width="0.127" layer="151"/>
+<wire x1="2.162225" y1="19.3683125" x2="2.23169375" y2="19.762240625" width="0.127" layer="151"/>
+<wire x1="1.646503125" y1="20.474659375" x2="1.368678125" y2="18.898971875" width="0.127" layer="151"/>
+<wire x1="1.368678125" y1="18.898971875" x2="2.3534875" y2="18.7253375" width="0.127" layer="151"/>
+<wire x1="2.3534875" y1="18.7253375" x2="2.6313125" y2="20.301025" width="0.127" layer="151"/>
+<wire x1="2.6313125" y1="20.301025" x2="1.646503125" y2="20.474659375" width="0.127" layer="151"/>
+<text x="3.144265625" y="22.2511375" size="0.254" layer="151" rot="R250">D4</text>
+<wire x1="2.734209375" y1="22.2939625" x2="2.477871875" y2="22.174428125" width="0.0500125" layer="151"/>
+<wire x1="2.477871875" y1="22.174428125" x2="2.853740625" y2="22.037625" width="0.0500125" layer="151"/>
+<wire x1="2.853740625" y1="22.037625" x2="2.734209375" y2="22.2939625" width="0.0500125" layer="151"/>
+<wire x1="2.35871875" y1="22.06348125" x2="2.526309375" y2="22.52393125" width="0.0500125" layer="151"/>
+<wire x1="2.875559375" y1="21.87536875" x2="3.04315" y2="22.33581875" width="0.0500125" layer="151"/>
+<wire x1="2.546275" y1="22.3623625" x2="2.92214375" y2="22.225559375" width="0.0500125" layer="151"/>
+<rectangle x1="2.41638125" y1="21.518753125" x2="2.71638125" y2="22.118653125" layer="151" rot="R70"/>
+<rectangle x1="2.694375" y1="22.2825375" x2="2.994375" y2="22.8824375" layer="151" rot="R70"/>
+<text x="16.818" y="30.499" size="0.254" layer="151">D5</text>
+<wire x1="16.918" y1="31.115" x2="17.118" y2="30.915" width="0.0500125" layer="151"/>
+<wire x1="17.118" y1="30.915" x2="17.118" y2="31.315" width="0.0500125" layer="151"/>
+<wire x1="17.118" y1="31.315" x2="16.918" y2="31.115" width="0.0500125" layer="151"/>
+<wire x1="17.263009375" y1="30.841009375" x2="16.772990625" y2="30.841009375" width="0.0500125" layer="151"/>
+<wire x1="17.263009375" y1="31.390996875" x2="16.772990625" y2="31.390996875" width="0.0500125" layer="151"/>
+<wire x1="16.918" y1="30.915" x2="16.918" y2="31.315" width="0.0500125" layer="151"/>
+<rectangle x1="17.272" y1="30.8199" x2="17.572" y2="31.4198" layer="151" rot="R180"/>
+<rectangle x1="16.4592" y1="30.8199" x2="16.7592" y2="31.4198" layer="151" rot="R180"/>
+<text x="16.818" y="32.404" size="0.254" layer="151">D6</text>
+<wire x1="16.918" y1="32.004" x2="17.118" y2="31.804" width="0.0500125" layer="151"/>
+<wire x1="17.118" y1="31.804" x2="17.118" y2="32.204" width="0.0500125" layer="151"/>
+<wire x1="17.118" y1="32.204" x2="16.918" y2="32.004" width="0.0500125" layer="151"/>
+<wire x1="17.263009375" y1="31.730009375" x2="16.772990625" y2="31.730009375" width="0.0500125" layer="151"/>
+<wire x1="17.263009375" y1="32.279996875" x2="16.772990625" y2="32.279996875" width="0.0500125" layer="151"/>
+<wire x1="16.918" y1="31.804" x2="16.918" y2="32.204" width="0.0500125" layer="151"/>
+<rectangle x1="17.272" y1="31.7089" x2="17.572" y2="32.3088" layer="151" rot="R180"/>
+<rectangle x1="16.4592" y1="31.7089" x2="16.7592" y2="32.3088" layer="151" rot="R180"/>
+<text x="16.942003125" y="28.086" size="0.2" layer="151">D10</text>
+<wire x1="15.218003125" y1="28.410003125" x2="15.218003125" y2="30.009996875" width="0.127" layer="151"/>
+<wire x1="15.218003125" y1="30.009996875" x2="18.817996875" y2="30.009996875" width="0.127" layer="151"/>
+<wire x1="18.817996875" y1="30.009996875" x2="18.817996875" y2="28.410003125" width="0.127" layer="151"/>
+<wire x1="18.817996875" y1="28.410003125" x2="15.218003125" y2="28.410003125" width="0.127" layer="151"/>
+<wire x1="16.518" y1="29.21" x2="17.518" y2="29.71" width="0.2032" layer="151"/>
+<wire x1="17.518" y1="29.71" x2="17.518" y2="28.71" width="0.2032" layer="151"/>
+<wire x1="17.518" y1="28.71" x2="16.518" y2="29.21" width="0.2032" layer="151"/>
+<wire x1="16.518" y1="29.71" x2="16.518" y2="29.21" width="0.2032" layer="151"/>
+<wire x1="16.518" y1="29.21" x2="16.518" y2="28.71" width="0.2032" layer="151"/>
+<text x="15.74599375" y="32.49500625" size="1.27" layer="152" rot="MR180">J1</text>
+<wire x1="12.9" y1="34.344990625" x2="21.100009375" y2="34.344990625" width="0.1" layer="152"/>
+<wire x1="12.9" y1="29.445" x2="21.100009375" y2="29.445" width="0.1" layer="152"/>
+<wire x1="12.9" y1="34.344990625" x2="12.9" y2="29.445" width="0.1" layer="152"/>
+<wire x1="21.100009375" y1="34.344990625" x2="21.100009375" y2="29.445" width="0.1" layer="152"/>
+<text x="10.068" y="2.756003125" size="0.4064" layer="152" rot="MR180">J2</text>
+<wire x1="11.813996875" y1="6.525996875" x2="11.813996875" y2="3.126003125" width="0.127" layer="152"/>
+<wire x1="11.813996875" y1="3.126003125" x2="9.014003125" y2="3.126003125" width="0.127" layer="152"/>
+<wire x1="9.014003125" y1="3.126003125" x2="9.014003125" y2="6.525996875" width="0.127" layer="152"/>
+<wire x1="9.014003125" y1="6.525996875" x2="11.813996875" y2="6.525996875" width="0.127" layer="152"/>
+<circle x="9.414" y="3.826" radius="0.22360625" width="0.127" layer="152"/>
+<circle x="9.21925" y="28.585403125" radius="0.381" width="0.0254" layer="151"/>
+<circle x="8.4200125" y="27.598428125" radius="0.381" width="0.0254" layer="151"/>
+<circle x="7.620775" y="26.611453125" radius="0.381" width="0.0254" layer="151"/>
+<circle x="6.6338" y="27.410690625" radius="0.381" width="0.0254" layer="151"/>
+<circle x="7.4330375" y="28.397665625" radius="0.381" width="0.0254" layer="151"/>
+<circle x="8.232275" y="29.384640625" radius="0.381" width="0.0254" layer="151"/>
+<text x="25.1" y="8.328" size="0.254" layer="151">L1</text>
+<rectangle x1="25.1" y1="7.978" x2="25.25" y2="8.278" layer="151"/>
+<rectangle x1="25.55" y1="7.978" x2="25.7" y2="8.278" layer="151"/>
+<rectangle x1="25.25" y1="8.228" x2="25.55" y2="8.278" layer="151"/>
+<rectangle x1="25.25" y1="7.978" x2="25.55" y2="8.028" layer="151"/>
+<text x="24.592" y="7.693" size="0.254" layer="151">L2</text>
+<rectangle x1="24.592" y1="7.343" x2="24.742" y2="7.643" layer="151"/>
+<rectangle x1="25.042" y1="7.343" x2="25.192" y2="7.643" layer="151"/>
+<rectangle x1="24.742" y1="7.593" x2="25.042" y2="7.643" layer="151"/>
+<rectangle x1="24.742" y1="7.343" x2="25.042" y2="7.393" layer="151"/>
+<text x="26.116" y="8.328" size="0.254" layer="151">L3</text>
+<rectangle x1="26.116" y1="7.978" x2="26.266" y2="8.278" layer="151"/>
+<rectangle x1="26.566" y1="7.978" x2="26.716" y2="8.278" layer="151"/>
+<rectangle x1="26.266" y1="8.228" x2="26.566" y2="8.278" layer="151"/>
+<rectangle x1="26.266" y1="7.978" x2="26.566" y2="8.028" layer="151"/>
+<text x="19.631" y="29.002" size="0.254" layer="151" rot="R270">L4</text>
+<rectangle x1="19.356" y1="28.777" x2="19.506" y2="29.077" layer="151" rot="R270"/>
+<rectangle x1="19.356" y1="28.327" x2="19.506" y2="28.627" layer="151" rot="R270"/>
+<rectangle x1="19.406" y1="28.677" x2="19.706" y2="28.727" layer="151" rot="R270"/>
+<rectangle x1="19.156" y1="28.677" x2="19.456" y2="28.727" layer="151" rot="R270"/>
+<text x="27.059" y="6.990003125" size="0.254" layer="151" rot="R270">L6</text>
+<rectangle x1="27.484" y1="6.865" x2="27.634" y2="7.165" layer="151" rot="R270"/>
+<rectangle x1="27.484" y1="6.415" x2="27.634" y2="6.715" layer="151" rot="R270"/>
+<rectangle x1="27.534" y1="6.765" x2="27.834" y2="6.815" layer="151" rot="R270"/>
+<rectangle x1="27.284" y1="6.765" x2="27.584" y2="6.815" layer="151" rot="R270"/>
+<text x="28.993996875" y="21.128" size="0.4064" layer="151" rot="R270">L7</text>
+<wire x1="28.85399375" y1="21.209" x2="28.85399375" y2="20.447" width="0.1016" layer="151"/>
+<wire x1="27.53400625" y1="21.18400625" x2="27.53400625" y2="20.447" width="0.1016" layer="151"/>
+<rectangle x1="27.8201" y1="20.8201" x2="28.5702" y2="22.2702" layer="151" rot="R270"/>
+<rectangle x1="27.8201" y1="19.3723" x2="28.5702" y2="20.8224" layer="151" rot="R270"/>
+<text x="19.631" y="30.145" size="0.254" layer="151" rot="R270">L9</text>
+<rectangle x1="19.356" y1="29.92" x2="19.506" y2="30.22" layer="151" rot="R270"/>
+<rectangle x1="19.356" y1="29.47" x2="19.506" y2="29.77" layer="151" rot="R270"/>
+<rectangle x1="19.406" y1="29.82" x2="19.706" y2="29.87" layer="151" rot="R270"/>
+<rectangle x1="19.156" y1="29.82" x2="19.456" y2="29.87" layer="151" rot="R270"/>
+<text x="13.027" y="8.174" size="0.254" layer="151" rot="R270">R1</text>
+<rectangle x1="12.752" y1="7.949" x2="12.902" y2="8.249" layer="151" rot="R270"/>
+<rectangle x1="12.752" y1="7.499" x2="12.902" y2="7.799" layer="151" rot="R270"/>
+<rectangle x1="12.802" y1="7.849" x2="13.102" y2="7.899" layer="151" rot="R270"/>
+<rectangle x1="12.552" y1="7.849" x2="12.852" y2="7.899" layer="151" rot="R270"/>
+<text x="25.354" y="24.838" size="0.254" layer="151">R2</text>
+<rectangle x1="25.354" y1="24.488" x2="25.504" y2="24.788" layer="151"/>
+<rectangle x1="25.804" y1="24.488" x2="25.954" y2="24.788" layer="151"/>
+<rectangle x1="25.504" y1="24.738" x2="25.804" y2="24.788" layer="151"/>
+<rectangle x1="25.504" y1="24.488" x2="25.804" y2="24.538" layer="151"/>
+<text x="23.803" y="19.893" size="0.254" layer="151" rot="R90">R3</text>
+<rectangle x1="23.928" y1="19.818" x2="24.078" y2="20.118" layer="151" rot="R90"/>
+<rectangle x1="23.928" y1="20.268" x2="24.078" y2="20.568" layer="151" rot="R90"/>
+<rectangle x1="23.728" y1="20.168" x2="24.028" y2="20.218" layer="151" rot="R90"/>
+<rectangle x1="23.978" y1="20.168" x2="24.278" y2="20.218" layer="151" rot="R90"/>
+<text x="23.06" y="17.826" size="0.254" layer="151" rot="R270">R4</text>
+<rectangle x1="22.785" y1="17.601" x2="22.935" y2="17.901" layer="151" rot="R270"/>
+<rectangle x1="22.785" y1="17.151" x2="22.935" y2="17.451" layer="151" rot="R270"/>
+<rectangle x1="22.835" y1="17.501" x2="23.135" y2="17.551" layer="151" rot="R270"/>
+<rectangle x1="22.585" y1="17.501" x2="22.885" y2="17.551" layer="151" rot="R270"/>
+<text x="9.325" y="14.051" size="0.254" layer="151" rot="R90">R5</text>
+<rectangle x1="9.45" y1="13.976" x2="9.6" y2="14.276" layer="151" rot="R90"/>
+<rectangle x1="9.45" y1="14.426" x2="9.6" y2="14.726" layer="151" rot="R90"/>
+<rectangle x1="9.25" y1="14.326" x2="9.55" y2="14.376" layer="151" rot="R90"/>
+<rectangle x1="9.5" y1="14.326" x2="9.8" y2="14.376" layer="151" rot="R90"/>
+<text x="15.194" y="32.204" size="0.254" layer="151">R6</text>
+<rectangle x1="15.194" y1="31.854" x2="15.344" y2="32.154" layer="151"/>
+<rectangle x1="15.644" y1="31.854" x2="15.794" y2="32.154" layer="151"/>
+<rectangle x1="15.344" y1="32.104" x2="15.644" y2="32.154" layer="151"/>
+<rectangle x1="15.344" y1="31.854" x2="15.644" y2="31.904" layer="151"/>
+<text x="4.264" y="21.382" size="0.254" layer="151" rot="R270">R7</text>
+<rectangle x1="3.989" y1="21.157" x2="4.139" y2="21.457" layer="151" rot="R270"/>
+<rectangle x1="3.989" y1="20.707" x2="4.139" y2="21.007" layer="151" rot="R270"/>
+<rectangle x1="4.039" y1="21.057" x2="4.339" y2="21.107" layer="151" rot="R270"/>
+<rectangle x1="3.789" y1="21.057" x2="4.089" y2="21.107" layer="151" rot="R270"/>
+<text x="32.185" y="14.94" size="0.254" layer="151" rot="R90">R8</text>
+<rectangle x1="32.31" y1="14.865" x2="32.46" y2="15.165" layer="151" rot="R90"/>
+<rectangle x1="32.31" y1="15.315" x2="32.46" y2="15.615" layer="151" rot="R90"/>
+<rectangle x1="32.11" y1="15.215" x2="32.41" y2="15.265" layer="151" rot="R90"/>
+<rectangle x1="32.36" y1="15.215" x2="32.66" y2="15.265" layer="151" rot="R90"/>
+<text x="12.265" y="8.174" size="0.254" layer="151" rot="R270">R9</text>
+<rectangle x1="11.99" y1="7.949" x2="12.14" y2="8.249" layer="151" rot="R270"/>
+<rectangle x1="11.99" y1="7.499" x2="12.14" y2="7.799" layer="151" rot="R270"/>
+<rectangle x1="12.04" y1="7.849" x2="12.34" y2="7.899" layer="151" rot="R270"/>
+<rectangle x1="11.79" y1="7.849" x2="12.09" y2="7.899" layer="151" rot="R270"/>
+<text x="23.803" y="20.909" size="0.254" layer="151" rot="R90">R10</text>
+<rectangle x1="23.928" y1="20.834" x2="24.078" y2="21.134" layer="151" rot="R90"/>
+<rectangle x1="23.928" y1="21.284" x2="24.078" y2="21.584" layer="151" rot="R90"/>
+<rectangle x1="23.728" y1="21.184" x2="24.028" y2="21.234" layer="151" rot="R90"/>
+<rectangle x1="23.978" y1="21.184" x2="24.278" y2="21.234" layer="151" rot="R90"/>
+<text x="28.848" y="9.39" size="0.254" layer="151" rot="R180">R11</text>
+<rectangle x1="28.598" y1="8.74" x2="28.748" y2="9.04" layer="151" rot="R180"/>
+<rectangle x1="28.148" y1="8.74" x2="28.298" y2="9.04" layer="151" rot="R180"/>
+<rectangle x1="28.298" y1="8.74" x2="28.598" y2="8.79" layer="151" rot="R180"/>
+<rectangle x1="28.298" y1="8.99" x2="28.598" y2="9.04" layer="151" rot="R180"/>
+<text x="26.089" y="16.591" size="0.254" layer="151" rot="R90">R14</text>
+<rectangle x1="25.452" y1="16.516" x2="25.602" y2="16.816" layer="151" rot="R90"/>
+<rectangle x1="25.452" y1="16.966" x2="25.602" y2="17.266" layer="151" rot="R90"/>
+<rectangle x1="25.252" y1="16.866" x2="25.552" y2="16.916" layer="151" rot="R90"/>
+<rectangle x1="25.502" y1="16.866" x2="25.802" y2="16.916" layer="151" rot="R90"/>
+<text x="29.01" y="14.94" size="0.254" layer="151" rot="R90">R15</text>
+<rectangle x1="29.135" y1="14.865" x2="29.285" y2="15.165" layer="151" rot="R90"/>
+<rectangle x1="29.135" y1="15.315" x2="29.285" y2="15.615" layer="151" rot="R90"/>
+<rectangle x1="28.935" y1="15.215" x2="29.235" y2="15.265" layer="151" rot="R90"/>
+<rectangle x1="29.185" y1="15.215" x2="29.485" y2="15.265" layer="151" rot="R90"/>
+<text x="15.194" y="31.315" size="0.254" layer="151">R17</text>
+<rectangle x1="15.194" y1="30.965" x2="15.344" y2="31.265" layer="151"/>
+<rectangle x1="15.644" y1="30.965" x2="15.794" y2="31.265" layer="151"/>
+<rectangle x1="15.344" y1="31.215" x2="15.644" y2="31.265" layer="151"/>
+<rectangle x1="15.344" y1="30.965" x2="15.644" y2="31.015" layer="151"/>
+<text x="10.333" y="20.12" size="0.254" layer="151" rot="R180">R20</text>
+<rectangle x1="10.183" y1="20.17" x2="10.333" y2="20.47" layer="151" rot="R180"/>
+<rectangle x1="9.733" y1="20.17" x2="9.883" y2="20.47" layer="151" rot="R180"/>
+<rectangle x1="9.883" y1="20.17" x2="10.183" y2="20.22" layer="151" rot="R180"/>
+<rectangle x1="9.883" y1="20.42" x2="10.183" y2="20.47" layer="151" rot="R180"/>
+<text x="10.333" y="20.755" size="0.254" layer="151" rot="R180">R23</text>
+<rectangle x1="10.183" y1="20.805" x2="10.333" y2="21.105" layer="151" rot="R180"/>
+<rectangle x1="9.733" y1="20.805" x2="9.883" y2="21.105" layer="151" rot="R180"/>
+<rectangle x1="9.883" y1="20.805" x2="10.183" y2="20.855" layer="151" rot="R180"/>
+<rectangle x1="9.883" y1="21.055" x2="10.183" y2="21.105" layer="151" rot="R180"/>
+<text x="23.16" y="21.644" size="0.254" layer="151" rot="R180">R25</text>
+<rectangle x1="23.01" y1="21.694" x2="23.16" y2="21.994" layer="151" rot="R180"/>
+<rectangle x1="22.56" y1="21.694" x2="22.71" y2="21.994" layer="151" rot="R180"/>
+<rectangle x1="22.71" y1="21.694" x2="23.01" y2="21.744" layer="151" rot="R180"/>
+<rectangle x1="22.71" y1="21.944" x2="23.01" y2="21.994" layer="151" rot="R180"/>
+<text x="21.509" y="24.311" size="0.254" layer="151" rot="R180">R27</text>
+<rectangle x1="21.359" y1="24.361" x2="21.509" y2="24.661" layer="151" rot="R180"/>
+<rectangle x1="20.909" y1="24.361" x2="21.059" y2="24.661" layer="151" rot="R180"/>
+<rectangle x1="21.059" y1="24.361" x2="21.359" y2="24.411" layer="151" rot="R180"/>
+<rectangle x1="21.059" y1="24.611" x2="21.359" y2="24.661" layer="151" rot="R180"/>
+<text x="21.509" y="24.946" size="0.254" layer="151" rot="R180">R28</text>
+<rectangle x1="21.359" y1="24.996" x2="21.509" y2="25.296" layer="151" rot="R180"/>
+<rectangle x1="20.909" y1="24.996" x2="21.059" y2="25.296" layer="151" rot="R180"/>
+<rectangle x1="21.059" y1="24.996" x2="21.359" y2="25.046" layer="151" rot="R180"/>
+<rectangle x1="21.059" y1="25.246" x2="21.359" y2="25.296" layer="151" rot="R180"/>
+<text x="27.759" y="24.811" size="0.254" layer="151" rot="R270">R31</text>
+<rectangle x1="27.484" y1="24.586" x2="27.634" y2="24.886" layer="151" rot="R270"/>
+<rectangle x1="27.484" y1="24.136" x2="27.634" y2="24.436" layer="151" rot="R270"/>
+<rectangle x1="27.534" y1="24.486" x2="27.834" y2="24.536" layer="151" rot="R270"/>
+<rectangle x1="27.284" y1="24.486" x2="27.584" y2="24.536" layer="151" rot="R270"/>
+<text x="25.573" y="23.803" size="0.254" layer="151" rot="R180">R32</text>
+<rectangle x1="25.423" y1="23.853" x2="25.573" y2="24.153" layer="151" rot="R180"/>
+<rectangle x1="24.973" y1="23.853" x2="25.123" y2="24.153" layer="151" rot="R180"/>
+<rectangle x1="25.123" y1="23.853" x2="25.423" y2="23.903" layer="151" rot="R180"/>
+<rectangle x1="25.123" y1="24.103" x2="25.423" y2="24.153" layer="151" rot="R180"/>
+<text x="30.026" y="25.608" size="0.254" layer="151" rot="R90">R33</text>
+<rectangle x1="29.516" y1="25.533" x2="29.666" y2="25.833" layer="151" rot="R90"/>
+<rectangle x1="29.516" y1="25.983" x2="29.666" y2="26.283" layer="151" rot="R90"/>
+<rectangle x1="29.316" y1="25.883" x2="29.616" y2="25.933" layer="151" rot="R90"/>
+<rectangle x1="29.566" y1="25.883" x2="29.866" y2="25.933" layer="151" rot="R90"/>
+<text x="11.89400625" y="25.0880125" size="0.254" layer="151">U1</text>
+<wire x1="10.994009375" y1="25.708990625" x2="11.194009375" y2="25.708990625" width="0.2032" layer="151"/>
+<wire x1="11.194009375" y1="25.708990625" x2="19.993990625" y2="25.708990625" width="0.2032" layer="151"/>
+<wire x1="19.993990625" y1="25.708990625" x2="19.993990625" y2="16.709009375" width="0.2032" layer="151"/>
+<wire x1="19.993990625" y1="16.709009375" x2="10.994009375" y2="16.709009375" width="0.2032" layer="151"/>
+<wire x1="10.994009375" y1="16.709009375" x2="10.994009375" y2="25.508990625" width="0.2032" layer="151"/>
+<wire x1="10.994009375" y1="25.508990625" x2="10.994009375" y2="25.708990625" width="0.2032" layer="151"/>
+<circle x="11.494" y="25.209" radius="0.14141875" width="0.127" layer="151"/>
+<text x="26.791996875" y="13.129996875" size="0.254" layer="151" rot="R270">U2</text>
+<wire x1="27.39199375" y1="13.92999375" x2="27.39199375" y2="8.93000625" width="0.127" layer="151"/>
+<wire x1="27.39199375" y1="8.93000625" x2="22.39200625" y2="8.93000625" width="0.127" layer="151"/>
+<wire x1="22.39200625" y1="8.93000625" x2="22.39200625" y2="13.92999375" width="0.127" layer="151"/>
+<wire x1="22.39200625" y1="13.92999375" x2="27.39199375" y2="13.92999375" width="0.127" layer="151"/>
+<circle x="26.992" y="13.53" radius="0.22360625" width="0.127" layer="151"/>
+<text x="16.426003125" y="7.863003125" size="0.254" layer="151" rot="R90">U3</text>
+<wire x1="16.026003125" y1="7.263003125" x2="16.026003125" y2="10.262996875" width="0.127" layer="151"/>
+<wire x1="16.026003125" y1="10.262996875" x2="19.025996875" y2="10.262996875" width="0.127" layer="151"/>
+<wire x1="19.025996875" y1="10.262996875" x2="19.025996875" y2="7.263003125" width="0.127" layer="151"/>
+<wire x1="19.025996875" y1="7.263003125" x2="16.026003125" y2="7.263003125" width="0.127" layer="151"/>
+<circle x="16.326" y="7.563" radius="0.1" width="0.127" layer="151"/>
+<text x="7.601" y="10.252" size="0.2" layer="151">U4</text>
+<wire x1="7.001003125" y1="8.652003125" x2="9.000996875" y2="8.652003125" width="0.127" layer="151"/>
+<wire x1="9.000996875" y1="8.652003125" x2="9.000996875" y2="10.651996875" width="0.127" layer="151"/>
+<wire x1="9.000996875" y1="10.651996875" x2="7.001003125" y2="10.651996875" width="0.127" layer="151"/>
+<wire x1="7.001003125" y1="10.651996875" x2="7.001003125" y2="8.652003125" width="0.127" layer="151"/>
+<circle x="7.301" y="10.352" radius="0.14141875" width="0.127" layer="151"/>
+<text x="4.199990625" y="17.599990625" size="0.254" layer="151">U5</text>
+<wire x1="5.7999875" y1="15.79999375" x2="5.7999875" y2="17.999990625" width="0.127" layer="151"/>
+<wire x1="5.7999875" y1="17.999990625" x2="3.59999375" y2="17.999990625" width="0.127" layer="151"/>
+<wire x1="3.59999375" y1="17.999990625" x2="3.59999375" y2="15.79999375" width="0.127" layer="151"/>
+<wire x1="3.59999375" y1="15.79999375" x2="5.7999875" y2="15.79999375" width="0.127" layer="151"/>
+<circle x="3.9" y="17.7" radius="0.1" width="0.127" layer="151"/>
+<text x="28.275" y="25.835" size="0.2" layer="151">U6</text>
+<wire x1="28.075" y1="26.535" x2="29.075" y2="26.535" width="0.127" layer="151"/>
+<wire x1="29.075" y1="26.535" x2="29.075" y2="25.535" width="0.127" layer="151"/>
+<wire x1="29.075" y1="25.535" x2="28.075" y2="25.535" width="0.127" layer="151"/>
+<wire x1="28.075" y1="25.535" x2="28.075" y2="26.535" width="0.127" layer="151"/>
+<circle x="28.375" y="26.335" radius="0.1" width="0.127" layer="151"/>
+<text x="31.461" y="17.790996875" size="0.2" layer="151" rot="R270">U7</text>
+<wire x1="31.860996875" y1="18.390996875" x2="31.860996875" y2="15.391003125" width="0.127" layer="151"/>
+<wire x1="31.860996875" y1="15.391003125" x2="29.861003125" y2="15.391003125" width="0.127" layer="151"/>
+<wire x1="29.861003125" y1="15.391003125" x2="29.861003125" y2="18.390996875" width="0.127" layer="151"/>
+<wire x1="29.861003125" y1="18.390996875" x2="31.860996875" y2="18.390996875" width="0.127" layer="151"/>
+<circle x="31.561" y="18.091" radius="0.1" width="0.127" layer="151"/>
+<circle x="31.561" y="18.091" radius="0.1" width="0.127" layer="151"/>
+<text x="22.633" y="24.819" size="0.254" layer="151" rot="R90">U8</text>
+<wire x1="22.233" y1="24.319" x2="22.233" y2="25.719" width="0.127" layer="151"/>
+<wire x1="22.233" y1="25.719" x2="23.233" y2="25.719" width="0.127" layer="151"/>
+<wire x1="23.233" y1="25.719" x2="23.233" y2="24.319" width="0.127" layer="151"/>
+<wire x1="23.233" y1="24.319" x2="22.233" y2="24.319" width="0.127" layer="151"/>
+<circle x="22.533" y="24.619" radius="0.1" width="0.127" layer="151"/>
+<text x="11.422" y="14.116" size="0.254" layer="151" rot="R270">U9</text>
+<wire x1="11.921996875" y1="14.715996875" x2="9.922003125" y2="14.715996875" width="0.127" layer="151"/>
+<wire x1="9.922003125" y1="14.715996875" x2="9.922003125" y2="12.716003125" width="0.127" layer="151"/>
+<wire x1="9.922003125" y1="12.716003125" x2="11.921996875" y2="12.716003125" width="0.127" layer="151"/>
+<wire x1="11.921996875" y1="12.716003125" x2="11.921996875" y2="14.715996875" width="0.127" layer="151"/>
+<circle x="11.622" y="14.416" radius="0.1" width="0.127" layer="151"/>
+<text x="25.989" y="25.581" size="0.254" layer="151">U10</text>
+<wire x1="26.789" y1="25.081" x2="26.789" y2="26.481" width="0.127" layer="151"/>
+<wire x1="26.789" y1="26.481" x2="25.789" y2="26.481" width="0.127" layer="151"/>
+<wire x1="25.789" y1="26.481" x2="25.789" y2="25.081" width="0.127" layer="151"/>
+<wire x1="25.789" y1="25.081" x2="26.789" y2="25.081" width="0.127" layer="151"/>
+<circle x="26.089" y="26.181" radius="0.14141875" width="0.127" layer="151"/>
+<text x="27.032" y="17.11" size="0.2" layer="151">U11</text>
+<wire x1="26.432003125" y1="15.510003125" x2="28.431996875" y2="15.510003125" width="0.127" layer="151"/>
+<wire x1="28.431996875" y1="15.510003125" x2="28.431996875" y2="17.509996875" width="0.127" layer="151"/>
+<wire x1="28.431996875" y1="17.509996875" x2="26.432003125" y2="17.509996875" width="0.127" layer="151"/>
+<wire x1="26.432003125" y1="17.509996875" x2="26.432003125" y2="15.510003125" width="0.127" layer="151"/>
+<circle x="26.732" y="17.21" radius="0.14141875" width="0.127" layer="151"/>
+<text x="25.508" y="21.682" size="0.2" layer="151">U12</text>
+<wire x1="24.908003125" y1="20.082003125" x2="26.907996875" y2="20.082003125" width="0.127" layer="151"/>
+<wire x1="26.907996875" y1="20.082003125" x2="26.907996875" y2="22.081996875" width="0.127" layer="151"/>
+<wire x1="26.907996875" y1="22.081996875" x2="24.908003125" y2="22.081996875" width="0.127" layer="151"/>
+<wire x1="24.908003125" y1="22.081996875" x2="24.908003125" y2="20.082003125" width="0.127" layer="151"/>
+<circle x="25.208" y="21.782" radius="0.14141875" width="0.127" layer="151"/>
+<text x="24.657" y="17.572" size="0.2" layer="151" rot="R270">U13</text>
+<wire x1="23.457003125" y1="18.071996875" x2="23.457003125" y2="16.472003125" width="0.127" layer="151"/>
+<wire x1="23.457003125" y1="16.472003125" x2="25.056996875" y2="16.472003125" width="0.127" layer="151"/>
+<wire x1="25.056996875" y1="16.472003125" x2="25.056996875" y2="18.071996875" width="0.127" layer="151"/>
+<wire x1="25.056996875" y1="18.071996875" x2="23.457003125" y2="18.071996875" width="0.127" layer="151"/>
+<circle x="24.757" y="17.772" radius="0.1" width="0.127" layer="151"/>
+<text x="30.572" y="23.795" size="0.2" layer="151" rot="R270">U14</text>
+<wire x1="30.971996875" y1="22.495003125" x2="30.971996875" y2="24.494996875" width="0.127" layer="151"/>
+<wire x1="30.971996875" y1="24.494996875" x2="28.972003125" y2="24.494996875" width="0.127" layer="151"/>
+<wire x1="28.972003125" y1="24.494996875" x2="28.972003125" y2="22.495003125" width="0.127" layer="151"/>
+<wire x1="28.972003125" y1="22.495003125" x2="30.971996875" y2="22.495003125" width="0.127" layer="151"/>
+<circle x="30.672" y="24.195" radius="0.1" width="0.127" layer="151"/>
+<text x="5.888" y="20.717003125" size="0.254" layer="151" rot="R180">U16</text>
+<wire x1="6.487996875" y1="20.317003125" x2="4.688003125" y2="20.317003125" width="0.127" layer="151"/>
+<wire x1="4.688003125" y1="20.317003125" x2="4.688003125" y2="23.116996875" width="0.127" layer="151"/>
+<wire x1="4.688003125" y1="23.116996875" x2="6.487996875" y2="23.116996875" width="0.127" layer="151"/>
+<wire x1="6.487996875" y1="23.116996875" x2="6.487996875" y2="20.317003125" width="0.127" layer="151"/>
+<circle x="6.188" y="20.617" radius="0.14141875" width="0.127" layer="151"/>
+<text x="5.126" y="24.176" size="0.254" layer="151" rot="R180">U17</text>
+<wire x1="5.226" y1="24.276" x2="4.426" y2="24.276" width="0.127" layer="151"/>
+<wire x1="4.426" y1="24.276" x2="4.426" y2="23.476" width="0.127" layer="151"/>
+<wire x1="4.426" y1="23.476" x2="5.226" y2="23.476" width="0.127" layer="151"/>
+<wire x1="5.226" y1="23.476" x2="5.226" y2="24.276" width="0.127" layer="151"/>
+<circle x="5.026" y="23.676" radius="0.14141875" width="0.127" layer="151"/>
+<text x="7.474" y="22.671" size="0.254" layer="151">U18</text>
+<wire x1="6.874003125" y1="23.170996875" x2="8.873996875" y2="23.170996875" width="0.127" layer="151"/>
+<wire x1="8.873996875" y1="23.170996875" x2="8.873996875" y2="20.771003125" width="0.127" layer="151"/>
+<wire x1="8.873996875" y1="20.771003125" x2="6.874003125" y2="20.771003125" width="0.127" layer="151"/>
+<wire x1="6.874003125" y1="20.771003125" x2="6.874003125" y2="23.170996875" width="0.127" layer="151"/>
+<circle x="7.174" y="22.871" radius="0.14141875" width="0.127" layer="151"/>
+<text x="21.863" y="27.342996875" size="0.254" layer="151" rot="R180">USBD+</text>
+<circle x="21.463" y="26.543" radius="0.4" width="0.127" layer="151"/>
+<text x="25.165" y="27.342996875" size="0.254" layer="151" rot="R180">USBD-</text>
+<circle x="24.765" y="26.543" radius="0.4" width="0.127" layer="151"/>
+<text x="23.387" y="27.342996875" size="0.254" layer="151" rot="R180">USBID</text>
+<circle x="22.987" y="26.543" radius="0.4" width="0.127" layer="151"/>
+<text x="19.45" y="31.914996875" size="0.254" layer="151" rot="R180">USBV</text>
+<circle x="19.05" y="31.115" radius="0.4" width="0.127" layer="151"/>
+<text x="9.29" y="18.652996875" size="0.2" layer="151" rot="R270">X1</text>
+<wire x1="9.689996875" y1="19.252996875" x2="9.689996875" y2="16.053003125" width="0.127" layer="151"/>
+<wire x1="9.689996875" y1="16.053003125" x2="8.090003125" y2="16.053003125" width="0.127" layer="151"/>
+<wire x1="8.090003125" y1="16.053003125" x2="8.090003125" y2="19.252996875" width="0.127" layer="151"/>
+<wire x1="8.090003125" y1="19.252996875" x2="9.689996875" y2="19.252996875" width="0.127" layer="151"/>
+<circle x="9.39" y="18.953" radius="0.1" width="0.127" layer="151"/>
+<text x="29.645" y="12.13" size="0.3048" layer="151">X2</text>
+<wire x1="28.845003125" y1="12.629996875" x2="30.844996875" y2="12.629996875" width="0.127" layer="151"/>
+<wire x1="30.844996875" y1="12.629996875" x2="30.844996875" y2="10.230003125" width="0.127" layer="151"/>
+<wire x1="30.844996875" y1="10.230003125" x2="28.845003125" y2="10.230003125" width="0.127" layer="151"/>
+<wire x1="28.845003125" y1="10.230003125" x2="28.845003125" y2="12.629996875" width="0.127" layer="151"/>
+<circle x="29.245" y="12.23" radius="0.14141875" width="0.127" layer="151"/>
+<text x="15.021" y="12.754" size="0.2" layer="151" rot="R90">X4</text>
+<wire x1="14.621003125" y1="12.154003125" x2="14.621003125" y2="13.753996875" width="0.127" layer="151"/>
+<wire x1="14.621003125" y1="13.753996875" x2="16.620996875" y2="13.753996875" width="0.127" layer="151"/>
+<wire x1="16.620996875" y1="13.753996875" x2="16.620996875" y2="12.154003125" width="0.127" layer="151"/>
+<wire x1="16.620996875" y1="12.154003125" x2="14.621003125" y2="12.154003125" width="0.127" layer="151"/>
+<circle x="14.921" y="12.454" radius="0.1" width="0.127" layer="151"/>
 </plain>
 <libraries>
 <library name="firefly">
@@ -580,7 +1212,7 @@ Source: http://www.vishay.com/docs/45017/vjsoldfo.pdf</description>
 <wire x1="-4.1" y1="4.05" x2="4.1" y2="4.05" width="0.1" layer="51"/>
 <wire x1="-4.1" y1="-0.85" x2="-4.1" y2="4.05" width="0.1" layer="51"/>
 <wire x1="4.1" y1="-0.85" x2="4.1" y2="4.05" width="0.1" layer="51"/>
-<text x="-1" y="1" size="1.27" layer="25">&gt;Name</text>
+<text x="-1" y="1" size="1.27" layer="51">&gt;Name</text>
 <text x="-4" y="2.3" size="0.4" layer="51">PTH</text>
 <text x="3" y="2.3" size="0.4" layer="51">PTH</text>
 <wire x1="-3.61" y1="1.1" x2="-3.61" y2="1.6" width="1" layer="2"/>
@@ -723,16 +1355,12 @@ Source: http://www.vishay.com/docs/45017/vjsoldfo.pdf</description>
 <wire x1="4.5" y1="-4.5" x2="-4.5" y2="-4.5" width="0.2032" layer="51"/>
 <wire x1="-4.5" y1="-4.5" x2="-4.5" y2="4.3" width="0.2032" layer="51"/>
 <wire x1="-4.5" y1="4.3" x2="-4.5" y2="4.5" width="0.2032" layer="51"/>
-<wire x1="-4.3" y1="4.5" x2="-4.5" y2="4.3" width="0.2032" layer="51"/>
-<wire x1="-4.5" y1="4.5" x2="-4.0516" y2="4.5" width="0.2032" layer="21"/>
-<wire x1="-4.5" y1="4.5" x2="-4.5" y2="4.0516" width="0.2032" layer="21"/>
 <wire x1="4.5" y1="4.5" x2="4.0516" y2="4.5" width="0.2032" layer="21"/>
 <wire x1="4.5" y1="4.5" x2="4.5" y2="4.0516" width="0.2032" layer="21"/>
 <wire x1="4.5" y1="-4.5" x2="4.0516" y2="-4.5" width="0.2032" layer="21"/>
 <wire x1="4.5" y1="-4.5" x2="4.5" y2="-4.0516" width="0.2032" layer="21"/>
 <wire x1="-4.5" y1="-4.5" x2="-4.0516" y2="-4.5" width="0.2032" layer="21"/>
 <wire x1="-4.5" y1="-4.5" x2="-4.5" y2="-4.0516" width="0.2032" layer="21"/>
-<wire x1="-4.0516" y1="4.5" x2="-4.5" y2="4.0516" width="0.2032" layer="21"/>
 <rectangle x1="-4.935" y1="3.54" x2="-3.965" y2="3.96" layer="29"/>
 <rectangle x1="-4.825" y1="3.65" x2="-4.075" y2="3.85" layer="31"/>
 <rectangle x1="-4.935" y1="3.04" x2="-3.965" y2="3.46" layer="29"/>
@@ -931,8 +1559,8 @@ Source: http://www.vishay.com/docs/45017/vjsoldfo.pdf</description>
 <smd name="63" x="-3.25" y="4.45" dx="0.3" dy="0.85" layer="1" stop="no" cream="no"/>
 <smd name="64" x="-3.75" y="4.45" dx="0.3" dy="0.85" layer="1" stop="no" cream="no"/>
 <smd name="65" x="0" y="0" dx="7.2" dy="7.2" layer="1" stop="no" cream="no"/>
-<text x="-4.5" y="5.179" size="1.27" layer="25">&gt;NAME</text>
-<text x="-4.5" y="-5.179" size="1.27" layer="27" align="top-left">&gt;VALUE</text>
+<text x="-3.6" y="3.879" size="0.254" layer="51">&gt;NAME</text>
+<circle x="-4" y="4" radius="0.14141875" width="0.127" layer="51"/>
 </package>
 <package name="WL-CSP-25">
 <smd name="C3" x="0" y="0" dx="0.225" dy="0.225" layer="1" roundness="100" stop="no"/>
@@ -1114,7 +1742,7 @@ Source: http://www.vishay.com/docs/45017/vjsoldfo.pdf</description>
 <wire x1="0.8" y1="-0.5" x2="0.8" y2="0.5" width="0.127" layer="51"/>
 <wire x1="0.8" y1="0.5" x2="-0.8" y2="0.5" width="0.127" layer="51"/>
 <wire x1="-0.8" y1="0.5" x2="-0.8" y2="-0.5" width="0.127" layer="51"/>
-<text x="-0.7" y="0.1" size="0.254" layer="25">&gt;Name</text>
+<text x="-0.6" y="0.179" size="0.254" layer="51">&gt;NAME</text>
 </package>
 </packages>
 </library>
@@ -1295,83 +1923,101 @@ This Sunstone Circuits 4 Layer .DRU has been set to cover our minimum requiremen
 </pass>
 </autorouter>
 <elements>
-<element name="C23" library="firefly" package="C0201" value="100nF" x="15.494" y="7.62" rot="R90">
+<element name="C23" library="firefly" package="C0201" value="100nF" x="15.494" y="7.62" smashed="yes" rot="R90">
 <attribute name="PART" value="GRM033R60J104KE19D" x="15.494" y="7.62" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MANUFACTURER" value="Murata" x="15.494" y="7.62" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="ORDERING-CODE" value="GRM033R60J104KE19D" x="15.494" y="7.62" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="15.294" y="7.32" size="0.254" layer="51" rot="R90"/>
 </element>
-<element name="JPDEBUG" library="firefly" package="TC2030-MCP-NL" value="TC2030-SWD" x="9.525" y="29.972" rot="R231">
+<element name="JPDEBUG" library="firefly" package="TC2030-MCP-NL" value="TC2030-SWD" x="9.525" y="29.972" smashed="yes" rot="R231">
 <attribute name="DNS" value="true" x="9.525" y="29.972" size="1.778" layer="27" rot="R231" display="off"/>
+<attribute name="NAME" x="10.91159375" y="29.66625" size="1.27" layer="25" rot="R231"/>
 </element>
-<element name="C24" library="firefly" package="C0201" value="1uF" x="21.209" y="20.955">
+<element name="C24" library="firefly" package="C0201" value="1uF" x="21.209" y="20.955" smashed="yes">
 <attribute name="MANUFACTURER" value="TDK Corporation" x="21.209" y="20.955" size="1.778" layer="27" display="off"/>
 <attribute name="PART" value="C0603X5R0J105M" x="21.209" y="20.955" size="1.778" layer="27" display="off"/>
 <attribute name="ORDERING-CODE" value="C0603X5R0J105M030BC" x="21.209" y="20.955" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="20.909" y="21.155" size="0.254" layer="51"/>
 </element>
-<element name="C25" library="firefly" package="C0402" value="10uF" x="22.733" y="20.447" rot="R270">
+<element name="C25" library="firefly" package="C0402" value="10uF" x="22.733" y="20.447" smashed="yes" rot="R270">
 <attribute name="MANUFACTURER" value="Samsung Electro-Mechanics America, Inc" x="22.733" y="20.447" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="PART" value="AMK105CBJ106MV-F" x="22.733" y="20.447" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="ORDERING-CODE" value="CL05A106MP5NUNC" x="22.733" y="20.447" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="23.133" y="20.747" size="0.254" layer="51" rot="R270"/>
 </element>
-<element name="C26" library="firefly" package="C0201" value="100nF" x="21.717" y="20.066" rot="R270">
+<element name="C26" library="firefly" package="C0201" value="100nF" x="21.717" y="20.066" smashed="yes" rot="R270">
 <attribute name="MANUFACTURER" value="Murata" x="21.717" y="20.066" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="PART" value="GRM033R60J104KE19D" x="21.717" y="20.066" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="ORDERING-CODE" value="GRM033R60J104KE19D" x="21.717" y="20.066" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="21.917" y="20.366" size="0.254" layer="51" rot="R270"/>
 </element>
-<element name="C27" library="firefly" package="C0201" value="100nF" x="16.129" y="15.748" rot="R270">
+<element name="C27" library="firefly" package="C0201" value="100nF" x="16.129" y="15.748" smashed="yes" rot="R270">
 <attribute name="PART" value="GRM033R60J104KE19D" x="16.129" y="15.748" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MANUFACTURER" value="Murata" x="16.129" y="15.748" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="ORDERING-CODE" value="GRM033R60J104KE19D" x="16.129" y="15.748" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="16.329" y="16.048" size="0.254" layer="51" rot="R270"/>
 </element>
-<element name="C28" library="firefly" package="C0201" value="100nF" x="16.256" y="26.797" rot="R90">
+<element name="C28" library="firefly" package="C0201" value="100nF" x="16.256" y="26.797" smashed="yes" rot="R90">
 <attribute name="PART" value="GRM033R60J104KE19D" x="16.256" y="26.797" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MANUFACTURER" value="Murata" x="16.256" y="26.797" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="ORDERING-CODE" value="GRM033R60J104KE19D" x="16.256" y="26.797" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="16.056" y="26.497" size="0.254" layer="51" rot="R90"/>
 </element>
-<element name="C29" library="firefly" package="C0201" value="100nF" x="10.033" y="21.59" rot="R180">
+<element name="C29" library="firefly" package="C0201" value="100nF" x="10.033" y="21.59" smashed="yes" rot="R180">
 <attribute name="PART" value="GRM033R60J104KE19D" x="10.033" y="21.59" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MANUFACTURER" value="Murata" x="10.033" y="21.59" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="ORDERING-CODE" value="GRM033R60J104KE19D" x="10.033" y="21.59" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="10.333" y="21.39" size="0.254" layer="51" rot="R180"/>
 </element>
-<element name="C30" library="firefly" package="C0201" value="100nF" x="16.891" y="15.748" rot="R270">
+<element name="C30" library="firefly" package="C0201" value="100nF" x="16.891" y="15.748" smashed="yes" rot="R270">
 <attribute name="PART" value="GRM033R60J104KE19D" x="16.891" y="15.748" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MANUFACTURER" value="Murata" x="16.891" y="15.748" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="ORDERING-CODE" value="GRM033R60J104KE19D" x="16.891" y="15.748" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="17.091" y="16.048" size="0.254" layer="51" rot="R270"/>
 </element>
-<element name="C31" library="firefly" package="C0201" value="100nF" x="14.859" y="15.748" rot="R270">
+<element name="C31" library="firefly" package="C0201" value="100nF" x="14.859" y="15.748" smashed="yes" rot="R270">
 <attribute name="PART" value="GRM033R60J104KE19D" x="14.859" y="15.748" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MANUFACTURER" value="Murata" x="14.859" y="15.748" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="ORDERING-CODE" value="GRM033R60J104KE19D" x="14.859" y="15.748" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="15.059" y="16.048" size="0.254" layer="51" rot="R270"/>
 </element>
-<element name="X1" library="firefly" package="9HT10" value="32kHz" x="8.89" y="17.653" rot="R270">
+<element name="X1" library="firefly" package="9HT10" value="32kHz" x="8.89" y="17.653" smashed="yes" rot="R270">
 <attribute name="MANUFACTURER" value="TXC CORPORATION" x="8.89" y="17.653" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="PART" value="ABS06-32.768KHZ-T" x="8.89" y="17.653" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="ORDERING-CODE" value="9HT10-32.768KEZF-T" x="8.89" y="17.653" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="9.29" y="18.653" size="0.2" layer="51" rot="R270"/>
 </element>
-<element name="C32" library="firefly" package="C0201" value="22pF" x="7.493" y="16.891" rot="R90">
+<element name="C32" library="firefly" package="C0201" value="22pF" x="7.493" y="16.891" smashed="yes" rot="R90">
 <attribute name="MANUFACTURER" value="AVX Corporation" x="7.493" y="16.891" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="PART" value="CBR02C120F3GAC" x="7.493" y="16.891" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="ORDERING-CODE" value="02013A220GAT2A" x="7.493" y="16.891" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="7.293" y="16.591" size="0.254" layer="51" rot="R90"/>
 </element>
-<element name="C33" library="firefly" package="C0201" value="22pF" x="7.493" y="18.415" rot="R270">
+<element name="C33" library="firefly" package="C0201" value="22pF" x="7.493" y="18.415" smashed="yes" rot="R270">
 <attribute name="MANUFACTURER" value="AVX Corporation" x="7.493" y="18.415" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="PART" value="CBR02C120F3GAC" x="7.493" y="18.415" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="ORDERING-CODE" value="02013A220GAT2A" x="7.493" y="18.415" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="7.693" y="18.715" size="0.254" layer="51" rot="R270"/>
 </element>
-<element name="U2" library="firefly" package="QFN-32" value="NRF8001" x="24.892" y="11.43" rot="R270">
+<element name="U2" library="firefly" package="QFN-32" value="NRF8001" x="24.892" y="11.43" smashed="yes" rot="R270">
 <attribute name="MANUFACTURER" value="Nordic Semiconductor" x="24.892" y="11.43" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="ORDERING-CODE" value="nRF8001-R2Q32-T" x="24.892" y="11.43" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="DISTRIBUTOR" value="Mouser" x="24.892" y="11.43" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="28.192" y="13.63" size="1.27" layer="25" rot="R270"/>
+<attribute name="VALUE" x="20.392" y="13.63" size="1.27" layer="27" rot="R270"/>
+<attribute name="NAME" x="26.792" y="13.13" size="0.254" layer="51" rot="R270"/>
 </element>
-<element name="C34" library="firefly" package="C0201" value="15pF" x="30.099" y="9.525">
+<element name="C34" library="firefly" package="C0201" value="15pF" x="30.099" y="9.525" smashed="yes">
 <attribute name="MANUFACTURER" value="Johanson Technology Inc" x="30.099" y="9.525" size="1.778" layer="27" display="off"/>
 <attribute name="PART" value="CBR02C120F3GAC" x="30.099" y="9.525" size="1.778" layer="27" display="off"/>
 <attribute name="ORDERING-CODE" value="250R05L150GV4T" x="30.099" y="9.525" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="29.799" y="9.725" size="0.254" layer="51"/>
 </element>
-<element name="C35" library="firefly" package="C0201" value="15pF" x="30.226" y="13.335">
+<element name="C35" library="firefly" package="C0201" value="15pF" x="30.226" y="13.335" smashed="yes">
 <attribute name="MANUFACTURER" value="Johanson Technology Inc" x="30.226" y="13.335" size="1.778" layer="27" display="off"/>
 <attribute name="PART" value="CBR02C120F3GAC" x="30.226" y="13.335" size="1.778" layer="27" display="off"/>
 <attribute name="ORDERING-CODE" value="250R05L150GV4T" x="30.226" y="13.335" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="29.926" y="13.535" size="0.254" layer="51"/>
 </element>
 <element name="R11" library="firefly" package="R0201" value="22k" x="28.448" y="8.89" smashed="yes" rot="R180">
 <attribute name="MANUFACTURER" value="Panasonic" x="28.448" y="8.89" size="1.778" layer="27" rot="R180" display="off"/>
@@ -1381,107 +2027,132 @@ This Sunstone Circuits 4 Layer .DRU has been set to cover our minimum requiremen
 <attribute name="NAME" x="28.848" y="9.39" size="0.254" layer="51" rot="R180"/>
 <attribute name="ORDERING-CODE" value="ERJ-1GEF2202C" x="28.448" y="8.89" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="C39" library="firefly" package="C0201" value="1nF" x="28.321" y="13.716">
+<element name="C39" library="firefly" package="C0201" value="1nF" x="28.321" y="13.716" smashed="yes">
 <attribute name="MANUFACTURER" value="Murata" x="28.321" y="13.716" size="1.778" layer="27" display="off"/>
 <attribute name="PART" value="GRM033R71E102KA01D" x="28.321" y="13.716" size="1.778" layer="27" display="off"/>
 <attribute name="ORDERING-CODE" value="C0603X7R1E102K" x="28.321" y="13.716" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="28.021" y="13.916" size="0.254" layer="51"/>
 </element>
-<element name="C40" library="firefly" package="C0201" value="33nF" x="25.4" y="14.859" rot="R90">
+<element name="C40" library="firefly" package="C0201" value="33nF" x="25.4" y="14.859" smashed="yes" rot="R90">
 <attribute name="MANUFACTURER" value="Murata" x="25.4" y="14.859" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="PART" value="GRM033R60J333KE01D" x="25.4" y="14.859" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="ORDERING-CODE" value="GRM033R60J333KE01D" x="25.4" y="14.859" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="25.2" y="14.559" size="0.254" layer="51" rot="R90"/>
 </element>
-<element name="C41" library="firefly" package="C0201" value="100nF" x="26.162" y="14.859" rot="R90">
+<element name="C41" library="firefly" package="C0201" value="100nF" x="26.162" y="14.859" smashed="yes" rot="R90">
 <attribute name="MANUFACTURER" value="Kemet" x="26.162" y="14.859" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="PART" value="GRM033R60J104KE19D" x="26.162" y="14.859" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="ORDERING-CODE" value="GRM033R60J104KE19D" x="26.162" y="14.859" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="25.962" y="14.559" size="0.254" layer="51" rot="R90"/>
 </element>
-<element name="C42" library="firefly" package="C0201" value="1uF" x="26.924" y="14.859" rot="R90">
+<element name="C42" library="firefly" package="C0201" value="1uF" x="26.924" y="14.859" smashed="yes" rot="R90">
 <attribute name="MANUFACTURER" value="TDK Corporation" x="26.924" y="14.859" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="PART" value="C0603X5R0J105M" x="26.924" y="14.859" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="ORDERING-CODE" value="C0603X5R0J105M030BC" x="26.924" y="14.859" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="26.724" y="14.559" size="0.254" layer="51" rot="R90"/>
 </element>
-<element name="C43" library="firefly" package="C0201" value="100nF" x="22.479" y="14.859" rot="R90">
+<element name="C43" library="firefly" package="C0201" value="100nF" x="22.479" y="14.859" smashed="yes" rot="R90">
 <attribute name="MANUFACTURER" value="Murata" x="22.479" y="14.859" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="PART" value="GRM033R60J104KE19D" x="22.479" y="14.859" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="ORDERING-CODE" value="GRM033R60J104KE19D" x="22.479" y="14.859" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="22.279" y="14.559" size="0.254" layer="51" rot="R90"/>
 </element>
-<element name="C44" library="firefly" package="C0201" value="2.2nF" x="23.876" y="7.874" rot="R180">
+<element name="C44" library="firefly" package="C0201" value="2.2nF" x="23.876" y="7.874" smashed="yes" rot="R180">
 <attribute name="MANUFACTURER" value="TDK" x="23.876" y="7.874" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="PART" value="C0603X5R1E222K" x="23.876" y="7.874" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="ORDERING-CODE" value="C0603X5R1E222K" x="23.876" y="7.874" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="24.176" y="7.674" size="0.254" layer="51" rot="R180"/>
 </element>
-<element name="C45" library="firefly" package="C0201" value="DNS" x="23.876" y="7.239" rot="R180">
+<element name="C45" library="firefly" package="C0201" value="DNS" x="23.876" y="7.239" smashed="yes" rot="R180">
 <attribute name="DNS" value="true" x="23.876" y="7.239" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="24.176" y="7.039" size="0.254" layer="51" rot="R180"/>
 </element>
-<element name="C46" library="firefly" package="C0201" value="1.2pF" x="28.448" y="8.255">
+<element name="C46" library="firefly" package="C0201" value="1.2pF" x="28.448" y="8.255" smashed="yes">
 <attribute name="MANUFACTURER" value="TDK" x="28.448" y="8.255" size="1.778" layer="27" display="off"/>
 <attribute name="PART" value="C0603C0G1E1R2BTQ" x="28.448" y="8.255" size="1.778" layer="27" display="off"/>
 <attribute name="ORDERING-CODE" value="C0603C0G1E1R2BTQ" x="28.448" y="8.255" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="28.148" y="8.455" size="0.254" layer="51"/>
 </element>
-<element name="C47" library="firefly" package="C0201" value="1.8pF" x="27.432" y="8.255">
+<element name="C47" library="firefly" package="C0201" value="1.8pF" x="27.432" y="8.255" smashed="yes">
 <attribute name="MANUFACTURER" value="TDK" x="27.432" y="8.255" size="1.778" layer="27" display="off"/>
 <attribute name="PART" value="C0603C0G1E1R8CTQ" x="27.432" y="8.255" size="1.778" layer="27" display="off"/>
 <attribute name="ORDERING-CODE" value="C0603C0G1E1R8CTQ" x="27.432" y="8.255" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="27.132" y="8.455" size="0.254" layer="51"/>
 </element>
-<element name="L2" library="firefly" package="L0201" value="5.6nH" x="24.892" y="7.493">
+<element name="L2" library="firefly" package="L0201" value="5.6nH" x="24.892" y="7.493" smashed="yes">
 <attribute name="MANUFACTURER" value="TDK" x="24.892" y="7.493" size="1.778" layer="27" display="off"/>
 <attribute name="PART" value="MLG0603P5N6S" x="24.892" y="7.493" size="1.778" layer="27" display="off"/>
 <attribute name="ORDERING-CODE" value="MLG0603P5N6S" x="24.892" y="7.493" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="24.592" y="7.693" size="0.254" layer="51"/>
 </element>
-<element name="L3" library="firefly" package="L0201" value="3.9nH" x="26.416" y="8.128">
+<element name="L3" library="firefly" package="L0201" value="3.9nH" x="26.416" y="8.128" smashed="yes">
 <attribute name="MANUFACTURER" value="TDK" x="26.416" y="8.128" size="1.778" layer="27" display="off"/>
 <attribute name="PART" value="MLG0603S3N9S" x="26.416" y="8.128" size="1.778" layer="27" display="off"/>
 <attribute name="ORDERING-CODE" value="MLG0603S3N9S" x="26.416" y="8.128" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="26.116" y="8.328" size="0.254" layer="51"/>
 </element>
-<element name="L1" library="firefly" package="L0201" value="8.2nH" x="25.4" y="8.128">
+<element name="L1" library="firefly" package="L0201" value="8.2nH" x="25.4" y="8.128" smashed="yes">
 <attribute name="MANUFACTURER" value="TDK" x="25.4" y="8.128" size="1.778" layer="27" display="off"/>
 <attribute name="PART" value="MLG0603P8N2J" x="25.4" y="8.128" size="1.778" layer="27" display="off"/>
 <attribute name="ORDERING-CODE" value="MLG0603P8N2J" x="25.4" y="8.128" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="25.1" y="8.328" size="0.254" layer="51"/>
 </element>
-<element name="C1" library="firefly" package="C0201" value="100nF" x="15.494" y="9.144" rot="R270">
+<element name="C1" library="firefly" package="C0201" value="100nF" x="15.494" y="9.144" smashed="yes" rot="R270">
 <attribute name="PART" value="GRM033R60J104KE19D" x="15.494" y="9.144" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MANUFACTURER" value="Murata" x="15.494" y="9.144" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="ORDERING-CODE" value="GRM033R60J104KE19D" x="15.494" y="9.144" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="15.059" y="9.317" size="0.254" layer="51" rot="R270"/>
 </element>
-<element name="R1" library="firefly" package="R0201" value="4.7k" x="12.827" y="7.874" rot="R270">
+<element name="R1" library="firefly" package="R0201" value="4.7k" x="12.827" y="7.874" smashed="yes" rot="R270">
 <attribute name="PART" value="ERJ-1GEF1003C" x="12.827" y="7.874" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MANUFACTURER" value="Panasonic Electronic Components" x="12.827" y="7.874" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="ORDERING-CODE" value="ERJ-1GEF4701C" x="12.827" y="7.874" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="13.462" y="8.509" size="1.27" layer="25" rot="R270"/>
+<attribute name="VALUE" x="10.922" y="8.509" size="1.27" layer="27" rot="R270"/>
+<attribute name="NAME" x="13.027" y="8.174" size="0.254" layer="51" rot="R270"/>
 </element>
-<element name="C2" library="firefly" package="C0201" value="100nF" x="9.017" y="13.081" rot="R90">
+<element name="C2" library="firefly" package="C0201" value="100nF" x="9.017" y="13.081" smashed="yes" rot="R90">
 <attribute name="MANUFACTURER" value="Murata" x="9.017" y="13.081" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="PART" value="GRM033R60J104KE19D" x="9.017" y="13.081" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VARIANTS" value="low-power" x="9.017" y="13.081" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="ORDERING-CODE" value="GRM033R60J104KE19D" x="9.017" y="13.081" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="8.817" y="12.781" size="0.254" layer="51" rot="R90"/>
 </element>
-<element name="C3" library="firefly" package="C0201" value="1uF" x="24.638" y="16.002" rot="R180">
+<element name="C3" library="firefly" package="C0201" value="1uF" x="24.638" y="16.002" smashed="yes" rot="R180">
 <attribute name="MANUFACTURER" value="TDK Corporation" x="24.638" y="16.002" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="PART" value="C0603X5R0J105M" x="24.638" y="16.002" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="VARIANTS" value="efficient-power" x="24.638" y="16.002" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="ORDERING-CODE" value="C0603X5R0J105M030BC" x="24.638" y="16.002" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="24.938" y="15.802" size="0.254" layer="51" rot="R180"/>
 </element>
-<element name="C4" library="firefly" package="C0402" value="4.7uF" x="30.353" y="19.939" rot="R90">
+<element name="C4" library="firefly" package="C0402" value="4.7uF" x="30.353" y="19.939" smashed="yes" rot="R90">
 <attribute name="PART" value="C1608X5R1A106K" x="30.353" y="19.939" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MANUFACTURER" value="TDK Corporation" x="30.353" y="19.939" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="ORDERING-CODE" value="C1005X5R0J475M" x="30.353" y="19.939" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="29.953" y="19.639" size="0.254" layer="51" rot="R90"/>
 </element>
-<element name="C5" library="firefly" package="C0402" value="4.7uF" x="31.496" y="19.939" rot="R90">
+<element name="C5" library="firefly" package="C0402" value="4.7uF" x="31.496" y="19.939" smashed="yes" rot="R90">
 <attribute name="PART" value="C0603X5R1C224K" x="31.496" y="19.939" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MANUFACTURER" value="TDK Corporation" x="31.496" y="19.939" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="ORDERING-CODE" value="C1005X5R0J475M" x="31.496" y="19.939" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VARIANTS" value="usb-charging" x="31.496" y="19.939" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="31.096" y="19.639" size="0.254" layer="51" rot="R90"/>
 </element>
-<element name="A1" library="firefly" package="FR05_S1_N_0_110" value="FR05_S1_N_0_110" x="19.558" y="2.921" rot="R180">
+<element name="A1" library="firefly" package="FR05_S1_N_0_110" value="FR05_S1_N_0_110" x="19.558" y="2.921" smashed="yes" rot="R180">
 <attribute name="MANUFACTURER" value="Fractus" x="19.558" y="2.921" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="ORDERING-CODE" value="FR05_S1_N_0_110" x="19.558" y="2.921" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="DISTRIBUTOR" value="RichardsonRFPD" x="19.558" y="2.921" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="19.658" y="3.021" size="0.254" layer="51" rot="R180"/>
 </element>
-<element name="USBV" library="firefly" package="TARGET-PIN-1MM" value="TARGET-PIN" x="19.05" y="31.115" rot="R180"/>
-<element name="C6" library="firefly" package="C0201" value="1.2pF" x="28.194" y="7.62">
+<element name="USBV" library="firefly" package="TARGET-PIN-1MM" value="TARGET-PIN" x="19.05" y="31.115" smashed="yes" rot="R180">
+<attribute name="NAME" x="19.25" y="30.415" size="0.5" layer="25" rot="R180"/>
+<attribute name="NAME" x="19.45" y="31.915" size="0.254" layer="51" rot="R180"/>
+</element>
+<element name="C6" library="firefly" package="C0201" value="1.2pF" x="28.194" y="7.62" smashed="yes">
 <attribute name="PART" value="C0603C0G1E1R2BTQ" x="28.194" y="7.62" size="1.778" layer="27" display="off"/>
 <attribute name="MANUFACTURER" value="TDK" x="28.194" y="7.62" size="1.778" layer="27" display="off"/>
 <attribute name="ORDERING-CODE" value="C0603C0G1E1R2BTQ" x="28.194" y="7.62" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="27.894" y="7.82" size="0.254" layer="51"/>
 </element>
 <element name="L6" library="firefly" package="L0201" value="7.5nH" x="27.559" y="6.79" smashed="yes" rot="R270">
 <attribute name="PART" value="HKQ0603S7N5H-T" x="27.559" y="6.79" size="1.778" layer="27" rot="R270" display="off"/>
@@ -1491,360 +2162,489 @@ This Sunstone Circuits 4 Layer .DRU has been set to cover our minimum requiremen
 <attribute name="NAME" x="27.059" y="6.99" size="0.254" layer="51" rot="R270"/>
 <attribute name="ORDERING-CODE" value="HKQ0603S7N5H-T" x="27.559" y="6.79" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
-<element name="C7" library="firefly" package="C0201" value="DNS" x="28.321" y="6.79" rot="R90">
+<element name="C7" library="firefly" package="C0201" value="DNS" x="28.321" y="6.79" smashed="yes" rot="R90">
 <attribute name="DNS" value="true" x="28.321" y="6.79" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="28.121" y="6.49" size="0.254" layer="51" rot="R90"/>
 </element>
-<element name="X2" library="firefly" package="XTAL2520" value="16MHz" x="29.845" y="11.43">
+<element name="X2" library="firefly" package="XTAL2520" value="16MHz" x="29.845" y="11.43" smashed="yes">
 <attribute name="MANUFACTURER" value="TXC CORPORATION" x="29.845" y="11.43" size="1.778" layer="27" display="off"/>
 <attribute name="PART" value="TSX-3225 16.0000MF18X-AC3" x="29.845" y="11.43" size="1.778" layer="27" display="off"/>
 <attribute name="ORDERING-CODE" value="7V-16.000MAAE-T" x="29.845" y="11.43" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="29.645" y="12.13" size="0.3048" layer="51"/>
 </element>
-<element name="BAT1" library="firefly" package="TARGET-PIN-1MM" value="TARGET-PIN" x="28.194" y="27.813" rot="R180"/>
-<element name="U9" library="firefly" package="MICROFET-2X2-6L" value="FPF100X" x="10.922" y="13.716" rot="R270">
+<element name="BAT1" library="firefly" package="TARGET-PIN-1MM" value="TARGET-PIN" x="28.194" y="27.813" smashed="yes" rot="R180">
+<attribute name="NAME" x="28.394" y="27.113" size="0.5" layer="25" rot="R180"/>
+<attribute name="NAME" x="28.594" y="28.613" size="0.254" layer="51" rot="R180"/>
+</element>
+<element name="U9" library="firefly" package="MICROFET-2X2-6L" value="FPF100X" x="10.922" y="13.716" smashed="yes" rot="R270">
 <attribute name="MANUFACTURER" value="Fairchild Semiconductor" x="10.922" y="13.716" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="ORDERING-CODE" value="FPF1005" x="10.922" y="13.716" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VARIANTS" value="low-power" x="10.922" y="13.716" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="11.422" y="14.116" size="0.254" layer="51" rot="R270"/>
 </element>
-<element name="C10" library="firefly" package="C0201" value="1uF" x="8.636" y="14.351" rot="R270">
+<element name="C10" library="firefly" package="C0201" value="1uF" x="8.636" y="14.351" smashed="yes" rot="R270">
 <attribute name="MANUFACTURER" value="TDK Corporation" x="6.036" y="14.351" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VARIANTS" value="low-power" x="8.636" y="14.351" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="ORDERING-CODE" value="C0603X5R0J105M030BC" x="8.636" y="14.351" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="8.201" y="14.651" size="0.254" layer="51" rot="R270"/>
 </element>
-<element name="R5" library="firefly" package="R0201" value="0 (DNS)" x="9.525" y="14.351" rot="R90">
+<element name="R5" library="firefly" package="R0201" value="0 (DNS)" x="9.525" y="14.351" smashed="yes" rot="R90">
 <attribute name="VARIANTS" value="!low-power" x="9.525" y="14.351" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MANUFACTURER" value="Panasonic Electronic Components" x="9.525" y="14.351" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="ORDERING-CODE" value="ERJ-1GE0R00C" x="9.525" y="14.351" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="8.89" y="13.716" size="1.27" layer="25" rot="R90"/>
+<attribute name="VALUE" x="11.43" y="13.716" size="1.27" layer="27" rot="R90"/>
+<attribute name="NAME" x="9.325" y="14.051" size="0.254" layer="51" rot="R90"/>
 </element>
-<element name="D6" library="firefly" package="D0402" value="LEDD0402" x="17.018" y="32.004">
+<element name="D6" library="firefly" package="D0402" value="LEDD0402" x="17.018" y="32.004" smashed="yes">
 <attribute name="MANUFACTURER" value="Panasonic Electronic Components" x="17.018" y="32.004" size="1.778" layer="27" display="off"/>
 <attribute name="ORDERING-CODE" value="LNJ347W83RA" x="17.018" y="32.004" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="16.818" y="32.404" size="0.254" layer="51"/>
 </element>
-<element name="D5" library="firefly" package="D0402" value="LEDD0402" x="17.018" y="31.115">
+<element name="D5" library="firefly" package="D0402" value="LEDD0402" x="17.018" y="31.115" smashed="yes">
 <attribute name="MANUFACTURER" value="Panasonic Electronic Components" x="17.018" y="31.115" size="1.778" layer="27" display="off"/>
 <attribute name="ORDERING-CODE" value="LNJ847W83RA" x="17.018" y="31.115" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="16.818" y="30.499" size="0.254" layer="51"/>
 </element>
-<element name="D4" library="firefly" package="D0402" value="LEDD0402" x="2.7" y="22.2" rot="R250">
+<element name="D4" library="firefly" package="D0402" value="LEDD0402" x="2.7" y="22.2" smashed="yes" rot="R250">
 <attribute name="MANUFACTURER" value="Rohm Semiconductor" x="2.7" y="22.2" size="1.778" layer="27" rot="R250" display="off"/>
 <attribute name="ORDERING-CODE" value="SML-P11UTT86" x="2.7" y="22.2" size="1.778" layer="27" rot="R250" display="off"/>
+<attribute name="NAME" x="3.144278125" y="22.251128125" size="0.254" layer="51" rot="R250"/>
 </element>
-<element name="D0" library="firefly" package="D0402" value="LEDD0402" x="2.7" y="11.8" rot="R290">
+<element name="D0" library="firefly" package="D0402" value="LEDD0402" x="2.7" y="11.8" smashed="yes" rot="R290">
 <attribute name="MANUFACTURER" value="Rohm Semiconductor" x="2.7" y="11.8" size="1.778" layer="27" rot="R290" display="off"/>
 <attribute name="ORDERING-CODE" value="SML-P11UTT86" x="2.7" y="11.8" size="1.778" layer="27" rot="R290" display="off"/>
+<attribute name="NAME" x="3.007471875" y="12.12474375" size="0.254" layer="51" rot="R290"/>
 </element>
-<element name="R8" library="firefly" package="R0201" value="20k" x="32.385" y="15.24" rot="R90">
+<element name="R8" library="firefly" package="R0201" value="20k" x="32.385" y="15.24" smashed="yes" rot="R90">
 <attribute name="VARIANTS" value="usb-charging" x="32.385" y="15.24" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="ORDERING-CODE" value="ERJ-1GEF2002C" x="32.385" y="15.24" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MANUFACTURER" value="Panasonic Electronic Components" x="32.385" y="15.24" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="31.75" y="14.605" size="1.27" layer="25" rot="R90"/>
+<attribute name="VALUE" x="34.29" y="14.605" size="1.27" layer="27" rot="R90"/>
+<attribute name="NAME" x="32.185" y="14.94" size="0.254" layer="51" rot="R90"/>
 </element>
-<element name="U3" library="firefly" package="LGA16_3X3" value="LIS3DH" x="17.526" y="8.763" rot="R90">
+<element name="U3" library="firefly" package="LGA16_3X3" value="LIS3DH" x="17.526" y="8.763" smashed="yes" rot="R90">
 <attribute name="MANUFACTURER" value="ST" x="17.526" y="8.763" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="ORDERING-CODE" value="LIS3DHTR" x="17.526" y="8.763" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="15.526" y="8.063" size="0.4064" layer="25" rot="R90"/>
+<attribute name="NAME" x="16.426" y="7.863" size="0.254" layer="51" rot="R90"/>
 </element>
-<element name="U4" library="firefly" package="DFN10-2X2" value="MAG3110" x="8.001" y="9.652">
+<element name="U4" library="firefly" package="DFN10-2X2" value="MAG3110" x="8.001" y="9.652" smashed="yes">
 <attribute name="MANUFACTURER" value="Freescale Semiconductor" x="8.001" y="9.652" size="1.778" layer="27" display="off"/>
 <attribute name="ORDERING-CODE" value="MAG3110FCR1" x="8.001" y="9.652" size="1.778" layer="27" display="off"/>
 <attribute name="VARIANTS" value="magnetometer" x="8.001" y="9.652" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="7.601" y="10.252" size="0.2" layer="51"/>
 </element>
-<element name="R9" library="firefly" package="R0201" value="4.7k" x="12.065" y="7.874" rot="R270">
+<element name="R9" library="firefly" package="R0201" value="4.7k" x="12.065" y="7.874" smashed="yes" rot="R270">
 <attribute name="MANUFACTURER" value="Panasonic Electronic Components" x="12.065" y="7.874" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="ORDERING-CODE" value="ERJ-1GEF4701C" x="12.065" y="7.874" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="12.7" y="8.509" size="1.27" layer="25" rot="R270"/>
+<attribute name="VALUE" x="10.16" y="8.509" size="1.27" layer="27" rot="R270"/>
+<attribute name="NAME" x="12.265" y="8.174" size="0.254" layer="51" rot="R270"/>
 </element>
-<element name="C12" library="firefly" package="C0201" value="100nF" x="11.43" y="9.779">
+<element name="C12" library="firefly" package="C0201" value="100nF" x="11.43" y="9.779" smashed="yes">
 <attribute name="MANUFACTURER" value="Murata" x="11.43" y="9.779" size="1.778" layer="27" display="off"/>
 <attribute name="ORDERING-CODE" value="GRM033R60J104KE19D" x="11.43" y="9.779" size="1.778" layer="27" display="off"/>
 <attribute name="VARIANTS" value="magnetometer" x="11.43" y="9.779" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="11.13" y="9.979" size="0.254" layer="51"/>
 </element>
-<element name="C13" library="firefly" package="C0201" value="100nF" x="4.064" y="9.906" rot="R270">
+<element name="C13" library="firefly" package="C0201" value="100nF" x="4.064" y="9.906" smashed="yes" rot="R270">
 <attribute name="MANUFACTURER" value="Murata" x="4.064" y="9.906" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="ORDERING-CODE" value="GRM033R60J104KE19D" x="4.064" y="9.906" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VARIANTS" value="magnetometer" x="4.064" y="9.906" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="4.264" y="10.206" size="0.254" layer="51" rot="R270"/>
 </element>
-<element name="C14" library="firefly" package="C0201" value="1uF" x="4.826" y="9.906" rot="R270">
+<element name="C14" library="firefly" package="C0201" value="1uF" x="4.826" y="9.906" smashed="yes" rot="R270">
 <attribute name="MANUFACTURER" value="TDK Corporation" x="4.826" y="9.906" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="ORDERING-CODE" value="C0603X5R0J105M030BC" x="4.826" y="9.906" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VARIANTS" value="magnetometer" x="4.826" y="9.906" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="5.026" y="10.206" size="0.254" layer="51" rot="R270"/>
 </element>
-<element name="C16" library="firefly" package="C0201" value="100nF" x="4.699" y="10.795" rot="R180">
+<element name="C16" library="firefly" package="C0201" value="100nF" x="4.699" y="10.795" smashed="yes" rot="R180">
 <attribute name="MANUFACTURER" value="Murata" x="4.699" y="10.795" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="ORDERING-CODE" value="GRM033R60J104KE19D" x="4.699" y="10.795" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="VARIANTS" value="magnetometer" x="4.699" y="10.795" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="4.999" y="10.595" size="0.254" layer="51" rot="R180"/>
 </element>
-<element name="C17" library="firefly" package="C0201" value="100nF" x="4.699" y="9.017" rot="R180">
+<element name="C17" library="firefly" package="C0201" value="100nF" x="4.699" y="9.017" smashed="yes" rot="R180">
 <attribute name="MANUFACTURER" value="Murata" x="4.699" y="9.017" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="ORDERING-CODE" value="GRM033R60J104KE19D" x="4.699" y="9.017" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="VARIANTS" value="magnetometer" x="4.699" y="9.017" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="4.999" y="8.817" size="0.254" layer="51" rot="R180"/>
 </element>
-<element name="U7" library="firefly" package="DFN8" value="MCP73832DFN8" x="30.861" y="16.891" rot="R270">
+<element name="U7" library="firefly" package="DFN8" value="MCP73832DFN8" x="30.861" y="16.891" smashed="yes" rot="R270">
 <attribute name="MANUFACTURER" value="Microchip" x="30.861" y="16.891" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="ORDERING-CODE" value="MCP73832-2ACI/MC" x="30.861" y="16.891" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VARIANTS" value="usb-charging" x="30.861" y="16.891" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="DISTRIBUTOR" value="Mouser" x="30.861" y="16.891" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="31.961" y="17.991" size="0.5" layer="25" rot="R270"/>
+<attribute name="NAME" x="31.461" y="17.791" size="0.2" layer="51" rot="R270"/>
 </element>
-<element name="J1" library="firefly" package="ZX62WD1-B-5PC" value="USB-5PINZX62WD1-B-5PC" x="17" y="33.495" rot="MR180">
+<element name="J1" library="firefly" package="ZX62WD1-B-5PC" value="USB-5PINZX62WD1-B-5PC" x="17" y="33.495" smashed="yes" rot="MR180">
 <attribute name="MANUFACTURER" value="Hirose Electric Co Ltd" x="17" y="33.495" size="1.778" layer="28" rot="MR180" display="off"/>
 <attribute name="ORDERING-CODE" value="ZX62WD1-B-5PC" x="17" y="33.495" size="1.778" layer="28" rot="MR180" display="off"/>
 <attribute name="VARIANTS" value="usb-power" x="17" y="33.495" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="NAME" x="15.746" y="32.495" size="1.27" layer="52" rot="MR180"/>
 </element>
-<element name="U13" library="firefly" package="SOT902-2" value="NX3L1T53" x="24.257" y="17.272" rot="R270">
+<element name="U13" library="firefly" package="SOT902-2" value="NX3L1T53" x="24.257" y="17.272" smashed="yes" rot="R270">
 <attribute name="MANUFACTURER" value="NXP Semiconductor" x="24.257" y="17.272" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="ORDERING-CODE" value="NX3L1T53GM,125" x="24.257" y="17.272" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VARIANTS" value="efficient-power" x="24.257" y="17.272" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="24.657" y="17.572" size="0.2" layer="51" rot="R270"/>
 </element>
-<element name="U11" library="firefly" package="S-PWSON-N6" value="TPS782XX" x="27.432" y="16.51">
+<element name="U11" library="firefly" package="S-PWSON-N6" value="TPS782XX" x="27.432" y="16.51" smashed="yes">
 <attribute name="MANUFACTURER" value="Texas Instruments" x="27.432" y="16.51" size="1.778" layer="27" display="off"/>
 <attribute name="ORDERING-CODE" value="TPS78222DRVR" x="27.432" y="16.51" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="27.032" y="17.11" size="0.2" layer="51"/>
 </element>
-<element name="U12" library="firefly" package="S-PWSON-N8" value="TPS6208X" x="25.908" y="21.082">
+<element name="U12" library="firefly" package="S-PWSON-N8" value="TPS6208X" x="25.908" y="21.082" smashed="yes">
 <attribute name="MANUFACTURER" value="Texas Instruments" x="25.908" y="21.082" size="1.778" layer="27" display="off"/>
 <attribute name="ORDERING-CODE" value="TPS62080ADSGT" x="25.908" y="21.082" size="1.778" layer="27" display="off"/>
 <attribute name="VARIANTS" value="efficient-power" x="25.908" y="21.082" size="1.778" layer="27" display="off"/>
 <attribute name="DISTRIBUTOR" value="Mouser" x="25.908" y="21.082" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="25.508" y="21.682" size="0.2" layer="51"/>
 </element>
-<element name="C18" library="firefly" package="C0402" value="10uF" x="26.162" y="22.733" rot="R180">
+<element name="C18" library="firefly" package="C0402" value="10uF" x="26.162" y="22.733" smashed="yes" rot="R180">
 <attribute name="MANUFACTURER" value="Samsung Electro-Mechanics America, Inc" x="26.162" y="22.733" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="ORDERING-CODE" value="CL05A106MP5NUNC" x="26.162" y="22.733" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="VARIANTS" value="efficient-power" x="26.162" y="22.733" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="26.462" y="23.349" size="0.254" layer="51" rot="R180"/>
 </element>
-<element name="C19" library="firefly" package="C0603" value="22uF" x="25.908" y="19.177" rot="R180">
+<element name="C19" library="firefly" package="C0603" value="22uF" x="25.908" y="19.177" smashed="yes" rot="R180">
 <attribute name="MANUFACTURER" value="TDK Corporation" x="25.908" y="19.177" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="ORDERING-CODE" value="C1608X5R0J226M080AC" x="25.908" y="19.177" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="VARIANTS" value="efficient-power" x="25.908" y="19.177" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="26.308" y="18.577" size="0.254" layer="51" rot="R180"/>
 </element>
-<element name="L7" library="firefly" package="L0805" value="1uH" x="28.194" y="20.828" rot="R270">
+<element name="L7" library="firefly" package="L0805" value="1uH" x="28.194" y="20.828" smashed="yes" rot="R270">
 <attribute name="MANUFACTURER" value="WURTH" x="28.194" y="20.828" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="ORDERING-CODE" value="74479775210" x="28.194" y="20.828" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VARIANTS" value="efficient-power" x="28.194" y="20.828" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="28.994" y="21.128" size="0.4064" layer="51" rot="R270"/>
 </element>
-<element name="R3" library="firefly" package="R0201" value="152.4k" x="24.003" y="20.193" rot="R90">
+<element name="R3" library="firefly" package="R0201" value="152.4k" x="24.003" y="20.193" smashed="yes" rot="R90">
 <attribute name="MANUFACTURER" value="Panasonic Electronic Components" x="24.003" y="20.193" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="ORDERING-CODE" value="ERJ-1GEF1503C" x="24.003" y="20.193" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VARIANTS" value="efficient-power" x="24.003" y="20.193" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="23.368" y="19.558" size="1.27" layer="25" rot="R90"/>
+<attribute name="VALUE" x="25.908" y="19.558" size="1.27" layer="27" rot="R90"/>
+<attribute name="NAME" x="23.803" y="19.893" size="0.254" layer="51" rot="R90"/>
 </element>
-<element name="R10" library="firefly" package="R0201" value="39.2k" x="24.003" y="21.209" rot="R90">
+<element name="R10" library="firefly" package="R0201" value="39.2k" x="24.003" y="21.209" smashed="yes" rot="R90">
 <attribute name="MANUFACTURER" value="Panasonic Electronic Components" x="24.003" y="21.209" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="ORDERING-CODE" value="ERJ-1GEF3922C" x="24.003" y="21.209" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VARIANTS" value="efficient-power" x="24.003" y="21.209" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="23.368" y="20.574" size="1.27" layer="25" rot="R90"/>
+<attribute name="VALUE" x="25.908" y="20.574" size="1.27" layer="27" rot="R90"/>
+<attribute name="NAME" x="23.803" y="20.909" size="0.254" layer="51" rot="R90"/>
 </element>
-<element name="C20" library="firefly" package="C0201" value="1uF" x="27.94" y="17.907" rot="R180">
+<element name="C20" library="firefly" package="C0201" value="1uF" x="27.94" y="17.907" smashed="yes" rot="R180">
 <attribute name="MANUFACTURER" value="TDK Corporation" x="27.94" y="17.907" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="ORDERING-CODE" value="C0603X5R0J105M030BC" x="27.94" y="17.907" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="28.24" y="18.342" size="0.254" layer="51" rot="R180"/>
 </element>
-<element name="C21" library="firefly" package="C0201" value="1uF" x="26.797" y="17.907">
+<element name="C21" library="firefly" package="C0201" value="1uF" x="26.797" y="17.907" smashed="yes">
 <attribute name="MANUFACTURER" value="TDK Corporation" x="26.797" y="17.907" size="1.778" layer="27" display="off"/>
 <attribute name="ORDERING-CODE" value="C0603X5R0J105M030BC" x="26.797" y="17.907" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="26.497" y="18.107" size="0.254" layer="51"/>
 </element>
-<element name="U14" library="firefly" package="MO-229" value="FDFMA2P029Z" x="29.972" y="23.495" rot="R270">
+<element name="U14" library="firefly" package="MO-229" value="FDFMA2P029Z" x="29.972" y="23.495" smashed="yes" rot="R270">
 <attribute name="MANUFACTURER" value="Fairchild Semiconductor" x="29.972" y="23.495" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="ORDERING-CODE" value="FDFMA2P857" x="29.972" y="23.495" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VARIANTS" value="usb-power" x="29.972" y="23.495" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="30.572" y="23.795" size="0.2" layer="51" rot="R270"/>
 </element>
-<element name="D10" library="firefly" package="SOD-123F" value="BAT54WSSOD-123F" x="17.018" y="29.21">
+<element name="D10" library="firefly" package="SOD-123F" value="BAT54WSSOD-123F" x="17.018" y="29.21" smashed="yes">
 <attribute name="MANUFACTURER" value="Rohm Semiconductor" x="17.018" y="29.21" size="1.778" layer="27" display="off"/>
 <attribute name="ORDERING-CODE" value="RB161M-20TR" x="17.018" y="29.21" size="1.778" layer="27" display="off"/>
 <attribute name="VARIANTS" value="usb-power" x="17.018" y="29.21" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="16.942" y="28.086" size="0.2" layer="51"/>
 </element>
-<element name="R15" library="firefly" package="R0201" value="100k" x="29.21" y="15.24" rot="R90">
+<element name="R15" library="firefly" package="R0201" value="100k" x="29.21" y="15.24" smashed="yes" rot="R90">
 <attribute name="MANUFACTURER" value="Yageo" x="29.21" y="15.24" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="ORDERING-CODE" value="RC0201FR-07100KL" x="29.21" y="15.24" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VARIANTS" value="usb-charging" x="29.21" y="15.24" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="28.575" y="14.605" size="1.27" layer="25" rot="R90"/>
+<attribute name="VALUE" x="31.115" y="14.605" size="1.27" layer="27" rot="R90"/>
+<attribute name="NAME" x="29.01" y="14.94" size="0.254" layer="51" rot="R90"/>
 </element>
-<element name="U1" library="firefly" package="QFN64" value="EFM32LG330F256" x="15.494" y="21.209">
+<element name="U1" library="firefly" package="QFN64" value="EFM32LG330F256" x="15.494" y="21.209" smashed="yes">
 <attribute name="MANUFACTURER" value="Energy Micro" x="15.494" y="21.209" size="1.778" layer="27" display="off"/>
 <attribute name="ORDERING-CODE" value="EFM32LG330F256" x="15.494" y="21.209" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="11.894" y="25.088" size="0.254" layer="51"/>
 </element>
-<element name="R6" library="firefly" package="R0201" value="50" x="15.494" y="32.004">
+<element name="R6" library="firefly" package="R0201" value="50" x="15.494" y="32.004" smashed="yes">
 <attribute name="ORDERING-CODE" value="ERJ-1GEF51R0C" x="15.494" y="32.004" size="1.778" layer="27" display="off"/>
 <attribute name="MANUFACTURER" value="Panasonic Electronic Components" x="15.494" y="32.004" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="14.859" y="32.639" size="1.27" layer="25"/>
+<attribute name="VALUE" x="14.859" y="30.099" size="1.27" layer="27"/>
+<attribute name="NAME" x="15.194" y="32.204" size="0.254" layer="51"/>
 </element>
-<element name="R17" library="firefly" package="R0201" value="50" x="15.494" y="31.115">
+<element name="R17" library="firefly" package="R0201" value="50" x="15.494" y="31.115" smashed="yes">
 <attribute name="ORDERING-CODE" value="ERJ-1GEF51R0C" x="15.494" y="31.115" size="1.778" layer="27" display="off"/>
 <attribute name="MANUFACTURER" value="Panasonic Electronic Components" x="15.494" y="31.115" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="14.859" y="31.75" size="1.27" layer="25"/>
+<attribute name="VALUE" x="14.859" y="29.21" size="1.27" layer="27"/>
+<attribute name="NAME" x="15.194" y="31.315" size="0.254" layer="51"/>
 </element>
-<element name="R20" library="firefly" package="R0201" value="50" x="10.033" y="20.32" rot="R180">
+<element name="R20" library="firefly" package="R0201" value="50" x="10.033" y="20.32" smashed="yes" rot="R180">
 <attribute name="ORDERING-CODE" value="ERJ-1GEF51R0C" x="10.033" y="20.32" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MANUFACTURER" value="Panasonic Electronic Components" x="10.033" y="20.32" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="10.668" y="19.685" size="1.27" layer="25" rot="R180"/>
+<attribute name="VALUE" x="10.668" y="22.225" size="1.27" layer="27" rot="R180"/>
+<attribute name="NAME" x="10.333" y="20.12" size="0.254" layer="51" rot="R180"/>
 </element>
-<element name="R23" library="firefly" package="R0201" value="50" x="10.033" y="20.955" rot="R180">
+<element name="R23" library="firefly" package="R0201" value="50" x="10.033" y="20.955" smashed="yes" rot="R180">
 <attribute name="ORDERING-CODE" value="ERJ-1GEF51R0C" x="10.033" y="20.955" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MANUFACTURER" value="Panasonic Electronic Components" x="10.033" y="20.955" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="10.668" y="20.32" size="1.27" layer="25" rot="R180"/>
+<attribute name="VALUE" x="10.668" y="22.86" size="1.27" layer="27" rot="R180"/>
+<attribute name="NAME" x="10.333" y="20.755" size="0.254" layer="51" rot="R180"/>
 </element>
-<element name="C8" library="firefly" package="C0201" value="1uF" x="21.209" y="23.876">
+<element name="C8" library="firefly" package="C0201" value="1uF" x="21.209" y="23.876" smashed="yes">
 <attribute name="MANUFACTURER" value="TDK Corporation" x="21.209" y="23.876" size="1.778" layer="27" display="off"/>
 <attribute name="ORDERING-CODE" value="C0603X5R0J105M030BC" x="21.209" y="23.876" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="21.036" y="23.441" size="0.254" layer="51"/>
 </element>
-<element name="C15" library="firefly" package="C0402" value="4.7uF" x="18.542" y="27.686">
+<element name="C15" library="firefly" package="C0402" value="4.7uF" x="18.542" y="27.686" smashed="yes">
 <attribute name="MANUFACTURER" value="TDK Corporation" x="18.542" y="27.686" size="1.778" layer="27" display="off"/>
 <attribute name="ORDERING-CODE" value="C1005X5R0J475M" x="18.542" y="27.686" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="18.242" y="28.086" size="0.254" layer="51"/>
 </element>
-<element name="L9" library="firefly" package="L0201" value="Ferrite Bead" x="19.431" y="29.845" rot="R270">
+<element name="L9" library="firefly" package="L0201" value="Ferrite Bead" x="19.431" y="29.845" smashed="yes" rot="R270">
 <attribute name="MANUFACTURER" value="TDK Corportation" x="19.431" y="29.845" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="ORDERING-CODE" value="MPZ0603S220C" x="19.431" y="29.845" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VARIANTS" value="usb-power" x="19.431" y="29.845" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="19.631" y="30.145" size="0.254" layer="51" rot="R270"/>
 </element>
-<element name="R27" library="firefly" package="R0201" value="15" x="21.209" y="24.511" rot="R180">
+<element name="R27" library="firefly" package="R0201" value="15" x="21.209" y="24.511" smashed="yes" rot="R180">
 <attribute name="MANUFACTURER" value="Panasonic Electronic Components" x="21.209" y="24.511" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="ORDERING-CODE" value="ERJ-1GEF15R0C" x="21.209" y="24.511" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="VARIANTS" value="usb-data" x="21.209" y="24.511" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="21.844" y="23.876" size="1.27" layer="25" rot="R180"/>
+<attribute name="VALUE" x="21.844" y="26.416" size="1.27" layer="27" rot="R180"/>
+<attribute name="NAME" x="21.509" y="24.311" size="0.254" layer="51" rot="R180"/>
 </element>
-<element name="R28" library="firefly" package="R0201" value="15" x="21.209" y="25.146" rot="R180">
+<element name="R28" library="firefly" package="R0201" value="15" x="21.209" y="25.146" smashed="yes" rot="R180">
 <attribute name="MANUFACTURER" value="Panasonic Electronic Components" x="21.209" y="25.146" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="ORDERING-CODE" value="ERJ-1GEF15R0C" x="21.209" y="25.146" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="VARIANTS" value="usb-data" x="21.209" y="25.146" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="21.844" y="24.511" size="1.27" layer="25" rot="R180"/>
+<attribute name="VALUE" x="21.844" y="27.051" size="1.27" layer="27" rot="R180"/>
+<attribute name="NAME" x="21.509" y="24.946" size="0.254" layer="51" rot="R180"/>
 </element>
-<element name="USBD-" library="firefly" package="TARGET-PIN-1MM" value="TARGET-PIN" x="24.765" y="26.543" rot="R180"/>
-<element name="USBD+" library="firefly" package="TARGET-PIN-1MM" value="TARGET-PIN" x="21.463" y="26.543" rot="R180"/>
-<element name="X4" library="firefly" package="ABM11" value="48MHz" x="15.621" y="12.954" rot="R90">
+<element name="USBD-" library="firefly" package="TARGET-PIN-1MM" value="TARGET-PIN" x="24.765" y="26.543" smashed="yes" rot="R180">
+<attribute name="NAME" x="24.965" y="25.843" size="0.5" layer="25" rot="R180"/>
+<attribute name="NAME" x="25.165" y="27.343" size="0.254" layer="51" rot="R180"/>
+</element>
+<element name="USBD+" library="firefly" package="TARGET-PIN-1MM" value="TARGET-PIN" x="21.463" y="26.543" smashed="yes" rot="R180">
+<attribute name="NAME" x="21.663" y="25.843" size="0.5" layer="25" rot="R180"/>
+<attribute name="NAME" x="21.863" y="27.343" size="0.254" layer="51" rot="R180"/>
+</element>
+<element name="X4" library="firefly" package="ABM11" value="48MHz" x="15.621" y="12.954" smashed="yes" rot="R90">
 <attribute name="MANUFACTURER" value="Abracon Corporation" x="15.621" y="12.954" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="ORDERING-CODE" value="ABM11-48.000MHZ-D2X-T3" x="15.621" y="12.954" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VARIANTS" value="usb-data" x="15.621" y="12.954" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="15.021" y="12.754" size="0.2" layer="51" rot="R90"/>
 </element>
-<element name="C22" library="firefly" package="C0201" value="18pF" x="14.097" y="12.954" rot="R90">
+<element name="C22" library="firefly" package="C0201" value="18pF" x="14.097" y="12.954" smashed="yes" rot="R90">
 <attribute name="MANUFACTURER" value="Johanson Technology Inc" x="14.097" y="12.954" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="ORDERING-CODE" value="250R05L180GV4T" x="14.097" y="12.954" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VARIANTS" value="usb-data" x="14.097" y="12.954" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="13.897" y="12.654" size="0.254" layer="51" rot="R90"/>
 </element>
-<element name="C48" library="firefly" package="C0201" value="18pF" x="17.145" y="13.081" rot="R270">
+<element name="C48" library="firefly" package="C0201" value="18pF" x="17.145" y="13.081" smashed="yes" rot="R270">
 <attribute name="MANUFACTURER" value="Johanson Technology Inc" x="17.145" y="13.081" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="ORDERING-CODE" value="250R05L180GV4T" x="17.145" y="13.081" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VARIANTS" value="usb-data" x="17.145" y="13.081" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="17.345" y="13.381" size="0.254" layer="51" rot="R270"/>
 </element>
-<element name="R25" library="firefly" package="R0201" value="0" x="22.86" y="21.844" rot="R180">
+<element name="R25" library="firefly" package="R0201" value="0" x="22.86" y="21.844" smashed="yes" rot="R180">
 <attribute name="MANUFACTURER" value="Panasonic Electronic Components" x="22.86" y="21.844" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="ORDERING-CODE" value="ERJ-1GE0R00C" x="22.86" y="21.844" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="23.495" y="21.209" size="1.27" layer="25" rot="R180"/>
+<attribute name="VALUE" x="23.495" y="23.749" size="1.27" layer="27" rot="R180"/>
+<attribute name="NAME" x="23.16" y="21.644" size="0.254" layer="51" rot="R180"/>
 </element>
-<element name="R14" library="firefly" package="R0201" value="0 (DNS)" x="25.527" y="16.891" rot="R90">
+<element name="R14" library="firefly" package="R0201" value="0 (DNS)" x="25.527" y="16.891" smashed="yes" rot="R90">
 <attribute name="VARIANTS" value="!efficient-power" x="25.527" y="16.891" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MANUFACTURER" value="Panasonic Electronic Components" x="25.527" y="16.891" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="ORDERING-CODE" value="ERJ-1GE0R00C" x="25.527" y="16.891" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="24.892" y="16.256" size="1.27" layer="25" rot="R90"/>
+<attribute name="VALUE" x="27.432" y="16.256" size="1.27" layer="27" rot="R90"/>
+<attribute name="NAME" x="26.089" y="16.591" size="0.254" layer="51" rot="R90"/>
 </element>
 <element name="B+" library="firefly" package="WP-28AWG" value="TARGET-PINWP-28AWG" x="26.543" y="28.575" smashed="yes"/>
 <element name="B-" library="firefly" package="WP-28AWG" value="TARGET-PINWP-28AWG" x="25.019" y="29.718" smashed="yes"/>
-<element name="C51" library="firefly" package="C1206" value="100uF" x="29.746" y="23" rot="MR270">
+<element name="C51" library="firefly" package="C1206" value="100uF" x="29.746" y="23" smashed="yes" rot="MR270">
 <attribute name="ORDERING-CODE" value="C1206C107M9PACTU" x="29.746" y="23" size="1.778" layer="28" rot="MR270" display="off"/>
 <attribute name="MANUFACTURER" value="Kemet" x="29.746" y="23" size="1.778" layer="28" rot="MR270" display="off"/>
+<attribute name="NAME" x="28.746" y="23.6" size="0.5" layer="52" rot="MR270"/>
 </element>
-<element name="R31" library="firefly" package="R0201" value="100k" x="27.559" y="24.511" rot="R270">
+<element name="R31" library="firefly" package="R0201" value="100k" x="27.559" y="24.511" smashed="yes" rot="R270">
 <attribute name="VARIANTS" value="efficient-power" x="27.559" y="24.511" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MANUFACTURER" value="Yageo" x="27.559" y="24.511" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="ORDERING-CODE" value="RC0201FR-07100KL" x="27.559" y="24.511" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="28.194" y="25.146" size="1.27" layer="25" rot="R270"/>
+<attribute name="VALUE" x="25.654" y="25.146" size="1.27" layer="27" rot="R270"/>
+<attribute name="NAME" x="27.759" y="24.811" size="0.254" layer="51" rot="R270"/>
 </element>
-<element name="R32" library="firefly" package="R0201" value="100k" x="25.273" y="24.003" rot="R180">
+<element name="R32" library="firefly" package="R0201" value="100k" x="25.273" y="24.003" smashed="yes" rot="R180">
 <attribute name="VARIANTS" value="efficient-power" x="25.273" y="24.003" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MANUFACTURER" value="Yageo" x="25.273" y="24.003" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="ORDERING-CODE" value="RC0201FR-07100KL" x="25.273" y="24.003" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="25.908" y="23.368" size="1.27" layer="25" rot="R180"/>
+<attribute name="VALUE" x="25.908" y="25.908" size="1.27" layer="27" rot="R180"/>
+<attribute name="NAME" x="25.573" y="23.803" size="0.254" layer="51" rot="R180"/>
 </element>
-<element name="U6" library="firefly" package="SOT963" value="MOSFET-N+PSOT963" x="28.575" y="26.035">
+<element name="U6" library="firefly" package="SOT963" value="MOSFET-N+PSOT963" x="28.575" y="26.035" smashed="yes">
 <attribute name="MANUFACTURER" value="Diodes Inc" x="28.575" y="26.035" size="1.778" layer="27" display="off"/>
 <attribute name="ORDERING-CODE" value="DMC2990UDJ-7" x="28.575" y="26.035" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="28.275" y="25.835" size="0.2" layer="51"/>
 </element>
-<element name="R33" library="firefly" package="R0201" value="100k" x="29.591" y="25.908" rot="R90">
+<element name="R33" library="firefly" package="R0201" value="100k" x="29.591" y="25.908" smashed="yes" rot="R90">
 <attribute name="VARIANTS" value="efficient-power" x="29.591" y="25.908" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MANUFACTURER" value="Yageo" x="29.591" y="25.908" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="ORDERING-CODE" value="RC0201FR-07100KL" x="29.591" y="25.908" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="28.956" y="25.273" size="1.27" layer="25" rot="R90"/>
+<attribute name="VALUE" x="31.496" y="25.273" size="1.27" layer="27" rot="R90"/>
+<attribute name="NAME" x="30.026" y="25.608" size="0.254" layer="51" rot="R90"/>
 </element>
-<element name="U5" library="firefly" package="WL-CSP-25" value="AS3661WL-CSP-25" x="4.7" y="16.9">
+<element name="U5" library="firefly" package="WL-CSP-25" value="AS3661WL-CSP-25" x="4.7" y="16.9" smashed="yes">
 <attribute name="MANUFACTURER" value="Texas Instruments" x="4.7" y="16.9" size="1.778" layer="27" display="off"/>
 <attribute name="ORDERING-CODE" value="LP5523TMX/NOPB" x="4.7" y="16.9" size="1.778" layer="27" display="off"/>
 <attribute name="VARIANTS" value="color" x="4.7" y="16.9" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="4.2" y="17.6" size="0.254" layer="51"/>
 </element>
-<element name="C50" library="firefly" package="C0201" value="1uF" x="6.35" y="16.51" rot="R270">
+<element name="C50" library="firefly" package="C0201" value="1uF" x="6.35" y="16.51" smashed="yes" rot="R270">
 <attribute name="VARIANTS" value="color" x="6.35" y="16.51" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MANUFACTURER" value="TDK Corporation" x="6.35" y="16.51" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="ORDERING-CODE" value="C0603X5R0J105M030BC" x="6.35" y="16.51" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="6.55" y="16.81" size="0.254" layer="51" rot="R270"/>
 </element>
-<element name="C52" library="firefly" package="C0201" value="1uF" x="4.572" y="18.796" rot="R180">
+<element name="C52" library="firefly" package="C0201" value="1uF" x="4.572" y="18.796" smashed="yes" rot="R180">
 <attribute name="VARIANTS" value="color" x="4.572" y="18.796" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MANUFACTURER" value="TDK Corporation" x="4.572" y="18.796" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="ORDERING-CODE" value="C0603X5R0J105M030BC" x="4.572" y="18.796" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="4.872" y="18.596" size="0.254" layer="51" rot="R180"/>
 </element>
-<element name="C53" library="firefly" package="C0201" value="470nF" x="6.35" y="18.161" rot="R90">
+<element name="C53" library="firefly" package="C0201" value="470nF" x="6.35" y="18.161" smashed="yes" rot="R90">
 <attribute name="ORDERING-CODE" value="C0603X5R0J474M" x="6.35" y="18.161" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MANUFACTURER" value="TDK Corporation" x="6.35" y="18.161" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VARIANTS" value="color" x="6.35" y="18.161" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="6.785" y="17.861" size="0.254" layer="51" rot="R90"/>
 </element>
-<element name="C54" library="firefly" package="C0201" value="470nF" x="5.461" y="18.796" rot="R180">
+<element name="C54" library="firefly" package="C0201" value="470nF" x="5.461" y="18.796" smashed="yes" rot="R180">
 <attribute name="ORDERING-CODE" value="C0603X5R0J474M" x="5.461" y="18.796" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MANUFACTURER" value="TDK Corporation" x="5.461" y="18.796" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="VARIANTS" value="color" x="5.461" y="18.796" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="5.761" y="18.596" size="0.254" layer="51" rot="R180"/>
 </element>
-<element name="U16" library="firefly" package="WLBGA-8" value="MEMORY-SPIWLBGA-8" x="5.588" y="21.717" rot="R180">
+<element name="U16" library="firefly" package="WLBGA-8" value="MEMORY-SPIWLBGA-8" x="5.588" y="21.717" smashed="yes" rot="R180">
 <attribute name="ORDERING-CODE" value="W25Q16DWBYIG" x="5.588" y="21.717" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MANUFACTURER" value="Winbond" x="5.588" y="21.717" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="DISTRIBUTOR" value="Arrow" x="5.588" y="21.717" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="5.888" y="20.717" size="0.254" layer="51" rot="R180"/>
 </element>
-<element name="C55" library="firefly" package="C0201" value="100nF" x="4.191" y="22.098" rot="R90">
+<element name="C55" library="firefly" package="C0201" value="100nF" x="4.191" y="22.098" smashed="yes" rot="R90">
 <attribute name="MANUFACTURER" value="Murata" x="4.191" y="22.098" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="ORDERING-CODE" value="GRM033R60J104KE19D" x="4.191" y="22.098" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="3.991" y="21.798" size="0.254" layer="51" rot="R90"/>
 </element>
-<element name="L4" library="firefly" package="L0201" value="Ferrite Bead" x="19.431" y="28.702" rot="R270">
+<element name="L4" library="firefly" package="L0201" value="Ferrite Bead" x="19.431" y="28.702" smashed="yes" rot="R270">
 <attribute name="VARIANTS" value="usb-power" x="19.431" y="28.702" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MANUFACTURER" value="TDK Corporation" x="19.431" y="28.702" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="ORDERING-CODE" value="MPZ0603S220C" x="19.431" y="28.702" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="19.631" y="29.002" size="0.254" layer="51" rot="R270"/>
 </element>
-<element name="C9" library="firefly" package="C0201" value="100nF" x="27.559" y="25.527" rot="R90">
+<element name="C9" library="firefly" package="C0201" value="100nF" x="27.559" y="25.527" smashed="yes" rot="R90">
 <attribute name="MANUFACTURER" value="Murata" x="29.359" y="25.427" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="ORDERING-CODE" value="GRM033R60J104KE19D" x="29.359" y="25.427" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="27.359" y="25.227" size="0.254" layer="51" rot="R90"/>
 </element>
-<element name="U8" library="firefly" package="WLCSP5" value="USB-ESD3WLCSP5" x="22.733" y="25.019" rot="R90">
+<element name="U8" library="firefly" package="WLCSP5" value="USB-ESD3WLCSP5" x="22.733" y="25.019" smashed="yes" rot="R90">
 <attribute name="ORDERING-CODE" value="IP4059CX5/LF,135" x="22.733" y="25.019" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MANUFACTURER" value="NXP Semiconductors" x="22.733" y="25.019" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="22.633" y="24.819" size="0.254" layer="51" rot="R90"/>
 </element>
-<element name="R2" library="firefly" package="R0201" value="100k" x="25.654" y="24.638">
+<element name="R2" library="firefly" package="R0201" value="100k" x="25.654" y="24.638" smashed="yes">
 <attribute name="VARIANTS" value="usb-charging" x="25.654" y="24.638" size="1.778" layer="27" display="off"/>
 <attribute name="MANUFACTURER" value="Yageo" x="25.654" y="24.638" size="1.778" layer="27" display="off"/>
 <attribute name="ORDERING-CODE" value="RC0201FR-07100KL" x="25.654" y="24.638" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="25.019" y="25.273" size="1.27" layer="25"/>
+<attribute name="VALUE" x="25.019" y="22.733" size="1.27" layer="27"/>
+<attribute name="NAME" x="25.354" y="24.838" size="0.254" layer="51"/>
 </element>
-<element name="U10" library="firefly" package="UDFN6" value="STM6519" x="26.289" y="25.781">
+<element name="U10" library="firefly" package="UDFN6" value="STM6519" x="26.289" y="25.781" smashed="yes">
 <attribute name="ORDERING-CODE" value="STM6519AHARUB6F" x="26.289" y="25.781" size="1.778" layer="27" display="off"/>
 <attribute name="MANUFACTURER" value="STMicroelectronics" x="26.289" y="25.781" size="1.778" layer="27" display="off"/>
 <attribute name="VARIANTS" value="failsafe" x="26.289" y="25.781" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="25.989" y="25.581" size="0.254" layer="51"/>
 </element>
-<element name="R4" library="firefly" package="R0201" value="1M" x="22.86" y="17.526" rot="R270">
+<element name="R4" library="firefly" package="R0201" value="1M" x="22.86" y="17.526" smashed="yes" rot="R270">
 <attribute name="VARIANTS" value="efficient-power" x="22.86" y="17.526" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MANUFACTURER" value="Panasonic Electronic Components" x="22.86" y="17.526" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="ORDERING-CODE" value="ERJ-1GEJ105C" x="22.86" y="17.526" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="23.495" y="18.161" size="1.27" layer="25" rot="R270"/>
+<attribute name="VALUE" x="20.955" y="18.161" size="1.27" layer="27" rot="R270"/>
+<attribute name="NAME" x="23.06" y="17.826" size="0.254" layer="51" rot="R270"/>
 </element>
-<element name="U18" library="firefly" package="XQFN12" value="NTB0104" x="7.874" y="21.971">
+<element name="U18" library="firefly" package="XQFN12" value="NTB0104" x="7.874" y="21.971" smashed="yes">
 <attribute name="ORDERING-CODE" value="NTB0104GU12,115" x="7.874" y="21.971" size="1.778" layer="27" display="off"/>
 <attribute name="MANUFACTURER" value="NXP Semiconductors" x="7.874" y="21.971" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="7.474" y="22.671" size="0.254" layer="51"/>
 </element>
-<element name="C11" library="firefly" package="C0201" value="1uF" x="5.588" y="23.876" rot="R90">
+<element name="C11" library="firefly" package="C0201" value="1uF" x="5.588" y="23.876" smashed="yes" rot="R90">
 <attribute name="MANUFACTURER" value="TDK Corporation" x="7.788" y="23.876" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="ORDERING-CODE" value="C0603X5R0J105M030BC" x="7.788" y="23.876" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="6.023" y="23.576" size="0.254" layer="51" rot="R90"/>
 </element>
-<element name="C36" library="firefly" package="C0201" value="1uF" x="4.064" y="23.876" rot="R90">
+<element name="C36" library="firefly" package="C0201" value="1uF" x="4.064" y="23.876" smashed="yes" rot="R90">
 <attribute name="MANUFACTURER" value="TDK Corporation" x="6.264" y="23.876" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="ORDERING-CODE" value="C0603X5R0J105M030BC" x="6.264" y="23.876" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="3.864" y="23.576" size="0.254" layer="51" rot="R90"/>
 </element>
-<element name="U17" library="firefly" package="CB-4-3" value="ADP151" x="4.826" y="23.876" rot="R180">
+<element name="U17" library="firefly" package="CB-4-3" value="ADP151" x="4.826" y="23.876" smashed="yes" rot="R180">
 <attribute name="ORDERING-CODE" value="ADP151ACBZ-1.8-R7" x="4.826" y="23.876" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MANUFACTURER" value="Analog Devices" x="4.826" y="23.876" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="5.126" y="24.176" size="0.254" layer="51" rot="R180"/>
 </element>
-<element name="J2" library="firefly" package="M40-3100345R" value="CON-6SOCKET" x="10.414" y="4.826" rot="MR180">
+<element name="J2" library="firefly" package="M40-3100345R" value="CON-6SOCKET" x="10.414" y="4.826" smashed="yes" rot="MR180">
 <attribute name="MANUFACTURER" value="Harwin Inc" x="10.414" y="4.826" size="1.778" layer="28" rot="MR180" display="off"/>
 <attribute name="ORDERING-CODE" value="M40-3100345R" x="10.414" y="4.826" size="1.778" layer="28" rot="MR180" display="off"/>
 <attribute name="VARIANTS" value="expansion" x="10.414" y="4.826" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="NAME" x="10.068" y="2.756" size="0.4064" layer="52" rot="MR180"/>
 </element>
-<element name="USBID" library="firefly" package="TARGET-PIN-1MM" value="TARGET-PIN" x="22.987" y="26.543" rot="R180"/>
-<element name="D1" library="firefly" package="SMLP36" value="LED-RGB" x="2" y="14.4" rot="R280">
+<element name="USBID" library="firefly" package="TARGET-PIN-1MM" value="TARGET-PIN" x="22.987" y="26.543" smashed="yes" rot="R180">
+<attribute name="NAME" x="23.187" y="25.843" size="0.5" layer="25" rot="R180"/>
+<attribute name="NAME" x="23.387" y="27.343" size="0.254" layer="51" rot="R180"/>
+</element>
+<element name="D1" library="firefly" package="SMLP36" value="LED-RGB" x="2" y="14.4" smashed="yes" rot="R280">
 <attribute name="ORDERING-CODE" value="SMLP36RGB2W3" x="2" y="14.4" size="1.778" layer="27" rot="R280" display="off"/>
 <attribute name="MANUFACTURER" value="Rohm Semiconductor" x="2" y="14.4" size="1.778" layer="27" rot="R280" display="off"/>
 <attribute name="VARIANTS" value="color" x="2" y="14.4" size="1.778" layer="27" rot="R280" display="off"/>
+<attribute name="NAME" x="2.738925" y="14.725728125" size="0.254" layer="51" rot="R280"/>
 </element>
-<element name="D3" library="firefly" package="SMLP36" value="LED-RGB" x="2" y="19.6" rot="R260">
+<element name="D3" library="firefly" package="SMLP36" value="LED-RGB" x="2" y="19.6" smashed="yes" rot="R260">
 <attribute name="ORDERING-CODE" value="SMLP36RGB2W3" x="2" y="19.6" size="1.778" layer="27" rot="R260" display="off"/>
 <attribute name="MANUFACTURER" value="Rohm Semiconductor" x="2" y="19.6" size="1.778" layer="27" rot="R260" display="off"/>
 <attribute name="VARIANTS" value="color" x="2" y="19.6" size="1.778" layer="27" rot="R260" display="off"/>
+<attribute name="NAME" x="2.728034375" y="19.764" size="0.254" layer="51" rot="R260"/>
 </element>
-<element name="D2" library="firefly" package="SMLP36" value="LED-RGB" x="1.8" y="17" rot="R270">
+<element name="D2" library="firefly" package="SMLP36" value="LED-RGB" x="1.8" y="17" smashed="yes" rot="R270">
 <attribute name="ORDERING-CODE" value="SMLP36RGB2W3" x="1.8" y="17" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MANUFACTURER" value="Rohm Semiconductor" x="1.8" y="17" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VARIANTS" value="color" x="1.8" y="17" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="2.535" y="17.319" size="0.254" layer="51" rot="R270"/>
 </element>
-<element name="R7" library="firefly" package="R0201" value="100k" x="4.064" y="21.082" rot="R270">
+<element name="R7" library="firefly" package="R0201" value="100k" x="4.064" y="21.082" smashed="yes" rot="R270">
 <attribute name="VARIANTS" value="efficient-power" x="4.064" y="21.082" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MANUFACTURER" value="Yageo" x="4.064" y="21.082" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="ORDERING-CODE" value="RC0201FR-07100KL" x="4.064" y="21.082" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="4.699" y="21.717" size="1.27" layer="25" rot="R270"/>
+<attribute name="VALUE" x="2.159" y="21.717" size="1.27" layer="27" rot="R270"/>
+<attribute name="NAME" x="4.264" y="21.382" size="0.254" layer="51" rot="R270"/>
 </element>
 </elements>
 <signals>

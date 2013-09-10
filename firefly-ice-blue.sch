@@ -4430,16 +4430,12 @@ Source: WE-TPC 744053220.pdf</description>
 <wire x1="4.5" y1="-4.5" x2="-4.5" y2="-4.5" width="0.2032" layer="51"/>
 <wire x1="-4.5" y1="-4.5" x2="-4.5" y2="4.3" width="0.2032" layer="51"/>
 <wire x1="-4.5" y1="4.3" x2="-4.5" y2="4.5" width="0.2032" layer="51"/>
-<wire x1="-4.3" y1="4.5" x2="-4.5" y2="4.3" width="0.2032" layer="51"/>
-<wire x1="-4.5" y1="4.5" x2="-4.0516" y2="4.5" width="0.2032" layer="21"/>
-<wire x1="-4.5" y1="4.5" x2="-4.5" y2="4.0516" width="0.2032" layer="21"/>
 <wire x1="4.5" y1="4.5" x2="4.0516" y2="4.5" width="0.2032" layer="21"/>
 <wire x1="4.5" y1="4.5" x2="4.5" y2="4.0516" width="0.2032" layer="21"/>
 <wire x1="4.5" y1="-4.5" x2="4.0516" y2="-4.5" width="0.2032" layer="21"/>
 <wire x1="4.5" y1="-4.5" x2="4.5" y2="-4.0516" width="0.2032" layer="21"/>
 <wire x1="-4.5" y1="-4.5" x2="-4.0516" y2="-4.5" width="0.2032" layer="21"/>
 <wire x1="-4.5" y1="-4.5" x2="-4.5" y2="-4.0516" width="0.2032" layer="21"/>
-<wire x1="-4.0516" y1="4.5" x2="-4.5" y2="4.0516" width="0.2032" layer="21"/>
 <rectangle x1="-4.935" y1="3.54" x2="-3.965" y2="3.96" layer="29"/>
 <rectangle x1="-4.825" y1="3.65" x2="-4.075" y2="3.85" layer="31"/>
 <rectangle x1="-4.935" y1="3.04" x2="-3.965" y2="3.46" layer="29"/>
@@ -4638,8 +4634,8 @@ Source: WE-TPC 744053220.pdf</description>
 <smd name="63" x="-3.25" y="4.45" dx="0.3" dy="0.85" layer="1" stop="no" cream="no"/>
 <smd name="64" x="-3.75" y="4.45" dx="0.3" dy="0.85" layer="1" stop="no" cream="no"/>
 <smd name="65" x="0" y="0" dx="7.2" dy="7.2" layer="1" stop="no" cream="no"/>
-<text x="-4.5" y="5.179" size="1.27" layer="25">&gt;NAME</text>
-<text x="-4.5" y="-5.179" size="1.27" layer="27" align="top-left">&gt;VALUE</text>
+<text x="-3.6" y="3.879" size="0.254" layer="51">&gt;NAME</text>
+<circle x="-4" y="4" radius="0.14141875" width="0.127" layer="51"/>
 </package>
 <package name="WL-CSP-25">
 <smd name="C3" x="0" y="0" dx="0.225" dy="0.225" layer="1" roundness="100" stop="no"/>
@@ -4849,7 +4845,7 @@ Source: WE-TPC 744053220.pdf</description>
 <wire x1="0.8" y1="-0.5" x2="0.8" y2="0.5" width="0.127" layer="51"/>
 <wire x1="0.8" y1="0.5" x2="-0.8" y2="0.5" width="0.127" layer="51"/>
 <wire x1="-0.8" y1="0.5" x2="-0.8" y2="-0.5" width="0.127" layer="51"/>
-<text x="-0.7" y="0.1" size="0.254" layer="25">&gt;Name</text>
+<text x="-0.6" y="0.179" size="0.254" layer="51">&gt;NAME</text>
 </package>
 <package name="D0603">
 <wire x1="-0.1" y1="0" x2="0.1" y2="-0.2" width="0.05" layer="51"/>
@@ -4965,7 +4961,7 @@ Source: WE-TPC 744053220.pdf</description>
 <wire x1="-4.1" y1="4.05" x2="4.1" y2="4.05" width="0.1" layer="51"/>
 <wire x1="-4.1" y1="-0.85" x2="-4.1" y2="4.05" width="0.1" layer="51"/>
 <wire x1="4.1" y1="-0.85" x2="4.1" y2="4.05" width="0.1" layer="51"/>
-<text x="-1" y="1" size="1.27" layer="25">&gt;Name</text>
+<text x="-1" y="1" size="1.27" layer="51">&gt;Name</text>
 <text x="-4" y="2.3" size="0.4" layer="51">PTH</text>
 <text x="3" y="2.3" size="0.4" layer="51">PTH</text>
 <wire x1="-3.61" y1="1.1" x2="-3.61" y2="1.6" width="1" layer="2"/>

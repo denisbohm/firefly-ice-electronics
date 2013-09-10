@@ -2,9 +2,9 @@ Contact: Denis Bohm
 denis@fireflydesign.com
 (650) 814-1714
 
-July 12, 2013
+Sep 10, 2013
 Customer: Firefly Design LLC
-Board: Firefly Ice Blue 1.2.0
+Board: Firefly Ice Blue 1.3.1
 Number of Layers: 4
 Dimensions: 34mm x 34mm
 PCB Thickness: 0.031"
@@ -14,11 +14,23 @@ ENIG
 RoHS Compliant
 Lead Free Processing
 
+Plated Micro Vias In Pad:
+There are micro-vias in pads.  They should be filled flat and plated over.
+
 Plated Slots:
 There are 2 slots for mounting the USB connector (J1).  These slots should
 be plated through.  The finished slot size is 0.6 mm x 1.1 mm with a radius
 of 0.3 mm.  Please see page 3 of the ZX62WD1-B-5PC specification:
 http://media.digikey.com/PDF/Data%20Sheets/Hirose%20PDFs/ZX62WD1-B-5PC_Specs.pdf
+
+Changes to 1.3.1 from revision 1.3.0:
+1) Added top and bottom documentation layers to top and bottom silk.
+
+Changes to 1.3.0 from revision 1.2.0:
+1) Fixed issue with inner layers connecting with plating for mounting holes of
+USB connector J1.
+2) Fixed MOSI/MISO reversal to memory chip.
+3) Added CS pullup for memory chip to its power rail.
 
 Changes to 1.2.0 from revision 1.1.0:
 1) USB connector J1 has changed.  The new connector requires plated through
