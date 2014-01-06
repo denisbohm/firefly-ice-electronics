@@ -6,9 +6,9 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.127" unitdist="mm" unit="mil" style="lines" multiple="10" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.127" unitdist="mm" unit="mm" style="lines" multiple="10" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="11" fill="1" visible="no" active="yes"/>
 <layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
 <layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
@@ -23,11 +23,11 @@
 <layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
 <layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
 <layer number="15" name="Route15" color="13" fill="1" visible="no" active="yes"/>
-<layer number="16" name="Bottom" color="3" fill="1" visible="no" active="yes"/>
-<layer number="17" name="Pads" color="2" fill="1" visible="no" active="yes"/>
-<layer number="18" name="Vias" color="2" fill="1" visible="no" active="yes"/>
+<layer number="16" name="Bottom" color="3" fill="1" visible="yes" active="yes"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="yes"/>
-<layer number="20" name="Dimension" color="15" fill="1" visible="no" active="yes"/>
+<layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="7" fill="1" visible="no" active="yes"/>
 <layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
@@ -90,7 +90,7 @@
 <layer number="131" name="tAdjust" color="7" fill="1" visible="no" active="yes"/>
 <layer number="132" name="bAdjust" color="7" fill="1" visible="no" active="yes"/>
 <layer number="151" name="_tDocu" color="7" fill="1" visible="no" active="yes"/>
-<layer number="152" name="_bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="152" name="_bDocu" color="7" fill="1" visible="no" active="yes"/>
 <layer number="200" name="200bmp" color="7" fill="1" visible="no" active="yes"/>
 <layer number="201" name="201bmp" color="7" fill="1" visible="no" active="yes"/>
 <layer number="202" name="202bmp" color="7" fill="1" visible="no" active="yes"/>
@@ -108,7 +108,7 @@
 </layers>
 <board>
 <plain>
-<text x="11.757" y="4.413" size="1" layer="121">Ice Blue 1.3</text>
+<text x="11.757" y="4.413" size="1" layer="121">Ice Blue 1.4</text>
 <text x="7.203" y="5.905" size="1" layer="121">2013 Firefly Design LLC</text>
 <text x="25.899" y="29.396" size="1.778" layer="121">+</text>
 <text x="24.343" y="30.285" size="1.778" layer="121">-</text>
@@ -124,7 +124,7 @@
 <circle x="5.969" y="6.449" radius="0.5" width="0.08" layer="121"/>
 <text x="10.541" y="3.556" size="0.254" layer="51">No Floating Metal in this area.</text>
 <text x="27.94" y="7.239" size="1" layer="122" rot="MR0">2013 Firefly Design LLC</text>
-<text x="23.368" y="5.715" size="1" layer="122" rot="MR0">Ice Blue 1.3</text>
+<text x="23.368" y="5.715" size="1" layer="122" rot="MR0">Ice Blue 1.4</text>
 <text x="29.591" y="7.493" size="0.8" layer="122" rot="MR0">c</text>
 <circle x="29.28" y="7.782" radius="0.5" width="0.08" layer="122"/>
 <text x="16.256" y="3.175" size="0.254" layer="52">No Floating Metal in this area.</text>
@@ -1272,22 +1272,6 @@ Source: http://www.vishay.com/docs/45017/vjsoldfo.pdf</description>
 <smd name="TP" x="0" y="0" dx="1.3" dy="0.7" layer="1" rot="R90"/>
 <text x="-0.4" y="0.6" size="0.2" layer="51">&gt;Name</text>
 </package>
-<package name="MO-229">
-<circle x="-0.7" y="0.7" radius="0.1" width="0.127" layer="51"/>
-<wire x1="1" y1="1" x2="-1" y2="1" width="0.127" layer="51"/>
-<wire x1="-1" y1="1" x2="-1" y2="-1" width="0.127" layer="51"/>
-<wire x1="-1" y1="-1" x2="1" y2="-1" width="0.127" layer="51"/>
-<wire x1="1" y1="-1" x2="1" y2="1" width="0.127" layer="51"/>
-<smd name="1" x="-0.915" y="0.65" dx="0.42" dy="0.42" layer="1" rot="R90"/>
-<smd name="2" x="-0.915" y="0" dx="0.42" dy="0.42" layer="1" rot="R90"/>
-<smd name="3" x="-0.915" y="-0.65" dx="0.42" dy="0.42" layer="1" rot="R90"/>
-<smd name="4" x="0.915" y="-0.65" dx="0.42" dy="0.42" layer="1" rot="R270"/>
-<smd name="5" x="0.915" y="0" dx="0.42" dy="0.42" layer="1" rot="R270"/>
-<smd name="6" x="0.915" y="0.65" dx="0.42" dy="0.42" layer="1" rot="R270"/>
-<smd name="C" x="0" y="0.5" dx="0.8" dy="1" layer="1" rot="R270"/>
-<smd name="D" x="0" y="-0.5" dx="0.8" dy="1" layer="1" rot="R270"/>
-<text x="-0.3" y="0.6" size="0.2" layer="51">&gt;Name</text>
-</package>
 <package name="SOD-123F">
 <wire x1="-1.8" y1="-0.8" x2="-1.8" y2="0.8" width="0.127" layer="51"/>
 <wire x1="-1.8" y1="0.8" x2="1.8" y2="0.8" width="0.127" layer="51"/>
@@ -1744,6 +1728,22 @@ Source: http://www.vishay.com/docs/45017/vjsoldfo.pdf</description>
 <wire x1="-0.8" y1="0.5" x2="-0.8" y2="-0.5" width="0.127" layer="51"/>
 <text x="-0.6" y="0.179" size="0.254" layer="51">&gt;NAME</text>
 </package>
+<package name="MO-229">
+<circle x="-0.7" y="0.7" radius="0.1" width="0.127" layer="51"/>
+<wire x1="1" y1="1" x2="-1" y2="1" width="0.127" layer="51"/>
+<wire x1="-1" y1="1" x2="-1" y2="-1" width="0.127" layer="51"/>
+<wire x1="-1" y1="-1" x2="1" y2="-1" width="0.127" layer="51"/>
+<wire x1="1" y1="-1" x2="1" y2="1" width="0.127" layer="51"/>
+<smd name="1" x="-0.915" y="0.65" dx="0.42" dy="0.42" layer="1" rot="R90"/>
+<smd name="2" x="-0.915" y="0" dx="0.42" dy="0.42" layer="1" rot="R90"/>
+<smd name="3" x="-0.915" y="-0.65" dx="0.42" dy="0.42" layer="1" rot="R90"/>
+<smd name="4" x="0.915" y="-0.65" dx="0.42" dy="0.42" layer="1" rot="R270"/>
+<smd name="5" x="0.915" y="0" dx="0.42" dy="0.42" layer="1" rot="R270"/>
+<smd name="6" x="0.915" y="0.65" dx="0.42" dy="0.42" layer="1" rot="R270"/>
+<smd name="C" x="0" y="0.5" dx="0.8" dy="1" layer="1" rot="R270"/>
+<smd name="D" x="0" y="-0.5" dx="0.8" dy="1" layer="1" rot="R270"/>
+<text x="-0.3" y="0.6" size="0.2" layer="51">&gt;Name</text>
+</package>
 </packages>
 </library>
 </libraries>
@@ -1982,9 +1982,9 @@ This Sunstone Circuits 4 Layer .DRU has been set to cover our minimum requiremen
 <attribute name="NAME" x="15.059" y="16.048" size="0.254" layer="51" rot="R270"/>
 </element>
 <element name="X1" library="firefly" package="9HT10" value="32kHz" x="8.89" y="17.653" smashed="yes" rot="R270">
-<attribute name="MANUFACTURER" value="TXC CORPORATION" x="8.89" y="17.653" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MANUFACTURER" value="AVX Corp/Kyocera Corp" x="8.89" y="17.653" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="PART" value="ABS06-32.768KHZ-T" x="8.89" y="17.653" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="ORDERING-CODE" value="9HT10-32.768KEZF-T" x="8.89" y="17.653" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="ORDERING-CODE" value="ST3215SB32768B0HPWB3" x="8.89" y="17.653" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="NAME" x="9.29" y="18.653" size="0.2" layer="51" rot="R270"/>
 </element>
 <element name="C32" library="firefly" package="C0201" value="22pF" x="7.493" y="16.891" smashed="yes" rot="R90">
@@ -2030,7 +2030,7 @@ This Sunstone Circuits 4 Layer .DRU has been set to cover our minimum requiremen
 <element name="C39" library="firefly" package="C0201" value="1nF" x="28.321" y="13.716" smashed="yes">
 <attribute name="MANUFACTURER" value="Murata" x="28.321" y="13.716" size="1.778" layer="27" display="off"/>
 <attribute name="PART" value="GRM033R71E102KA01D" x="28.321" y="13.716" size="1.778" layer="27" display="off"/>
-<attribute name="ORDERING-CODE" value="C0603X7R1E102K" x="28.321" y="13.716" size="1.778" layer="27" display="off"/>
+<attribute name="ORDERING-CODE" value="C0603X7R1E102K030BA" x="28.321" y="13.716" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="28.021" y="13.916" size="0.254" layer="51"/>
 </element>
 <element name="C40" library="firefly" package="C0201" value="33nF" x="25.4" y="14.859" smashed="yes" rot="R90">
@@ -2060,7 +2060,7 @@ This Sunstone Circuits 4 Layer .DRU has been set to cover our minimum requiremen
 <element name="C44" library="firefly" package="C0201" value="2.2nF" x="23.876" y="7.874" smashed="yes" rot="R180">
 <attribute name="MANUFACTURER" value="TDK" x="23.876" y="7.874" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="PART" value="C0603X5R1E222K" x="23.876" y="7.874" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="ORDERING-CODE" value="C0603X5R1E222K" x="23.876" y="7.874" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="ORDERING-CODE" value="C0603X5R1E222K030BA" x="23.876" y="7.874" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="NAME" x="24.176" y="7.674" size="0.254" layer="51" rot="R180"/>
 </element>
 <element name="C45" library="firefly" package="C0201" value="DNS" x="23.876" y="7.239" smashed="yes" rot="R180">
@@ -2070,13 +2070,13 @@ This Sunstone Circuits 4 Layer .DRU has been set to cover our minimum requiremen
 <element name="C46" library="firefly" package="C0201" value="1.2pF" x="28.448" y="8.255" smashed="yes">
 <attribute name="MANUFACTURER" value="TDK" x="28.448" y="8.255" size="1.778" layer="27" display="off"/>
 <attribute name="PART" value="C0603C0G1E1R2BTQ" x="28.448" y="8.255" size="1.778" layer="27" display="off"/>
-<attribute name="ORDERING-CODE" value="C0603C0G1E1R2BTQ" x="28.448" y="8.255" size="1.778" layer="27" display="off"/>
+<attribute name="ORDERING-CODE" value="C0603C0G1E1R2B030BF" x="28.448" y="8.255" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="28.148" y="8.455" size="0.254" layer="51"/>
 </element>
 <element name="C47" library="firefly" package="C0201" value="1.8pF" x="27.432" y="8.255" smashed="yes">
 <attribute name="MANUFACTURER" value="TDK" x="27.432" y="8.255" size="1.778" layer="27" display="off"/>
 <attribute name="PART" value="C0603C0G1E1R8CTQ" x="27.432" y="8.255" size="1.778" layer="27" display="off"/>
-<attribute name="ORDERING-CODE" value="C0603C0G1E1R8CTQ" x="27.432" y="8.255" size="1.778" layer="27" display="off"/>
+<attribute name="ORDERING-CODE" value="C0603C0G1E1R8C030BF" x="27.432" y="8.255" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="27.132" y="8.455" size="0.254" layer="51"/>
 </element>
 <element name="L2" library="firefly" package="L0201" value="5.6nH" x="24.892" y="7.493" smashed="yes">
@@ -2128,13 +2128,14 @@ This Sunstone Circuits 4 Layer .DRU has been set to cover our minimum requiremen
 <element name="C4" library="firefly" package="C0402" value="4.7uF" x="30.353" y="19.939" smashed="yes" rot="R90">
 <attribute name="PART" value="C1608X5R1A106K" x="30.353" y="19.939" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MANUFACTURER" value="TDK Corporation" x="30.353" y="19.939" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="ORDERING-CODE" value="C1005X5R0J475M" x="30.353" y="19.939" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="ORDERING-CODE" value="C1005X5R0J475M050BC" x="30.353" y="19.939" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="29.953" y="19.639" size="0.254" layer="51" rot="R90"/>
+<attribute name="VARIANTS" value="usb-charging" x="30.353" y="19.939" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="C5" library="firefly" package="C0402" value="4.7uF" x="31.496" y="19.939" smashed="yes" rot="R90">
 <attribute name="PART" value="C0603X5R1C224K" x="31.496" y="19.939" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MANUFACTURER" value="TDK Corporation" x="31.496" y="19.939" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="ORDERING-CODE" value="C1005X5R0J475M" x="31.496" y="19.939" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="ORDERING-CODE" value="C1005X5R0J475M050BC" x="31.496" y="19.939" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VARIANTS" value="usb-charging" x="31.496" y="19.939" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="31.096" y="19.639" size="0.254" layer="51" rot="R90"/>
 </element>
@@ -2151,7 +2152,7 @@ This Sunstone Circuits 4 Layer .DRU has been set to cover our minimum requiremen
 <element name="C6" library="firefly" package="C0201" value="1.2pF" x="28.194" y="7.62" smashed="yes">
 <attribute name="PART" value="C0603C0G1E1R2BTQ" x="28.194" y="7.62" size="1.778" layer="27" display="off"/>
 <attribute name="MANUFACTURER" value="TDK" x="28.194" y="7.62" size="1.778" layer="27" display="off"/>
-<attribute name="ORDERING-CODE" value="C0603C0G1E1R2BTQ" x="28.194" y="7.62" size="1.778" layer="27" display="off"/>
+<attribute name="ORDERING-CODE" value="C0603C0G1E1R2B030BF" x="28.194" y="7.62" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="27.894" y="7.82" size="0.254" layer="51"/>
 </element>
 <element name="L6" library="firefly" package="L0201" value="7.5nH" x="27.559" y="6.79" smashed="yes" rot="R270">
@@ -2188,7 +2189,7 @@ This Sunstone Circuits 4 Layer .DRU has been set to cover our minimum requiremen
 <attribute name="ORDERING-CODE" value="C0603X5R0J105M030BC" x="8.636" y="14.351" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="NAME" x="8.201" y="14.651" size="0.254" layer="51" rot="R270"/>
 </element>
-<element name="R5" library="firefly" package="R0201" value="0 (DNS)" x="9.525" y="14.351" smashed="yes" rot="R90">
+<element name="R5" library="firefly" package="R0201" value="0 (OPT)" x="9.525" y="14.351" smashed="yes" rot="R90">
 <attribute name="VARIANTS" value="!low-power" x="9.525" y="14.351" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MANUFACTURER" value="Panasonic Electronic Components" x="9.525" y="14.351" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="ORDERING-CODE" value="ERJ-1GE0R00C" x="9.525" y="14.351" size="1.778" layer="27" rot="R90" display="off"/>
@@ -2216,9 +2217,9 @@ This Sunstone Circuits 4 Layer .DRU has been set to cover our minimum requiremen
 <attribute name="ORDERING-CODE" value="SML-P11UTT86" x="2.7" y="11.8" size="1.778" layer="27" rot="R290" display="off"/>
 <attribute name="NAME" x="3.007471875" y="12.12474375" size="0.254" layer="51" rot="R290"/>
 </element>
-<element name="R8" library="firefly" package="R0201" value="20k" x="32.385" y="15.24" smashed="yes" rot="R90">
+<element name="R8" library="firefly" package="R0201" value="12.4k" x="32.385" y="15.24" smashed="yes" rot="R90">
 <attribute name="VARIANTS" value="usb-charging" x="32.385" y="15.24" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="ORDERING-CODE" value="ERJ-1GEF2002C" x="32.385" y="15.24" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="ORDERING-CODE" value="ERJ-1GEF1242C" x="32.385" y="15.24" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MANUFACTURER" value="Panasonic Electronic Components" x="32.385" y="15.24" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="31.75" y="14.605" size="1.27" layer="25" rot="R90"/>
 <attribute name="VALUE" x="34.29" y="14.605" size="1.27" layer="27" rot="R90"/>
@@ -2349,12 +2350,6 @@ This Sunstone Circuits 4 Layer .DRU has been set to cover our minimum requiremen
 <attribute name="ORDERING-CODE" value="C0603X5R0J105M030BC" x="26.797" y="17.907" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="26.497" y="18.107" size="0.254" layer="51"/>
 </element>
-<element name="U14" library="firefly" package="MO-229" value="FDFMA2P029Z" x="29.972" y="23.495" smashed="yes" rot="R270">
-<attribute name="MANUFACTURER" value="Fairchild Semiconductor" x="29.972" y="23.495" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="ORDERING-CODE" value="FDFMA2P857" x="29.972" y="23.495" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="VARIANTS" value="usb-power" x="29.972" y="23.495" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="30.572" y="23.795" size="0.2" layer="51" rot="R270"/>
-</element>
 <element name="D10" library="firefly" package="SOD-123F" value="BAT54WSSOD-123F" x="17.018" y="29.21" smashed="yes">
 <attribute name="MANUFACTURER" value="Rohm Semiconductor" x="17.018" y="29.21" size="1.778" layer="27" display="off"/>
 <attribute name="ORDERING-CODE" value="RB161M-20TR" x="17.018" y="29.21" size="1.778" layer="27" display="off"/>
@@ -2374,8 +2369,8 @@ This Sunstone Circuits 4 Layer .DRU has been set to cover our minimum requiremen
 <attribute name="ORDERING-CODE" value="EFM32LG330F256" x="15.494" y="21.209" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="11.894" y="25.088" size="0.254" layer="51"/>
 </element>
-<element name="R6" library="firefly" package="R0201" value="50" x="15.494" y="32.004" smashed="yes">
-<attribute name="ORDERING-CODE" value="ERJ-1GEF51R0C" x="15.494" y="32.004" size="1.778" layer="27" display="off"/>
+<element name="R6" library="firefly" package="R0201" value="25" x="15.494" y="32.004" smashed="yes">
+<attribute name="ORDERING-CODE" value="ERJ-1GEF24R9C" x="15.494" y="32.004" size="1.778" layer="27" display="off"/>
 <attribute name="MANUFACTURER" value="Panasonic Electronic Components" x="15.494" y="32.004" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="14.859" y="32.639" size="1.27" layer="25"/>
 <attribute name="VALUE" x="14.859" y="30.099" size="1.27" layer="27"/>
@@ -2409,7 +2404,7 @@ This Sunstone Circuits 4 Layer .DRU has been set to cover our minimum requiremen
 </element>
 <element name="C15" library="firefly" package="C0402" value="4.7uF" x="18.542" y="27.686" smashed="yes">
 <attribute name="MANUFACTURER" value="TDK Corporation" x="18.542" y="27.686" size="1.778" layer="27" display="off"/>
-<attribute name="ORDERING-CODE" value="C1005X5R0J475M" x="18.542" y="27.686" size="1.778" layer="27" display="off"/>
+<attribute name="ORDERING-CODE" value="C1005X5R0J475M050BC" x="18.542" y="27.686" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="18.242" y="28.086" size="0.254" layer="51"/>
 </element>
 <element name="L9" library="firefly" package="L0201" value="Ferrite Bead" x="19.431" y="29.845" smashed="yes" rot="R270">
@@ -2467,7 +2462,7 @@ This Sunstone Circuits 4 Layer .DRU has been set to cover our minimum requiremen
 <attribute name="VALUE" x="23.495" y="23.749" size="1.27" layer="27" rot="R180"/>
 <attribute name="NAME" x="23.16" y="21.644" size="0.254" layer="51" rot="R180"/>
 </element>
-<element name="R14" library="firefly" package="R0201" value="0 (DNS)" x="25.527" y="16.891" smashed="yes" rot="R90">
+<element name="R14" library="firefly" package="R0201" value="0 (OPT)" x="25.527" y="16.891" smashed="yes" rot="R90">
 <attribute name="VARIANTS" value="!efficient-power" x="25.527" y="16.891" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MANUFACTURER" value="Panasonic Electronic Components" x="25.527" y="16.891" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="ORDERING-CODE" value="ERJ-1GE0R00C" x="25.527" y="16.891" size="1.778" layer="27" rot="R90" display="off"/>
@@ -2483,7 +2478,6 @@ This Sunstone Circuits 4 Layer .DRU has been set to cover our minimum requiremen
 <attribute name="NAME" x="28.746" y="23.6" size="0.5" layer="52" rot="MR270"/>
 </element>
 <element name="R31" library="firefly" package="R0201" value="100k" x="27.559" y="24.511" smashed="yes" rot="R270">
-<attribute name="VARIANTS" value="efficient-power" x="27.559" y="24.511" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MANUFACTURER" value="Yageo" x="27.559" y="24.511" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="ORDERING-CODE" value="RC0201FR-07100KL" x="27.559" y="24.511" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="NAME" x="28.194" y="25.146" size="1.27" layer="25" rot="R270"/>
@@ -2491,7 +2485,6 @@ This Sunstone Circuits 4 Layer .DRU has been set to cover our minimum requiremen
 <attribute name="NAME" x="27.759" y="24.811" size="0.254" layer="51" rot="R270"/>
 </element>
 <element name="R32" library="firefly" package="R0201" value="100k" x="25.273" y="24.003" smashed="yes" rot="R180">
-<attribute name="VARIANTS" value="efficient-power" x="25.273" y="24.003" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MANUFACTURER" value="Yageo" x="25.273" y="24.003" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="ORDERING-CODE" value="RC0201FR-07100KL" x="25.273" y="24.003" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="NAME" x="25.908" y="23.368" size="1.27" layer="25" rot="R180"/>
@@ -2504,7 +2497,6 @@ This Sunstone Circuits 4 Layer .DRU has been set to cover our minimum requiremen
 <attribute name="NAME" x="28.275" y="25.835" size="0.2" layer="51"/>
 </element>
 <element name="R33" library="firefly" package="R0201" value="100k" x="29.591" y="25.908" smashed="yes" rot="R90">
-<attribute name="VARIANTS" value="efficient-power" x="29.591" y="25.908" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MANUFACTURER" value="Yageo" x="29.591" y="25.908" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="ORDERING-CODE" value="RC0201FR-07100KL" x="29.591" y="25.908" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="28.956" y="25.273" size="1.27" layer="25" rot="R90"/>
@@ -2530,13 +2522,13 @@ This Sunstone Circuits 4 Layer .DRU has been set to cover our minimum requiremen
 <attribute name="NAME" x="4.872" y="18.596" size="0.254" layer="51" rot="R180"/>
 </element>
 <element name="C53" library="firefly" package="C0201" value="470nF" x="6.35" y="18.161" smashed="yes" rot="R90">
-<attribute name="ORDERING-CODE" value="C0603X5R0J474M" x="6.35" y="18.161" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="ORDERING-CODE" value="C0603X5R0J474M030BC" x="6.35" y="18.161" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MANUFACTURER" value="TDK Corporation" x="6.35" y="18.161" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VARIANTS" value="color" x="6.35" y="18.161" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="6.785" y="17.861" size="0.254" layer="51" rot="R90"/>
 </element>
 <element name="C54" library="firefly" package="C0201" value="470nF" x="5.461" y="18.796" smashed="yes" rot="R180">
-<attribute name="ORDERING-CODE" value="C0603X5R0J474M" x="5.461" y="18.796" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="ORDERING-CODE" value="C0603X5R0J474M030BC" x="5.461" y="18.796" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MANUFACTURER" value="TDK Corporation" x="5.461" y="18.796" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="VARIANTS" value="color" x="5.461" y="18.796" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="NAME" x="5.761" y="18.596" size="0.254" layer="51" rot="R180"/>
@@ -2567,6 +2559,7 @@ This Sunstone Circuits 4 Layer .DRU has been set to cover our minimum requiremen
 <attribute name="ORDERING-CODE" value="IP4059CX5/LF,135" x="22.733" y="25.019" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MANUFACTURER" value="NXP Semiconductors" x="22.733" y="25.019" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="22.633" y="24.819" size="0.254" layer="51" rot="R90"/>
+<attribute name="VARIANTS" value="usb-power" x="22.733" y="25.019" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="R2" library="firefly" package="R0201" value="100k" x="25.654" y="24.638" smashed="yes">
 <attribute name="VARIANTS" value="usb-charging" x="25.654" y="24.638" size="1.778" layer="27" display="off"/>
@@ -2639,12 +2632,21 @@ This Sunstone Circuits 4 Layer .DRU has been set to cover our minimum requiremen
 <attribute name="NAME" x="2.535" y="17.319" size="0.254" layer="51" rot="R270"/>
 </element>
 <element name="R7" library="firefly" package="R0201" value="100k" x="4.064" y="21.082" smashed="yes" rot="R270">
-<attribute name="VARIANTS" value="efficient-power" x="4.064" y="21.082" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MANUFACTURER" value="Yageo" x="4.064" y="21.082" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="ORDERING-CODE" value="RC0201FR-07100KL" x="4.064" y="21.082" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="NAME" x="4.699" y="21.717" size="1.27" layer="25" rot="R270"/>
 <attribute name="VALUE" x="2.159" y="21.717" size="1.27" layer="27" rot="R270"/>
 <attribute name="NAME" x="4.264" y="21.382" size="0.254" layer="51" rot="R270"/>
+</element>
+<element name="U14" library="firefly" package="MO-229" value="FDFMA2P029Z" x="29.972" y="23.495" rot="R270">
+<attribute name="DNS" value="true" x="29.972" y="23.495" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MANUFACTURER" value="Fairchild Semiconductor" x="29.972" y="23.495" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="ORDERING-CODE" value="FDFMA2P857" x="29.972" y="23.495" size="1.778" layer="27" rot="R270" display="off"/>
+</element>
+<element name="R12" library="firefly" package="R0201" value="100k" x="29.591" y="21.082" rot="R270">
+<attribute name="MANUFACTURER" value="Yageo" x="29.591" y="21.082" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="ORDERING-CODE" value="RC0201FR-07100KL" x="29.591" y="21.082" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="DNS" value="true" x="29.591" y="21.082" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 </elements>
 <signals>
@@ -3018,10 +3020,10 @@ This Sunstone Circuits 4 Layer .DRU has been set to cover our minimum requiremen
 <wire x1="27.686" y1="26.289" x2="27.559" y2="26.416" width="0.127" layer="1"/>
 <wire x1="26.764" y1="26.281" x2="26.764" y2="25.781" width="0.127" layer="1"/>
 <via x="29.21" y="26.924" extent="1-16" drill="0.2032"/>
-<via x="31.115" y="21.336" extent="1-16" drill="0.2032"/>
-<wire x1="31.115" y1="21.336" x2="30.607" y2="21.336" width="0.4064" layer="1"/>
-<wire x1="30.607" y1="21.336" x2="30.353" y2="21.082" width="0.4064" layer="1"/>
-<wire x1="30.353" y1="21.082" x2="30.353" y2="20.439" width="0.4064" layer="1"/>
+<via x="31.115" y="21.082" extent="1-16" drill="0.2032"/>
+<wire x1="31.115" y1="21.082" x2="30.607" y2="21.082" width="0.4064" layer="1"/>
+<wire x1="30.607" y1="21.082" x2="30.353" y2="20.828" width="0.4064" layer="1"/>
+<wire x1="30.353" y1="20.828" x2="30.353" y2="20.439" width="0.4064" layer="1"/>
 <wire x1="22.86" y1="17.271" x2="23.706" y2="17.271" width="0.127" layer="1"/>
 <wire x1="23.706" y1="17.271" x2="23.707" y2="17.272" width="0.127" layer="1"/>
 <via x="8.763" y="6.731" extent="1-16" drill="0.2032"/>
@@ -3120,6 +3122,9 @@ This Sunstone Circuits 4 Layer .DRU has been set to cover our minimum requiremen
 <via x="25.654" y="28.448" extent="1-16" drill="0.2032"/>
 <wire x1="7.493" y1="18.195" x2="7.493" y2="17.653" width="0.127" layer="1"/>
 <wire x1="7.493" y1="17.111" x2="7.493" y2="17.653" width="0.127" layer="1"/>
+<contactref element="R12" pad="2"/>
+<via x="29.591" y="20.32" extent="1-16" drill="0.2032"/>
+<wire x1="29.591" y1="20.32" x2="29.591" y2="20.827" width="0.127" layer="1"/>
 </signal>
 <signal name="VCC">
 <contactref element="JPDEBUG" pad="1"/>
@@ -3502,8 +3507,6 @@ This Sunstone Circuits 4 Layer .DRU has been set to cover our minimum requiremen
 <signal name="USB_VBUS">
 <contactref element="C5" pad="1"/>
 <contactref element="U7" pad="1"/>
-<contactref element="U14" pad="5"/>
-<contactref element="U14" pad="1"/>
 <contactref element="D10" pad="C"/>
 <contactref element="U7" pad="2"/>
 <wire x1="31.623" y1="19.431" x2="31.496" y2="19.439" width="0.4064" layer="1"/>
@@ -3515,7 +3518,6 @@ This Sunstone Circuits 4 Layer .DRU has been set to cover our minimum requiremen
 <wire x1="31.111" y1="18.341" x2="31.115" y2="18.923" width="0.254" layer="1"/>
 <wire x1="31.115" y1="18.923" x2="31.496" y2="19.304" width="0.254" layer="1"/>
 <wire x1="31.496" y1="19.304" x2="31.496" y2="19.439" width="0.127" layer="1"/>
-<wire x1="30.734" y1="24.384" x2="30.622" y2="24.41" width="0.127" layer="1"/>
 <contactref element="U1" pad="45"/>
 <contactref element="C15" pad="1"/>
 <contactref element="U1" pad="52"/>
@@ -3527,16 +3529,14 @@ This Sunstone Circuits 4 Layer .DRU has been set to cover our minimum requiremen
 <wire x1="22.352" y1="23.368" x2="22.225" y2="23.368" width="0.127" layer="1"/>
 <wire x1="22.225" y1="23.368" x2="20.32" y2="23.368" width="0.127" layer="1"/>
 <wire x1="20.32" y1="23.368" x2="19.944" y2="23.459" width="0.127" layer="1"/>
-<wire x1="29.972" y1="22.58" x2="29.972" y2="22.225" width="0.254" layer="1"/>
-<wire x1="29.972" y1="22.225" x2="30.226" y2="21.971" width="0.254" layer="1"/>
-<wire x1="30.226" y1="21.971" x2="31.242" y2="21.971" width="0.254" layer="1"/>
-<wire x1="31.242" y1="21.971" x2="31.242" y2="24.13" width="0.254" layer="1"/>
+<wire x1="30.226" y1="21.59" x2="31.623" y2="21.59" width="0.254" layer="1"/>
+<wire x1="31.623" y1="21.59" x2="31.623" y2="22.987" width="0.254" layer="1"/>
+<wire x1="31.623" y1="22.987" x2="31.242" y2="23.368" width="0.254" layer="1"/>
+<wire x1="31.242" y1="23.368" x2="31.242" y2="24.13" width="0.254" layer="1"/>
 <wire x1="31.242" y1="24.13" x2="30.988" y2="24.384" width="0.254" layer="1"/>
 <wire x1="30.988" y1="24.384" x2="30.607" y2="24.384" width="0.254" layer="1"/>
-<wire x1="30.607" y1="24.384" x2="30.622" y2="24.41" width="0.4064" layer="1"/>
-<wire x1="31.242" y1="21.971" x2="31.369" y2="21.971" width="0.254" layer="1"/>
-<wire x1="31.369" y1="21.971" x2="32.258" y2="21.082" width="0.254" layer="1"/>
-<wire x1="32.258" y1="21.082" x2="32.258" y2="19.431" width="0.254" layer="1"/>
+<wire x1="31.623" y1="21.59" x2="32.258" y2="20.955" width="0.254" layer="1"/>
+<wire x1="32.258" y1="20.955" x2="32.258" y2="19.431" width="0.254" layer="1"/>
 <wire x1="32.258" y1="19.431" x2="32.131" y2="19.304" width="0.254" layer="1"/>
 <wire x1="32.131" y1="19.304" x2="31.496" y2="19.304" width="0.254" layer="1"/>
 <wire x1="31.496" y1="19.304" x2="31.496" y2="19.439" width="0.127" layer="1"/>
@@ -3556,11 +3556,24 @@ This Sunstone Circuits 4 Layer .DRU has been set to cover our minimum requiremen
 <wire x1="22.352" y1="23.368" x2="22.733" y2="23.749" width="0.254" layer="1"/>
 <wire x1="22.733" y1="23.749" x2="23.749" y2="23.749" width="0.254" layer="1"/>
 <wire x1="23.749" y1="23.749" x2="24.003" y2="23.495" width="0.254" layer="1"/>
-<wire x1="24.003" y1="23.495" x2="27.559" y2="23.495" width="0.254" layer="1"/>
-<wire x1="27.559" y1="23.495" x2="28.956" y2="24.892" width="0.254" layer="1"/>
-<wire x1="28.956" y1="24.892" x2="30.48" y2="24.892" width="0.254" layer="1"/>
-<wire x1="30.48" y1="24.892" x2="30.607" y2="24.765" width="0.254" layer="1"/>
+<wire x1="24.003" y1="23.495" x2="27.686" y2="23.495" width="0.254" layer="1"/>
+<wire x1="27.686" y1="23.495" x2="28.194" y2="24.003" width="0.254" layer="1"/>
+<wire x1="28.194" y1="24.003" x2="28.194" y2="24.384" width="0.254" layer="1"/>
+<wire x1="28.194" y1="24.384" x2="28.829" y2="25.019" width="0.254" layer="1"/>
+<wire x1="28.829" y1="25.019" x2="30.353" y2="25.019" width="0.254" layer="1"/>
+<wire x1="30.353" y1="25.019" x2="30.607" y2="24.765" width="0.254" layer="1"/>
 <wire x1="30.607" y1="24.765" x2="30.607" y2="24.384" width="0.254" layer="1"/>
+<contactref element="U14" pad="1"/>
+<contactref element="U14" pad="5"/>
+<wire x1="29.972" y1="22.58" x2="29.972" y2="21.845" width="0.254" layer="1"/>
+<wire x1="29.972" y1="21.845" x2="30.226" y2="21.59" width="0.254" layer="1"/>
+<wire x1="30.607" y1="24.384" x2="30.607" y2="24.395" width="0.254" layer="1"/>
+<wire x1="30.607" y1="24.395" x2="30.622" y2="24.41" width="0.254" layer="1"/>
+<contactref element="R12" pad="1"/>
+<wire x1="30.226" y1="21.59" x2="29.972" y2="21.845" width="0.254" layer="1"/>
+<wire x1="29.972" y1="21.845" x2="29.719" y2="21.845" width="0.127" layer="1"/>
+<wire x1="29.719" y1="21.845" x2="29.591" y2="21.717" width="0.127" layer="1"/>
+<wire x1="29.591" y1="21.717" x2="29.591" y2="21.337" width="0.127" layer="1"/>
 </signal>
 <signal name="N$1">
 <contactref element="L6" pad="2"/>
@@ -3765,27 +3778,18 @@ This Sunstone Circuits 4 Layer .DRU has been set to cover our minimum requiremen
 <wire x1="25.527" y1="17.272" x2="25.527" y2="17.146" width="0.254" layer="1"/>
 </signal>
 <signal name="VUNREG">
-<contactref element="U14" pad="6"/>
-<contactref element="U14" pad="3"/>
 <contactref element="U11" pad="4"/>
 <contactref element="U11" pad="6"/>
 <contactref element="C18" pad="1"/>
 <contactref element="U12" pad="8"/>
 <contactref element="C20" pad="1"/>
-<contactref element="U14" pad="D"/>
-<contactref element="U14" pad="C"/>
-<wire x1="30.622" y1="22.58" x2="30.607" y2="23.495" width="0.4064" layer="1"/>
-<wire x1="30.607" y1="23.495" x2="30.472" y2="23.495" width="0.127" layer="1"/>
-<wire x1="30.472" y1="23.495" x2="29.472" y2="23.495" width="0.6096" layer="1"/>
-<wire x1="29.322" y1="24.41" x2="29.337" y2="23.495" width="0.4064" layer="1"/>
-<wire x1="29.337" y1="23.495" x2="29.472" y2="23.495" width="0.127" layer="1"/>
-<wire x1="27.559" y1="22.733" x2="26.797" y2="22.733" width="0.4064" layer="16"/>
+<wire x1="28.575" y1="22.733" x2="26.797" y2="22.733" width="0.4064" layer="16"/>
 <wire x1="26.797" y1="22.733" x2="26.797" y2="20.32" width="0.4064" layer="16"/>
 <wire x1="26.797" y1="20.32" x2="28.702" y2="18.415" width="0.4064" layer="16"/>
 <wire x1="28.702" y1="18.415" x2="28.702" y2="17.907" width="0.4064" layer="16"/>
 <wire x1="28.702" y1="17.907" x2="28.321" y2="17.907" width="0.21" layer="1"/>
 <wire x1="28.321" y1="17.907" x2="28.16" y2="17.907" width="0.21" layer="1"/>
-<wire x1="27.559" y1="22.733" x2="26.662" y2="22.733" width="0.4064" layer="1"/>
+<wire x1="28.575" y1="22.733" x2="26.662" y2="22.733" width="0.4064" layer="1"/>
 <wire x1="26.662" y1="22.733" x2="26.797" y2="22.733" width="0.3" layer="1"/>
 <wire x1="26.797" y1="22.733" x2="26.797" y2="22.606" width="0.3" layer="1"/>
 <wire x1="26.797" y1="22.606" x2="26.797" y2="21.844" width="0.3" layer="1"/>
@@ -3793,7 +3797,7 @@ This Sunstone Circuits 4 Layer .DRU has been set to cover our minimum requiremen
 <wire x1="26.924" y1="21.844" x2="26.858" y2="21.832" width="0.254" layer="1"/>
 <wire x1="26.797" y1="22.733" x2="26.662" y2="22.733" width="0.127" layer="1"/>
 <wire x1="28.321" y1="17.16" x2="28.482" y2="17.16" width="0.24" layer="1"/>
-<via x="27.559" y="22.733" extent="1-16" drill="0.2032"/>
+<via x="28.575" y="22.733" extent="1-16" drill="0.2032"/>
 <via x="28.702" y="17.907" extent="1-16" drill="0.2032"/>
 <wire x1="28.321" y1="17.16" x2="28.321" y2="17.907" width="0.21" layer="1"/>
 <wire x1="28.321" y1="17.907" x2="28.16" y2="17.907" width="0.21" layer="1"/>
@@ -3810,9 +3814,6 @@ This Sunstone Circuits 4 Layer .DRU has been set to cover our minimum requiremen
 <wire x1="29.083" y1="16.686" x2="29.083" y2="17.018" width="0.127" layer="1"/>
 <wire x1="29.083" y1="17.018" x2="28.941" y2="17.16" width="0.127" layer="1"/>
 <wire x1="28.941" y1="17.16" x2="28.482" y2="17.16" width="0.127" layer="1"/>
-<wire x1="27.559" y1="22.733" x2="28.067" y2="22.733" width="0.6096" layer="1"/>
-<wire x1="28.067" y1="22.733" x2="28.829" y2="23.495" width="0.6096" layer="1"/>
-<wire x1="28.829" y1="23.495" x2="29.472" y2="23.495" width="0.6096" layer="1"/>
 <wire x1="26.797" y1="24.511" x2="26.797" y2="25.248" width="0.127" layer="1"/>
 <wire x1="26.797" y1="25.248" x2="26.764" y2="25.281" width="0.127" layer="1"/>
 <via x="26.797" y="24.511" extent="1-16" drill="0.2032"/>
@@ -3862,6 +3863,18 @@ This Sunstone Circuits 4 Layer .DRU has been set to cover our minimum requiremen
 <via x="13.843" y="11.176" extent="1-16" drill="0.2032"/>
 <wire x1="12.573" y1="11.176" x2="12.573" y2="9.906" width="0.4064" layer="16"/>
 <wire x1="12.573" y1="9.906" x2="13.716" y2="8.763" width="0.4064" layer="16"/>
+<contactref element="U14" pad="6"/>
+<contactref element="U14" pad="4" route="any" routetag="S"/>
+<wire x1="30.622" y1="22.58" x2="30.633" y2="22.199" width="0.254" layer="1"/>
+<wire x1="30.633" y1="22.199" x2="30.734" y2="22.098" width="0.254" layer="1"/>
+<wire x1="30.734" y1="22.098" x2="31.115" y2="22.098" width="0.254" layer="1"/>
+<via x="31.115" y="22.098" extent="1-16" drill="0.2032"/>
+<wire x1="31.115" y1="22.098" x2="31.115" y2="22.479" width="0.254" layer="16"/>
+<wire x1="31.115" y1="22.479" x2="30.861" y2="22.733" width="0.254" layer="16"/>
+<wire x1="30.861" y1="22.733" x2="28.575" y2="22.733" width="0.254" layer="16"/>
+<wire x1="28.575" y1="22.733" x2="28.702" y2="22.606" width="0.254" layer="1"/>
+<wire x1="28.702" y1="22.606" x2="29.296" y2="22.606" width="0.254" layer="1"/>
+<wire x1="29.296" y1="22.606" x2="29.322" y2="22.58" width="0.254" layer="1"/>
 </signal>
 <signal name="N$30">
 <contactref element="D10" pad="A"/>
@@ -4396,7 +4409,6 @@ This Sunstone Circuits 4 Layer .DRU has been set to cover our minimum requiremen
 <wire x1="6.985" y1="15.621" x2="7.493" y2="15.113" width="0.127" layer="1"/>
 </signal>
 <signal name="BAT_V">
-<contactref element="U14" pad="4"/>
 <contactref element="C51" pad="1"/>
 <contactref element="R33" pad="1"/>
 <contactref element="C4" pad="1"/>
@@ -4414,13 +4426,11 @@ This Sunstone Circuits 4 Layer .DRU has been set to cover our minimum requiremen
 <wire x1="30.353" y1="19.439" x2="30.099" y2="19.289" width="0.127" layer="1"/>
 <wire x1="30.099" y1="19.289" x2="30.099" y2="19.304" width="0.127" layer="1"/>
 <wire x1="30.099" y1="19.304" x2="29.337" y2="19.304" width="0.4064" layer="1"/>
-<wire x1="29.337" y1="19.304" x2="29.337" y2="22.352" width="0.4064" layer="1"/>
 <wire x1="29.972" y1="24.511" x2="29.591" y2="24.511" width="0.4064" layer="16"/>
 <wire x1="29.591" y1="24.511" x2="29.337" y2="24.765" width="0.4064" layer="16"/>
 <wire x1="29.337" y1="24.765" x2="28.575" y2="25.527" width="0.4064" layer="16"/>
 <wire x1="28.575" y1="25.527" x2="28.575" y2="26.543" width="0.4064" layer="16"/>
 <wire x1="28.575" y1="26.543" x2="26.543" y2="28.575" width="0.4064" layer="16"/>
-<wire x1="29.322" y1="22.58" x2="29.337" y2="22.352" width="0.4064" layer="1"/>
 <wire x1="29.746" y1="24.55" x2="29.972" y2="24.511" width="0.127" layer="16"/>
 <via x="29.337" y="19.304" extent="1-16" drill="0.2032"/>
 <wire x1="29.337" y1="19.304" x2="31.242" y2="19.304" width="0.4064" layer="16"/>
@@ -4436,6 +4446,16 @@ This Sunstone Circuits 4 Layer .DRU has been set to cover our minimum requiremen
 <wire x1="30.226" y1="24.88" x2="29.746" y2="24.55" width="0.127" layer="16"/>
 <wire x1="30.226" y1="25.654" x2="29.719" y2="25.654" width="0.127" layer="1"/>
 <wire x1="29.719" y1="25.654" x2="29.591" y2="25.653" width="0.127" layer="1"/>
+<contactref element="U14" pad="3"/>
+<wire x1="29.322" y1="24.41" x2="28.982" y2="24.41" width="0.254" layer="1"/>
+<wire x1="28.982" y1="24.41" x2="28.855" y2="24.41" width="0.254" layer="1"/>
+<wire x1="28.855" y1="24.41" x2="28.702" y2="24.257" width="0.254" layer="1"/>
+<wire x1="28.702" y1="24.257" x2="28.702" y2="23.749" width="0.254" layer="1"/>
+<via x="28.702" y="23.749" extent="1-16" drill="0.2032"/>
+<wire x1="28.702" y1="23.749" x2="29.083" y2="24.13" width="0.254" layer="16"/>
+<wire x1="29.083" y1="24.13" x2="29.337" y2="24.384" width="0.254" layer="16"/>
+<wire x1="29.337" y1="24.384" x2="29.58" y2="24.384" width="0.254" layer="16"/>
+<wire x1="29.58" y1="24.384" x2="29.746" y2="24.55" width="0.254" layer="16"/>
 </signal>
 <signal name="BAT_V/2">
 <contactref element="U1" pad="34"/>

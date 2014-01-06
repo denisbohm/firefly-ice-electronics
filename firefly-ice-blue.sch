@@ -3152,22 +3152,6 @@ chip</description>
 <smd name="TP" x="0" y="0" dx="1.3" dy="0.7" layer="1" rot="R90"/>
 <text x="-0.4" y="0.6" size="0.2" layer="51">&gt;Name</text>
 </package>
-<package name="MO-229">
-<circle x="-0.7" y="0.7" radius="0.1" width="0.127" layer="51"/>
-<wire x1="1" y1="1" x2="-1" y2="1" width="0.127" layer="51"/>
-<wire x1="-1" y1="1" x2="-1" y2="-1" width="0.127" layer="51"/>
-<wire x1="-1" y1="-1" x2="1" y2="-1" width="0.127" layer="51"/>
-<wire x1="1" y1="-1" x2="1" y2="1" width="0.127" layer="51"/>
-<smd name="1" x="-0.915" y="0.65" dx="0.42" dy="0.42" layer="1" rot="R90"/>
-<smd name="2" x="-0.915" y="0" dx="0.42" dy="0.42" layer="1" rot="R90"/>
-<smd name="3" x="-0.915" y="-0.65" dx="0.42" dy="0.42" layer="1" rot="R90"/>
-<smd name="4" x="0.915" y="-0.65" dx="0.42" dy="0.42" layer="1" rot="R270"/>
-<smd name="5" x="0.915" y="0" dx="0.42" dy="0.42" layer="1" rot="R270"/>
-<smd name="6" x="0.915" y="0.65" dx="0.42" dy="0.42" layer="1" rot="R270"/>
-<smd name="C" x="0" y="0.5" dx="0.8" dy="1" layer="1" rot="R270"/>
-<smd name="D" x="0" y="-0.5" dx="0.8" dy="1" layer="1" rot="R270"/>
-<text x="-0.3" y="0.6" size="0.2" layer="51">&gt;Name</text>
-</package>
 <package name="L0805">
 <description>&lt;b&gt;INDUCTOR&lt;/b&gt;&lt;p&gt;
 Source: http://www.vishay.com/docs/45017/vjsoldfo.pdf</description>
@@ -5049,6 +5033,22 @@ Source: http://www.vishay.com/docs/45017/vjsoldfo.pdf</description>
 <smd name="2" x="0.5" y="0" dx="0.5" dy="0.5" layer="1"/>
 <text x="-0.3" y="0.4" size="0.254" layer="51">&gt;Name</text>
 </package>
+<package name="MO-229">
+<circle x="-0.7" y="0.7" radius="0.1" width="0.127" layer="51"/>
+<wire x1="1" y1="1" x2="-1" y2="1" width="0.127" layer="51"/>
+<wire x1="-1" y1="1" x2="-1" y2="-1" width="0.127" layer="51"/>
+<wire x1="-1" y1="-1" x2="1" y2="-1" width="0.127" layer="51"/>
+<wire x1="1" y1="-1" x2="1" y2="1" width="0.127" layer="51"/>
+<smd name="1" x="-0.915" y="0.65" dx="0.42" dy="0.42" layer="1" rot="R90"/>
+<smd name="2" x="-0.915" y="0" dx="0.42" dy="0.42" layer="1" rot="R90"/>
+<smd name="3" x="-0.915" y="-0.65" dx="0.42" dy="0.42" layer="1" rot="R90"/>
+<smd name="4" x="0.915" y="-0.65" dx="0.42" dy="0.42" layer="1" rot="R270"/>
+<smd name="5" x="0.915" y="0" dx="0.42" dy="0.42" layer="1" rot="R270"/>
+<smd name="6" x="0.915" y="0.65" dx="0.42" dy="0.42" layer="1" rot="R270"/>
+<smd name="C" x="0" y="0.5" dx="0.8" dy="1" layer="1" rot="R270"/>
+<smd name="D" x="0" y="-0.5" dx="0.8" dy="1" layer="1" rot="R270"/>
+<text x="-0.3" y="0.6" size="0.2" layer="51">&gt;Name</text>
+</package>
 </packages>
 <symbols>
 <symbol name="C-US">
@@ -5388,48 +5388,6 @@ Source: http://www.vishay.com/docs/45017/vjsoldfo.pdf</description>
 <pin name="VOS" x="17.78" y="-2.54" length="middle" rot="R180"/>
 <text x="-7.62" y="10.16" size="1.9304" layer="95">&gt;Name</text>
 <text x="-7.62" y="12.7" size="1.9304" layer="96">&gt;Value</text>
-</symbol>
-<symbol name="FDFMA2P029Z">
-<rectangle x1="-2.032" y1="-8.001" x2="-1.524" y2="-6.477" layer="94"/>
-<rectangle x1="-2.032" y1="-5.842" x2="-1.524" y2="-4.318" layer="94"/>
-<rectangle x1="-2.032" y1="-3.683" x2="-1.524" y2="-2.159" layer="94"/>
-<rectangle x1="0.762" y1="-4.572" x2="2.032" y2="-4.445" layer="94"/>
-<wire x1="-1.651" y1="-5.08" x2="0" y2="-5.08" width="0.1524" layer="94"/>
-<wire x1="-1.524" y1="-2.921" x2="0" y2="-2.921" width="0.1524" layer="94"/>
-<wire x1="-2.54" y1="-2.54" x2="-2.54" y2="-7.62" width="0.1524" layer="94"/>
-<wire x1="0" y1="-5.08" x2="0" y2="-2.921" width="0.1524" layer="94"/>
-<wire x1="1.397" y1="-4.572" x2="1.397" y2="-2.54" width="0.1524" layer="94"/>
-<wire x1="-1.524" y1="-7.239" x2="0" y2="-7.239" width="0.1524" layer="94"/>
-<wire x1="0" y1="-7.239" x2="0" y2="-7.62" width="0.1524" layer="94"/>
-<wire x1="1.397" y1="-7.62" x2="1.397" y2="-5.461" width="0.1524" layer="94"/>
-<wire x1="0" y1="-2.921" x2="0" y2="-2.54" width="0.1524" layer="94"/>
-<wire x1="1.905" y1="6.35" x2="1.27" y2="6.35" width="0.254" layer="94"/>
-<wire x1="1.27" y1="6.35" x2="1.27" y2="3.81" width="0.254" layer="94"/>
-<wire x1="1.905" y1="6.35" x2="1.905" y2="6.096" width="0.254" layer="94"/>
-<wire x1="1.27" y1="3.81" x2="0.635" y2="3.81" width="0.254" layer="94"/>
-<wire x1="0.635" y1="4.064" x2="0.635" y2="3.81" width="0.254" layer="94"/>
-<pin name="A" x="-5.08" y="5.08" visible="off" length="middle" direction="pas"/>
-<pin name="C" x="5.08" y="5.08" visible="off" length="middle" direction="pas" rot="R180"/>
-<pin name="D" x="5.08" y="-2.54" visible="off" length="middle" direction="pas" rot="R180"/>
-<pin name="G" x="-5.08" y="-2.54" visible="off" length="short" direction="pas"/>
-<pin name="S" x="5.08" y="-7.62" visible="off" length="middle" direction="pas" rot="R180"/>
-<text x="-2.54" y="7.62" size="1.778" layer="96">&gt;VALUE</text>
-<text x="-2.54" y="0" size="1.778" layer="95">&gt;NAME</text>
-<polygon width="0.1016" layer="94">
-<vertex x="-0.127" y="-5.08"/>
-<vertex x="-1.143" y="-4.445"/>
-<vertex x="-1.143" y="-5.715"/>
-</polygon>
-<polygon width="0.1016" layer="94">
-<vertex x="1.397" y="-4.572"/>
-<vertex x="0.762" y="-5.588"/>
-<vertex x="2.032" y="-5.588"/>
-</polygon>
-<polygon width="0.254" layer="94">
-<vertex x="-1.27" y="3.81"/>
-<vertex x="-1.27" y="6.35"/>
-<vertex x="1.27" y="5.08"/>
-</polygon>
 </symbol>
 <symbol name="SCHOTTKY">
 <wire x1="-1.27" y1="-1.27" x2="1.27" y2="0" width="0.254" layer="94"/>
@@ -5958,6 +5916,48 @@ Source: http://www.vishay.com/docs/45017/vjsoldfo.pdf</description>
 <wire x1="2.54" y1="0" x2="-2.54" y2="0" width="0.254" layer="94"/>
 <pin name="BA" x="-5.08" y="-5.08" visible="off" length="short" direction="pas"/>
 <pin name="RA" x="-5.08" y="5.08" visible="off" length="short" direction="pas"/>
+</symbol>
+<symbol name="FDFMA2P029Z">
+<rectangle x1="-2.032" y1="-8.001" x2="-1.524" y2="-6.477" layer="94"/>
+<rectangle x1="-2.032" y1="-5.842" x2="-1.524" y2="-4.318" layer="94"/>
+<rectangle x1="-2.032" y1="-3.683" x2="-1.524" y2="-2.159" layer="94"/>
+<rectangle x1="0.762" y1="-4.572" x2="2.032" y2="-4.445" layer="94"/>
+<wire x1="-1.651" y1="-5.08" x2="0" y2="-5.08" width="0.1524" layer="94"/>
+<wire x1="-1.524" y1="-2.921" x2="0" y2="-2.921" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="-2.54" x2="-2.54" y2="-7.62" width="0.1524" layer="94"/>
+<wire x1="0" y1="-5.08" x2="0" y2="-2.921" width="0.1524" layer="94"/>
+<wire x1="1.397" y1="-4.572" x2="1.397" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="-1.524" y1="-7.239" x2="0" y2="-7.239" width="0.1524" layer="94"/>
+<wire x1="0" y1="-7.239" x2="0" y2="-7.62" width="0.1524" layer="94"/>
+<wire x1="1.397" y1="-7.62" x2="1.397" y2="-5.461" width="0.1524" layer="94"/>
+<wire x1="0" y1="-2.921" x2="0" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="1.905" y1="6.35" x2="1.27" y2="6.35" width="0.254" layer="94"/>
+<wire x1="1.27" y1="6.35" x2="1.27" y2="3.81" width="0.254" layer="94"/>
+<wire x1="1.905" y1="6.35" x2="1.905" y2="6.096" width="0.254" layer="94"/>
+<wire x1="1.27" y1="3.81" x2="0.635" y2="3.81" width="0.254" layer="94"/>
+<wire x1="0.635" y1="4.064" x2="0.635" y2="3.81" width="0.254" layer="94"/>
+<pin name="A" x="-5.08" y="5.08" visible="off" length="middle" direction="pas"/>
+<pin name="C" x="5.08" y="5.08" visible="off" length="middle" direction="pas" rot="R180"/>
+<pin name="S" x="5.08" y="-2.54" visible="off" length="middle" direction="pas" rot="R180"/>
+<pin name="G" x="-5.08" y="-2.54" visible="off" length="short" direction="pas"/>
+<pin name="D" x="5.08" y="-7.62" visible="off" length="middle" direction="pas" rot="R180"/>
+<text x="-2.54" y="7.62" size="1.778" layer="96">&gt;VALUE</text>
+<text x="-2.54" y="0" size="1.778" layer="95">&gt;NAME</text>
+<polygon width="0.1016" layer="94">
+<vertex x="-0.127" y="-5.08"/>
+<vertex x="-1.143" y="-4.445"/>
+<vertex x="-1.143" y="-5.715"/>
+</polygon>
+<polygon width="0.1016" layer="94">
+<vertex x="1.397" y="-4.572"/>
+<vertex x="0.762" y="-5.588"/>
+<vertex x="2.032" y="-5.588"/>
+</polygon>
+<polygon width="0.254" layer="94">
+<vertex x="-1.27" y="3.81"/>
+<vertex x="-1.27" y="6.35"/>
+<vertex x="1.27" y="5.08"/>
+</polygon>
 </symbol>
 </symbols>
 <devicesets>
@@ -8268,25 +8268,6 @@ Source: http://www.vishay.com/docs/45017/vjsoldfo.pdf</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="FDFMA2P029Z">
-<gates>
-<gate name="G$1" symbol="FDFMA2P029Z" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="MO-229">
-<connects>
-<connect gate="G$1" pin="A" pad="1"/>
-<connect gate="G$1" pin="C" pad="6 C"/>
-<connect gate="G$1" pin="D" pad="3 D"/>
-<connect gate="G$1" pin="G" pad="5"/>
-<connect gate="G$1" pin="S" pad="4"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="BAT54WS">
 <gates>
 <gate name="G$1" symbol="SCHOTTKY" x="0" y="0"/>
@@ -8643,6 +8624,25 @@ Source: http://www.vishay.com/docs/45017/vjsoldfo.pdf</description>
 </device>
 </devices>
 </deviceset>
+<deviceset name="FDFMA2P029Z">
+<gates>
+<gate name="G$1" symbol="FDFMA2P029Z" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="MO-229">
+<connects>
+<connect gate="G$1" pin="A" pad="1"/>
+<connect gate="G$1" pin="C" pad="6"/>
+<connect gate="G$1" pin="D" pad="3"/>
+<connect gate="G$1" pin="G" pad="5"/>
+<connect gate="G$1" pin="S" pad="4" route="any"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </libraries>
@@ -8710,8 +8710,8 @@ Source: http://www.vishay.com/docs/45017/vjsoldfo.pdf</description>
 <part name="U$11" library="firefly" deviceset="VCC" device=""/>
 <part name="V36" library="firefly" deviceset="GND" device=""/>
 <part name="X1" library="firefly" deviceset="XTAL2" device="9HT10" value="32kHz">
-<attribute name="MANUFACTURER" value="TXC CORPORATION"/>
-<attribute name="ORDERING-CODE" value="9HT10-32.768KEZF-T"/>
+<attribute name="MANUFACTURER" value="AVX Corp/Kyocera Corp"/>
+<attribute name="ORDERING-CODE" value="ST3215SB32768B0HPWB3"/>
 </part>
 <part name="C32" library="firefly" deviceset="C-US" device="C0201" value="22pF">
 <attribute name="MANUFACTURER" value="AVX Corporation"/>
@@ -8752,7 +8752,7 @@ Source: http://www.vishay.com/docs/45017/vjsoldfo.pdf</description>
 <part name="V54" library="firefly" deviceset="GND" device=""/>
 <part name="C39" library="firefly" deviceset="C-US" device="C0201" value="1nF">
 <attribute name="MANUFACTURER" value="Murata"/>
-<attribute name="ORDERING-CODE" value="C0603X7R1E102K"/>
+<attribute name="ORDERING-CODE" value="C0603X7R1E102K030BA"/>
 </part>
 <part name="V56" library="firefly" deviceset="GND" device=""/>
 <part name="C40" library="firefly" deviceset="C-US" device="C0201" value="33nF">
@@ -8777,18 +8777,18 @@ Source: http://www.vishay.com/docs/45017/vjsoldfo.pdf</description>
 <part name="V60" library="firefly" deviceset="GND" device=""/>
 <part name="C44" library="firefly" deviceset="C-US" device="C0201" value="2.2nF">
 <attribute name="MANUFACTURER" value="TDK"/>
-<attribute name="ORDERING-CODE" value="C0603X5R1E222K"/>
+<attribute name="ORDERING-CODE" value="C0603X5R1E222K030BA"/>
 </part>
 <part name="C45" library="firefly" deviceset="C-US" device="C0201" value="DNS">
 <attribute name="DNS" value="true"/>
 </part>
 <part name="C46" library="firefly" deviceset="C-US" device="C0201" value="1.2pF">
 <attribute name="MANUFACTURER" value="TDK"/>
-<attribute name="ORDERING-CODE" value="C0603C0G1E1R2BTQ"/>
+<attribute name="ORDERING-CODE" value="C0603C0G1E1R2B030BF"/>
 </part>
 <part name="C47" library="firefly" deviceset="C-US" device="C0201" value="1.8pF">
 <attribute name="MANUFACTURER" value="TDK"/>
-<attribute name="ORDERING-CODE" value="C0603C0G1E1R8CTQ"/>
+<attribute name="ORDERING-CODE" value="C0603C0G1E1R8C030BF"/>
 </part>
 <part name="L2" library="firefly" deviceset="L-US" device="L0201" value="5.6nH">
 <attribute name="MANUFACTURER" value="TDK"/>
@@ -8836,12 +8836,13 @@ Source: http://www.vishay.com/docs/45017/vjsoldfo.pdf</description>
 <part name="V10" library="firefly" deviceset="GND" device=""/>
 <part name="C4" library="firefly" deviceset="C-US" device="C0402" value="4.7uF">
 <attribute name="MANUFACTURER" value="TDK Corporation"/>
-<attribute name="ORDERING-CODE" value="C1005X5R0J475M"/>
+<attribute name="ORDERING-CODE" value="C1005X5R0J475M050BC"/>
+<attribute name="VARIANTS" value="usb-charging"/>
 </part>
 <part name="V17" library="firefly" deviceset="GND" device=""/>
 <part name="C5" library="firefly" deviceset="C-US" device="C0402" value="4.7uF">
 <attribute name="MANUFACTURER" value="TDK Corporation"/>
-<attribute name="ORDERING-CODE" value="C1005X5R0J475M"/>
+<attribute name="ORDERING-CODE" value="C1005X5R0J475M050BC"/>
 <attribute name="VARIANTS" value="usb-charging"/>
 </part>
 <part name="V18" library="firefly" deviceset="GND" device=""/>
@@ -8854,7 +8855,7 @@ Source: http://www.vishay.com/docs/45017/vjsoldfo.pdf</description>
 <part name="USBV" library="firefly" deviceset="TARGET-PIN" device=""/>
 <part name="C6" library="firefly" deviceset="C-US" device="C0201" value="1.2pF">
 <attribute name="MANUFACTURER" value="TDK"/>
-<attribute name="ORDERING-CODE" value="C0603C0G1E1R2BTQ"/>
+<attribute name="ORDERING-CODE" value="C0603C0G1E1R2B030BF"/>
 </part>
 <part name="L6" library="firefly" deviceset="L-US" device="L0201" value="7.5nH">
 <attribute name="MANUFACTURER" value="Taiyo Yuden"/>
@@ -8887,7 +8888,7 @@ Source: http://www.vishay.com/docs/45017/vjsoldfo.pdf</description>
 <attribute name="VARIANTS" value="low-power"/>
 </part>
 <part name="V67" library="firefly" deviceset="GND" device=""/>
-<part name="R5" library="firefly" deviceset="R-US_" device="R0201" value="0 (DNS)">
+<part name="R5" library="firefly" deviceset="R-US_" device="R0201" value="0 (OPT)">
 <attribute name="MANUFACTURER" value="Panasonic Electronic Components"/>
 <attribute name="ORDERING-CODE" value="ERJ-1GE0R00C"/>
 <attribute name="VARIANTS" value="!low-power"/>
@@ -8909,9 +8910,9 @@ Source: http://www.vishay.com/docs/45017/vjsoldfo.pdf</description>
 <attribute name="MANUFACTURER" value="Rohm Semiconductor"/>
 <attribute name="ORDERING-CODE" value="SML-P11UTT86"/>
 </part>
-<part name="R8" library="firefly" deviceset="R-US_" device="R0201" value="20k">
+<part name="R8" library="firefly" deviceset="R-US_" device="R0201" value="12.4k">
 <attribute name="MANUFACTURER" value="Panasonic Electronic Components"/>
-<attribute name="ORDERING-CODE" value="ERJ-1GEF2002C"/>
+<attribute name="ORDERING-CODE" value="ERJ-1GEF1242C"/>
 <attribute name="VARIANTS" value="usb-charging"/>
 </part>
 <part name="V14" library="firefly" deviceset="GND" device=""/>
@@ -9031,11 +9032,6 @@ Source: http://www.vishay.com/docs/45017/vjsoldfo.pdf</description>
 <attribute name="ORDERING-CODE" value="C0603X5R0J105M030BC"/>
 </part>
 <part name="V83" library="firefly" deviceset="GND" device=""/>
-<part name="U14" library="firefly" deviceset="FDFMA2P029Z" device="">
-<attribute name="MANUFACTURER" value="Fairchild Semiconductor"/>
-<attribute name="ORDERING-CODE" value="FDFMA2P857"/>
-<attribute name="VARIANTS" value="usb-power"/>
-</part>
 <part name="D10" library="firefly" deviceset="BAT54WS" device="SOD-123F" value="BAT54WSSOD-123F">
 <attribute name="MANUFACTURER" value="Rohm Semiconductor"/>
 <attribute name="ORDERING-CODE" value="RB161M-20TR"/>
@@ -9052,9 +9048,9 @@ Source: http://www.vishay.com/docs/45017/vjsoldfo.pdf</description>
 <attribute name="MANUFACTURER" value="Energy Micro"/>
 <attribute name="ORDERING-CODE" value="EFM32LG330F256"/>
 </part>
-<part name="R6" library="firefly" deviceset="R-US_" device="R0201" value="50">
+<part name="R6" library="firefly" deviceset="R-US_" device="R0201" value="25">
 <attribute name="MANUFACTURER" value="Panasonic Electronic Components"/>
-<attribute name="ORDERING-CODE" value="ERJ-1GEF51R0C"/>
+<attribute name="ORDERING-CODE" value="ERJ-1GEF24R9C"/>
 </part>
 <part name="R17" library="firefly" deviceset="R-US_" device="R0201" value="50">
 <attribute name="MANUFACTURER" value="Panasonic Electronic Components"/>
@@ -9076,7 +9072,7 @@ Source: http://www.vishay.com/docs/45017/vjsoldfo.pdf</description>
 <part name="V12" library="firefly" deviceset="GND" device=""/>
 <part name="C15" library="firefly" deviceset="C-US" device="C0402" value="4.7uF">
 <attribute name="MANUFACTURER" value="TDK Corporation"/>
-<attribute name="ORDERING-CODE" value="C1005X5R0J475M"/>
+<attribute name="ORDERING-CODE" value="C1005X5R0J475M050BC"/>
 </part>
 <part name="V13" library="firefly" deviceset="GND" device=""/>
 <part name="L9" library="firefly" deviceset="L-US" device="L0201" value="Ferrite Bead">
@@ -9120,7 +9116,7 @@ Source: http://www.vishay.com/docs/45017/vjsoldfo.pdf</description>
 <attribute name="MANUFACTURER" value="Panasonic Electronic Components"/>
 <attribute name="ORDERING-CODE" value="ERJ-1GE0R00C"/>
 </part>
-<part name="R14" library="firefly" deviceset="R-US_" device="R0201" value="0 (DNS)">
+<part name="R14" library="firefly" deviceset="R-US_" device="R0201" value="0 (OPT)">
 <attribute name="MANUFACTURER" value="Panasonic Electronic Components"/>
 <attribute name="ORDERING-CODE" value="ERJ-1GE0R00C"/>
 <attribute name="VARIANTS" value="!efficient-power"/>
@@ -9139,12 +9135,10 @@ Source: http://www.vishay.com/docs/45017/vjsoldfo.pdf</description>
 <part name="R31" library="firefly" deviceset="R-US_" device="R0201" value="100k">
 <attribute name="MANUFACTURER" value="Yageo"/>
 <attribute name="ORDERING-CODE" value="RC0201FR-07100KL"/>
-<attribute name="VARIANTS" value="efficient-power"/>
 </part>
 <part name="R32" library="firefly" deviceset="R-US_" device="R0201" value="100k">
 <attribute name="MANUFACTURER" value="Yageo"/>
 <attribute name="ORDERING-CODE" value="RC0201FR-07100KL"/>
-<attribute name="VARIANTS" value="efficient-power"/>
 </part>
 <part name="V92" library="firefly" deviceset="GND" device=""/>
 <part name="U6" library="firefly" deviceset="MOSFET-N+P" device="SOT963">
@@ -9154,7 +9148,6 @@ Source: http://www.vishay.com/docs/45017/vjsoldfo.pdf</description>
 <part name="R33" library="firefly" deviceset="R-US_" device="R0201" value="100k">
 <attribute name="MANUFACTURER" value="Yageo"/>
 <attribute name="ORDERING-CODE" value="RC0201FR-07100KL"/>
-<attribute name="VARIANTS" value="efficient-power"/>
 </part>
 <part name="V93" library="firefly" deviceset="GND" device=""/>
 <part name="FRAME3" library="frames" deviceset="A3P-LOC" device="" value="FRAME"/>
@@ -9176,12 +9169,12 @@ Source: http://www.vishay.com/docs/45017/vjsoldfo.pdf</description>
 <part name="V94" library="firefly" deviceset="GND" device=""/>
 <part name="C53" library="firefly" deviceset="C-US" device="C0201" value="470nF">
 <attribute name="MANUFACTURER" value="TDK Corporation"/>
-<attribute name="ORDERING-CODE" value="C0603X5R0J474M"/>
+<attribute name="ORDERING-CODE" value="C0603X5R0J474M030BC"/>
 <attribute name="VARIANTS" value="color"/>
 </part>
 <part name="C54" library="firefly" deviceset="C-US" device="C0201" value="470nF">
 <attribute name="MANUFACTURER" value="TDK Corporation"/>
-<attribute name="ORDERING-CODE" value="C0603X5R0J474M"/>
+<attribute name="ORDERING-CODE" value="C0603X5R0J474M030BC"/>
 <attribute name="VARIANTS" value="color"/>
 </part>
 <part name="V95" library="firefly" deviceset="GND" device=""/>
@@ -9215,6 +9208,7 @@ Source: http://www.vishay.com/docs/45017/vjsoldfo.pdf</description>
 <part name="U8" library="firefly" deviceset="USB-ESD3" device="WLCSP5">
 <attribute name="MANUFACTURER" value="NXP Semiconductors"/>
 <attribute name="ORDERING-CODE" value="IP4059CX5/LF,135"/>
+<attribute name="VARIANTS" value="usb-power"/>
 </part>
 <part name="R2" library="firefly" deviceset="R-US_" device="R0201" value="100k">
 <attribute name="MANUFACTURER" value="Yageo"/>
@@ -9279,7 +9273,17 @@ Source: http://www.vishay.com/docs/45017/vjsoldfo.pdf</description>
 <part name="R7" library="firefly" deviceset="R-US_" device="R0201" value="100k">
 <attribute name="MANUFACTURER" value="Yageo"/>
 <attribute name="ORDERING-CODE" value="RC0201FR-07100KL"/>
-<attribute name="VARIANTS" value="efficient-power"/>
+</part>
+<part name="U14" library="firefly" deviceset="FDFMA2P029Z" device="">
+<attribute name="DNS" value="true"/>
+<attribute name="MANUFACTURER" value="Fairchild Semiconductor"/>
+<attribute name="ORDERING-CODE" value="FDFMA2P857"/>
+</part>
+<part name="V70" library="firefly" deviceset="GND" device=""/>
+<part name="R12" library="firefly" deviceset="R-US_" device="R0201" value="100k">
+<attribute name="DNS" value="true"/>
+<attribute name="MANUFACTURER" value="Yageo"/>
+<attribute name="ORDERING-CODE" value="RC0201FR-07100KL"/>
 </part>
 </parts>
 <sheets>
@@ -10531,7 +10535,6 @@ Source: http://www.vishay.com/docs/45017/vjsoldfo.pdf</description>
 <instance part="R7" gate="G$1" x="119.38" y="149.86" rot="R270">
 <attribute name="MANUFACTURER" x="119.38" y="149.86" size="1.778" layer="96" rot="R270" display="off"/>
 <attribute name="ORDERING-CODE" x="119.38" y="149.86" size="1.778" layer="96" rot="R270" display="off"/>
-<attribute name="VARIANTS" x="119.38" y="149.86" size="1.778" layer="96" rot="R270" display="off"/>
 </instance>
 </instances>
 <busses>
@@ -11407,7 +11410,7 @@ Source: http://www.vishay.com/docs/45017/vjsoldfo.pdf</description>
 <sheet>
 <plain>
 <text x="256.54" y="132.08" size="1.778" layer="91">2.2V</text>
-<text x="167.64" y="154.94" size="1.778" layer="91">50 mA</text>
+<text x="167.64" y="154.94" size="1.778" layer="91">80 mA</text>
 </plain>
 <instances>
 <instance part="FRAME6" gate="G$1" x="0" y="0"/>
@@ -11422,6 +11425,7 @@ Source: http://www.vishay.com/docs/45017/vjsoldfo.pdf</description>
 <instance part="C4" gate="G$1" x="180.34" y="170.18">
 <attribute name="MANUFACTURER" x="180.34" y="170.18" size="1.778" layer="96" display="off"/>
 <attribute name="ORDERING-CODE" x="180.34" y="170.18" size="1.778" layer="96" display="off"/>
+<attribute name="VARIANTS" x="180.34" y="170.18" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="V17" gate="GND" x="180.34" y="160.02"/>
 <instance part="C5" gate="G$1" x="99.06" y="170.18">
@@ -11511,11 +11515,6 @@ Source: http://www.vishay.com/docs/45017/vjsoldfo.pdf</description>
 <attribute name="ORDERING-CODE" x="165.1" y="116.84" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="V83" gate="GND" x="165.1" y="106.68"/>
-<instance part="U14" gate="G$1" x="251.46" y="182.88" rot="R270">
-<attribute name="MANUFACTURER" x="251.46" y="182.88" size="1.778" layer="96" rot="R270" display="off"/>
-<attribute name="ORDERING-CODE" x="251.46" y="182.88" size="1.778" layer="96" rot="R270" display="off"/>
-<attribute name="VARIANTS" x="251.46" y="182.88" size="1.778" layer="96" rot="R270" display="off"/>
-</instance>
 <instance part="D10" gate="G$1" x="93.98" y="190.5">
 <attribute name="MANUFACTURER" x="93.98" y="190.5" size="1.778" layer="96" display="off"/>
 <attribute name="ORDERING-CODE" x="93.98" y="190.5" size="1.778" layer="96" display="off"/>
@@ -11562,12 +11561,10 @@ Source: http://www.vishay.com/docs/45017/vjsoldfo.pdf</description>
 <instance part="R31" gate="G$1" x="76.2" y="38.1" rot="R270">
 <attribute name="MANUFACTURER" x="76.2" y="38.1" size="1.778" layer="96" rot="R270" display="off"/>
 <attribute name="ORDERING-CODE" x="76.2" y="38.1" size="1.778" layer="96" rot="R270" display="off"/>
-<attribute name="VARIANTS" x="76.2" y="38.1" size="1.778" layer="96" rot="R270" display="off"/>
 </instance>
 <instance part="R32" gate="G$1" x="76.2" y="22.86" rot="R270">
 <attribute name="MANUFACTURER" x="76.2" y="22.86" size="1.778" layer="96" rot="R270" display="off"/>
 <attribute name="ORDERING-CODE" x="76.2" y="22.86" size="1.778" layer="96" rot="R270" display="off"/>
-<attribute name="VARIANTS" x="76.2" y="22.86" size="1.778" layer="96" rot="R270" display="off"/>
 </instance>
 <instance part="V92" gate="GND" x="76.2" y="12.7"/>
 <instance part="U6" gate="G$1" x="55.88" y="50.8">
@@ -11577,7 +11574,6 @@ Source: http://www.vishay.com/docs/45017/vjsoldfo.pdf</description>
 <instance part="R33" gate="G$1" x="45.72" y="71.12" rot="R270">
 <attribute name="MANUFACTURER" x="45.72" y="71.12" size="1.778" layer="96" rot="R270" display="off"/>
 <attribute name="ORDERING-CODE" x="45.72" y="71.12" size="1.778" layer="96" rot="R270" display="off"/>
-<attribute name="VARIANTS" x="45.72" y="71.12" size="1.778" layer="96" rot="R270" display="off"/>
 </instance>
 <instance part="V93" gate="GND" x="68.58" y="33.02"/>
 <instance part="L4" gate="G$1" x="25.4" y="170.18" rot="R180">
@@ -11595,6 +11591,7 @@ Source: http://www.vishay.com/docs/45017/vjsoldfo.pdf</description>
 <instance part="U8" gate="G$1" x="45.72" y="165.1">
 <attribute name="ORDERING-CODE" x="45.72" y="165.1" size="1.778" layer="96" display="off"/>
 <attribute name="MANUFACTURER" x="45.72" y="165.1" size="1.778" layer="96" display="off"/>
+<attribute name="VARIANTS" x="45.72" y="165.1" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="R2" gate="G$1" x="40.64" y="121.92" rot="R270">
 <attribute name="MANUFACTURER" x="40.64" y="121.92" size="1.778" layer="96" rot="R270" display="off"/>
@@ -11613,6 +11610,17 @@ Source: http://www.vishay.com/docs/45017/vjsoldfo.pdf</description>
 </instance>
 <instance part="V55" gate="GND" x="210.82" y="71.12"/>
 <instance part="USBID" gate="G$1" x="27.94" y="200.66" rot="R90"/>
+<instance part="U14" gate="G$1" x="251.46" y="182.88" rot="R270">
+<attribute name="DNS" x="251.46" y="182.88" size="1.778" layer="96" rot="R270" display="off"/>
+<attribute name="MANUFACTURER" x="251.46" y="182.88" size="1.778" layer="96" rot="R270" display="off"/>
+<attribute name="ORDERING-CODE" x="251.46" y="182.88" size="1.778" layer="96" rot="R270" display="off"/>
+</instance>
+<instance part="V70" gate="GND" x="266.7" y="172.72"/>
+<instance part="R12" gate="G$1" x="266.7" y="182.88" rot="R270">
+<attribute name="MANUFACTURER" x="266.7" y="182.88" size="1.778" layer="96" rot="R270" display="off"/>
+<attribute name="ORDERING-CODE" x="266.7" y="182.88" size="1.778" layer="96" rot="R270" display="off"/>
+<attribute name="DNS" x="266.7" y="182.88" size="1.778" layer="96" rot="R270" display="off"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -11757,6 +11765,11 @@ Source: http://www.vishay.com/docs/45017/vjsoldfo.pdf</description>
 <pinref part="V55" gate="GND" pin="GND"/>
 <wire x1="210.82" y1="76.2" x2="210.82" y2="73.66" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="R12" gate="G$1" pin="2"/>
+<pinref part="V70" gate="GND" pin="GND"/>
+<wire x1="266.7" y1="177.8" x2="266.7" y2="175.26" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="USB_VBUS" class="0">
 <segment>
@@ -11765,10 +11778,8 @@ Source: http://www.vishay.com/docs/45017/vjsoldfo.pdf</description>
 <wire x1="99.06" y1="172.72" x2="99.06" y2="175.26" width="0.1524" layer="91"/>
 <junction x="99.06" y="175.26"/>
 <pinref part="U7" gate="G$1" pin="VDD"/>
-<pinref part="U14" gate="G$1" pin="G"/>
 <wire x1="248.92" y1="187.96" x2="248.92" y2="190.5" width="0.1524" layer="91"/>
 <wire x1="248.92" y1="190.5" x2="256.54" y2="190.5" width="0.1524" layer="91"/>
-<pinref part="U14" gate="G$1" pin="A"/>
 <wire x1="256.54" y1="190.5" x2="256.54" y2="187.96" width="0.1524" layer="91"/>
 <wire x1="248.92" y1="190.5" x2="99.06" y2="190.5" width="0.1524" layer="91"/>
 <wire x1="99.06" y1="190.5" x2="99.06" y2="175.26" width="0.1524" layer="91"/>
@@ -11777,6 +11788,12 @@ Source: http://www.vishay.com/docs/45017/vjsoldfo.pdf</description>
 <junction x="99.06" y="190.5"/>
 <junction x="248.92" y="190.5"/>
 <label x="104.14" y="190.5" size="1.778" layer="95"/>
+<pinref part="U14" gate="G$1" pin="A"/>
+<pinref part="U14" gate="G$1" pin="G"/>
+<pinref part="R12" gate="G$1" pin="1"/>
+<wire x1="256.54" y1="190.5" x2="266.7" y2="190.5" width="0.1524" layer="91"/>
+<wire x1="266.7" y1="190.5" x2="266.7" y2="187.96" width="0.1524" layer="91"/>
+<junction x="256.54" y="190.5"/>
 </segment>
 </net>
 <net name="VCC" class="0">
@@ -11857,11 +11874,8 @@ Source: http://www.vishay.com/docs/45017/vjsoldfo.pdf</description>
 </net>
 <net name="VUNREG" class="0">
 <segment>
-<pinref part="U14" gate="G$1" pin="C"/>
 <wire x1="256.54" y1="177.8" x2="256.54" y2="175.26" width="0.1524" layer="91"/>
-<pinref part="U14" gate="G$1" pin="D"/>
 <wire x1="256.54" y1="175.26" x2="248.92" y2="175.26" width="0.1524" layer="91"/>
-<wire x1="248.92" y1="175.26" x2="248.92" y2="177.8" width="0.1524" layer="91"/>
 <wire x1="256.54" y1="175.26" x2="256.54" y2="139.7" width="0.1524" layer="91"/>
 <pinref part="U11" gate="G$1" pin="EN"/>
 <wire x1="132.08" y1="116.84" x2="129.54" y2="116.84" width="0.1524" layer="91"/>
@@ -11893,6 +11907,9 @@ Source: http://www.vishay.com/docs/45017/vjsoldfo.pdf</description>
 <wire x1="81.28" y1="139.7" x2="104.14" y2="139.7" width="0.1524" layer="91"/>
 <junction x="81.28" y="139.7"/>
 <junction x="104.14" y="139.7"/>
+<wire x1="248.92" y1="175.26" x2="248.92" y2="177.8" width="0.1524" layer="91"/>
+<pinref part="U14" gate="G$1" pin="C"/>
+<pinref part="U14" gate="G$1" pin="S"/>
 </segment>
 </net>
 <net name="N$30" class="0">
@@ -11989,8 +12006,6 @@ Source: http://www.vishay.com/docs/45017/vjsoldfo.pdf</description>
 </net>
 <net name="BAT_V" class="0">
 <segment>
-<pinref part="U14" gate="G$1" pin="S"/>
-<wire x1="243.84" y1="177.8" x2="243.84" y2="175.26" width="0.1524" layer="91"/>
 <wire x1="200.66" y1="175.26" x2="208.28" y2="175.26" width="0.1524" layer="91"/>
 <wire x1="208.28" y1="175.26" x2="243.84" y2="175.26" width="0.1524" layer="91"/>
 <pinref part="C51" gate="G$1" pin="1"/>
@@ -12012,6 +12027,8 @@ Source: http://www.vishay.com/docs/45017/vjsoldfo.pdf</description>
 <wire x1="218.44" y1="165.1" x2="218.44" y2="154.94" width="0.1524" layer="91"/>
 <junction x="218.44" y="154.94"/>
 <wire x1="200.66" y1="175.26" x2="200.66" y2="154.94" width="0.1524" layer="91"/>
+<wire x1="243.84" y1="175.26" x2="243.84" y2="177.8" width="0.1524" layer="91"/>
+<pinref part="U14" gate="G$1" pin="D"/>
 </segment>
 <segment>
 <pinref part="R33" gate="G$1" pin="1"/>
