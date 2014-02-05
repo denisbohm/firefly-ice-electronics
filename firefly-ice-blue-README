@@ -2,9 +2,9 @@ Contact: Denis Bohm
 denis@fireflydesign.com
 (650) 814-1714
 
-Sep 10, 2013
+Feb 5, 2014
 Customer: Firefly Design LLC
-Board: Firefly Ice Blue 1.3.1
+Board: Firefly Ice Blue 1.4.0
 Number of Layers: 4
 Dimensions: 34mm x 34mm
 PCB Thickness: 0.031"
@@ -22,6 +22,9 @@ There are 2 slots for mounting the USB connector (J1).  These slots should
 be plated through.  The finished slot size is 0.6 mm x 1.1 mm with a radius
 of 0.3 mm.  Please see page 3 of the ZX62WD1-B-5PC specification:
 http://media.digikey.com/PDF/Data%20Sheets/Hirose%20PDFs/ZX62WD1-B-5PC_Specs.pdf
+
+Changes to 1.4.0 from revision 1.3.1:
+1) Fixed power pass connections.
 
 Changes to 1.3.1 from revision 1.3.0:
 1) Added top and bottom documentation layers to top and bottom silk.
@@ -48,11 +51,12 @@ Files:
 
 firefly-ice-blue.sch - Eagle 6 schematic file
 firefly-ice-blue.brd - Eagle 6 board file
-firefly-ice-blue.xls - bill of materials
 
+firefly-ice-blue-bom.xls - bill of materials
+firefly-ice-blue-bom.pdf - bill of materials
 firefly-ice-blue-schematic.pdf - schematic
-firefly-ice-blue-top-diagram.pdf - top (component) side assembly diagram
-firefly-ice-blue-bottom-diagram.pdf - bottom side assembly diagram
+firefly-ice-blue-placement-top.pdf - top (component) side assembly diagram
+firefly-ice-blue-placement-bottom.pdf - bottom side assembly diagram
 firefly-ice-blue-centroid.csv - surface mount centroid placement data
 
 Gerbers
