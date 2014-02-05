@@ -7,7 +7,7 @@ cp firefly-ice-blue-fixture.slk firefly-ice-blue-fixture.GTO
 cp firefly-ice-blue-fixture.bsk firefly-ice-blue-fixture.GBO
 cp firefly-ice-blue-fixture.oln firefly-ice-blue-fixture.GKO
 cp firefly-ice-blue-fixture.drd firefly-ice-blue-fixture.XLN
-zip firefly-ice-blue-fixture-1.0.0.zip \
+zip firefly-ice-blue-fixture-1.1.0.zip \
 firefly-ice-blue-fixture.sch \
 firefly-ice-blue-fixture.brd \
 firefly-ice-blue-fixture.GTL \

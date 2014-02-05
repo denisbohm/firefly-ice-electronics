@@ -109,11 +109,25 @@
 <board>
 <plain>
 <wire x1="0" y1="0" x2="36" y2="0" width="0" layer="20"/>
-<wire x1="36" y1="0" x2="36" y2="100" width="0" layer="20"/>
-<wire x1="36" y1="100" x2="0" y2="100" width="0" layer="20"/>
-<wire x1="0" y1="100" x2="0" y2="0" width="0" layer="20"/>
-<text x="1.524" y="1.651" size="1.778" layer="111">Firefly Ice Fixture 1.0</text>
-<text x="34.163" y="1.651" size="1.778" layer="112" rot="MR0">Firefly Ice Fixture 1.0</text>
+<wire x1="36" y1="0" x2="36" y2="105" width="0" layer="20"/>
+<wire x1="36" y1="105" x2="0" y2="105" width="0" layer="20"/>
+<wire x1="0" y1="105" x2="0" y2="0" width="0" layer="20"/>
+<text x="1.524" y="102" size="1.778" layer="111">Firefly Ice Fixture 1.0</text>
+<text x="34.163" y="102" size="1.778" layer="112" rot="MR0">Firefly Ice Fixture 1.0</text>
+<text x="1.27" y="97.155" size="1.778" layer="111">GND</text>
+<text x="1.27" y="87.122" size="1.778" layer="111">BAT+</text>
+<text x="33.655" y="82.042" size="1.778" layer="111" rot="R270">RESET</text>
+<text x="17.018" y="80.137" size="1.778" layer="111" rot="R270">USB</text>
+<text x="14.478" y="98.933" size="1.778" layer="111" rot="R270">BATTERY</text>
+<text x="7.62" y="65.024" size="1.778" layer="111" rot="R270">SWD</text>
+<text x="3.175" y="56.642" size="1.778" layer="111">1</text>
+<text x="1.905" y="49.149" size="1.778" layer="111">1</text>
+<text x="1.905" y="38.735" size="1.778" layer="111">1</text>
+<wire x1="6.35" y1="66.167" x2="6.35" y2="63.5" width="0.3048" layer="111"/>
+<wire x1="6.35" y1="63.5" x2="6.985" y2="63.5" width="0.3048" layer="111"/>
+<wire x1="6.985" y1="63.5" x2="6.985" y2="61.468" width="0.3048" layer="111"/>
+<wire x1="6.985" y1="61.468" x2="6.35" y2="61.468" width="0.3048" layer="111"/>
+<wire x1="6.35" y1="61.468" x2="6.35" y2="58.801" width="0.3048" layer="111"/>
 </plain>
 <libraries>
 <library name="firefly">
@@ -121,7 +135,7 @@
 by exp-lbrs.ulp</description>
 <packages>
 <package name="PROBE-0985">
-<pad name="1" x="0" y="0" drill="0.49"/>
+<pad name="1" x="0" y="0" drill="0.6"/>
 </package>
 <package name="SWD-10">
 <pad name="6" x="0" y="0.635" drill="0.7" diameter="1"/>
@@ -395,9 +409,9 @@ design rules under a new name.</description>
 <attribute name="MANUFACTURER" value="On Shore Technology Inc" x="10.287" y="77.343" size="1.778" layer="28" rot="MR90" display="off"/>
 <attribute name="ORDERING-CODE" value="USB-B1HSB6" x="10.287" y="77.343" size="1.778" layer="28" rot="MR90" display="off"/>
 </element>
-<element name="SRES" library="firefly" package="KS-01Q-01" value="SPST-NOKS-01Q-01" x="25.908" y="63.881" rot="MR0">
-<attribute name="MANUFACTURER" value="E-Switch" x="25.908" y="63.881" size="1.778" layer="28" rot="MR0" display="off"/>
-<attribute name="ORDERING-CODE" value="KS-01Q-01" x="25.908" y="63.881" size="1.778" layer="28" rot="MR0" display="off"/>
+<element name="SRES" library="firefly" package="KS-01Q-01" value="SPST-NOKS-01Q-01" x="25.908" y="77.343" rot="MR0">
+<attribute name="MANUFACTURER" value="E-Switch" x="25.908" y="77.343" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="ORDERING-CODE" value="KS-01Q-01" x="25.908" y="77.343" size="1.778" layer="28" rot="MR0" display="off"/>
 </element>
 <element name="JBAT" library="firefly" package="20020303-D021B01LF" value="CON-220020303-D021B01LF" x="8.001" y="92.964" rot="MR90">
 <attribute name="MANUFACTURER" value="FCI" x="8.001" y="92.964" size="1.778" layer="28" rot="MR90" display="off"/>
@@ -433,13 +447,14 @@ design rules under a new name.</description>
 <wire x1="4.191" y1="94.869" x2="11.811" y2="94.869" width="0.6096" layer="16"/>
 <wire x1="12.997" y1="78.593" x2="2.052" y2="78.593" width="0.6096" layer="16"/>
 <wire x1="2.052" y1="78.593" x2="2.032" y2="78.613" width="0.6096" layer="16"/>
-<wire x1="28.408" y1="66.381" x2="28.408" y2="66.461" width="0.6096" layer="16"/>
-<wire x1="28.408" y1="66.461" x2="27.051" y2="67.818" width="0.6096" layer="16"/>
+<wire x1="28.321" y1="69.088" x2="27.051" y2="67.818" width="0.6096" layer="16"/>
 <wire x1="27.051" y1="67.818" x2="2.032" y2="67.818" width="0.6096" layer="16"/>
 <wire x1="3.81" y1="65.024" x2="2.032" y2="65.024" width="0.6096" layer="16"/>
 <wire x1="3.81" y1="62.484" x2="2.032" y2="62.484" width="0.6096" layer="16"/>
 <wire x1="3.81" y1="61.214" x2="2.032" y2="61.214" width="0.6096" layer="16"/>
-<wire x1="28.408" y1="66.381" x2="28.408" y2="61.381" width="0.6096" layer="1"/>
+<wire x1="28.321" y1="69.088" x2="28.321" y2="74.803" width="0.6096" layer="16"/>
+<wire x1="28.321" y1="74.803" x2="28.408" y2="74.843" width="0.6096" layer="16"/>
+<wire x1="28.408" y1="79.843" x2="28.408" y2="74.843" width="0.6096" layer="1"/>
 </signal>
 <signal name="VCC">
 <contactref element="VCC" pad="1"/>
@@ -554,11 +569,13 @@ design rules under a new name.</description>
 <wire x1="22.987" y1="26.543" x2="22.987" y2="35.814" width="0.3048" layer="1"/>
 <wire x1="22.987" y1="35.814" x2="26.67" y2="39.497" width="0.3048" layer="1"/>
 <wire x1="26.67" y1="39.497" x2="26.67" y2="49.911" width="0.3048" layer="1"/>
-<wire x1="23.408" y1="66.381" x2="23.408" y2="61.381" width="0.3048" layer="1"/>
 <wire x1="26.67" y1="49.911" x2="26.67" y2="54.356" width="0.3048" layer="1"/>
 <wire x1="26.67" y1="54.356" x2="23.495" y2="57.531" width="0.3048" layer="1"/>
 <wire x1="23.495" y1="57.531" x2="23.495" y2="61.214" width="0.3048" layer="1"/>
-<wire x1="23.495" y1="61.214" x2="23.408" y2="61.381" width="0.3048" layer="1"/>
+<wire x1="23.495" y1="61.214" x2="23.495" y2="74.803" width="0.3048" layer="1"/>
+<wire x1="23.495" y1="74.803" x2="23.455" y2="74.843" width="0.3048" layer="1"/>
+<wire x1="23.455" y1="74.843" x2="23.408" y2="74.843" width="0.3048" layer="1"/>
+<wire x1="23.408" y1="79.843" x2="23.408" y2="74.843" width="0.3048" layer="1"/>
 </signal>
 <signal name="BAT+">
 <contactref element="JBAT" pad="1B"/>
@@ -571,9 +588,9 @@ design rules under a new name.</description>
 <wire x1="29.21" y1="39.497" x2="29.21" y2="49.911" width="0.6096" layer="1"/>
 <wire x1="29.21" y1="49.911" x2="29.21" y2="54.61" width="0.6096" layer="1"/>
 <wire x1="29.21" y1="54.61" x2="33.147" y2="58.547" width="0.6096" layer="1"/>
-<wire x1="33.147" y1="58.547" x2="33.147" y2="75.946" width="0.6096" layer="1"/>
-<wire x1="33.147" y1="75.946" x2="18.034" y2="91.059" width="0.6096" layer="1"/>
-<wire x1="18.034" y1="91.059" x2="11.811" y2="91.059" width="0.6096" layer="1"/>
+<wire x1="33.147" y1="58.547" x2="33.147" y2="85.852" width="0.6096" layer="1"/>
+<wire x1="33.147" y1="85.852" x2="27.94" y2="91.059" width="0.6096" layer="1"/>
+<wire x1="27.94" y1="91.059" x2="11.811" y2="91.059" width="0.6096" layer="1"/>
 <wire x1="11.811" y1="91.059" x2="4.191" y2="91.059" width="0.6096" layer="1"/>
 </signal>
 </signals>

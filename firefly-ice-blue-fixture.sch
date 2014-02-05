@@ -121,7 +121,7 @@ by exp-lbrs.ulp</description>
 <text x="-0.8" y="1.3" size="1" layer="51">&gt;Name</text>
 </package>
 <package name="PROBE-0985">
-<pad name="1" x="0" y="0" drill="0.49"/>
+<pad name="1" x="0" y="0" drill="0.6"/>
 </package>
 <package name="CON-HEADER-10">
 <pad name="5" x="-1.27" y="0" drill="1.102359375"/>
