@@ -1,7 +1,7 @@
 firefly-ice-electronics
 =======================
 
-Firefly Ice Activity Monitor Electronics
+Firefly Ice Activity Monitor / Internet of Things Electronics
 
 See http://fireflydesign.com for information on the open source Firefly Activity Monitor.
 

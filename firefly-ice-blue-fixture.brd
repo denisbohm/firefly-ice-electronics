@@ -109,25 +109,25 @@
 <board>
 <plain>
 <wire x1="0" y1="0" x2="36" y2="0" width="0" layer="20"/>
-<wire x1="36" y1="0" x2="36" y2="105" width="0" layer="20"/>
+<wire x1="36" y1="0" x2="36" y2="105" width="0" layer="112"/>
 <wire x1="36" y1="105" x2="0" y2="105" width="0" layer="20"/>
 <wire x1="0" y1="105" x2="0" y2="0" width="0" layer="20"/>
-<text x="1.524" y="102" size="1.778" layer="111">Firefly Ice Fixture 1.0</text>
-<text x="34.163" y="102" size="1.778" layer="112" rot="MR0">Firefly Ice Fixture 1.0</text>
-<text x="1.27" y="97.155" size="1.778" layer="111">GND</text>
-<text x="1.27" y="87.122" size="1.778" layer="111">BAT+</text>
-<text x="33.655" y="82.042" size="1.778" layer="111" rot="R270">RESET</text>
-<text x="17.018" y="80.137" size="1.778" layer="111" rot="R270">USB</text>
-<text x="14.478" y="98.933" size="1.778" layer="111" rot="R270">BATTERY</text>
-<text x="7.62" y="65.024" size="1.778" layer="111" rot="R270">SWD</text>
-<text x="3.175" y="56.642" size="1.778" layer="111">1</text>
-<text x="1.905" y="49.149" size="1.778" layer="111">1</text>
-<text x="1.905" y="38.735" size="1.778" layer="111">1</text>
-<wire x1="6.35" y1="66.167" x2="6.35" y2="63.5" width="0.3048" layer="111"/>
-<wire x1="6.35" y1="63.5" x2="6.985" y2="63.5" width="0.3048" layer="111"/>
-<wire x1="6.985" y1="63.5" x2="6.985" y2="61.468" width="0.3048" layer="111"/>
-<wire x1="6.985" y1="61.468" x2="6.35" y2="61.468" width="0.3048" layer="111"/>
-<wire x1="6.35" y1="61.468" x2="6.35" y2="58.801" width="0.3048" layer="111"/>
+<text x="1.524" y="102" size="1.778" layer="111">Firefly Ice Fixture 1.1</text>
+<text x="34.163" y="102" size="1.778" layer="112" rot="MR0">Firefly Ice Fixture 1.1</text>
+<text x="6.35" y="96.901" size="1.778" layer="112" rot="MR0">GND</text>
+<text x="6.35" y="87.122" size="1.778" layer="112" rot="MR0">BAT+</text>
+<text x="35.052" y="82.423" size="1.778" layer="112" rot="MR270">RESET</text>
+<text x="18.923" y="80.01" size="1.778" layer="112" rot="MR270">USB</text>
+<text x="16.51" y="98.933" size="1.778" layer="112" rot="MR270">BATTERY</text>
+<text x="9.652" y="65.151" size="1.778" layer="112" rot="MR270">SWD</text>
+<text x="3.937" y="56.642" size="1.778" layer="112" rot="MR0">1</text>
+<text x="2.413" y="48.895" size="1.778" layer="112" rot="MR0">1</text>
+<text x="2.54" y="38.735" size="1.778" layer="112" rot="MR0">1</text>
+<wire x1="6.35" y1="66.167" x2="6.35" y2="63.5" width="0.3048" layer="112"/>
+<wire x1="6.35" y1="63.5" x2="6.985" y2="63.5" width="0.3048" layer="112"/>
+<wire x1="6.985" y1="63.5" x2="6.985" y2="61.468" width="0.3048" layer="112"/>
+<wire x1="6.985" y1="61.468" x2="6.35" y2="61.468" width="0.3048" layer="112"/>
+<wire x1="6.35" y1="61.468" x2="6.35" y2="58.801" width="0.3048" layer="112"/>
 </plain>
 <libraries>
 <library name="firefly">
