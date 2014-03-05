@@ -9046,7 +9046,7 @@ Source: http://www.vishay.com/docs/45017/vjsoldfo.pdf</description>
 <part name="U$15" library="firefly" deviceset="VCC" device=""/>
 <part name="U1" library="firefly" deviceset="EFM32LG330F256" device="">
 <attribute name="MANUFACTURER" value="Energy Micro"/>
-<attribute name="ORDERING-CODE" value="EFM32LG330F256"/>
+<attribute name="ORDERING-CODE" value="EFM32LG330F256-QFN64"/>
 </part>
 <part name="R6" library="firefly" deviceset="R-US_" device="R0201" value="25">
 <attribute name="MANUFACTURER" value="Panasonic Electronic Components"/>
@@ -9183,7 +9183,7 @@ Source: http://www.vishay.com/docs/45017/vjsoldfo.pdf</description>
 <part name="U16" library="firefly" deviceset="MEMORY-SPI" device="WLBGA-8">
 <attribute name="DISTRIBUTOR" value="Arrow"/>
 <attribute name="MANUFACTURER" value="Winbond"/>
-<attribute name="ORDERING-CODE" value="W25Q16DWBYIG"/>
+<attribute name="ORDERING-CODE" value="W25Q16DWBYIG-TR"/>
 </part>
 <part name="U$3" library="firefly" deviceset="VCC" device=""/>
 <part name="C55" library="firefly" deviceset="C-US" device="C0201" value="100nF">

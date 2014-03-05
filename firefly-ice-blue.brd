@@ -2366,7 +2366,7 @@ This Sunstone Circuits 4 Layer .DRU has been set to cover our minimum requiremen
 </element>
 <element name="U1" library="firefly" package="QFN64" value="EFM32LG330F256" x="15.494" y="21.209" smashed="yes">
 <attribute name="MANUFACTURER" value="Energy Micro" x="15.494" y="21.209" size="1.778" layer="27" display="off"/>
-<attribute name="ORDERING-CODE" value="EFM32LG330F256" x="15.494" y="21.209" size="1.778" layer="27" display="off"/>
+<attribute name="ORDERING-CODE" value="EFM32LG330F256-QFN64" x="15.494" y="21.209" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="11.894" y="25.088" size="0.254" layer="51"/>
 </element>
 <element name="R6" library="firefly" package="R0201" value="25" x="15.494" y="32.004" smashed="yes">
@@ -2534,7 +2534,7 @@ This Sunstone Circuits 4 Layer .DRU has been set to cover our minimum requiremen
 <attribute name="NAME" x="5.761" y="18.596" size="0.254" layer="51" rot="R180"/>
 </element>
 <element name="U16" library="firefly" package="WLBGA-8" value="MEMORY-SPIWLBGA-8" x="5.588" y="21.717" smashed="yes" rot="R180">
-<attribute name="ORDERING-CODE" value="W25Q16DWBYIG" x="5.588" y="21.717" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="ORDERING-CODE" value="W25Q16DWBYIG-TR" x="5.588" y="21.717" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MANUFACTURER" value="Winbond" x="5.588" y="21.717" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="DISTRIBUTOR" value="Arrow" x="5.588" y="21.717" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="NAME" x="5.888" y="20.717" size="0.254" layer="51" rot="R180"/>
