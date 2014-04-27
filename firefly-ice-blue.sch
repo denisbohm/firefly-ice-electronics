@@ -8978,7 +8978,7 @@ Source: http://www.vishay.com/docs/45017/vjsoldfo.pdf</description>
 </part>
 <part name="U11" library="firefly" deviceset="TPS782XX" device="">
 <attribute name="MANUFACTURER" value="Texas Instruments"/>
-<attribute name="ORDERING-CODE" value="TPS78222DRVR"/>
+<attribute name="ORDERING-CODE" value="TPS78225DRVR"/>
 </part>
 <part name="U12" library="firefly" deviceset="TPS6208X" device="">
 <attribute name="DISTRIBUTOR" value="Mouser"/>
@@ -9010,9 +9010,9 @@ Source: http://www.vishay.com/docs/45017/vjsoldfo.pdf</description>
 <attribute name="ORDERING-CODE" value="74479775210"/>
 <attribute name="VARIANTS" value="efficient-power"/>
 </part>
-<part name="R3" library="firefly" deviceset="R-US_" device="R0201" value="152.4k">
+<part name="R3" library="firefly" deviceset="R-US_" device="R0201" value="182k">
 <attribute name="MANUFACTURER" value="Panasonic Electronic Components"/>
-<attribute name="ORDERING-CODE" value="ERJ-1GEF1503C"/>
+<attribute name="ORDERING-CODE" value="ERJ-1GEF1823C"/>
 <attribute name="VARIANTS" value="efficient-power"/>
 </part>
 <part name="R10" library="firefly" deviceset="R-US_" device="R0201" value="39.2k">
@@ -9253,7 +9253,7 @@ Source: http://www.vishay.com/docs/45017/vjsoldfo.pdf</description>
 <attribute name="ORDERING-CODE" value="M40-3100345R"/>
 <attribute name="VARIANTS" value="expansion"/>
 </part>
-<part name="USBID" library="firefly" deviceset="TARGET-PIN" device=""/>
+<part name="EXTRESET" library="firefly" deviceset="TARGET-PIN" device=""/>
 <part name="D1" library="firefly" deviceset="LED-RGB" device="">
 <attribute name="MANUFACTURER" value="Rohm Semiconductor"/>
 <attribute name="ORDERING-CODE" value="SMLP36RGB2W3"/>
@@ -9284,6 +9284,11 @@ Source: http://www.vishay.com/docs/45017/vjsoldfo.pdf</description>
 <attribute name="DNS" value="true"/>
 <attribute name="MANUFACTURER" value="Yageo"/>
 <attribute name="ORDERING-CODE" value="RC0201FR-07100KL"/>
+</part>
+<part name="R13" library="firefly" deviceset="R-US_" device="R0201" value="0 (OPT)">
+<attribute name="MANUFACTURER" value="Panasonic Electronic Components"/>
+<attribute name="ORDERING-CODE" value="ERJ-1GE0R00C"/>
+<attribute name="VARIANTS" value="!usb-id-failsafe"/>
 </part>
 </parts>
 <sheets>
@@ -11409,7 +11414,7 @@ Source: http://www.vishay.com/docs/45017/vjsoldfo.pdf</description>
 </sheet>
 <sheet>
 <plain>
-<text x="256.54" y="132.08" size="1.778" layer="91">2.2V</text>
+<text x="256.54" y="132.08" size="1.778" layer="91">2.5V</text>
 <text x="167.64" y="154.94" size="1.778" layer="91">80 mA</text>
 </plain>
 <instances>
@@ -11609,7 +11614,7 @@ Source: http://www.vishay.com/docs/45017/vjsoldfo.pdf</description>
 <attribute name="VARIANTS" x="210.82" y="81.28" size="1.778" layer="96" rot="R270" display="off"/>
 </instance>
 <instance part="V55" gate="GND" x="210.82" y="71.12"/>
-<instance part="USBID" gate="G$1" x="27.94" y="200.66" rot="R90"/>
+<instance part="EXTRESET" gate="G$1" x="20.32" y="124.46" rot="R90"/>
 <instance part="U14" gate="G$1" x="251.46" y="182.88" rot="R270">
 <attribute name="DNS" x="251.46" y="182.88" size="1.778" layer="96" rot="R270" display="off"/>
 <attribute name="MANUFACTURER" x="251.46" y="182.88" size="1.778" layer="96" rot="R270" display="off"/>
@@ -11620,6 +11625,11 @@ Source: http://www.vishay.com/docs/45017/vjsoldfo.pdf</description>
 <attribute name="MANUFACTURER" x="266.7" y="182.88" size="1.778" layer="96" rot="R270" display="off"/>
 <attribute name="ORDERING-CODE" x="266.7" y="182.88" size="1.778" layer="96" rot="R270" display="off"/>
 <attribute name="DNS" x="266.7" y="182.88" size="1.778" layer="96" rot="R270" display="off"/>
+</instance>
+<instance part="R13" gate="G$1" x="30.48" y="121.92" rot="R270">
+<attribute name="VARIANTS" x="30.48" y="121.92" size="1.778" layer="96" rot="R270" display="off"/>
+<attribute name="MANUFACTURER" x="30.48" y="121.92" size="1.778" layer="96" rot="R270" display="off"/>
+<attribute name="ORDERING-CODE" x="30.48" y="121.92" size="1.778" layer="96" rot="R270" display="off"/>
 </instance>
 </instances>
 <busses>
@@ -12130,23 +12140,32 @@ Source: http://www.vishay.com/docs/45017/vjsoldfo.pdf</description>
 </net>
 <net name="N$8" class="0">
 <segment>
-<wire x1="40.64" y1="114.3" x2="33.02" y2="114.3" width="0.1524" layer="91"/>
-<wire x1="40.64" y1="116.84" x2="40.64" y2="114.3" width="0.1524" layer="91"/>
-<wire x1="33.02" y1="114.3" x2="33.02" y2="182.88" width="0.1524" layer="91"/>
 <pinref part="J1" gate="G$1" pin="ID"/>
-<wire x1="33.02" y1="182.88" x2="27.94" y2="182.88" width="0.1524" layer="91"/>
-<pinref part="R2" gate="G$1" pin="2"/>
+<wire x1="33.02" y1="182.88" x2="30.48" y2="182.88" width="0.1524" layer="91"/>
+<wire x1="30.48" y1="182.88" x2="27.94" y2="182.88" width="0.1524" layer="91"/>
 <wire x1="27.94" y1="182.88" x2="22.86" y2="182.88" width="0.1524" layer="91"/>
-<wire x1="43.18" y1="114.3" x2="40.64" y2="114.3" width="0.1524" layer="91"/>
-<junction x="40.64" y="114.3"/>
-<pinref part="U10" gate="G$1" pin="!SR"/>
 <pinref part="U8" gate="G$1" pin="IO1"/>
 <wire x1="33.02" y1="182.88" x2="38.1" y2="182.88" width="0.1524" layer="91"/>
 <wire x1="38.1" y1="182.88" x2="38.1" y2="175.26" width="0.1524" layer="91"/>
-<junction x="33.02" y="182.88"/>
-<pinref part="USBID" gate="G$1" pin="1"/>
-<wire x1="27.94" y1="193.04" x2="27.94" y2="182.88" width="0.1524" layer="91"/>
-<junction x="27.94" y="182.88"/>
+<pinref part="R13" gate="G$1" pin="1"/>
+<wire x1="30.48" y1="127" x2="30.48" y2="182.88" width="0.1524" layer="91"/>
+<junction x="30.48" y="182.88"/>
+</segment>
+</net>
+<net name="N$14" class="0">
+<segment>
+<pinref part="R2" gate="G$1" pin="2"/>
+<wire x1="40.64" y1="116.84" x2="40.64" y2="114.3" width="0.1524" layer="91"/>
+<pinref part="U10" gate="G$1" pin="!SR"/>
+<wire x1="43.18" y1="114.3" x2="40.64" y2="114.3" width="0.1524" layer="91"/>
+<junction x="40.64" y="114.3"/>
+<wire x1="40.64" y1="114.3" x2="30.48" y2="114.3" width="0.1524" layer="91"/>
+<pinref part="R13" gate="G$1" pin="2"/>
+<wire x1="30.48" y1="114.3" x2="20.32" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="30.48" y1="116.84" x2="30.48" y2="114.3" width="0.1524" layer="91"/>
+<pinref part="EXTRESET" gate="G$1" pin="1"/>
+<wire x1="20.32" y1="116.84" x2="20.32" y2="114.3" width="0.1524" layer="91"/>
+<junction x="30.48" y="114.3"/>
 </segment>
 </net>
 </nets>
