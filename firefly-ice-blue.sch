@@ -9290,10 +9290,12 @@ Source: http://www.vishay.com/docs/45017/vjsoldfo.pdf</description>
 <attribute name="ORDERING-CODE" value="ERJ-1GE0R00C"/>
 <attribute name="VARIANTS" value="!usb-id-failsafe"/>
 </part>
+<part name="U$9" library="firefly" deviceset="VCC" device=""/>
 </parts>
 <sheets>
 <sheet>
 <plain>
+<text x="43.18" y="289.56" size="1.778" layer="91">REVISION (1.4)</text>
 </plain>
 <instances>
 <instance part="JPDEBUG" gate="G$1" x="83.82" y="154.94">
@@ -9401,6 +9403,7 @@ Source: http://www.vishay.com/docs/45017/vjsoldfo.pdf</description>
 <attribute name="ORDERING-CODE" x="175.26" y="139.7" size="1.778" layer="96" rot="R90" display="off"/>
 </instance>
 <instance part="FRAME3" gate="G$1" x="0" y="0"/>
+<instance part="U$9" gate="G$1" x="40.64" y="292.1"/>
 </instances>
 <busses>
 </busses>
@@ -9516,6 +9519,12 @@ Source: http://www.vishay.com/docs/45017/vjsoldfo.pdf</description>
 <pinref part="R25" gate="G$1" pin="2"/>
 <wire x1="175.26" y1="147.32" x2="175.26" y2="144.78" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="U$9" gate="G$1" pin="VCC"/>
+<wire x1="40.64" y1="292.1" x2="40.64" y2="289.56" width="0.1524" layer="91"/>
+<pinref part="U1" gate="A" pin="PA0/GPIO_EM4WU0/I2C0_SDA#0/LEU0_RX#4/PRS_CH0/TIM0_CC0#0,1,4"/>
+<wire x1="40.64" y1="289.56" x2="68.58" y2="289.56" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="N$25" class="0">
 <segment>
@@ -9558,10 +9567,14 @@ Source: http://www.vishay.com/docs/45017/vjsoldfo.pdf</description>
 </net>
 <net name="ACC_INT" class="0">
 <segment>
-<wire x1="66.04" y1="279.4" x2="43.18" y2="279.4" width="0.1524" layer="91"/>
-<label x="43.18" y="279.4" size="1.778" layer="95"/>
+<wire x1="66.04" y1="276.86" x2="43.18" y2="276.86" width="0.1524" layer="91"/>
+<label x="43.18" y="276.86" size="1.778" layer="95"/>
+<pinref part="U1" gate="A" pin="PA5/ETM_TD3#3/LES_ALTEX4/LEU1_TX#1/TIM0_CDTI2#0"/>
+<wire x1="66.04" y1="276.86" x2="68.58" y2="276.86" width="0.1524" layer="91"/>
 <pinref part="U1" gate="A" pin="PA4/ETM_TD2#3/LES_ALTEX3/TIM0_CDTI1#0"/>
-<wire x1="66.04" y1="279.4" x2="68.58" y2="279.4" width="0.1524" layer="91"/>
+<wire x1="68.58" y1="279.4" x2="66.04" y2="279.4" width="0.1524" layer="91"/>
+<wire x1="66.04" y1="279.4" x2="66.04" y2="276.86" width="0.1524" layer="91"/>
+<junction x="66.04" y="276.86"/>
 </segment>
 </net>
 <net name="PWR_MODE" class="0">
@@ -9877,8 +9890,8 @@ Source: http://www.vishay.com/docs/45017/vjsoldfo.pdf</description>
 <net name="CLK32K" class="0">
 <segment>
 <pinref part="U1" gate="A" pin="PA1/CMU_CLK1#0/I2C0_SCL#0/PRS_CH1/TIM0_CC1#0,1"/>
-<wire x1="68.58" y1="287.02" x2="50.8" y2="287.02" width="0.1524" layer="91"/>
-<label x="50.8" y="287.02" size="1.778" layer="95"/>
+<wire x1="68.58" y1="287.02" x2="43.18" y2="287.02" width="0.1524" layer="91"/>
+<label x="43.18" y="287.02" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="PWR_SEL" class="0">
