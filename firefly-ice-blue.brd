@@ -2283,8 +2283,8 @@ This Sunstone Circuits 4 Layer .DRU has been set to cover our minimum requiremen
 <attribute name="NAME" x="31.461" y="17.791" size="0.2" layer="51" rot="R270"/>
 </element>
 <element name="J1" library="firefly" package="ZX62WD1-B-5PC" value="USB-5PINZX62WD1-B-5PC" x="17" y="33.495" smashed="yes" rot="MR180">
-<attribute name="MANUFACTURER" value="Hirose Electric Co Ltd" x="17" y="33.495" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="ORDERING-CODE" value="ZX62WD1-B-5PC" x="17" y="33.495" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="MANUFACTURER" value="TE Connectivity" x="17" y="33.495" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="ORDERING-CODE" value="2173157-3" x="17" y="33.495" size="1.778" layer="28" rot="MR180" display="off"/>
 <attribute name="VARIANTS" value="usb-power" x="17" y="33.495" size="1.778" layer="28" rot="MR180" display="off"/>
 <attribute name="NAME" x="15.746" y="32.495" size="1.27" layer="52" rot="MR180"/>
 </element>

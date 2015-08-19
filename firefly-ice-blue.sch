@@ -8967,8 +8967,8 @@ Source: http://www.vishay.com/docs/45017/vjsoldfo.pdf</description>
 <attribute name="VARIANTS" value="usb-charging"/>
 </part>
 <part name="J1" library="firefly" deviceset="USB-5PIN" device="ZX62WD1-B-5PC" value="USB-5PINZX62WD1-B-5PC">
-<attribute name="MANUFACTURER" value="Hirose Electric Co Ltd"/>
-<attribute name="ORDERING-CODE" value="ZX62WD1-B-5PC"/>
+<attribute name="MANUFACTURER" value="TE Connectivity"/>
+<attribute name="ORDERING-CODE" value="2173157-3"/>
 <attribute name="VARIANTS" value="usb-power"/>
 </part>
 <part name="U13" library="firefly" deviceset="NX3L1T53" device="">
