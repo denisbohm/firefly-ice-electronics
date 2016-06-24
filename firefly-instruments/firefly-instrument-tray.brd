@@ -1166,12 +1166,12 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="NAME" x="78.775" y="47.655" size="1.27" layer="25" rot="R270"/>
 </element>
 <element name="U9:U5" library="firefly" package="MSOP8" value="LTC6102-1MS8" x="98" y="24.4" smashed="yes">
-<attribute name="ORDERING-CODE" value="LTC6102CMS8#PBF" x="98" y="24.4" size="1.778" layer="27" display="off"/>
+<attribute name="ORDERING-CODE" value="LTC6102CMS8-1#PBF" x="98" y="24.4" size="1.778" layer="27" display="off"/>
 <attribute name="MANUFACTURER" value="Linear Technology" x="98" y="24.4" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="95.6" y="26.1" size="1.27" layer="25"/>
 </element>
 <element name="U9:U7" library="firefly" package="MSOP8" value="LTC6102-1MS8" x="98" y="11.4" smashed="yes">
-<attribute name="ORDERING-CODE" value="LTC6102CMS8#PBF" x="98" y="11.4" size="1.778" layer="27" display="off"/>
+<attribute name="ORDERING-CODE" value="LTC6102CMS8-1#PBF" x="98" y="11.4" size="1.778" layer="27" display="off"/>
 <attribute name="MANUFACTURER" value="Linear Technology" x="98" y="11.4" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="95.5" y="13.2" size="1.27" layer="25"/>
 </element>
@@ -1287,7 +1287,7 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="VALUE" x="25.438" y="38.714" size="1.27" layer="27"/>
 </element>
 <element name="U8:U1" library="firefly" package="MSOP8" value="LTC6102-1MS8" x="8.7" y="52.5">
-<attribute name="ORDERING-CODE" value="LTC6102CMS8#PBF" x="8.7" y="52.5" size="1.778" layer="27" display="off"/>
+<attribute name="ORDERING-CODE" value="LTC6102CMS8-1#PBF" x="8.7" y="52.5" size="1.778" layer="27" display="off"/>
 <attribute name="MANUFACTURER" value="Linear Technology" x="8.7" y="52.5" size="1.778" layer="27" display="off"/>
 </element>
 <element name="J2" library="firefly" package="USB-B1HSB6" value="USB-4PINUSB-B1HSB6" x="22.4" y="89.5" smashed="yes" rot="R180">
@@ -1632,12 +1632,18 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="NAME" x="23.145" y="46.875" size="1.27" layer="25"/>
 <attribute name="VALUE" x="19.705" y="41.195" size="1.27" layer="27"/>
 <attribute name="NAME" x="21.8" y="47" size="0.4064" layer="51" display="off"/>
+<attribute name="ORDERING-CODE" value="TLV271SN2T1G" x="22" y="45.4" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER" value="ON Semiconductor" x="22" y="45.4" size="1.778" layer="27" display="off"/>
 </element>
 <element name="U9:U6" library="firefly" package="SOT-23-5" value="TLV271SN2T1G" x="116.7" y="23.5" smashed="yes" rot="R90">
 <attribute name="NAME" x="120.625" y="21.045" size="1.27" layer="25" rot="R90"/>
+<attribute name="MANUFACTURER" value="ON Semiconductor" x="116.7" y="23.5" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="ORDERING-CODE" value="TLV271SN2T1G" x="116.7" y="23.5" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="U9:U8" library="firefly" package="SOT-23-5" value="TLV271SN2T1G" x="116.8" y="10.1" smashed="yes" rot="R90">
 <attribute name="NAME" x="120.625" y="8.045" size="1.27" layer="25" rot="R90"/>
+<attribute name="MANUFACTURER" value="ON Semiconductor" x="116.8" y="10.1" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="ORDERING-CODE" value="TLV271SN2T1G" x="116.8" y="10.1" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="U9:C6" library="firefly" package="C0805" value="10uF" x="93.1" y="42.4" rot="R270">
 <attribute name="MANUFACTURER" value="AVX Corporation" x="93.1" y="42.4" size="1.778" layer="27" rot="R270" display="off"/>

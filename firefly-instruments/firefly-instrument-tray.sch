@@ -7563,7 +7563,7 @@ Source: WE-TPC 744053220.pdf</description>
 <part name="FRAME1" library="frames" deviceset="FRAME_A_L" device="" value="paper"/>
 <part name="U1" library="firefly" deviceset="LTC6102-1" device="MS8">
 <attribute name="MANUFACTURER" value="Linear Technology"/>
-<attribute name="ORDERING-CODE" value="LTC6102CMS8#PBF"/>
+<attribute name="ORDERING-CODE" value="LTC6102CMS8-1#PBF"/>
 </part>
 <part name="R1" library="firefly" deviceset="R-US" device="R0805" value="1.8K">
 <attribute name="MANUFACTURER" value="Yageo"/>
@@ -7640,7 +7640,10 @@ Source: WE-TPC 744053220.pdf</description>
 <attribute name="MANUFACTURER" value="AVX Corporation"/>
 <attribute name="ORDERING-CODE" value="08055C104KAT2A"/>
 </part>
-<part name="U2" library="firefly" deviceset="TLV271SN2T1G" device=""/>
+<part name="U2" library="firefly" deviceset="TLV271SN2T1G" device="">
+<attribute name="MANUFACTURER" value="ON Semiconductor"/>
+<attribute name="ORDERING-CODE" value="TLV271SN2T1G"/>
+</part>
 </parts>
 <sheets>
 <sheet>
@@ -7728,7 +7731,10 @@ Source: WE-TPC 744053220.pdf</description>
 <attribute name="MANUFACTURER" x="210.82" y="142.24" size="1.778" layer="96" display="off"/>
 <attribute name="ORDERING-CODE" x="210.82" y="142.24" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="U2" gate="G$1" x="200.66" y="124.46"/>
+<instance part="U2" gate="G$1" x="200.66" y="124.46">
+<attribute name="ORDERING-CODE" x="200.66" y="124.46" size="1.778" layer="96" display="off"/>
+<attribute name="MANUFACTURER" x="200.66" y="124.46" size="1.778" layer="96" display="off"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -7976,7 +7982,7 @@ Source: WE-TPC 744053220.pdf</description>
 <part name="FRAME2" library="frames" deviceset="FRAME_A_L" device="" value="paper"/>
 <part name="U5" library="firefly" deviceset="LTC6102-1" device="MS8">
 <attribute name="MANUFACTURER" value="Linear Technology"/>
-<attribute name="ORDERING-CODE" value="LTC6102CMS8#PBF"/>
+<attribute name="ORDERING-CODE" value="LTC6102CMS8-1#PBF"/>
 </part>
 <part name="R18" library="firefly" deviceset="R-US" device="R0805" value="1.8K">
 <attribute name="MANUFACTURER" value="Yageo"/>
@@ -8036,7 +8042,7 @@ Source: WE-TPC 744053220.pdf</description>
 <part name="V19" library="firefly" deviceset="GND" device=""/>
 <part name="U7" library="firefly" deviceset="LTC6102-1" device="MS8">
 <attribute name="MANUFACTURER" value="Linear Technology"/>
-<attribute name="ORDERING-CODE" value="LTC6102CMS8#PBF"/>
+<attribute name="ORDERING-CODE" value="LTC6102CMS8-1#PBF"/>
 </part>
 <part name="R26" library="firefly" deviceset="R-US" device="R0805" value="4.7">
 <attribute name="MANUFACTURER" value="Yageo"/>
@@ -8236,8 +8242,14 @@ Source: WE-TPC 744053220.pdf</description>
 <attribute name="MANUFACTURER" value="Yageo"/>
 <attribute name="ORDERING-CODE" value="RC0805FR-070RL"/>
 </part>
-<part name="U6" library="firefly" deviceset="TLV271SN2T1G" device=""/>
-<part name="U8" library="firefly" deviceset="TLV271SN2T1G" device=""/>
+<part name="U6" library="firefly" deviceset="TLV271SN2T1G" device="">
+<attribute name="MANUFACTURER" value="ON Semiconductor"/>
+<attribute name="ORDERING-CODE" value="TLV271SN2T1G"/>
+</part>
+<part name="U8" library="firefly" deviceset="TLV271SN2T1G" device="">
+<attribute name="MANUFACTURER" value="ON Semiconductor"/>
+<attribute name="ORDERING-CODE" value="TLV271SN2T1G"/>
+</part>
 <part name="C6" library="firefly" deviceset="C-US" device="C0805" value="10uF">
 <attribute name="MANUFACTURER" value="AVX Corporation"/>
 <attribute name="ORDERING-CODE" value="0805YD106KAT2A"/>
@@ -8881,8 +8893,14 @@ Source: WE-TPC 744053220.pdf</description>
 <attribute name="MANUFACTURER" x="200.66" y="104.14" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="V27" gate="GND" x="200.66" y="93.98"/>
-<instance part="U6" gate="G$1" x="190.5" y="170.18"/>
-<instance part="U8" gate="G$1" x="190.5" y="86.36"/>
+<instance part="U6" gate="G$1" x="190.5" y="170.18">
+<attribute name="MANUFACTURER" x="190.5" y="170.18" size="1.778" layer="96" display="off"/>
+<attribute name="ORDERING-CODE" x="190.5" y="170.18" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="U8" gate="G$1" x="190.5" y="86.36">
+<attribute name="MANUFACTURER" x="190.5" y="86.36" size="1.778" layer="96" display="off"/>
+<attribute name="ORDERING-CODE" x="190.5" y="86.36" size="1.778" layer="96" display="off"/>
+</instance>
 </instances>
 <busses>
 </busses>
