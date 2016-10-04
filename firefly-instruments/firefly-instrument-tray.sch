@@ -7275,7 +7275,7 @@ Source: WE-TPC 744053220.pdf</description>
 </part>
 <part name="Q1" library="firefly" deviceset="FET-N" device="MCPH3" value="FET-NMCPH3">
 <attribute name="MANUFACTURER" value="ON Semiconductor"/>
-<attribute name="ORDERING-CODE" value="MCH3484-TL-H"/>
+<attribute name="ORDERING-CODE" value="MCH3481-TL-W"/>
 </part>
 <part name="V1" library="firefly" deviceset="GND" device=""/>
 <part name="V2" library="firefly" deviceset="GND" device=""/>
@@ -7528,7 +7528,7 @@ Source: WE-TPC 744053220.pdf</description>
 <part name="V1" library="firefly" deviceset="GND" device=""/>
 <part name="Q1" library="firefly" deviceset="FET-N" device="MCPH3" value="FET-NMCPH3">
 <attribute name="MANUFACURER" value="ON Semiconductor"/>
-<attribute name="ORDERING-CODE" value="MCH3484-TL-H"/>
+<attribute name="ORDERING-CODE" value="MCH3481-TL-W"/>
 </part>
 <part name="V2" library="firefly" deviceset="GND" device=""/>
 <part name="V29" library="firefly" deviceset="GND" device=""/>
@@ -8264,6 +8264,11 @@ Source: WE-TPC 744053220.pdf</description>
 <attribute name="ORDERING-CODE" value="TLV271SN2T1G"/>
 </part>
 <part name="V5" library="firefly" deviceset="GND" device=""/>
+<part name="R1" library="firefly" deviceset="R-US" device="R0805" value="0">
+<attribute name="MANUFACTURER" value="Yageo"/>
+<attribute name="ORDERING-CODE" value="RC0805FR-070RL"/>
+</part>
+<part name="V6" library="firefly" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -8319,6 +8324,11 @@ Source: WE-TPC 744053220.pdf</description>
 <attribute name="ORDERING-CODE" x="71.12" y="185.42" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="V5" gate="GND" x="33.02" y="109.22"/>
+<instance part="R1" gate="G$1" x="246.38" y="68.58">
+<attribute name="MANUFACTURER" x="246.38" y="68.58" size="1.778" layer="96" display="off"/>
+<attribute name="ORDERING-CODE" x="246.38" y="68.58" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="V6" gate="GND" x="238.76" y="63.5"/>
 </instances>
 <busses>
 </busses>
@@ -8327,6 +8337,7 @@ Source: WE-TPC 744053220.pdf</description>
 <segment>
 <wire x1="251.46" y1="68.58" x2="271.78" y2="68.58" width="0.1524" layer="91"/>
 <label x="266.7" y="68.58" size="1.778" layer="95"/>
+<pinref part="R1" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -8355,6 +8366,12 @@ Source: WE-TPC 744053220.pdf</description>
 <pinref part="V1" gate="GND" pin="GND"/>
 <pinref part="U2" gate="G$1" pin="GND"/>
 <wire x1="58.42" y1="157.48" x2="58.42" y2="160.02" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="R1" gate="G$1" pin="1"/>
+<pinref part="V6" gate="GND" pin="GND"/>
+<wire x1="241.3" y1="68.58" x2="238.76" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="238.76" y1="68.58" x2="238.76" y2="66.04" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="+5V" class="0">
@@ -9698,10 +9715,6 @@ Source: WE-TPC 744053220.pdf</description>
 </net>
 <net name="DUT_BATTERY+" class="0">
 <segment>
-<wire x1="48.26" y1="177.8" x2="68.58" y2="177.8" width="0.1524" layer="91"/>
-<label x="48.26" y="177.8" size="1.778" layer="95"/>
-</segment>
-<segment>
 <portref moduleinst="U15" port="BNO"/>
 <wire x1="134.62" y1="152.4" x2="144.78" y2="152.4" width="0.1524" layer="91"/>
 <label x="134.62" y="152.4" size="1.778" layer="95"/>
@@ -9747,10 +9760,6 @@ Source: WE-TPC 744053220.pdf</description>
 <pinref part="R2" gate="G$1" pin="2"/>
 <wire x1="236.22" y1="40.64" x2="259.08" y2="40.64" width="0.1524" layer="91"/>
 <label x="243.84" y="40.64" size="1.778" layer="95"/>
-</segment>
-<segment>
-<wire x1="93.98" y1="177.8" x2="109.22" y2="177.8" width="0.1524" layer="91"/>
-<label x="93.98" y="177.8" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="DUT_MOTOR+" class="0">
