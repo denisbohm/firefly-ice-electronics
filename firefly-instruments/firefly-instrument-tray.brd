@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.5.0">
+<eagle version="7.7.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -1552,7 +1552,7 @@ Please make sure your boards conform to these design rules.</description>
 </element>
 <element name="U17" library="firefly" package="SOA008" value="MEMORY-SPISOA008" x="187.7" y="48">
 <attribute name="MANUFACTURER" value="Cypress Semiconductor Corp" x="187.7" y="48" size="1.778" layer="27" display="off"/>
-<attribute name="ORDERING-CODE" value="S25FL116K0XMFI013" x="187.7" y="48" size="1.778" layer="27" display="off"/>
+<attribute name="ORDERING-CODE" value="S25FL116K0XMFI043" x="187.7" y="48" size="1.778" layer="27" display="off"/>
 </element>
 <element name="R7" library="firefly" package="R0805" value="10k" x="186.9" y="53.7">
 <attribute name="MANUFACTURER" value="Yageo" x="186.9" y="53.7" size="1.778" layer="27" display="off"/>

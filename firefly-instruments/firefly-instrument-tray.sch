@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.5.0">
+<eagle version="7.7.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -9378,7 +9378,7 @@ Source: WE-TPC 744053220.pdf</description>
 <part name="V43" library="firefly" deviceset="GND" device=""/>
 <part name="U17" library="firefly" deviceset="MEMORY-SPI" device="SOA008" value="MEMORY-SPISOA008">
 <attribute name="MANUFACTURER" value="Cypress Semiconductor Corp"/>
-<attribute name="ORDERING-CODE" value="S25FL116K0XMFI013"/>
+<attribute name="ORDERING-CODE" value="S25FL116K0XMFI043"/>
 </part>
 <part name="+3V6" library="supply1" deviceset="+3V3" device=""/>
 <part name="+3V23" library="supply1" deviceset="+3V3" device=""/>
