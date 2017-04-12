@@ -23,7 +23,7 @@
 <layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
 <layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
 <layer number="15" name="Route15" color="4" fill="6" visible="no" active="no"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
@@ -173,7 +173,7 @@
 <wire x1="156.3" y1="33.7" x2="156.3" y2="65.5" width="0.254" layer="121"/>
 <wire x1="156.3" y1="65.5" x2="77.7" y2="65.5" width="0.254" layer="121"/>
 <wire x1="77.7" y1="65.5" x2="77.7" y2="33.7" width="0.254" layer="121"/>
-<text x="78.3" y="63" size="1.778" layer="121">U9.1</text>
+<text x="78.5" y="34.2" size="1.778" layer="121">U9.1</text>
 <wire x1="130.1" y1="2" x2="130.1" y2="33" width="0.254" layer="121"/>
 <wire x1="148" y1="2" x2="148" y2="33" width="0.254" layer="121"/>
 <wire x1="130.1" y1="33" x2="148" y2="33" width="0.254" layer="121"/>
@@ -183,7 +183,7 @@
 <hole x="190" y="3" drill="3.2"/>
 <hole x="190" y="97" drill="3.2"/>
 <text x="104.2" y="72" size="1.778" layer="121">Firefly Instruments
-Revision 0.4 2016/09/13
+Revision 0.5 2017/04/12
 Copyright Firefly Design LLC</text>
 </plain>
 <libraries>
@@ -833,7 +833,7 @@ Please make sure your boards conform to these design rules.</description>
 <element name="U9:C4" library="firefly" package="C0805" value="1uF" x="80.2" y="59.3" smashed="yes" rot="R180">
 <attribute name="MANUFACTURER" value="Yageo" x="80.2" y="59.3" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="ORDERING-CODE" value="CC0805KKX7R7BB105" x="80.2" y="59.3" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="81.335" y="58.038" size="1.27" layer="25" rot="R180"/>
+<attribute name="NAME" x="82.935" y="61.538" size="1.27" layer="25" rot="R180"/>
 </element>
 <element name="U9:C5" library="firefly" package="C0805" value="1uF" x="92.4" y="53.7" smashed="yes">
 <attribute name="MANUFACTURER" value="Yageo" x="92.4" y="53.7" size="1.778" layer="27" display="off"/>
@@ -855,14 +855,14 @@ Please make sure your boards conform to these design rules.</description>
 <element name="U9:R11" library="firefly" package="R0805" value="650K" x="87.8" y="50.4" smashed="yes">
 <attribute name="MANUFACTURER" value="Yageo" x="87.8" y="50.4" size="1.778" layer="27" display="off"/>
 <attribute name="ORDERING-CODE" value="RC0805FR-07649KL" x="87.8" y="50.4" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="87.038" y="51.416" size="1.27" layer="25"/>
+<attribute name="NAME" x="89.538" y="49.716" size="1.27" layer="25"/>
 <attribute name="VALUE" x="87.038" y="48.114" size="1.27" layer="27"/>
 </element>
-<element name="U9:R12" library="firefly" package="R0805" value="100K" x="92.4" y="50.4" smashed="yes" rot="R180">
-<attribute name="MANUFACTURER" value="Yageo" x="92.4" y="50.4" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="ORDERING-CODE" value="RC0805FR-07100KL" x="92.4" y="50.4" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="95.962" y="49.484" size="1.27" layer="25" rot="R180"/>
-<attribute name="VALUE" x="93.162" y="52.686" size="1.27" layer="27" rot="R180"/>
+<element name="U9:R12" library="firefly" package="R0805" value="100K" x="87.8" y="47.3" smashed="yes" rot="R180">
+<attribute name="MANUFACTURER" value="Yageo" x="87.8" y="47.3" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="ORDERING-CODE" value="RC0805FR-07100KL" x="87.8" y="47.3" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="89.538" y="46.616" size="1.27" layer="25"/>
+<attribute name="VALUE" x="88.562" y="49.586" size="1.27" layer="27" rot="R180"/>
 </element>
 <element name="U9:R13" library="firefly" package="R0805" value="100K" x="82.2" y="50.4" smashed="yes">
 <attribute name="MANUFACTURER" value="Yageo" x="82.2" y="50.4" size="1.778" layer="27" display="off"/>
@@ -930,21 +930,21 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="NAME" x="101.016" y="19.762" size="1.27" layer="25" rot="R270"/>
 <attribute name="VALUE" x="97.914" y="17.062" size="1.27" layer="27" rot="R270"/>
 </element>
-<element name="U9:R28" library="firefly" package="R0805" value="10K" x="98.1" y="7.5" rot="R180">
-<attribute name="ORDERING-CODE" value="RC0805FR-0710KL" x="98.1" y="7.5" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MANUFACTURER" value="Yageo" x="98.1" y="7.5" size="1.778" layer="27" rot="R180" display="off"/>
+<element name="U9:R28" library="firefly" package="R0805" value="10K" x="95" y="7.2" rot="R180">
+<attribute name="ORDERING-CODE" value="RC0805FR-0710KL" x="95" y="7.2" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MANUFACTURER" value="Yageo" x="95" y="7.2" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="U9:R29" library="firefly" package="R0805" value="10k" x="111" y="7.5" smashed="yes">
-<attribute name="ORDERING-CODE" value="RC0805FR-0710KL" x="111" y="7.5" size="1.778" layer="27" display="off"/>
-<attribute name="MANUFACTURER" value="Yageo" x="111" y="7.5" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="108.538" y="8.116" size="1.27" layer="25"/>
-<attribute name="VALUE" x="110.238" y="5.214" size="1.27" layer="27"/>
+<element name="U9:R29" library="firefly" package="R0805" value="10k" x="111" y="7.2" smashed="yes">
+<attribute name="ORDERING-CODE" value="RC0805FR-0710KL" x="111" y="7.2" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER" value="Yageo" x="111" y="7.2" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="108.538" y="8.016" size="1.27" layer="25"/>
+<attribute name="VALUE" x="110.238" y="4.914" size="1.27" layer="27"/>
 </element>
-<element name="U9:R30" library="firefly" package="R0805" value="10k" x="105.3" y="7.5" smashed="yes">
-<attribute name="ORDERING-CODE" value="RC0805FR-0710KL" x="105.3" y="7.5" size="1.778" layer="27" display="off"/>
-<attribute name="MANUFACTURER" value="Yageo" x="105.3" y="7.5" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="102.838" y="5.316" size="1.27" layer="25"/>
-<attribute name="VALUE" x="104.538" y="5.214" size="1.27" layer="27"/>
+<element name="U9:R30" library="firefly" package="R0805" value="10k" x="103.5" y="7.2" smashed="yes">
+<attribute name="ORDERING-CODE" value="RC0805FR-0710KL" x="103.5" y="7.2" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER" value="Yageo" x="103.5" y="7.2" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="101.038" y="5.016" size="1.27" layer="25"/>
+<attribute name="VALUE" x="102.738" y="4.914" size="1.27" layer="27"/>
 </element>
 <element name="U9:R31" library="firefly" package="R0805" value="0" x="116.9" y="5" smashed="yes" rot="R180">
 <attribute name="MANUFACTURER" value="Yageo" x="116.9" y="5" size="1.778" layer="27" rot="R180" display="off"/>
@@ -1112,11 +1112,6 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="ORDERING-CODE" value="LTC6102CMS8-1#PBF" x="8.7" y="52.5" size="1.778" layer="27" display="off"/>
 <attribute name="MANUFACTURER" value="Linear Technology" x="8.7" y="52.5" size="1.778" layer="27" display="off"/>
 </element>
-<element name="J2" library="firefly" package="USB-B1HSB6" value="USB-4PINUSB-B1HSB6" x="22.1" y="10.5" smashed="yes">
-<attribute name="ORDERING-CODE" value="USB-B1HSB6" x="22.1" y="10.5" size="1.778" layer="27" display="off"/>
-<attribute name="MANUFACTURER" value="On Shore Technology Inc." x="22.1" y="10.5" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="22.3" y="17" size="1.27" layer="25"/>
-</element>
 <element name="R1" library="firefly" package="KRL6432" value="0.1" x="9" y="61.5" smashed="yes">
 <attribute name="ORDERING-CODE" value="KRL6432E-M-R100-F-T1" x="9" y="61.5" size="1.778" layer="27" display="off"/>
 <attribute name="MANUFACTURER" value="Susumu" x="9" y="61.5" size="1.778" layer="27" display="off"/>
@@ -1155,10 +1150,9 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="VALUE" x="55.089" y="22.732" size="1.27" layer="27" rot="R180"/>
 <attribute name="NAME" x="54.6" y="20.1" size="0.5" layer="51" rot="R180" display="off"/>
 </element>
-<element name="U5:Q1" library="firefly" package="MCPH3" value="FET-NMCPH3" x="187" y="75" smashed="yes">
+<element name="U5:Q1" library="firefly" package="MCPH3" value="FET-NMCPH3" x="187" y="75">
 <attribute name="MANUFACURER" value="ON Semiconductor" x="187" y="75" size="1.778" layer="27" display="off"/>
 <attribute name="ORDERING-CODE" value="MCH3481-TL-W" x="187" y="75" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="184.6" y="76.3" size="1.27" layer="25"/>
 </element>
 <element name="U5:U1" library="firefly" package="TXS2SA" value="TXS2SA" x="130" y="91" smashed="yes" rot="R90">
 <attribute name="ORDERING-CODE" value="TXS2SA-3V-Z" x="130" y="91" size="1.778" layer="27" rot="R90" display="off"/>
@@ -1178,12 +1172,12 @@ Please make sure your boards conform to these design rules.</description>
 <element name="U3:Q1" library="firefly" package="MCPH3" value="FET-NMCPH3" x="34.2" y="77.8" smashed="yes" rot="R90">
 <attribute name="MANUFACURER" value="ON Semiconductor" x="34.2" y="77.8" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="ORDERING-CODE" value="MCH3481-TL-W" x="34.2" y="77.8" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="32.9" y="75.2" size="1.27" layer="25" rot="R90"/>
+<attribute name="NAME" x="36.8" y="75.5" size="1.27" layer="25" rot="R90"/>
 </element>
 <element name="U3:U1" library="firefly" package="TXS2SA" value="TXS2SA" x="22.4" y="76.9" smashed="yes" rot="R270">
 <attribute name="ORDERING-CODE" value="TXS2SA-3V-Z" x="22.4" y="76.9" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MANUFACTURER" value="Panasonic Electric Works" x="22.4" y="76.9" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="30.2" y="80.3" size="1.27" layer="51" rot="R270"/>
+<attribute name="NAME" x="13.2" y="79.5" size="1.27" layer="51" rot="R270"/>
 </element>
 <element name="U2:Q1" library="firefly" package="MCPH3" value="FET-NMCPH3" x="48.9" y="21.1" smashed="yes" rot="R270">
 <attribute name="MANUFACURER" value="ON Semiconductor" x="48.9" y="21.1" size="1.778" layer="27" rot="R270" display="off"/>
@@ -1243,14 +1237,14 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="MANUFACTURER" value="Bivar Inc." x="142.2" y="11" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="136.4" y="8.9" size="1.27" layer="25" rot="R90"/>
 </element>
-<element name="J1" library="firefly" package="CON-HEADER-2X13" value="CON-26" x="57.5" y="93.5">
+<element name="J1" library="firefly" package="CON-HEADER-2X13" value="CON-26" x="57.5" y="93.5" smashed="yes">
 <attribute name="ORDERING-CODE" value="68602-126HLF" x="57.5" y="93.5" size="1.778" layer="27" display="off"/>
 <attribute name="MANUFACTURER" value="Amphenol FCI" x="57.5" y="93.5" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="37.425" y="89.815" size="1.27" layer="25"/>
 </element>
-<element name="U11:Q1" library="firefly" package="MCPH3" value="FET-NMCPH3" x="187" y="70" smashed="yes">
+<element name="U11:Q1" library="firefly" package="MCPH3" value="FET-NMCPH3" x="187" y="70">
 <attribute name="MANUFACURER" value="ON Semiconductor" x="187" y="70" size="1.778" layer="27" display="off"/>
 <attribute name="ORDERING-CODE" value="MCH3481-TL-W" x="187" y="70" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="184.8" y="71.3" size="1.27" layer="25"/>
 </element>
 <element name="U11:U1" library="firefly" package="TXS2SA" value="TXS2SA" x="150" y="91.1" smashed="yes" rot="R90">
 <attribute name="MANUFACTURER" value="Panasonic Electric Works" x="150" y="91.1" size="1.778" layer="27" rot="R90" display="off"/>
@@ -1265,7 +1259,7 @@ Please make sure your boards conform to these design rules.</description>
 <element name="C15" library="firefly" package="C0805" value="100nF" x="180.5" y="30.2" smashed="yes" rot="R180">
 <attribute name="MANUFACTURER" value="AVX Corporation" x="180.5" y="30.2" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="ORDERING-CODE" value="08055C104KAT2A" x="180.5" y="30.2" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="185.435" y="30.938" size="1.27" layer="25" rot="R180"/>
+<attribute name="NAME" x="182.135" y="29.338" size="1.27" layer="25" rot="R180"/>
 </element>
 <element name="C1" library="firefly" package="C0805" value="100nF" x="167.8" y="33.5" smashed="yes" rot="R90">
 <attribute name="MANUFACTURER" value="AVX Corporation" x="167.8" y="33.5" size="1.778" layer="27" rot="R90" display="off"/>
@@ -1486,9 +1480,11 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="MANUFACTURER" value="Yageo" x="39.9" y="31.7" size="1.778" layer="27" display="off"/>
 <attribute name="ORDERING-CODE" value="RC0805FR-0710KL" x="39.9" y="31.7" size="1.778" layer="27" display="off"/>
 </element>
-<element name="U3:R13" library="firefly" package="R0805" value="10K" x="34" y="72.7" rot="R180">
+<element name="U3:R13" library="firefly" package="R0805" value="10K" x="34" y="72.7" smashed="yes" rot="R180">
 <attribute name="MANUFACTURER" value="Yageo" x="34" y="67.1" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="ORDERING-CODE" value="RC0805FR-0710KL" x="34" y="67.1" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="36.762" y="71.484" size="1.27" layer="25" rot="R180"/>
+<attribute name="VALUE" x="34.762" y="74.986" size="1.27" layer="27" rot="R180"/>
 </element>
 <element name="U4:R13" library="firefly" package="R0805" value="10K" x="147.2" y="42.3">
 <attribute name="MANUFACTURER" value="Yageo" x="139.3" y="42.3" size="1.778" layer="27" display="off"/>
@@ -1518,29 +1514,39 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="NAME" x="182.062" y="65.484" size="1.27" layer="25" rot="R180"/>
 <attribute name="VALUE" x="185.286" y="64.238" size="1.27" layer="27" rot="R90"/>
 </element>
-<element name="U6:R17" library="firefly" package="R0805" value="240" x="53.3" y="61.4" rot="R180">
+<element name="U6:R17" library="firefly" package="R0805" value="240" x="53.3" y="61.4" smashed="yes" rot="R180">
 <attribute name="MANUFACTURER" value="Yageo" x="53.3" y="61.4" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="ORDERING-CODE" value="RC0805FR-07240RL" x="53.3" y="61.4" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="54.762" y="63.584" size="1.27" layer="25" rot="R180"/>
+<attribute name="VALUE" x="54.062" y="63.686" size="1.27" layer="27" rot="R180"/>
 </element>
 <element name="U7:R17" library="firefly" package="R0805" value="240" x="53.7" y="47" rot="R180">
 <attribute name="MANUFACTURER" value="Yageo" x="53.7" y="47" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="ORDERING-CODE" value="RC0805FR-07240RL" x="53.7" y="47" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="U6:R1" library="firefly" package="R0805" value="240" x="48" y="54" rot="R180">
+<element name="U6:R1" library="firefly" package="R0805" value="240" x="48" y="54" smashed="yes" rot="R180">
 <attribute name="MANUFACTURER" value="Yageo" x="48" y="54" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="ORDERING-CODE" value="RC0805FR-07240RL" x="48" y="54" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="51.562" y="53.084" size="1.27" layer="25" rot="R180"/>
+<attribute name="VALUE" x="48.762" y="56.286" size="1.27" layer="27" rot="R180"/>
 </element>
-<element name="U7:R1" library="firefly" package="R0805" value="240" x="48.3" y="36.6" rot="R180">
+<element name="U7:R1" library="firefly" package="R0805" value="240" x="48.3" y="36.6" smashed="yes" rot="R180">
 <attribute name="MANUFACTURER" value="Yageo" x="48.3" y="36.6" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="ORDERING-CODE" value="RC0805FR-07240RL" x="48.3" y="36.6" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="51.762" y="35.484" size="1.27" layer="25" rot="R180"/>
+<attribute name="VALUE" x="49.062" y="38.886" size="1.27" layer="27" rot="R180"/>
 </element>
-<element name="U6:R2" library="firefly" package="R0805" value="240" x="44.3" y="50.9" rot="R180">
+<element name="U6:R2" library="firefly" package="R0805" value="240" x="44.3" y="50.9" smashed="yes" rot="R180">
 <attribute name="MANUFACTURER" value="Yageo" x="44.3" y="50.9" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="ORDERING-CODE" value="RC0805FR-07240RL" x="44.3" y="50.9" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="45.762" y="53.084" size="1.27" layer="25" rot="R180"/>
+<attribute name="VALUE" x="45.062" y="53.186" size="1.27" layer="27" rot="R180"/>
 </element>
-<element name="U7:R2" library="firefly" package="R0805" value="240" x="44.4" y="33.1" rot="R180">
+<element name="U7:R2" library="firefly" package="R0805" value="240" x="44.4" y="33.1" smashed="yes" rot="R180">
 <attribute name="MANUFACTURER" value="Yageo" x="44.4" y="33.1" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="ORDERING-CODE" value="RC0805FR-07240RL" x="44.4" y="33.1" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="45.962" y="35.484" size="1.27" layer="25" rot="R180"/>
+<attribute name="VALUE" x="45.162" y="35.386" size="1.27" layer="27" rot="R180"/>
 </element>
 <element name="U6:U3" library="firefly" package="SOT363" value="74LVCH1T45" x="57.6" y="52.6" rot="R180">
 <attribute name="MANUFACTURER" value="NXP Semiconductors" x="57.6" y="52.6" size="1.778" layer="27" rot="R180" display="off"/>
@@ -1558,24 +1564,31 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="MANUFACTURER" value="Yageo" x="186.9" y="53.7" size="1.778" layer="27" display="off"/>
 <attribute name="ORDERING-CODE" value="RC0805FR-0710KL" x="186.9" y="53.7" size="1.778" layer="27" display="off"/>
 </element>
-<element name="J3" library="firefly" package="282847-4" value="CON-4282847-4" x="20" y="92.6">
+<element name="J3" library="firefly" package="282847-4" value="CON-4282847-4" x="20" y="92.6" smashed="yes">
 <attribute name="MANUFACTURER" value="TE Connectivity AMP Connectors" x="20" y="92.6" size="1.778" layer="27" display="off"/>
 <attribute name="ORDERING-CODE" value="282847-4" x="20" y="92.6" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="7.7" y="86.4" size="1.27" layer="21"/>
 </element>
-<element name="C17" library="firefly" package="C0805" value="100nF" x="190.3" y="52.9" rot="R90">
+<element name="C17" library="firefly" package="C0805" value="100nF" x="190.3" y="52.9" smashed="yes" rot="R90">
 <attribute name="MANUFACTURER" value="AVX Corporation" x="190.3" y="52.9" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="ORDERING-CODE" value="08055C104KAT2A" x="190.3" y="52.9" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="192.538" y="51.465" size="1.27" layer="25" rot="R90"/>
 </element>
-<element name="U9:R1" library="firefly" package="R0805" value="0" x="76" y="54.3" smashed="yes" rot="R270">
-<attribute name="MANUFACTURER" value="Yageo" x="76" y="54.3" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="ORDERING-CODE" value="RC0805FR-070RL" x="76" y="54.3" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="73.816" y="57.762" size="1.27" layer="25" rot="R270"/>
-<attribute name="VALUE" x="73.714" y="55.062" size="1.27" layer="27" rot="R270"/>
+<element name="U9:R1" library="firefly" package="R0805" value="100K" x="88.9" y="61.4" smashed="yes" rot="R180">
+<attribute name="MANUFACTURER" value="Yageo" x="88.9" y="61.4" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="ORDERING-CODE" value="RC0805FR-07100KL" x="88.9" y="61.4" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="92.262" y="63.684" size="1.27" layer="25" rot="R180"/>
+<attribute name="VALUE" x="89.662" y="63.686" size="1.27" layer="27" rot="R180"/>
+</element>
+<element name="U9:R2" library="firefly" package="R0805" value="100K" x="84.6" y="61.4" smashed="yes" rot="R180">
+<attribute name="MANUFACTURER" value="Yageo" x="84.6" y="61.4" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="ORDERING-CODE" value="RC0805FR-07100KL" x="84.6" y="61.4" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="86.562" y="63.684" size="1.27" layer="25" rot="R180"/>
+<attribute name="VALUE" x="85.362" y="63.686" size="1.27" layer="27" rot="R180"/>
 </element>
 </elements>
 <signals>
 <signal name="GND">
-<contactref element="J2" pad="4"/>
 <contactref element="R6" pad="2"/>
 <contactref element="R5" pad="2"/>
 <contactref element="U6:U2" pad="2"/>
@@ -1620,7 +1633,7 @@ Please make sure your boards conform to these design rules.</description>
 </polygon>
 <via x="34.9" y="74.7" extent="1-16" drill="0.3302"/>
 <via x="144.5" y="14.3" extent="1-16" drill="0.3302"/>
-<via x="9.5" y="49.7" extent="1-16" drill="0.6"/>
+<via x="9.5" y="49.7" extent="1-16" drill="0.3302"/>
 <via x="122.3" y="6.4" extent="1-16" drill="0.3302"/>
 <via x="109" y="26.3" extent="1-16" drill="0.3302"/>
 <via x="95.5" y="20.8" extent="1-16" drill="0.3302"/>
@@ -1657,29 +1670,29 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="10.9" y1="51.525" x2="11.875" y2="51.525" width="0.254" layer="1"/>
 <wire x1="11.875" y1="51.525" x2="12.5" y2="50.8" width="0.254" layer="1"/>
 <wire x1="9.5" y1="49.7" x2="9.55" y2="48" width="0.254" layer="1"/>
-<via x="23.7" y="53" extent="1-16" drill="0.6"/>
-<via x="26.7" y="43" extent="1-16" drill="0.6"/>
-<via x="23.7" y="49.5" extent="1-16" drill="0.6"/>
-<via x="18.7" y="51" extent="1-16" drill="0.6"/>
-<via x="21.7" y="53.5" extent="1-16" drill="0.6"/>
+<via x="23.7" y="53" extent="1-16" drill="0.3302"/>
+<via x="26.7" y="43" extent="1-16" drill="0.3302"/>
+<via x="23.7" y="49.5" extent="1-16" drill="0.3302"/>
+<via x="18.7" y="51" extent="1-16" drill="0.3302"/>
+<via x="21.7" y="53.5" extent="1-16" drill="0.3302"/>
 <wire x1="26.7" y1="43" x2="26.7" y2="41.35" width="0.254" layer="1"/>
 <wire x1="26.7" y1="41.35" x2="27.05" y2="41" width="0.254" layer="1"/>
 <wire x1="20.15" y1="53.5" x2="21.7" y2="53.5" width="0.254" layer="1"/>
 <wire x1="20.25" y1="51" x2="18.7" y2="51" width="0.254" layer="1"/>
 <wire x1="23.7" y1="49.5" x2="25.25" y2="49.5" width="0.254" layer="1"/>
 <wire x1="25.25" y1="53" x2="23.7" y2="53" width="0.254" layer="1"/>
-<via x="95.2" y="7.5" extent="1-16" drill="0.6"/>
+<via x="92.2" y="7.2" extent="1-16" drill="0.3302"/>
 <via x="112" y="31" extent="1-16" drill="0.3302"/>
 <via x="109" y="10" extent="1-16" drill="0.3302"/>
 <via x="109" y="13" extent="1-16" drill="0.3302"/>
 <via x="123.5" y="18.5" extent="1-16" drill="0.3302"/>
 <via x="109" y="23.6" extent="1-16" drill="0.3302"/>
-<via x="95" y="50.4" extent="1-16" drill="0.3302"/>
+<via x="89.9" y="47.3" extent="1-16" drill="0.3302"/>
 <via x="101.7" y="22.9" extent="1-16" drill="0.3302"/>
-<via x="101.7" y="9.9" extent="1-16" drill="0.6"/>
+<via x="101.7" y="9.9" extent="1-16" drill="0.3302"/>
 <via x="106.8" y="23" extent="1-16" drill="0.3302"/>
 <via x="94.7" y="53.7" extent="1-16" drill="0.3302"/>
-<wire x1="97.25" y1="7.5" x2="95.2" y2="7.5" width="0.254" layer="1"/>
+<wire x1="94.15" y1="7.2" x2="92.2" y2="7.2" width="0.254" layer="1"/>
 <wire x1="101.7" y1="9.9" x2="101.2" y2="10.4" width="0.254" layer="1"/>
 <wire x1="101.2" y1="10.4" x2="100.225" y2="10.4" width="0.254" layer="1"/>
 <wire x1="100.225" y1="10.4" x2="100.2" y2="10.425" width="0.254" layer="1"/>
@@ -1695,10 +1708,10 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="79.2" y1="57" x2="79.2" y2="59.2" width="0.6096" layer="1"/>
 <wire x1="79.2" y1="59.2" x2="79.25" y2="59.3" width="0.6096" layer="1"/>
 <wire x1="94.7" y1="53.7" x2="93.35" y2="53.7" width="0.254" layer="1"/>
-<wire x1="95" y1="50.4" x2="93.25" y2="50.4" width="0.254" layer="1"/>
+<wire x1="89.9" y1="47.3" x2="88.65" y2="47.3" width="0.254" layer="1"/>
 <via x="141.3" y="13.4" extent="1-16" drill="0.3302"/>
 <wire x1="144.5" y1="14.3" x2="144.5" y2="15.25" width="0.254" layer="1"/>
-<via x="12.5" y="50.8" extent="1-16" drill="0.6"/>
+<via x="12.5" y="50.8" extent="1-16" drill="0.3302"/>
 <wire x1="106.8" y1="24.05" x2="106.8" y2="23" width="0.254" layer="1"/>
 <wire x1="110.05" y1="26.3" x2="109" y2="26.3" width="0.8128" layer="1"/>
 <wire x1="110.05" y1="10" x2="109" y2="10" width="0.254" layer="1"/>
@@ -1797,7 +1810,7 @@ Please make sure your boards conform to these design rules.</description>
 <via x="189.6" y="40.7" extent="1-16" drill="0.3302"/>
 <via x="183.8" y="39.1" extent="1-16" drill="0.3302"/>
 <contactref element="U8:U2" pad="2"/>
-<via x="18.9" y="45.4" extent="1-16" drill="0.6"/>
+<via x="18.9" y="45.4" extent="1-16" drill="0.3302"/>
 <wire x1="18.9" y1="45.4" x2="20.75" y2="45.4" width="0.254" layer="1"/>
 <wire x1="20.75" y1="45.4" x2="20.76" y2="45.39" width="0.254" layer="1"/>
 <contactref element="U9:U6" pad="2"/>
@@ -1844,8 +1857,8 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="79.81" y1="55.29" x2="79.2" y2="55.9" width="0.6096" layer="1"/>
 <wire x1="79.2" y1="55.9" x2="79.2" y2="57" width="0.6096" layer="1"/>
 <contactref element="C17" pad="2"/>
-<via x="185.1" y="45" extent="1-16" drill="0.3302"/>
-<wire x1="185.1" y1="46.095" x2="185.1" y2="45" width="0.254" layer="1"/>
+<via x="187.2" y="46.1" extent="1-16" drill="0.3302"/>
+<wire x1="185.1" y1="46.095" x2="187.2" y2="46.1" width="0.254" layer="1"/>
 <via x="190.3" y="54.8" extent="1-16" drill="0.3302"/>
 <wire x1="190.3" y1="54.8" x2="190.3" y2="53.85" width="0.254" layer="1"/>
 <via x="184.5" y="59.3" extent="1-16" drill="0.3302"/>
@@ -1878,9 +1891,20 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="135.03" y1="47.73" x2="135" y2="48" width="1" layer="1"/>
 <wire x1="56.8" y1="52.6" x2="58.4" y2="52.6" width="0.254" layer="1"/>
 <wire x1="56.8" y1="35.9" x2="58.4" y2="35.9" width="0.254" layer="1"/>
+<contactref element="J6" pad="3"/>
+<contactref element="J6" pad="5"/>
+<contactref element="J7" pad="3"/>
+<contactref element="J7" pad="5"/>
+<contactref element="U3:U1" pad="5"/>
+<contactref element="J1" pad="24"/>
+<contactref element="J1" pad="4"/>
+<contactref element="J1" pad="23"/>
+<via x="18.6" y="83" extent="1-16" drill="0.6"/>
+<wire x1="18.59" y1="80.52" x2="18.6" y2="80.52" width="0.254" layer="1"/>
+<wire x1="18.6" y1="80.52" x2="18.6" y2="83" width="0.254" layer="1"/>
 <contactref element="U9:R1" pad="1"/>
-<wire x1="76" y1="55.15" x2="76" y2="56.6" width="1" layer="1"/>
-<via x="76" y="56.6" extent="1-16" drill="0.3302"/>
+<via x="91.1" y="61.4" extent="1-16" drill="0.3302"/>
+<wire x1="91.1" y1="61.4" x2="89.75" y2="61.4" width="0.254" layer="1"/>
 </signal>
 <signal name="DUT_USB_5V">
 <contactref element="U5:U1" pad="9"/>
@@ -1904,9 +1928,9 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="U3:U1" pad="4"/>
 <contactref element="J1" pad="11"/>
 <wire x1="21.1" y1="80.55" x2="21.13" y2="80.52" width="0.254" layer="1"/>
-<wire x1="21.1" y1="82" x2="22" y2="83" width="0.254" layer="1"/>
-<wire x1="22" y1="83" x2="55" y2="83" width="0.254" layer="1"/>
-<wire x1="21.1" y1="82" x2="21.1" y2="80.592425" width="0.254" layer="1"/>
+<wire x1="21.1" y1="82.4" x2="21.7" y2="83" width="0.254" layer="1"/>
+<wire x1="21.7" y1="83" x2="55" y2="83" width="0.254" layer="1"/>
+<wire x1="21.1" y1="82.4" x2="21.1" y2="80.592425" width="0.254" layer="1"/>
 <wire x1="21.1" y1="80.592425" x2="21.13" y2="80.52" width="0.254" layer="1" curve="45"/>
 <via x="55" y="83" extent="1-16" drill="0.3302"/>
 <wire x1="55" y1="83" x2="55" y2="92.19" width="0.254" layer="16"/>
@@ -1915,15 +1939,12 @@ Please make sure your boards conform to these design rules.</description>
 <signal name="+5V">
 <contactref element="U10" pad="1"/>
 <wire x1="28.3" y1="15.3" x2="28.3" y2="20.44" width="1" layer="1"/>
-<contactref element="J2" pad="1"/>
 <contactref element="J13" pad="4"/>
 <contactref element="J13" pad="1"/>
 <contactref element="J13" pad="3"/>
 <contactref element="J13" pad="2"/>
 <wire x1="28.3" y1="15.3" x2="25.86" y2="15.3" width="1" layer="1"/>
 <wire x1="25.86" y1="15.3" x2="25.86" y2="15.36" width="1" layer="1"/>
-<wire x1="25.86" y1="15.36" x2="23.35" y2="15.36" width="1" layer="1"/>
-<wire x1="23.35" y1="15.36" x2="23.35" y2="15.21" width="1" layer="1"/>
 <wire x1="28.3" y1="15.3" x2="30.94" y2="15.3" width="1" layer="1"/>
 <wire x1="30.94" y1="15.3" x2="30.94" y2="15.36" width="1" layer="1"/>
 <wire x1="25.86" y1="20.44" x2="28.3" y2="20.44" width="1" layer="1"/>
@@ -1980,73 +2001,6 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="114.8" y1="94.63" x2="114.81" y2="94.62" width="1" layer="1"/>
 <wire x1="94.81" y1="94.62" x2="94.81" y2="97.49" width="1" layer="1"/>
 <wire x1="94.81" y1="97.49" x2="94.8" y2="97.5" width="1" layer="1"/>
-</signal>
-<signal name="DUT_GND">
-<contactref element="J6" pad="5"/>
-<contactref element="J6" pad="3"/>
-<contactref element="J7" pad="5"/>
-<contactref element="J7" pad="3"/>
-<contactref element="R2" pad="2"/>
-<contactref element="U3:U1" pad="5"/>
-<wire x1="47.17" y1="59.035" x2="47.2" y2="59.3" width="0.254" layer="16"/>
-<wire x1="47.2" y1="59.3" x2="47.2" y2="63" width="0.254" layer="16"/>
-<wire x1="47.2" y1="63" x2="72" y2="63" width="0.254" layer="1"/>
-<wire x1="45.9" y1="59.035" x2="45.9" y2="63" width="0.254" layer="16"/>
-<wire x1="45.9" y1="63" x2="47.2" y2="63" width="0.254" layer="1"/>
-<wire x1="45.9" y1="63" x2="41.2" y2="63" width="0.254" layer="1"/>
-<via x="41.2" y="63" extent="1-16" drill="0.3302"/>
-<wire x1="41.2" y1="63" x2="41.2" y2="44.6" width="0.254" layer="16"/>
-<via x="41.2" y="44.6" extent="1-16" drill="0.3302"/>
-<wire x1="41.2" y1="44.6" x2="46.1" y2="44.6" width="0.254" layer="1"/>
-<wire x1="46.1" y1="44.6" x2="47" y2="44.6" width="0.254" layer="1"/>
-<wire x1="47" y1="44.6" x2="47.3" y2="44.3" width="0.254" layer="1"/>
-<wire x1="47.3" y1="44.3" x2="47.3" y2="42.805" width="0.254" layer="1"/>
-<wire x1="47.3" y1="42.805" x2="47.37" y2="42.735" width="0.254" layer="1"/>
-<wire x1="46.1" y1="42.735" x2="46.1" y2="44.6" width="0.254" layer="1"/>
-<wire x1="18.5" y1="80.53" x2="18.59" y2="80.52" width="0.254" layer="1"/>
-<contactref element="J1" pad="4"/>
-<contactref element="J1" pad="24"/>
-<contactref element="J1" pad="23"/>
-<contactref element="J1" pad="25"/>
-<wire x1="72" y1="89.896528125" x2="72" y2="86" width="1" layer="16"/>
-<wire x1="72" y1="86" x2="72" y2="63" width="1" layer="16"/>
-<wire x1="72" y1="63" x2="72" y2="53.3" width="1" layer="16"/>
-<wire x1="18.6" y1="83.1" x2="18.59" y2="80.52" width="1" layer="1"/>
-<via x="18.6" y="83.1" extent="1-16" drill="0.3302"/>
-<via x="72" y="63" extent="1-16" drill="0.3302"/>
-<wire x1="70.2" y1="94.77" x2="70.2" y2="92.23" width="1" layer="16"/>
-<wire x1="70.2" y1="92.23" x2="72" y2="92.23" width="1" layer="16"/>
-<wire x1="72" y1="92.23" x2="72.74" y2="92.23" width="1" layer="16"/>
-<wire x1="72.74" y1="92.23" x2="72.7" y2="92.03" width="0.254" layer="16"/>
-<wire x1="44.8" y1="94.77" x2="44.8" y2="96" width="1" layer="16"/>
-<wire x1="44.8" y1="96" x2="45.8" y2="97" width="1" layer="16"/>
-<wire x1="45.8" y1="97" x2="69.6" y2="97" width="1" layer="16"/>
-<wire x1="69.6" y1="97" x2="70.2" y2="96.5" width="1" layer="16"/>
-<wire x1="70.2" y1="96.5" x2="70.2" y2="94.77" width="1" layer="16"/>
-<wire x1="175" y1="63" x2="72" y2="63" width="0.254" layer="1"/>
-<wire x1="71.920240625" y1="89.720240625" x2="71.920240625" y2="90" width="0.254" layer="16"/>
-<wire x1="71.920240625" y1="90" x2="72" y2="89.896528125" width="0.254" layer="16"/>
-<contactref element="U14" pad="24"/>
-<wire x1="176.25" y1="43.75" x2="176.25" y2="49.75" width="0.254" layer="1"/>
-<wire x1="176.25" y1="49.75" x2="175" y2="51" width="0.254" layer="1"/>
-<via x="175" y="51" extent="1-16" drill="0.3302"/>
-<wire x1="175" y1="51" x2="175" y2="63" width="0.254" layer="16"/>
-<via x="175" y="63" extent="1-16" drill="0.3302"/>
-<wire x1="72" y1="89.896528125" x2="72" y2="92.23" width="1" layer="16"/>
-<wire x1="72" y1="55.42" x2="72" y2="53.3" width="1" layer="1"/>
-<via x="72" y="53.3" extent="1-16" drill="0.3302"/>
-<wire x1="72" y1="86" x2="18.6" y2="86" width="1" layer="1"/>
-<wire x1="18.6" y1="86" x2="18.6" y2="83.1" width="1" layer="16"/>
-<via x="45.9" y="63" extent="1-16" drill="0.3302"/>
-<via x="47.2" y="63" extent="1-16" drill="0.3302"/>
-<via x="18.6" y="86" extent="1-16" drill="0.3302"/>
-<contactref element="U9:R1" pad="2"/>
-<via x="72" y="86" extent="1-16" drill="0.3302"/>
-<wire x1="76" y1="53.45" x2="76" y2="52.8" width="1" layer="1"/>
-<wire x1="76" y1="52.8" x2="75.2" y2="52" width="1" layer="1"/>
-<wire x1="75.2" y1="52" x2="72.6" y2="52" width="1" layer="1"/>
-<wire x1="72.6" y1="52" x2="72" y2="52.6" width="1" layer="1"/>
-<wire x1="72" y1="52.6" x2="72" y2="53.3" width="1" layer="1"/>
 </signal>
 <signal name="DUT_MOTOR+">
 <contactref element="R2" pad="1"/>
@@ -3122,12 +3076,7 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="83.64" y1="54.34" x2="83.64" y2="50.99" width="0.254" layer="1"/>
 <wire x1="83.64" y1="50.99" x2="83.05" y2="50.4" width="0.254" layer="1"/>
 <wire x1="83.05" y1="50.4" x2="86.95" y2="50.4" width="0.254" layer="1"/>
-<wire x1="91.55" y1="50.4" x2="91.55" y2="50.25" width="0.254" layer="1"/>
-<wire x1="91.55" y1="50.25" x2="90.4" y2="49.1" width="0.254" layer="1"/>
-<wire x1="90.4" y1="49.1" x2="87.6" y2="49.1" width="0.254" layer="1"/>
-<wire x1="87.6" y1="49.1" x2="86.9" y2="49.8" width="0.254" layer="1"/>
-<wire x1="86.9" y1="49.8" x2="86.9" y2="50.35" width="0.254" layer="1"/>
-<wire x1="86.9" y1="50.35" x2="86.95" y2="50.4" width="0.254" layer="1"/>
+<wire x1="86.95" y1="50.4" x2="86.95" y2="47.3" width="0.254" layer="1"/>
 </signal>
 <signal name="U9:N$35">
 <contactref element="U9:RS" pad="1"/>
@@ -3138,6 +3087,10 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="86" y1="57.2" x2="85" y2="56.2" width="0.5" layer="1"/>
 <wire x1="85" y1="56.2" x2="83.68" y2="56.2" width="0.5" layer="1"/>
 <wire x1="83.68" y1="56.2" x2="83.64" y2="56.24" width="0.254" layer="1"/>
+<contactref element="U9:R2" pad="2"/>
+<wire x1="83.7" y1="61.35" x2="83.75" y2="61.4" width="0.254" layer="1"/>
+<wire x1="83.7" y1="61.35" x2="83.7" y2="56.3" width="0.254" layer="1"/>
+<wire x1="83.7" y1="56.3" x2="83.64" y2="56.24" width="0.254" layer="1"/>
 </signal>
 <signal name="U9:SENSE_S">
 <contactref element="U9:R34" pad="1"/>
@@ -3256,27 +3209,23 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="U9:U7" pad="4"/>
 <contactref element="U9:R28" pad="1"/>
 <contactref element="U9:R30" pad="1"/>
-<wire x1="95.8" y1="10.425" x2="95.8" y2="9.7" width="0.254" layer="1"/>
-<wire x1="95.8" y1="9.7" x2="96.4" y2="9.1" width="0.254" layer="1"/>
-<wire x1="96.4" y1="9.1" x2="98.4" y2="9.1" width="0.254" layer="1"/>
-<wire x1="98.4" y1="9.1" x2="98.9" y2="8.6" width="0.254" layer="1"/>
-<wire x1="98.9" y1="8.6" x2="98.9" y2="7.55" width="0.254" layer="1"/>
-<wire x1="98.9" y1="7.55" x2="98.95" y2="7.5" width="0.254" layer="1"/>
-<wire x1="98.95" y1="7.5" x2="104.45" y2="7.5" width="0.254" layer="1"/>
+<wire x1="95.85" y1="7.2" x2="102.65" y2="7.2" width="0.254" layer="1"/>
+<wire x1="95.8" y1="10.425" x2="95.8" y2="7.25" width="0.254" layer="1"/>
+<wire x1="95.8" y1="7.25" x2="95.85" y2="7.2" width="0.254" layer="1"/>
 </signal>
 <signal name="U9:N$25">
 <contactref element="U9:R30" pad="2"/>
 <contactref element="U9:R29" pad="1"/>
 <contactref element="U9:C16" pad="2"/>
-<wire x1="106.15" y1="7.5" x2="110.15" y2="7.5" width="0.254" layer="1"/>
-<wire x1="110.15" y1="7.5" x2="110.15" y2="5.1" width="0.254" layer="1"/>
+<wire x1="104.35" y1="7.2" x2="110.15" y2="7.2" width="0.254" layer="1"/>
+<wire x1="110.15" y1="7.2" x2="110.15" y2="5.1" width="0.254" layer="1"/>
 <wire x1="110.15" y1="5.1" x2="110.05" y2="5" width="0.254" layer="1"/>
 </signal>
 <signal name="U9:N$26">
 <contactref element="U9:R29" pad="2"/>
 <contactref element="U9:C14" pad="1"/>
 <contactref element="U9:U8" pad="3"/>
-<wire x1="111.85" y1="7.5" x2="111.85" y2="9.9" width="0.254" layer="1"/>
+<wire x1="111.85" y1="7.2" x2="111.85" y2="9.9" width="0.254" layer="1"/>
 <wire x1="111.85" y1="9.9" x2="111.95" y2="10" width="0.254" layer="1"/>
 <wire x1="111.95" y1="10" x2="117.5" y2="10" width="0.254" layer="1"/>
 <wire x1="117.5" y1="10" x2="117.7" y2="9.8" width="0.254" layer="1"/>
@@ -3420,6 +3369,18 @@ Please make sure your boards conform to these design rules.</description>
 </signal>
 <signal name="ATE_BATTERY+2">
 <contactref element="U14" pad="25"/>
+<contactref element="U9:R2" pad="1"/>
+<contactref element="U9:R1" pad="2"/>
+<wire x1="85.45" y1="61.4" x2="86.8" y2="61.4" width="0.254" layer="1"/>
+<wire x1="86.8" y1="61.4" x2="88.05" y2="61.4" width="0.254" layer="1"/>
+<wire x1="175.75" y1="43.75" x2="175.75" y2="49.85" width="0.254" layer="1"/>
+<wire x1="175.75" y1="49.85" x2="174.6" y2="51" width="0.254" layer="1"/>
+<via x="174.6" y="51" extent="1-16" drill="0.3302"/>
+<wire x1="174.6" y1="51" x2="174.6" y2="63.2" width="0.254" layer="16"/>
+<via x="174.6" y="63.2" extent="1-16" drill="0.3302"/>
+<wire x1="174.6" y1="63.2" x2="87.2" y2="63.2" width="0.254" layer="1"/>
+<wire x1="87.2" y1="63.2" x2="86.8" y2="62.8" width="0.254" layer="1"/>
+<wire x1="86.8" y1="62.8" x2="86.8" y2="61.4" width="0.254" layer="1"/>
 </signal>
 <signal name="BOOT0">
 <contactref element="U14" pad="60"/>
@@ -3790,9 +3751,9 @@ Please make sure your boards conform to these design rules.</description>
 <via x="131.3" y="89.7" extent="1-16" drill="0.3302"/>
 <wire x1="131.3" y1="89.7" x2="131.3" y2="62" width="1" layer="16"/>
 <via x="131.3" y="62" extent="1-16" drill="0.3302"/>
-<wire x1="131.3" y1="62" x2="92.7" y2="62" width="1" layer="1"/>
-<wire x1="92.7" y1="62" x2="91.5" y2="60.8" width="1" layer="1"/>
-<wire x1="91.5" y1="60.8" x2="91.5" y2="57.25" width="1" layer="1"/>
+<wire x1="131.3" y1="62" x2="94.5" y2="62" width="1" layer="1"/>
+<wire x1="94.5" y1="62" x2="91.5" y2="59" width="1" layer="1"/>
+<wire x1="91.5" y1="59" x2="91.5" y2="57.25" width="1" layer="1"/>
 <wire x1="91.5" y1="57.25" x2="91.45" y2="57.2" width="1" layer="1"/>
 <wire x1="151.27" y1="87.48" x2="151.27" y2="85.27" width="1" layer="1"/>
 <wire x1="151.27" y1="85.27" x2="150.5" y2="84.5" width="1" layer="1"/>
@@ -4077,6 +4038,15 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="18.541715625" y1="73.3" x2="18.59" y2="73.28" width="0.254" layer="1" curve="-45"/>
 <wire x1="18.3" y1="73.4" x2="18.432571875" y2="73.345209375" width="0.254" layer="1" curve="-9.116681"/>
 <wire x1="18.432571875" y1="73.345209375" x2="18.59" y2="73.28" width="0.254" layer="1" curve="-45"/>
+</signal>
+<signal name="DUT_MOTOR-">
+<contactref element="R2" pad="2"/>
+<contactref element="J1" pad="25"/>
+<wire x1="72.74" y1="92.23" x2="72.4" y2="91.89" width="1" layer="16"/>
+<wire x1="72.4" y1="91.89" x2="72.4" y2="53" width="1" layer="16"/>
+<via x="72.4" y="53" extent="1-16" drill="0.3302"/>
+<wire x1="72.4" y1="53" x2="72.4" y2="55.02" width="1" layer="1"/>
+<wire x1="72.4" y1="55.02" x2="72" y2="55.42" width="1" layer="1"/>
 </signal>
 </signals>
 </board>
