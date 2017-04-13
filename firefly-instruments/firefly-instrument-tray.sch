@@ -279,10 +279,10 @@ by exp-lbrs.ulp</description>
 <pad name="3" x="-1.27" y="-0.635" drill="0.7" diameter="1"/>
 <pad name="1" x="-2.54" y="-0.635" drill="0.7" diameter="1" shape="square"/>
 <text x="-2" y="2" size="1.27" layer="21">&gt;Name</text>
-<wire x1="-3.7" y1="1.7" x2="3.7" y2="1.7" width="0.127" layer="21"/>
-<wire x1="3.7" y1="1.7" x2="3.7" y2="-1.7" width="0.127" layer="21"/>
-<wire x1="3.7" y1="-1.7" x2="-3.7" y2="-1.7" width="0.127" layer="21"/>
-<wire x1="-3.7" y1="-1.7" x2="-3.7" y2="1.7" width="0.127" layer="21"/>
+<wire x1="-5.275" y1="1.6" x2="5.275" y2="1.6" width="0.127" layer="21"/>
+<wire x1="5.275" y1="1.6" x2="5.275" y2="-1.6" width="0.127" layer="21"/>
+<wire x1="5.275" y1="-1.6" x2="-5.275" y2="-1.6" width="0.127" layer="21"/>
+<wire x1="-5.275" y1="-1.6" x2="-5.275" y2="1.6" width="0.127" layer="21"/>
 </package>
 <package name="0603">
 <wire x1="-0.725" y1="0.35" x2="0.725" y2="0.35" width="0.1016" layer="51"/>
@@ -1182,14 +1182,14 @@ chip</description>
 <package name="R0805">
 <description>&lt;b&gt;RESISTOR&lt;/b&gt;&lt;p&gt;
 chip</description>
-<wire x1="-0.41" y1="0.635" x2="0.41" y2="0.635" width="0.1524" layer="51"/>
-<wire x1="-0.41" y1="-0.635" x2="0.41" y2="-0.635" width="0.1524" layer="51"/>
+<wire x1="-0.41" y1="0.635" x2="0.41" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="-0.41" y1="-0.635" x2="0.41" y2="-0.635" width="0.1524" layer="21"/>
 <wire x1="-1.973" y1="0.983" x2="1.973" y2="0.983" width="0.0508" layer="39"/>
 <wire x1="1.973" y1="0.983" x2="1.973" y2="-0.983" width="0.0508" layer="39"/>
 <wire x1="1.973" y1="-0.983" x2="-1.973" y2="-0.983" width="0.0508" layer="39"/>
 <wire x1="-1.973" y1="-0.983" x2="-1.973" y2="0.983" width="0.0508" layer="39"/>
-<rectangle x1="0.4064" y1="-0.6985" x2="1.0564" y2="0.7015" layer="51"/>
-<rectangle x1="-1.0668" y1="-0.6985" x2="-0.4168" y2="0.7015" layer="51"/>
+<rectangle x1="0.4064" y1="-0.6985" x2="1.0564" y2="0.7015" layer="21"/>
+<rectangle x1="-1.0668" y1="-0.6985" x2="-0.4168" y2="0.7015" layer="21"/>
 <rectangle x1="-0.1999" y1="-0.5001" x2="0.1999" y2="0.5001" layer="35"/>
 <smd name="1" x="-0.85" y="0" dx="1.3" dy="1.5" layer="1"/>
 <smd name="2" x="0.85" y="0" dx="1.3" dy="1.5" layer="1"/>
@@ -2908,11 +2908,11 @@ Source: http://www.vishay.com/docs/45017/vjsoldfo.pdf</description>
 <wire x1="-1.525" y1="0.925" x2="1.525" y2="0.925" width="0.0508" layer="39"/>
 <wire x1="1.525" y1="-0.925" x2="-1.525" y2="-0.925" width="0.0508" layer="39"/>
 <wire x1="-1.525" y1="-0.925" x2="-1.525" y2="0.925" width="0.0508" layer="39"/>
-<wire x1="-0.381" y1="0.66" x2="0.381" y2="0.66" width="0.1016" layer="51"/>
-<wire x1="-0.356" y1="-0.66" x2="0.381" y2="-0.66" width="0.1016" layer="51"/>
+<wire x1="-0.381" y1="0.66" x2="0.381" y2="0.66" width="0.1016" layer="21"/>
+<wire x1="-0.356" y1="-0.66" x2="0.381" y2="-0.66" width="0.1016" layer="21"/>
 <wire x1="1.525" y1="0.925" x2="1.525" y2="-0.925" width="0.0508" layer="39"/>
-<rectangle x1="-1.0922" y1="-0.7239" x2="-0.3421" y2="0.7262" layer="51"/>
-<rectangle x1="0.3556" y1="-0.7239" x2="1.1057" y2="0.7262" layer="51"/>
+<rectangle x1="-1.0922" y1="-0.7239" x2="-0.3421" y2="0.7262" layer="21"/>
+<rectangle x1="0.3556" y1="-0.7239" x2="1.1057" y2="0.7262" layer="21"/>
 <rectangle x1="-0.1001" y1="-0.4001" x2="0.1001" y2="0.4001" layer="35"/>
 <smd name="1" x="-0.95" y="0" dx="0.9" dy="1.3" layer="1"/>
 <smd name="2" x="0.95" y="0" dx="0.9" dy="1.3" layer="1"/>
@@ -2947,22 +2947,6 @@ chip</description>
 <text x="-0.635" y="0.762" size="1.27" layer="25">&gt;NAME</text>
 <text x="-0.635" y="-1.905" size="1.27" layer="27">&gt;VALUE</text>
 </package>
-<package name="C1206">
-<description>&lt;b&gt;CAPACITOR&lt;/b&gt;&lt;p&gt;
-Source: http://www.vishay.com/docs/45017/vjsoldfo.pdf</description>
-<wire x1="-2.125" y1="1.125" x2="2.125" y2="1.125" width="0.0508" layer="39"/>
-<wire x1="2.125" y1="-1.125" x2="-2.125" y2="-1.125" width="0.0508" layer="39"/>
-<wire x1="-2.125" y1="-1.125" x2="-2.125" y2="1.125" width="0.0508" layer="39"/>
-<wire x1="2.125" y1="1.125" x2="2.125" y2="-1.125" width="0.0508" layer="39"/>
-<wire x1="-0.965" y1="0.787" x2="0.965" y2="0.787" width="0.1016" layer="51"/>
-<wire x1="-0.965" y1="-0.787" x2="0.965" y2="-0.787" width="0.1016" layer="51"/>
-<rectangle x1="-1.7018" y1="-0.8509" x2="-0.9517" y2="0.8491" layer="51"/>
-<rectangle x1="0.9517" y1="-0.8491" x2="1.7018" y2="0.8509" layer="51"/>
-<rectangle x1="-0.1999" y1="-0.4001" x2="0.1999" y2="0.4001" layer="35"/>
-<smd name="1" x="-1.55" y="0" dx="0.9" dy="1.6" layer="1"/>
-<smd name="2" x="1.55" y="0" dx="0.9" dy="1.6" layer="1"/>
-<text x="-0.6" y="1" size="0.5" layer="51">&gt;Name</text>
-</package>
 <package name="C1206K">
 <description>&lt;b&gt;Ceramic Chip Capacitor KEMET 1206 Reflow solder&lt;/b&gt;&lt;p&gt;
 Metric Code Size 3216</description>
@@ -2974,21 +2958,6 @@ Metric Code Size 3216</description>
 <smd name="2" x="1.5" y="0" dx="1.5" dy="2" layer="1"/>
 <text x="-1.6" y="1.1" size="1.016" layer="25">&gt;NAME</text>
 <text x="-1.6" y="-2.1" size="1.016" layer="27">&gt;VALUE</text>
-</package>
-<package name="C1210">
-<description>&lt;b&gt;CAPACITOR&lt;/b&gt;&lt;p&gt;
-Source: http://www.vishay.com/docs/45017/vjsoldfo.pdf</description>
-<wire x1="-2.125" y1="1.575" x2="2.125" y2="1.575" width="0.0508" layer="39"/>
-<wire x1="2.125" y1="-1.575" x2="-2.125" y2="-1.575" width="0.0508" layer="39"/>
-<wire x1="-2.125" y1="-1.575" x2="-2.125" y2="1.575" width="0.0508" layer="39"/>
-<wire x1="-0.9652" y1="1.2446" x2="0.9652" y2="1.2446" width="0.1016" layer="51"/>
-<wire x1="-0.9652" y1="-1.2446" x2="0.9652" y2="-1.2446" width="0.1016" layer="51"/>
-<wire x1="2.125" y1="1.575" x2="2.125" y2="-1.575" width="0.0508" layer="39"/>
-<rectangle x1="-1.7018" y1="-1.2954" x2="-0.9517" y2="1.3045" layer="51"/>
-<rectangle x1="0.9517" y1="-1.3045" x2="1.7018" y2="1.2954" layer="51"/>
-<rectangle x1="-0.1999" y1="-0.4001" x2="0.1999" y2="0.4001" layer="35"/>
-<smd name="1" x="-1.55" y="0" dx="0.9" dy="2.5" layer="1"/>
-<smd name="2" x="1.55" y="0" dx="0.9" dy="2.5" layer="1"/>
 </package>
 <package name="C1210K">
 <description>&lt;b&gt;Ceramic Chip Capacitor KEMET 1210 Reflow solder&lt;/b&gt;&lt;p&gt;
@@ -3244,17 +3213,6 @@ tantalum</description>
 <wire x1="-3.7" y1="-7.5" x2="-3.7" y2="7.5" width="0.127" layer="51"/>
 <text x="-2.6" y="7.7" size="1.27" layer="25">&gt;Name</text>
 </package>
-<package name="SOT-23-3">
-<wire x1="-1.04" y1="2.24" x2="0.96" y2="2.24" width="0.127" layer="51"/>
-<wire x1="0.96" y1="2.24" x2="0.96" y2="-2.26" width="0.127" layer="51"/>
-<wire x1="0.96" y1="-2.26" x2="-1.04" y2="-2.26" width="0.127" layer="51"/>
-<wire x1="-1.04" y1="-2.26" x2="-1.04" y2="2.24" width="0.127" layer="51"/>
-<smd name="1" x="-1.1" y="0.95" dx="1.4" dy="0.6" layer="1"/>
-<smd name="2" x="-1.1" y="-0.95" dx="1.4" dy="0.6" layer="1"/>
-<smd name="3" x="1.1" y="0" dx="1.4" dy="0.6" layer="1"/>
-<circle x="-0.6" y="1.8" radius="0.22360625" width="0.127" layer="51"/>
-<text x="-0.2" y="1.6" size="0.4064" layer="51">&gt;Name</text>
-</package>
 <package name="SOT363">
 <circle x="-1" y="1.2" radius="0.1" width="0.127" layer="51"/>
 <wire x1="-0.7" y1="1" x2="0.7" y2="1" width="0.127" layer="51"/>
@@ -3303,17 +3261,17 @@ tantalum</description>
 <text x="-1.6" y="1.7" size="1.27" layer="25">&gt;Name</text>
 </package>
 <package name="SOT-23-5">
-<wire x1="-1.04" y1="2.24" x2="0.96" y2="2.24" width="0.127" layer="51"/>
-<wire x1="0.96" y1="2.24" x2="0.96" y2="-2.26" width="0.127" layer="51"/>
-<wire x1="0.96" y1="-2.26" x2="-1.04" y2="-2.26" width="0.127" layer="51"/>
-<wire x1="-1.04" y1="-2.26" x2="-1.04" y2="2.24" width="0.127" layer="51"/>
+<wire x1="-1.04" y1="2.24" x2="0.96" y2="2.24" width="0.127" layer="21"/>
+<wire x1="0.96" y1="2.24" x2="0.96" y2="-2.26" width="0.127" layer="21"/>
+<wire x1="0.96" y1="-2.26" x2="-1.04" y2="-2.26" width="0.127" layer="21"/>
+<wire x1="-1.04" y1="-2.26" x2="-1.04" y2="2.24" width="0.127" layer="21"/>
 <smd name="1" x="-1.24" y="0.94" dx="1.4" dy="0.6" layer="1"/>
 <smd name="2" x="-1.24" y="-0.01" dx="1.4" dy="0.6" layer="1"/>
 <smd name="3" x="-1.24" y="-0.96" dx="1.4" dy="0.6" layer="1"/>
 <smd name="4" x="1.34" y="-0.96" dx="1.4" dy="0.6" layer="1"/>
 <smd name="5" x="1.34" y="0.94" dx="1.4" dy="0.6" layer="1"/>
 <text x="-1.055" y="2.475" size="1.27" layer="25">&gt;NAME</text>
-<circle x="-0.6" y="1.8" radius="0.22360625" width="0.127" layer="51"/>
+<circle x="-0.6" y="1.8" radius="0.22360625" width="0.127" layer="21"/>
 </package>
 <package name="CEP125">
 <description>&lt;b&gt;POWER INDUCTORS&lt;/b&gt; (SMT Type)&lt;p&gt;
@@ -3873,11 +3831,11 @@ Source: WE-TPC 744053220.pdf</description>
 <pad name="15" x="2.54" y="-1.27" drill="1.102359375"/>
 <pad name="17" x="5.08" y="-1.27" drill="1.102359375"/>
 <pad name="19" x="7.62" y="-1.27" drill="1.102359375"/>
-<text x="-18.415" y="-3.175" size="1.27" layer="25" rot="R90">&gt;Name</text>
-<wire x1="-17.78" y1="3.81" x2="17.78" y2="3.81" width="0.127" layer="21"/>
-<wire x1="17.78" y1="3.81" x2="17.78" y2="-3.81" width="0.127" layer="21"/>
-<wire x1="17.78" y1="-3.81" x2="-17.78" y2="-3.81" width="0.127" layer="21"/>
-<wire x1="-17.78" y1="-3.81" x2="-17.78" y2="3.81" width="0.127" layer="21"/>
+<text x="-17.315" y="-1.175" size="1.27" layer="25" rot="R90">&gt;Name</text>
+<wire x1="-19" y1="3.81" x2="19" y2="3.81" width="0.127" layer="21"/>
+<wire x1="19" y1="3.81" x2="19" y2="-3.81" width="0.127" layer="21"/>
+<wire x1="19" y1="-3.81" x2="-19" y2="-3.81" width="0.127" layer="21"/>
+<wire x1="-19" y1="-3.81" x2="-19" y2="3.81" width="0.127" layer="21"/>
 <pad name="21" x="10.16" y="-1.27" drill="1.102359375"/>
 <pad name="23" x="12.7" y="-1.27" drill="1.102359375"/>
 <pad name="25" x="15.24" y="-1.27" drill="1.102359375"/>
@@ -3894,14 +3852,15 @@ Source: WE-TPC 744053220.pdf</description>
 <pad name="24" x="12.7" y="1.27" drill="1.102359375"/>
 <pad name="26" x="15.24" y="1.27" drill="1.102359375"/>
 <pad name="2" x="-15.24" y="1.27" drill="1.102359375"/>
+<text x="-17.4" y="-3.1" size="1.27" layer="21">1</text>
 </package>
 <package name="LQFP-64">
 <smd name="1" x="-5.75" y="3.75" dx="1.2" dy="0.3" layer="1"/>
-<wire x1="-5" y1="5" x2="5" y2="5" width="0.127" layer="51"/>
-<wire x1="5" y1="5" x2="5" y2="-5" width="0.127" layer="51"/>
-<wire x1="5" y1="-5" x2="-5" y2="-5" width="0.127" layer="51"/>
-<wire x1="-5" y1="-5" x2="-5" y2="5" width="0.127" layer="51"/>
-<circle x="-4.5" y="4.5" radius="0.25" width="0.127" layer="51"/>
+<wire x1="-5" y1="5" x2="5" y2="5" width="0.127" layer="21"/>
+<wire x1="5" y1="5" x2="5" y2="-5" width="0.127" layer="21"/>
+<wire x1="5" y1="-5" x2="-5" y2="-5" width="0.127" layer="21"/>
+<wire x1="-5" y1="-5" x2="-5" y2="5" width="0.127" layer="21"/>
+<circle x="-4.5" y="4.5" radius="0.25" width="0.127" layer="21"/>
 <text x="-6.6" y="5.25" size="1.27" layer="25">&gt;Name</text>
 <smd name="2" x="-5.75" y="3.25" dx="1.2" dy="0.3" layer="1"/>
 <smd name="3" x="-5.75" y="2.75" dx="1.2" dy="0.3" layer="1"/>
@@ -4047,16 +4006,16 @@ Source: WE-TPC 744053220.pdf</description>
 <text x="-3.2" y="-2.7" size="1.27" layer="27">&gt;Value</text>
 </package>
 <package name="SOT-23-6">
-<wire x1="-1.6" y1="1.6" x2="1.6" y2="1.6" width="0.127" layer="51"/>
-<wire x1="1.6" y1="1.6" x2="1.6" y2="-1.6" width="0.127" layer="51"/>
-<wire x1="1.6" y1="-1.6" x2="-1.6" y2="-1.6" width="0.127" layer="51"/>
-<wire x1="-1.6" y1="-1.6" x2="-1.6" y2="1.6" width="0.127" layer="51"/>
+<wire x1="-1.6" y1="1.6" x2="1.6" y2="1.6" width="0.127" layer="21"/>
+<wire x1="1.6" y1="1.6" x2="1.6" y2="-1.6" width="0.127" layer="21"/>
+<wire x1="1.6" y1="-1.6" x2="-1.6" y2="-1.6" width="0.127" layer="21"/>
+<wire x1="-1.6" y1="-1.6" x2="-1.6" y2="1.6" width="0.127" layer="21"/>
 <smd name="1" x="-1.4" y="0.95" dx="1.4" dy="0.6" layer="1"/>
 <smd name="2" x="-1.4" y="0" dx="1.4" dy="0.6" layer="1"/>
 <smd name="3" x="-1.4" y="-0.95" dx="1.4" dy="0.6" layer="1"/>
 <smd name="4" x="1.4" y="-0.95" dx="1.4" dy="0.6" layer="1"/>
 <smd name="5" x="1.4" y="0" dx="1.4" dy="0.6" layer="1"/>
-<circle x="-2" y="1.8" radius="0.22360625" width="0.127" layer="51"/>
+<circle x="-2" y="1.8" radius="0.22360625" width="0.127" layer="21"/>
 <text x="-1.5" y="1.7" size="1.27" layer="25">&gt;Name</text>
 <smd name="6" x="1.4" y="0.95" dx="1.4" dy="0.6" layer="1"/>
 </package>
@@ -4303,6 +4262,87 @@ Source: WE-TPC 744053220.pdf</description>
 <pad name="3" x="2.54" y="0" drill="1.4"/>
 <pad name="4" x="7.62" y="0" drill="1.4"/>
 </package>
+<package name="C1206">
+<description>&lt;b&gt;CAPACITOR&lt;/b&gt;&lt;p&gt;
+Source: http://www.vishay.com/docs/45017/vjsoldfo.pdf</description>
+<wire x1="-2.125" y1="1.125" x2="2.125" y2="1.125" width="0.0508" layer="39"/>
+<wire x1="2.125" y1="-1.125" x2="-2.125" y2="-1.125" width="0.0508" layer="39"/>
+<wire x1="-2.125" y1="-1.125" x2="-2.125" y2="1.125" width="0.0508" layer="39"/>
+<wire x1="2.125" y1="1.125" x2="2.125" y2="-1.125" width="0.0508" layer="39"/>
+<wire x1="-0.965" y1="0.787" x2="0.965" y2="0.787" width="0.1016" layer="51"/>
+<wire x1="-0.965" y1="-0.787" x2="0.965" y2="-0.787" width="0.1016" layer="51"/>
+<rectangle x1="-1.7018" y1="-0.8509" x2="-0.9517" y2="0.8491" layer="51"/>
+<rectangle x1="0.9517" y1="-0.8491" x2="1.7018" y2="0.8509" layer="51"/>
+<rectangle x1="-0.1999" y1="-0.4001" x2="0.1999" y2="0.4001" layer="35"/>
+<smd name="1" x="-1.55" y="0" dx="0.9" dy="1.6" layer="1"/>
+<smd name="2" x="1.55" y="0" dx="0.9" dy="1.6" layer="1"/>
+<text x="-1.17" y="1.3" size="1.27" layer="51">&gt;Name</text>
+</package>
+<package name="C1210">
+<description>&lt;b&gt;CAPACITOR&lt;/b&gt;&lt;p&gt;
+Source: http://www.vishay.com/docs/45017/vjsoldfo.pdf</description>
+<wire x1="-2.125" y1="1.575" x2="2.125" y2="1.575" width="0.0508" layer="39"/>
+<wire x1="2.125" y1="-1.575" x2="-2.125" y2="-1.575" width="0.0508" layer="39"/>
+<wire x1="-2.125" y1="-1.575" x2="-2.125" y2="1.575" width="0.0508" layer="39"/>
+<wire x1="-0.9652" y1="1.2446" x2="0.9652" y2="1.2446" width="0.1016" layer="51"/>
+<wire x1="-0.9652" y1="-1.2446" x2="0.9652" y2="-1.2446" width="0.1016" layer="51"/>
+<wire x1="2.125" y1="1.575" x2="2.125" y2="-1.575" width="0.0508" layer="39"/>
+<rectangle x1="-1.7018" y1="-1.2954" x2="-0.9517" y2="1.3045" layer="51"/>
+<rectangle x1="0.9517" y1="-1.3045" x2="1.7018" y2="1.2954" layer="51"/>
+<rectangle x1="-0.1999" y1="-0.4001" x2="0.1999" y2="0.4001" layer="35"/>
+<smd name="1" x="-1.55" y="0" dx="0.9" dy="2.5" layer="1"/>
+<smd name="2" x="1.55" y="0" dx="0.9" dy="2.5" layer="1"/>
+<text x="-1.27" y="2.54" size="1.27" layer="25">&gt;Name</text>
+</package>
+<package name="SOT-23-3">
+<wire x1="-1.04" y1="2.24" x2="0.96" y2="2.24" width="0.127" layer="21"/>
+<wire x1="0.96" y1="2.24" x2="0.96" y2="-2.26" width="0.127" layer="21"/>
+<wire x1="0.96" y1="-2.26" x2="-1.04" y2="-2.26" width="0.127" layer="21"/>
+<wire x1="-1.04" y1="-2.26" x2="-1.04" y2="2.24" width="0.127" layer="21"/>
+<smd name="1" x="-1.1" y="0.95" dx="1.4" dy="0.6" layer="1"/>
+<smd name="2" x="-1.1" y="-0.95" dx="1.4" dy="0.6" layer="1"/>
+<smd name="3" x="1.1" y="0" dx="1.4" dy="0.6" layer="1"/>
+<circle x="-0.6" y="1.8" radius="0.22360625" width="0.127" layer="21"/>
+<text x="-0.2" y="1.6" size="0.4064" layer="25">&gt;Name</text>
+</package>
+<package name="CX5032GA">
+<wire x1="-2.5" y1="1.6" x2="2.5" y2="1.6" width="0.127" layer="21"/>
+<wire x1="2.5" y1="1.6" x2="2.5" y2="-1.6" width="0.127" layer="21"/>
+<wire x1="2.5" y1="-1.6" x2="-2.5" y2="-1.6" width="0.127" layer="21"/>
+<wire x1="-2.5" y1="-1.6" x2="-2.5" y2="1.6" width="0.127" layer="21"/>
+<smd name="1" x="-2.05" y="0" dx="1.9" dy="2.4" layer="1"/>
+<smd name="2" x="2.05" y="0" dx="1.9" dy="2.4" layer="1"/>
+<text x="-3.2" y="1.6" size="1.27" layer="25">&gt;Name</text>
+<text x="-3.2" y="-2.7" size="1.27" layer="27">&gt;Value</text>
+</package>
+<package name="SOC008">
+<circle x="-3.1" y="2.7" radius="0.2" width="0.127" layer="21"/>
+<wire x1="-2.7" y1="2.5" x2="2.7" y2="2.5" width="0.127" layer="21"/>
+<wire x1="2.7" y1="2.5" x2="2.7" y2="-2.5" width="0.127" layer="21"/>
+<wire x1="2.7" y1="-2.5" x2="-2.7" y2="-2.5" width="0.127" layer="21"/>
+<wire x1="-2.7" y1="-2.5" x2="-2.7" y2="2.5" width="0.127" layer="21"/>
+<smd name="1" x="-3.6" y="1.905" dx="0.76" dy="2.2" layer="1" rot="R90"/>
+<smd name="2" x="-3.6" y="0.635" dx="0.76" dy="2.2" layer="1" rot="R90"/>
+<smd name="3" x="-3.6" y="-0.635" dx="0.76" dy="2.2" layer="1" rot="R90"/>
+<smd name="4" x="-3.6" y="-1.905" dx="0.76" dy="2.2" layer="1" rot="R90"/>
+<smd name="5" x="3.6" y="-1.905" dx="0.76" dy="2.2" layer="1" rot="R270"/>
+<smd name="6" x="3.6" y="-0.635" dx="0.76" dy="2.2" layer="1" rot="R270"/>
+<smd name="7" x="3.6" y="0.635" dx="0.76" dy="2.2" layer="1" rot="R270"/>
+<smd name="8" x="3.6" y="1.905" dx="0.76" dy="2.2" layer="1" rot="R270"/>
+<text x="-1.9" y="2.6" size="1.27" layer="25">&gt;Name</text>
+</package>
+<package name="PPAK">
+<smd name="TAB" x="0" y="0" dx="6.7" dy="6.7" layer="1" rot="R180"/>
+<smd name="5" x="-6.65" y="-2.62" dx="3" dy="0.76" layer="1" rot="R180"/>
+<smd name="4" x="-6.65" y="-1.35" dx="3" dy="0.76" layer="1" rot="R180"/>
+<smd name="1" x="-6.65" y="2.62" dx="3" dy="0.76" layer="1" rot="R180"/>
+<smd name="2" x="-6.65" y="1.35" dx="3" dy="0.76" layer="1" rot="R180"/>
+<wire x1="2.8" y1="-3.3" x2="-7.2" y2="-3.3" width="0.127" layer="21"/>
+<wire x1="-7.2" y1="-3.3" x2="-7.2" y2="3.3" width="0.127" layer="21"/>
+<wire x1="-7.2" y1="3.3" x2="2.8" y2="3.3" width="0.127" layer="21"/>
+<wire x1="2.8" y1="3.3" x2="2.8" y2="-3.3" width="0.127" layer="21"/>
+<text x="-7.2" y="3.6" size="1.27" layer="25">&gt;Name</text>
+</package>
 </packages>
 <symbols>
 <symbol name="USB-4PIN">
@@ -4349,7 +4389,7 @@ Source: WE-TPC 744053220.pdf</description>
 <wire x1="2.54" y1="15.24" x2="2.54" y2="-12.7" width="0.254" layer="94"/>
 <wire x1="2.54" y1="-12.7" x2="-2.54" y2="-12.7" width="0.254" layer="94"/>
 <wire x1="-2.54" y1="-12.7" x2="-2.54" y2="15.24" width="0.254" layer="94"/>
-<text x="-2.54" y="15.24" size="1.778" layer="94">&gt;Name</text>
+<text x="-2.54" y="17.78" size="1.778" layer="95">&gt;Name</text>
 </symbol>
 <symbol name="GND">
 <wire x1="-1.27" y1="0" x2="1.27" y2="0" width="0.254" layer="94"/>
@@ -4549,7 +4589,7 @@ Source: WE-TPC 744053220.pdf</description>
 <wire x1="12.7" y1="-7.62" x2="12.7" y2="7.62" width="0.254" layer="94"/>
 <wire x1="12.7" y1="7.62" x2="-12.7" y2="7.62" width="0.254" layer="94"/>
 <wire x1="-12.7" y1="7.62" x2="-12.7" y2="-7.62" width="0.254" layer="94"/>
-<text x="-2.54" y="5.08" size="2.54" layer="94">&gt;Name</text>
+<text x="-12.7" y="10.16" size="2.54" layer="95">&gt;Name</text>
 </symbol>
 <symbol name="SMFLP">
 <wire x1="-7.62" y1="7.62" x2="7.62" y2="7.62" width="0.254" layer="94"/>
@@ -4567,7 +4607,7 @@ Source: WE-TPC 744053220.pdf</description>
 <pin name="8" x="-12.7" y="-7.62" visible="pin" length="middle"/>
 <pin name="2" x="-12.7" y="-15.24" visible="pin" length="middle"/>
 <pin name="9" x="12.7" y="-5.08" visible="pin" length="middle" rot="R180"/>
-<pin name="1" x="12.7" y="-15.24" length="middle" rot="R180"/>
+<pin name="1" x="12.7" y="-15.24" visible="pin" length="middle" rot="R180"/>
 <pin name="10" x="-12.7" y="-5.08" visible="pin" length="middle"/>
 <wire x1="7.62" y1="17.78" x2="7.62" y2="-17.78" width="0.254" layer="94"/>
 <wire x1="7.62" y1="-17.78" x2="-7.62" y2="-17.78" width="0.254" layer="94"/>
@@ -4580,16 +4620,16 @@ Source: WE-TPC 744053220.pdf</description>
 <pin name="18" x="-12.7" y="5.08" visible="pin" length="middle"/>
 <pin name="12" x="-12.7" y="-2.54" visible="pin" length="middle"/>
 <pin name="19" x="12.7" y="7.62" visible="pin" length="middle" rot="R180"/>
-<pin name="11" x="12.7" y="-2.54" length="middle" rot="R180"/>
+<pin name="11" x="12.7" y="-2.54" visible="pin" length="middle" rot="R180"/>
 <pin name="20" x="-12.7" y="7.62" visible="pin" length="middle"/>
 <pin name="25" x="12.7" y="15.24" visible="pin" length="middle" rot="R180"/>
 <pin name="26" x="-12.7" y="15.24" visible="pin" length="middle"/>
 <pin name="24" x="-12.7" y="12.7" visible="pin" length="middle"/>
 <pin name="23" x="12.7" y="12.7" visible="pin" length="middle" rot="R180"/>
 <pin name="22" x="-12.7" y="10.16" visible="pin" length="middle"/>
-<pin name="21" x="12.7" y="10.16" length="middle" rot="R180"/>
+<pin name="21" x="12.7" y="10.16" visible="pin" length="middle" rot="R180"/>
 <wire x1="-7.62" y1="17.78" x2="7.62" y2="17.78" width="0.254" layer="94"/>
-<text x="-5.08" y="20.32" size="1.778" layer="94">&gt;Name</text>
+<text x="-7.62" y="20.32" size="1.778" layer="95">&gt;Name</text>
 </symbol>
 <symbol name="STM32F411-LQFP64">
 <pin name="VBAT" x="-35.56" y="20.32" length="middle"/>
@@ -4660,6 +4700,7 @@ Source: WE-TPC 744053220.pdf</description>
 <wire x1="33.02" y1="33.02" x2="33.02" y2="-30.48" width="0.254" layer="94"/>
 <wire x1="33.02" y1="-30.48" x2="-30.48" y2="-30.48" width="0.254" layer="94"/>
 <wire x1="-30.48" y1="-30.48" x2="-30.48" y2="33.02" width="0.254" layer="94"/>
+<text x="-2.54" y="0" size="1.9304" layer="95">&gt;NAME</text>
 </symbol>
 <symbol name="XTAL2">
 <wire x1="1.016" y1="0" x2="2.54" y2="0" width="0.1524" layer="94"/>
@@ -4771,7 +4812,7 @@ Source: WE-TPC 744053220.pdf</description>
 <wire x1="2.54" y1="-2.54" x2="2.54" y2="2.54" width="0.254" layer="94"/>
 <wire x1="2.54" y1="2.54" x2="-2.54" y2="2.54" width="0.254" layer="94"/>
 <wire x1="-2.54" y1="2.54" x2="-2.54" y2="-2.54" width="0.254" layer="94"/>
-<text x="-2.54" y="5.08" size="1.778" layer="94">&gt;Name</text>
+<text x="-2.54" y="5.08" size="1.778" layer="95">&gt;Name</text>
 </symbol>
 <symbol name="MEMORY-SPI">
 <wire x1="-15.24" y1="15.24" x2="15.24" y2="15.24" width="0.254" layer="94"/>
@@ -4798,7 +4839,7 @@ Source: WE-TPC 744053220.pdf</description>
 <wire x1="2.54" y1="-10.16" x2="2.54" y2="10.16" width="0.254" layer="94"/>
 <wire x1="2.54" y1="10.16" x2="-2.54" y2="10.16" width="0.254" layer="94"/>
 <wire x1="-2.54" y1="10.16" x2="-2.54" y2="-10.16" width="0.254" layer="94"/>
-<text x="-2.54" y="12.7" size="1.778" layer="94">&gt;Name</text>
+<text x="-2.54" y="12.7" size="1.778" layer="95">&gt;Name</text>
 <circle x="0" y="7.62" radius="1.27" width="0.254" layer="94"/>
 <circle x="0" y="2.54" radius="1.27" width="0.254" layer="94"/>
 <circle x="0" y="-2.54" radius="1.27" width="0.254" layer="94"/>
@@ -6789,12 +6830,36 @@ Source: WE-TPC 744053220.pdf</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="AP7331">
+<deviceset name="VREG-ADJ">
 <gates>
 <gate name="G$1" symbol="VREG-ADJ" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="SOT-23-5">
+<device name="AP7331-WG-7" package="SOT-23-5">
+<connects>
+<connect gate="G$1" pin="ADJ" pad="4"/>
+<connect gate="G$1" pin="EN" pad="3"/>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="IN" pad="1"/>
+<connect gate="G$1" pin="OUT" pad="5"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="LDFMPT-TR" package="PPAK">
+<connects>
+<connect gate="G$1" pin="ADJ" pad="5"/>
+<connect gate="G$1" pin="EN" pad="1"/>
+<connect gate="G$1" pin="GND" pad="TAB"/>
+<connect gate="G$1" pin="IN" pad="2"/>
+<connect gate="G$1" pin="OUT" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="AP2204" package="SOT-23-5">
 <connects>
 <connect gate="G$1" pin="ADJ" pad="4"/>
 <connect gate="G$1" pin="EN" pad="3"/>
@@ -7006,6 +7071,15 @@ Source: WE-TPC 744053220.pdf</description>
 <technology name=""/>
 </technologies>
 </device>
+<device name="CX5032GA" package="CX5032GA">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="MCP47X6">
@@ -7193,6 +7267,21 @@ Source: WE-TPC 744053220.pdf</description>
 <technology name=""/>
 </technologies>
 </device>
+<device name="SOC008" package="SOC008">
+<connects>
+<connect gate="G$1" pin="!CS" pad="1"/>
+<connect gate="G$1" pin="!HOLD" pad="7"/>
+<connect gate="G$1" pin="!WP" pad="3"/>
+<connect gate="G$1" pin="CLK" pad="6"/>
+<connect gate="G$1" pin="DI" pad="5"/>
+<connect gate="G$1" pin="DO" pad="2"/>
+<connect gate="G$1" pin="GND" pad="4"/>
+<connect gate="G$1" pin="VCC" pad="8"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="CON-4">
@@ -7303,6 +7392,7 @@ Source: WE-TPC 744053220.pdf</description>
 <sheets>
 <sheet>
 <plain>
+<text x="175.26" y="30.48" size="1.778" layer="91">Module: SERIAL_WIRE_DEBUG</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
@@ -7527,7 +7617,7 @@ Source: WE-TPC 744053220.pdf</description>
 </part>
 <part name="V1" library="firefly" deviceset="GND" device=""/>
 <part name="Q1" library="firefly" deviceset="FET-N" device="MCPH3" value="FET-NMCPH3">
-<attribute name="MANUFACURER" value="ON Semiconductor"/>
+<attribute name="MANUFACTURER" value="ON Semiconductor"/>
 <attribute name="ORDERING-CODE" value="MCH3481-TL-W"/>
 </part>
 <part name="V2" library="firefly" deviceset="GND" device=""/>
@@ -7540,6 +7630,7 @@ Source: WE-TPC 744053220.pdf</description>
 <sheets>
 <sheet>
 <plain>
+<text x="175.26" y="30.48" size="1.778" layer="91">Module: RELAY</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
@@ -7550,7 +7641,7 @@ Source: WE-TPC 744053220.pdf</description>
 </instance>
 <instance part="V1" gate="GND" x="116.84" y="119.38"/>
 <instance part="Q1" gate="G$1" x="114.3" y="129.54">
-<attribute name="MANUFACURER" x="114.3" y="129.54" size="1.778" layer="96" display="off"/>
+<attribute name="MANUFACTURER" x="114.3" y="129.54" size="1.778" layer="96" display="off"/>
 <attribute name="ORDERING-CODE" x="114.3" y="129.54" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="V2" gate="GND" x="111.76" y="86.36"/>
@@ -7699,6 +7790,7 @@ Source: WE-TPC 744053220.pdf</description>
 <attribute name="ORDERING-CODE" value="RC0805FR-07374RL"/>
 </part>
 <part name="C1" library="firefly" deviceset="C-US" device="C0805" value="1nF">
+<attribute name="MANUFACTURER" value="AVX Corporation"/>
 <attribute name="ORDERING-CODE" value="08055A102JAT2A"/>
 </part>
 <part name="C2" library="firefly" deviceset="C-US" device="C0805" value="100nF">
@@ -7753,6 +7845,7 @@ Source: WE-TPC 744053220.pdf</description>
 <sheets>
 <sheet>
 <plain>
+<text x="175.26" y="30.48" size="1.778" layer="91">Module: CURRENT_SENSE</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
@@ -7791,6 +7884,7 @@ Source: WE-TPC 744053220.pdf</description>
 </instance>
 <instance part="C1" gate="G$1" x="167.64" y="124.46">
 <attribute name="ORDERING-CODE" x="167.64" y="124.46" size="1.778" layer="96" display="off"/>
+<attribute name="MANUFACTURER" x="167.64" y="124.46" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="C2" gate="G$1" x="121.92" y="147.32" rot="R90">
 <attribute name="ORDERING-CODE" x="121.92" y="147.32" size="1.778" layer="96" rot="R90" display="off"/>
@@ -8118,6 +8212,7 @@ Source: WE-TPC 744053220.pdf</description>
 <attribute name="ORDERING-CODE" value="RC0805FR-07374RL"/>
 </part>
 <part name="C10" library="firefly" deviceset="C-US" device="C0805" value="1nF">
+<attribute name="MANUFACTURER" value="AVX Corporation"/>
 <attribute name="ORDERING-CODE" value="08055A102JAT2A"/>
 </part>
 <part name="C11" library="firefly" deviceset="C-US" device="C0805" value="100nF">
@@ -8174,6 +8269,7 @@ Source: WE-TPC 744053220.pdf</description>
 <attribute name="ORDERING-CODE" value="RC0805FR-070RL"/>
 </part>
 <part name="C14" library="firefly" deviceset="C-US" device="C0805" value="1nF">
+<attribute name="MANUFACTURER" value="AVX Corporation"/>
 <attribute name="ORDERING-CODE" value="08055A102JAT2A"/>
 </part>
 <part name="C15" library="firefly" deviceset="C-US" device="C0805" value="100nF">
@@ -8215,7 +8311,7 @@ Source: WE-TPC 744053220.pdf</description>
 <attribute name="ORDERING-CODE" value="08055C104KAT2A"/>
 </part>
 <part name="V27" library="firefly" deviceset="GND" device=""/>
-<part name="U2" library="firefly" deviceset="AP7331" device="">
+<part name="U2" library="firefly" deviceset="VREG-ADJ" device="AP7331-WG-7">
 <attribute name="MANUFACTURER" value="Diodes Incorporated"/>
 <attribute name="ORDERING-CODE" value="AP7331-WG-7"/>
 </part>
@@ -8277,6 +8373,7 @@ Source: WE-TPC 744053220.pdf</description>
 <sheets>
 <sheet>
 <plain>
+<text x="175.26" y="30.48" size="1.778" layer="91">Module: BATTERY_SIMULATOR (Page 1 of 2)</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
@@ -8478,6 +8575,7 @@ Source: WE-TPC 744053220.pdf</description>
 </sheet>
 <sheet>
 <plain>
+<text x="175.26" y="30.48" size="1.778" layer="91">Module: BATTERY_SIMULATOR (Page 2 of 2)</text>
 </plain>
 <instances>
 <instance part="FRAME2" gate="G$1" x="0" y="0"/>
@@ -8516,6 +8614,7 @@ Source: WE-TPC 744053220.pdf</description>
 </instance>
 <instance part="C10" gate="G$1" x="157.48" y="170.18">
 <attribute name="ORDERING-CODE" x="157.48" y="170.18" size="1.778" layer="96" display="off"/>
+<attribute name="MANUFACTURER" x="157.48" y="170.18" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="C11" gate="G$1" x="111.76" y="193.04" rot="R90">
 <attribute name="ORDERING-CODE" x="111.76" y="193.04" size="1.778" layer="96" rot="R90" display="off"/>
@@ -8572,6 +8671,7 @@ Source: WE-TPC 744053220.pdf</description>
 </instance>
 <instance part="C14" gate="G$1" x="157.48" y="86.36">
 <attribute name="ORDERING-CODE" x="157.48" y="86.36" size="1.778" layer="96" display="off"/>
+<attribute name="MANUFACTURER" x="157.48" y="86.36" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="C15" gate="G$1" x="111.76" y="109.22" rot="R90">
 <attribute name="ORDERING-CODE" x="111.76" y="109.22" size="1.778" layer="96" rot="R90" display="off"/>
@@ -9039,6 +9139,7 @@ Source: WE-TPC 744053220.pdf</description>
 <sheet>
 <plain>
 <text x="111.76" y="165.1" size="1.778" layer="91">Use with flexible light pipe SMFLP12.0.</text>
+<text x="175.26" y="30.48" size="1.778" layer="91">Module: COLOR_SENSOR</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
@@ -9229,12 +9330,12 @@ Source: WE-TPC 744053220.pdf</description>
 <part name="V23" library="firefly" deviceset="GND" device=""/>
 <part name="+3V13" library="supply1" deviceset="+3V3" device=""/>
 <part name="C5" library="firefly" deviceset="C-US" device="C0805" value="22pF">
-<attribute name="MANUFACTURER" value="Samsung Electro-Mechanics America, Inc."/>
-<attribute name="ORDERING-CODE" value="CL21C220FBANNNC"/>
+<attribute name="MANUFACTURER" value="KEMET"/>
+<attribute name="ORDERING-CODE" value="C0805C220F5GACTU"/>
 </part>
 <part name="C6" library="firefly" deviceset="C-US" device="C0805" value="22pF">
-<attribute name="MANUFACTURER" value="Samsung Electro-Mechanics America, Inc."/>
-<attribute name="ORDERING-CODE" value="CL21C220FBANNNC"/>
+<attribute name="MANUFACTURER" value="KEMET"/>
+<attribute name="ORDERING-CODE" value="C0805C220F5GACTU"/>
 </part>
 <part name="V24" library="firefly" deviceset="GND" device=""/>
 <part name="V25" library="firefly" deviceset="GND" device=""/>
@@ -9268,7 +9369,7 @@ Source: WE-TPC 744053220.pdf</description>
 <attribute name="ORDERING-CODE" value="RC0805FR-0722RL"/>
 </part>
 <part name="V27" library="firefly" deviceset="GND" device=""/>
-<part name="U12" library="firefly" deviceset="AP7331" device="">
+<part name="U12" library="firefly" deviceset="VREG-ADJ" device="AP7331-WG-7">
 <attribute name="MANUFACTURER" value="Diodes Incorporated"/>
 <attribute name="ORDERING-CODE" value="AP7331-WG-7"/>
 </part>
@@ -9299,9 +9400,9 @@ Source: WE-TPC 744053220.pdf</description>
 </part>
 <part name="V32" library="firefly" deviceset="GND" device=""/>
 <part name="+3V16" library="supply1" deviceset="+3V3" device=""/>
-<part name="X1" library="firefly" deviceset="XTAL2" device="TXC_7A" value="XTAL2TXC_7A">
-<attribute name="MANUFACTURER" value="TXC CORPORATION"/>
-<attribute name="ORDERING-CODE" value="7A-8.000MAAE-T"/>
+<part name="X1" library="firefly" deviceset="XTAL2" device="CX5032GA" value="XTAL2CX5032GA">
+<attribute name="MANUFACTURER" value="AVX Corp/Kyocera Corp"/>
+<attribute name="ORDERING-CODE" value="CX5032GA08000H0PST02"/>
 </part>
 <part name="U13" library="firefly" deviceset="MCP47X6" device="">
 <attribute name="MANUFACTURER" value="Microchip Technology"/>
@@ -9357,7 +9458,7 @@ Source: WE-TPC 744053220.pdf</description>
 </part>
 <part name="J14" library="firefly" deviceset="CON-1" device="CT3151">
 <attribute name="MANUFACTURER" value="B&amp;K Precision"/>
-<attribute name="ORDERING-CODE" value="CT3151-0"/>
+<attribute name="ORDERING-CODE" value="CT3151SP-0"/>
 </part>
 <part name="V2" library="firefly" deviceset="GND" device=""/>
 <part name="C16" library="firefly" deviceset="C-US" device="PM118" value="1F">
@@ -9413,12 +9514,23 @@ Source: WE-TPC 744053220.pdf</description>
 <sheets>
 <sheet>
 <plain>
-<text x="27.94" y="167.64" size="1.778" layer="91">USB</text>
 <text x="226.06" y="45.72" size="1.778" layer="91">Motor</text>
-<text x="99.06" y="167.64" size="1.778" layer="91">USB</text>
 <text x="25.4" y="78.74" size="1.778" layer="91">160 mA Hold
 400 mA Trip</text>
 <text x="116.84" y="96.52" size="1.778" layer="91">+</text>
+<text x="177.8" y="162.56" size="1.778" layer="91">Module: RELAY</text>
+<text x="177.8" y="208.28" size="1.778" layer="91">Module: RELAY</text>
+<text x="99.06" y="208.28" size="1.778" layer="91">Module: RELAY</text>
+<text x="27.94" y="208.28" size="1.778" layer="91">Module: RELAY</text>
+<text x="27.94" y="167.64" size="1.778" layer="91">Module: RELAY</text>
+<text x="99.06" y="167.64" size="1.778" layer="91">Module: RELAY</text>
+<text x="30.48" y="114.3" size="1.778" layer="91">Module: RELAY</text>
+<text x="170.18" y="121.92" size="1.778" layer="91">Module: SERIAL_WIRE_DEBUG</text>
+<text x="170.18" y="78.74" size="1.778" layer="91">Module: SERIAL_WIRE_DEBUG</text>
+<text x="132.08" y="38.1" size="1.778" layer="91">Module: COLOR_SENSOR</text>
+<text x="60.96" y="73.66" size="1.778" layer="91">Module: CURRENT_SENSE</text>
+<text x="25.4" y="38.1" size="1.778" layer="91">Module: BATTERY_SIMULATOR</text>
+<text x="175.26" y="30.48" size="1.778" layer="91">Top Level</text>
 </plain>
 <moduleinsts>
 <moduleinst name="U6" module="SERIAL_WIRE_DEBUG" x="195.58" y="63.5"/>
@@ -9429,7 +9541,7 @@ Source: WE-TPC 744053220.pdf</description>
 <moduleinst name="U9" module="BATTERY_SIMULATOR" x="50.8" y="25.4"/>
 <moduleinst name="U7" module="SERIAL_WIRE_DEBUG" x="195.58" y="106.68"/>
 <moduleinst name="U1" module="COLOR_SENSOR" x="147.32" y="25.4"/>
-<moduleinst name="U2" module="RELAY" x="195.58" y="144.78"/>
+<moduleinst name="U2" module="RELAY" x="193.04" y="149.86"/>
 <moduleinst name="U11" module="RELAY" x="43.18" y="195.58"/>
 <moduleinst name="U15" module="RELAY" x="114.3" y="154.94"/>
 <moduleinst name="U16" module="RELAY" x="114.3" y="195.58"/>
@@ -9469,26 +9581,26 @@ Source: WE-TPC 744053220.pdf</description>
 <instance part="V5" gate="GND" x="195.58" y="83.82"/>
 <instance part="V10" gate="GND" x="147.32" y="5.08"/>
 <instance part="+3V4" gate="G$1" x="147.32" y="45.72"/>
-<instance part="V11" gate="GND" x="195.58" y="124.46"/>
-<instance part="+3V5" gate="G$1" x="172.72" y="157.48"/>
-<instance part="R3" gate="G$1" x="241.3" y="142.24">
-<attribute name="ORDERING-CODE" x="241.3" y="142.24" size="1.778" layer="96" display="off"/>
-<attribute name="MANUFACTURER" x="241.3" y="142.24" size="1.778" layer="96" display="off"/>
+<instance part="V11" gate="GND" x="193.04" y="129.54"/>
+<instance part="+3V5" gate="G$1" x="170.18" y="162.56"/>
+<instance part="R3" gate="G$1" x="238.76" y="147.32">
+<attribute name="ORDERING-CODE" x="238.76" y="147.32" size="1.778" layer="96" display="off"/>
+<attribute name="MANUFACTURER" x="238.76" y="147.32" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="R4" gate="G$1" x="241.3" y="152.4">
-<attribute name="ORDERING-CODE" x="241.3" y="152.4" size="1.778" layer="96" display="off"/>
-<attribute name="MANUFACTURER" x="241.3" y="152.4" size="1.778" layer="96" display="off"/>
+<instance part="R4" gate="G$1" x="238.76" y="157.48">
+<attribute name="ORDERING-CODE" x="238.76" y="157.48" size="1.778" layer="96" display="off"/>
+<attribute name="MANUFACTURER" x="238.76" y="157.48" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="R5" gate="G$1" x="264.16" y="152.4">
-<attribute name="ORDERING-CODE" x="264.16" y="152.4" size="1.778" layer="96" display="off"/>
-<attribute name="MANUFACTURER" x="264.16" y="152.4" size="1.778" layer="96" display="off"/>
+<instance part="R5" gate="G$1" x="261.62" y="157.48">
+<attribute name="ORDERING-CODE" x="261.62" y="157.48" size="1.778" layer="96" display="off"/>
+<attribute name="MANUFACTURER" x="261.62" y="157.48" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="R6" gate="G$1" x="264.16" y="142.24">
-<attribute name="ORDERING-CODE" x="264.16" y="142.24" size="1.778" layer="96" display="off"/>
-<attribute name="MANUFACTURER" x="264.16" y="142.24" size="1.778" layer="96" display="off"/>
+<instance part="R6" gate="G$1" x="261.62" y="147.32">
+<attribute name="ORDERING-CODE" x="261.62" y="147.32" size="1.778" layer="96" display="off"/>
+<attribute name="MANUFACTURER" x="261.62" y="147.32" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="V12" gate="GND" x="271.78" y="137.16"/>
-<instance part="V13" gate="GND" x="271.78" y="147.32"/>
+<instance part="V12" gate="GND" x="269.24" y="142.24"/>
+<instance part="V13" gate="GND" x="269.24" y="152.4"/>
 <instance part="V17" gate="GND" x="43.18" y="175.26"/>
 <instance part="+3V7" gate="G$1" x="20.32" y="208.28"/>
 <instance part="C16" gate="G$1" x="121.92" y="96.52">
@@ -9574,9 +9686,9 @@ Source: WE-TPC 744053220.pdf</description>
 </segment>
 <segment>
 <pinref part="+3V5" gate="G$1" pin="+3V3"/>
-<wire x1="172.72" y1="154.94" x2="172.72" y2="152.4" width="0.1524" layer="91"/>
+<wire x1="170.18" y1="160.02" x2="170.18" y2="157.48" width="0.1524" layer="91"/>
 <portref moduleinst="U2" port="VCC"/>
-<wire x1="172.72" y1="152.4" x2="175.26" y2="152.4" width="0.1524" layer="91"/>
+<wire x1="170.18" y1="157.48" x2="172.72" y2="157.48" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="+3V7" gate="G$1" pin="+3V3"/>
@@ -9641,19 +9753,19 @@ Source: WE-TPC 744053220.pdf</description>
 <segment>
 <pinref part="V11" gate="GND" pin="GND"/>
 <portref moduleinst="U2" port="GND"/>
-<wire x1="195.58" y1="127" x2="195.58" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="193.04" y1="132.08" x2="193.04" y2="134.62" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="R6" gate="G$1" pin="2"/>
 <pinref part="V12" gate="GND" pin="GND"/>
-<wire x1="269.24" y1="142.24" x2="271.78" y2="142.24" width="0.1524" layer="91"/>
-<wire x1="271.78" y1="142.24" x2="271.78" y2="139.7" width="0.1524" layer="91"/>
+<wire x1="266.7" y1="147.32" x2="269.24" y2="147.32" width="0.1524" layer="91"/>
+<wire x1="269.24" y1="147.32" x2="269.24" y2="144.78" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="R5" gate="G$1" pin="2"/>
 <pinref part="V13" gate="GND" pin="GND"/>
-<wire x1="269.24" y1="152.4" x2="271.78" y2="152.4" width="0.1524" layer="91"/>
-<wire x1="271.78" y1="152.4" x2="271.78" y2="149.86" width="0.1524" layer="91"/>
+<wire x1="266.7" y1="157.48" x2="269.24" y2="157.48" width="0.1524" layer="91"/>
+<wire x1="269.24" y1="157.48" x2="269.24" y2="154.94" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="V17" gate="GND" pin="GND"/>
@@ -9809,8 +9921,8 @@ Source: WE-TPC 744053220.pdf</description>
 </segment>
 <segment>
 <portref moduleinst="U2" port="BC"/>
-<wire x1="215.9" y1="139.7" x2="233.68" y2="139.7" width="0.1524" layer="91"/>
-<label x="215.9" y="139.7" size="1.778" layer="95"/>
+<wire x1="213.36" y1="144.78" x2="231.14" y2="144.78" width="0.1524" layer="91"/>
+<label x="213.36" y="144.78" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="DUT_MCU2_NRESET" class="0">
@@ -9862,8 +9974,8 @@ Source: WE-TPC 744053220.pdf</description>
 </segment>
 <segment>
 <portref moduleinst="U2" port="AC"/>
-<wire x1="215.9" y1="149.86" x2="233.68" y2="149.86" width="0.1524" layer="91"/>
-<label x="215.9" y="149.86" size="1.778" layer="95"/>
+<wire x1="213.36" y1="154.94" x2="231.14" y2="154.94" width="0.1524" layer="91"/>
+<label x="213.36" y="154.94" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="ATE_SDA" class="0">
@@ -9995,46 +10107,46 @@ Source: WE-TPC 744053220.pdf</description>
 <net name="ATE_MCU_VCC_SENSE" class="0">
 <segment>
 <portref moduleinst="U2" port="EN"/>
-<wire x1="175.26" y1="137.16" x2="147.32" y2="137.16" width="0.1524" layer="91"/>
-<label x="147.32" y="137.16" size="1.778" layer="95"/>
+<wire x1="172.72" y1="142.24" x2="144.78" y2="142.24" width="0.1524" layer="91"/>
+<label x="144.78" y="142.24" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="ATE_MCU1_VCC2" class="0">
 <segment>
 <pinref part="R6" gate="G$1" pin="1"/>
 <pinref part="R3" gate="G$1" pin="2"/>
-<wire x1="259.08" y1="142.24" x2="248.92" y2="142.24" width="0.1524" layer="91"/>
-<wire x1="246.38" y1="142.24" x2="248.92" y2="142.24" width="0.1524" layer="91"/>
-<wire x1="248.92" y1="142.24" x2="248.92" y2="147.32" width="0.1524" layer="91"/>
-<wire x1="248.92" y1="147.32" x2="266.7" y2="147.32" width="0.1524" layer="91"/>
-<label x="248.92" y="147.32" size="1.778" layer="95"/>
-<junction x="248.92" y="142.24"/>
+<wire x1="256.54" y1="147.32" x2="246.38" y2="147.32" width="0.1524" layer="91"/>
+<wire x1="243.84" y1="147.32" x2="246.38" y2="147.32" width="0.1524" layer="91"/>
+<wire x1="246.38" y1="147.32" x2="246.38" y2="152.4" width="0.1524" layer="91"/>
+<wire x1="246.38" y1="152.4" x2="264.16" y2="152.4" width="0.1524" layer="91"/>
+<label x="246.38" y="152.4" size="1.778" layer="95"/>
+<junction x="246.38" y="147.32"/>
 </segment>
 </net>
 <net name="ATE_MCU2_VCC2" class="0">
 <segment>
 <pinref part="R4" gate="G$1" pin="2"/>
 <pinref part="R5" gate="G$1" pin="1"/>
-<wire x1="246.38" y1="152.4" x2="248.92" y2="152.4" width="0.1524" layer="91"/>
-<wire x1="248.92" y1="152.4" x2="259.08" y2="152.4" width="0.1524" layer="91"/>
-<wire x1="248.92" y1="152.4" x2="248.92" y2="157.48" width="0.1524" layer="91"/>
-<wire x1="248.92" y1="157.48" x2="266.7" y2="157.48" width="0.1524" layer="91"/>
-<label x="248.92" y="157.48" size="1.778" layer="95"/>
-<junction x="248.92" y="152.4"/>
+<wire x1="243.84" y1="157.48" x2="246.38" y2="157.48" width="0.1524" layer="91"/>
+<wire x1="246.38" y1="157.48" x2="256.54" y2="157.48" width="0.1524" layer="91"/>
+<wire x1="246.38" y1="157.48" x2="246.38" y2="162.56" width="0.1524" layer="91"/>
+<wire x1="246.38" y1="162.56" x2="264.16" y2="162.56" width="0.1524" layer="91"/>
+<label x="246.38" y="162.56" size="1.778" layer="95"/>
+<junction x="246.38" y="157.48"/>
 </segment>
 </net>
 <net name="N$8" class="0">
 <segment>
 <pinref part="R4" gate="G$1" pin="1"/>
 <portref moduleinst="U2" port="ANO"/>
-<wire x1="236.22" y1="152.4" x2="215.9" y2="152.4" width="0.1524" layer="91"/>
+<wire x1="233.68" y1="157.48" x2="213.36" y2="157.48" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$9" class="0">
 <segment>
 <pinref part="R3" gate="G$1" pin="1"/>
 <portref moduleinst="U2" port="BNO"/>
-<wire x1="215.9" y1="142.24" x2="236.22" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="213.36" y1="147.32" x2="233.68" y2="147.32" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="USB_VBUS" class="0">
@@ -10210,6 +10322,7 @@ Source: WE-TPC 744053220.pdf</description>
 <text x="114.3" y="25.4" size="1.778" layer="91">DAC</text>
 <text x="200.66" y="205.74" size="1.778" layer="91">VSSA/VDDA Decoupling</text>
 <text x="233.68" y="205.74" size="1.778" layer="91">VSS/VDD 1-4 Decoupling</text>
+<text x="175.26" y="30.48" size="1.778" layer="91">Top Level</text>
 </plain>
 <instances>
 <instance part="FRAME2" gate="G$1" x="0" y="0"/>

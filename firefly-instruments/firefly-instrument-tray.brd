@@ -8,7 +8,7 @@
 </settings>
 <grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="10" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
 <layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
 <layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
@@ -23,14 +23,14 @@
 <layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
 <layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
 <layer number="15" name="Route15" color="4" fill="6" visible="no" active="no"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
-<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="no" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
@@ -208,11 +208,11 @@ Source: http://www.vishay.com/docs/45017/vjsoldfo.pdf</description>
 <wire x1="-1.525" y1="0.925" x2="1.525" y2="0.925" width="0.0508" layer="39"/>
 <wire x1="1.525" y1="-0.925" x2="-1.525" y2="-0.925" width="0.0508" layer="39"/>
 <wire x1="-1.525" y1="-0.925" x2="-1.525" y2="0.925" width="0.0508" layer="39"/>
-<wire x1="-0.381" y1="0.66" x2="0.381" y2="0.66" width="0.1016" layer="51"/>
-<wire x1="-0.356" y1="-0.66" x2="0.381" y2="-0.66" width="0.1016" layer="51"/>
+<wire x1="-0.381" y1="0.66" x2="0.381" y2="0.66" width="0.1016" layer="21"/>
+<wire x1="-0.356" y1="-0.66" x2="0.381" y2="-0.66" width="0.1016" layer="21"/>
 <wire x1="1.525" y1="0.925" x2="1.525" y2="-0.925" width="0.0508" layer="39"/>
-<rectangle x1="-1.0922" y1="-0.7239" x2="-0.3421" y2="0.7262" layer="51"/>
-<rectangle x1="0.3556" y1="-0.7239" x2="1.1057" y2="0.7262" layer="51"/>
+<rectangle x1="-1.0922" y1="-0.7239" x2="-0.3421" y2="0.7262" layer="21"/>
+<rectangle x1="0.3556" y1="-0.7239" x2="1.1057" y2="0.7262" layer="21"/>
 <rectangle x1="-0.1001" y1="-0.4001" x2="0.1001" y2="0.4001" layer="35"/>
 <smd name="1" x="-0.95" y="0" dx="0.9" dy="1.3" layer="1"/>
 <smd name="2" x="0.95" y="0" dx="0.9" dy="1.3" layer="1"/>
@@ -267,14 +267,14 @@ chip</description>
 <package name="R0805">
 <description>&lt;b&gt;RESISTOR&lt;/b&gt;&lt;p&gt;
 chip</description>
-<wire x1="-0.41" y1="0.635" x2="0.41" y2="0.635" width="0.1524" layer="51"/>
-<wire x1="-0.41" y1="-0.635" x2="0.41" y2="-0.635" width="0.1524" layer="51"/>
+<wire x1="-0.41" y1="0.635" x2="0.41" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="-0.41" y1="-0.635" x2="0.41" y2="-0.635" width="0.1524" layer="21"/>
 <wire x1="-1.973" y1="0.983" x2="1.973" y2="0.983" width="0.0508" layer="39"/>
 <wire x1="1.973" y1="0.983" x2="1.973" y2="-0.983" width="0.0508" layer="39"/>
 <wire x1="1.973" y1="-0.983" x2="-1.973" y2="-0.983" width="0.0508" layer="39"/>
 <wire x1="-1.973" y1="-0.983" x2="-1.973" y2="0.983" width="0.0508" layer="39"/>
-<rectangle x1="0.4064" y1="-0.6985" x2="1.0564" y2="0.7015" layer="51"/>
-<rectangle x1="-1.0668" y1="-0.6985" x2="-0.4168" y2="0.7015" layer="51"/>
+<rectangle x1="0.4064" y1="-0.6985" x2="1.0564" y2="0.7015" layer="21"/>
+<rectangle x1="-1.0668" y1="-0.6985" x2="-0.4168" y2="0.7015" layer="21"/>
 <rectangle x1="-0.1999" y1="-0.5001" x2="0.1999" y2="0.5001" layer="35"/>
 <smd name="1" x="-0.85" y="0" dx="1.3" dy="1.5" layer="1"/>
 <smd name="2" x="0.85" y="0" dx="1.3" dy="1.5" layer="1"/>
@@ -282,17 +282,17 @@ chip</description>
 <text x="-0.762" y="-2.286" size="1.27" layer="27">&gt;VALUE</text>
 </package>
 <package name="SOT-23-5">
-<wire x1="-1.04" y1="2.24" x2="0.96" y2="2.24" width="0.127" layer="51"/>
-<wire x1="0.96" y1="2.24" x2="0.96" y2="-2.26" width="0.127" layer="51"/>
-<wire x1="0.96" y1="-2.26" x2="-1.04" y2="-2.26" width="0.127" layer="51"/>
-<wire x1="-1.04" y1="-2.26" x2="-1.04" y2="2.24" width="0.127" layer="51"/>
+<wire x1="-1.04" y1="2.24" x2="0.96" y2="2.24" width="0.127" layer="21"/>
+<wire x1="0.96" y1="2.24" x2="0.96" y2="-2.26" width="0.127" layer="21"/>
+<wire x1="0.96" y1="-2.26" x2="-1.04" y2="-2.26" width="0.127" layer="21"/>
+<wire x1="-1.04" y1="-2.26" x2="-1.04" y2="2.24" width="0.127" layer="21"/>
 <smd name="1" x="-1.24" y="0.94" dx="1.4" dy="0.6" layer="1"/>
 <smd name="2" x="-1.24" y="-0.01" dx="1.4" dy="0.6" layer="1"/>
 <smd name="3" x="-1.24" y="-0.96" dx="1.4" dy="0.6" layer="1"/>
 <smd name="4" x="1.34" y="-0.96" dx="1.4" dy="0.6" layer="1"/>
 <smd name="5" x="1.34" y="0.94" dx="1.4" dy="0.6" layer="1"/>
 <text x="-1.055" y="2.475" size="1.27" layer="25">&gt;NAME</text>
-<circle x="-0.6" y="1.8" radius="0.22360625" width="0.127" layer="51"/>
+<circle x="-0.6" y="1.8" radius="0.22360625" width="0.127" layer="21"/>
 </package>
 <package name="MSOP8">
 <circle x="-1.2" y="1.2" radius="0.1" width="0.127" layer="51"/>
@@ -388,10 +388,10 @@ chip</description>
 <pad name="3" x="-1.27" y="-0.635" drill="0.7" diameter="1"/>
 <pad name="1" x="-2.54" y="-0.635" drill="0.7" diameter="1" shape="square"/>
 <text x="-2" y="2" size="1.27" layer="21">&gt;Name</text>
-<wire x1="-3.7" y1="1.7" x2="3.7" y2="1.7" width="0.127" layer="21"/>
-<wire x1="3.7" y1="1.7" x2="3.7" y2="-1.7" width="0.127" layer="21"/>
-<wire x1="3.7" y1="-1.7" x2="-3.7" y2="-1.7" width="0.127" layer="21"/>
-<wire x1="-3.7" y1="-1.7" x2="-3.7" y2="1.7" width="0.127" layer="21"/>
+<wire x1="-5.275" y1="1.6" x2="5.275" y2="1.6" width="0.127" layer="21"/>
+<wire x1="5.275" y1="1.6" x2="5.275" y2="-1.6" width="0.127" layer="21"/>
+<wire x1="5.275" y1="-1.6" x2="-5.275" y2="-1.6" width="0.127" layer="21"/>
+<wire x1="-5.275" y1="-1.6" x2="-5.275" y2="1.6" width="0.127" layer="21"/>
 </package>
 <package name="0603">
 <wire x1="-0.725" y1="0.35" x2="0.725" y2="0.35" width="0.1016" layer="51"/>
@@ -428,11 +428,11 @@ chip</description>
 <pad name="15" x="2.54" y="-1.27" drill="1.102359375"/>
 <pad name="17" x="5.08" y="-1.27" drill="1.102359375"/>
 <pad name="19" x="7.62" y="-1.27" drill="1.102359375"/>
-<text x="-18.415" y="-3.175" size="1.27" layer="25" rot="R90">&gt;Name</text>
-<wire x1="-17.78" y1="3.81" x2="17.78" y2="3.81" width="0.127" layer="21"/>
-<wire x1="17.78" y1="3.81" x2="17.78" y2="-3.81" width="0.127" layer="21"/>
-<wire x1="17.78" y1="-3.81" x2="-17.78" y2="-3.81" width="0.127" layer="21"/>
-<wire x1="-17.78" y1="-3.81" x2="-17.78" y2="3.81" width="0.127" layer="21"/>
+<text x="-17.315" y="-1.175" size="1.27" layer="25" rot="R90">&gt;Name</text>
+<wire x1="-19" y1="3.81" x2="19" y2="3.81" width="0.127" layer="21"/>
+<wire x1="19" y1="3.81" x2="19" y2="-3.81" width="0.127" layer="21"/>
+<wire x1="19" y1="-3.81" x2="-19" y2="-3.81" width="0.127" layer="21"/>
+<wire x1="-19" y1="-3.81" x2="-19" y2="3.81" width="0.127" layer="21"/>
 <pad name="21" x="10.16" y="-1.27" drill="1.102359375"/>
 <pad name="23" x="12.7" y="-1.27" drill="1.102359375"/>
 <pad name="25" x="15.24" y="-1.27" drill="1.102359375"/>
@@ -449,14 +449,15 @@ chip</description>
 <pad name="24" x="12.7" y="1.27" drill="1.102359375"/>
 <pad name="26" x="15.24" y="1.27" drill="1.102359375"/>
 <pad name="2" x="-15.24" y="1.27" drill="1.102359375"/>
+<text x="-17.4" y="-3.1" size="1.27" layer="21">1</text>
 </package>
 <package name="LQFP-64">
 <smd name="1" x="-5.75" y="3.75" dx="1.2" dy="0.3" layer="1"/>
-<wire x1="-5" y1="5" x2="5" y2="5" width="0.127" layer="51"/>
-<wire x1="5" y1="5" x2="5" y2="-5" width="0.127" layer="51"/>
-<wire x1="5" y1="-5" x2="-5" y2="-5" width="0.127" layer="51"/>
-<wire x1="-5" y1="-5" x2="-5" y2="5" width="0.127" layer="51"/>
-<circle x="-4.5" y="4.5" radius="0.25" width="0.127" layer="51"/>
+<wire x1="-5" y1="5" x2="5" y2="5" width="0.127" layer="21"/>
+<wire x1="5" y1="5" x2="5" y2="-5" width="0.127" layer="21"/>
+<wire x1="5" y1="-5" x2="-5" y2="-5" width="0.127" layer="21"/>
+<wire x1="-5" y1="-5" x2="-5" y2="5" width="0.127" layer="21"/>
+<circle x="-4.5" y="4.5" radius="0.25" width="0.127" layer="21"/>
 <text x="-6.6" y="5.25" size="1.27" layer="25">&gt;Name</text>
 <smd name="2" x="-5.75" y="3.25" dx="1.2" dy="0.3" layer="1"/>
 <smd name="3" x="-5.75" y="2.75" dx="1.2" dy="0.3" layer="1"/>
@@ -522,27 +523,27 @@ chip</description>
 <smd name="63" x="-3.25" y="5.75" dx="1.2" dy="0.3" layer="1" rot="R270"/>
 <smd name="64" x="-3.75" y="5.75" dx="1.2" dy="0.3" layer="1" rot="R270"/>
 </package>
-<package name="TXC_7A">
+<package name="CX5032GA">
 <wire x1="-2.5" y1="1.6" x2="2.5" y2="1.6" width="0.127" layer="21"/>
 <wire x1="2.5" y1="1.6" x2="2.5" y2="-1.6" width="0.127" layer="21"/>
 <wire x1="2.5" y1="-1.6" x2="-2.5" y2="-1.6" width="0.127" layer="21"/>
 <wire x1="-2.5" y1="-1.6" x2="-2.5" y2="1.6" width="0.127" layer="21"/>
-<smd name="1" x="-1.85" y="0" dx="1.7" dy="2.4" layer="1"/>
-<smd name="2" x="1.85" y="0" dx="1.7" dy="2.4" layer="1"/>
+<smd name="1" x="-2.05" y="0" dx="1.9" dy="2.4" layer="1"/>
+<smd name="2" x="2.05" y="0" dx="1.9" dy="2.4" layer="1"/>
 <text x="-3.2" y="1.6" size="1.27" layer="25">&gt;Name</text>
 <text x="-3.2" y="-2.7" size="1.27" layer="27">&gt;Value</text>
 </package>
 <package name="SOT-23-6">
-<wire x1="-1.6" y1="1.6" x2="1.6" y2="1.6" width="0.127" layer="51"/>
-<wire x1="1.6" y1="1.6" x2="1.6" y2="-1.6" width="0.127" layer="51"/>
-<wire x1="1.6" y1="-1.6" x2="-1.6" y2="-1.6" width="0.127" layer="51"/>
-<wire x1="-1.6" y1="-1.6" x2="-1.6" y2="1.6" width="0.127" layer="51"/>
+<wire x1="-1.6" y1="1.6" x2="1.6" y2="1.6" width="0.127" layer="21"/>
+<wire x1="1.6" y1="1.6" x2="1.6" y2="-1.6" width="0.127" layer="21"/>
+<wire x1="1.6" y1="-1.6" x2="-1.6" y2="-1.6" width="0.127" layer="21"/>
+<wire x1="-1.6" y1="-1.6" x2="-1.6" y2="1.6" width="0.127" layer="21"/>
 <smd name="1" x="-1.4" y="0.95" dx="1.4" dy="0.6" layer="1"/>
 <smd name="2" x="-1.4" y="0" dx="1.4" dy="0.6" layer="1"/>
 <smd name="3" x="-1.4" y="-0.95" dx="1.4" dy="0.6" layer="1"/>
 <smd name="4" x="1.4" y="-0.95" dx="1.4" dy="0.6" layer="1"/>
 <smd name="5" x="1.4" y="0" dx="1.4" dy="0.6" layer="1"/>
-<circle x="-2" y="1.8" radius="0.22360625" width="0.127" layer="51"/>
+<circle x="-2" y="1.8" radius="0.22360625" width="0.127" layer="21"/>
 <text x="-1.5" y="1.7" size="1.27" layer="25">&gt;Name</text>
 <smd name="6" x="1.4" y="0.95" dx="1.4" dy="0.6" layer="1"/>
 </package>
@@ -787,6 +788,7 @@ Please make sure your boards conform to these design rules.</description>
 <element name="U9:C10" library="firefly" package="C0805" value="1nF" x="111" y="23.6" smashed="yes" rot="R180">
 <attribute name="ORDERING-CODE" value="08055A102JAT2A" x="111" y="23.6" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="NAME" x="115.235" y="25.538" size="1.27" layer="25" rot="R180"/>
+<attribute name="MANUFACTURER" value="AVX Corporation" x="111" y="23.6" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="U9:C11" library="firefly" package="C0805" value="100nF" x="104.3" y="25" smashed="yes" rot="R90">
 <attribute name="ORDERING-CODE" value="08055C104KAT2A" x="104.3" y="25" size="1.778" layer="27" rot="R90" display="off"/>
@@ -805,6 +807,7 @@ Please make sure your boards conform to these design rules.</description>
 <element name="U9:C14" library="firefly" package="C0805" value="1nF" x="111" y="10" smashed="yes" rot="R180">
 <attribute name="ORDERING-CODE" value="08055A102JAT2A" x="111" y="10" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="NAME" x="114.535" y="12.138" size="1.27" layer="25" rot="R180"/>
+<attribute name="MANUFACTURER" value="AVX Corporation" x="111" y="10" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="U9:C15" library="firefly" package="C0805" value="100nF" x="104.4" y="12" smashed="yes" rot="R90">
 <attribute name="ORDERING-CODE" value="08055C104KAT2A" x="104.4" y="12" size="1.778" layer="27" rot="R90" display="off"/>
@@ -982,7 +985,7 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="NAME" x="85.038" y="54.716" size="1.27" layer="25"/>
 <attribute name="VALUE" x="87.038" y="51.414" size="1.27" layer="27"/>
 </element>
-<element name="U9:U2" library="firefly" package="SOT-23-5" value="AP7331" x="82.3" y="55.3" smashed="yes">
+<element name="U9:U2" library="firefly" package="SOT-23-5" value="VREG-ADJAP7331-WG-7" x="82.3" y="55.3" smashed="yes">
 <attribute name="ORDERING-CODE" value="AP7331-WG-7" x="82.3" y="55.3" size="1.778" layer="27" display="off"/>
 <attribute name="MANUFACTURER" value="Diodes Incorporated" x="82.3" y="55.3" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="79.845" y="51.575" size="1.27" layer="25"/>
@@ -1016,6 +1019,7 @@ Please make sure your boards conform to these design rules.</description>
 <element name="U8:C1" library="firefly" package="C0805" value="1nF" x="21.2" y="51" smashed="yes" rot="R180">
 <attribute name="ORDERING-CODE" value="08055A102JAT2A" x="21.2" y="51" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="NAME" x="22.735" y="50.138" size="1.27" layer="25" rot="R180"/>
+<attribute name="MANUFACTURER" value="AVX Corporation" x="21.2" y="51" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="U8:C2" library="firefly" package="C0805" value="100nF" x="15.2" y="52.5" smashed="yes" rot="R90">
 <attribute name="ORDERING-CODE" value="08055C104KAT2A" x="15.2" y="52.5" size="1.778" layer="27" rot="R90" display="off"/>
@@ -1151,7 +1155,7 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="NAME" x="54.6" y="20.1" size="0.5" layer="51" rot="R180" display="off"/>
 </element>
 <element name="U5:Q1" library="firefly" package="MCPH3" value="FET-NMCPH3" x="187" y="75">
-<attribute name="MANUFACURER" value="ON Semiconductor" x="187" y="75" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER" value="ON Semiconductor" x="187" y="75" size="1.778" layer="27" display="off"/>
 <attribute name="ORDERING-CODE" value="MCH3481-TL-W" x="187" y="75" size="1.778" layer="27" display="off"/>
 </element>
 <element name="U5:U1" library="firefly" package="TXS2SA" value="TXS2SA" x="130" y="91" smashed="yes" rot="R90">
@@ -1160,7 +1164,7 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="NAME" x="122.2" y="87.4" size="1.27" layer="51" rot="R90"/>
 </element>
 <element name="U4:Q1" library="firefly" package="MCPH3" value="FET-NMCPH3" x="147" y="38.3" smashed="yes" rot="R270">
-<attribute name="MANUFACURER" value="ON Semiconductor" x="147" y="38.3" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MANUFACTURER" value="ON Semiconductor" x="147" y="38.3" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="ORDERING-CODE" value="MCH3481-TL-W" x="147" y="38.3" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="NAME" x="148.3" y="40.6" size="1.27" layer="25" rot="R270"/>
 </element>
@@ -1170,7 +1174,7 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="NAME" x="144.1" y="45.1" size="1.27" layer="51" rot="R270"/>
 </element>
 <element name="U3:Q1" library="firefly" package="MCPH3" value="FET-NMCPH3" x="34.2" y="77.8" smashed="yes" rot="R90">
-<attribute name="MANUFACURER" value="ON Semiconductor" x="34.2" y="77.8" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MANUFACTURER" value="ON Semiconductor" x="34.2" y="77.8" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="ORDERING-CODE" value="MCH3481-TL-W" x="34.2" y="77.8" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="36.8" y="75.5" size="1.27" layer="25" rot="R90"/>
 </element>
@@ -1180,7 +1184,7 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="NAME" x="13.2" y="79.5" size="1.27" layer="51" rot="R270"/>
 </element>
 <element name="U2:Q1" library="firefly" package="MCPH3" value="FET-NMCPH3" x="48.9" y="21.1" smashed="yes" rot="R270">
-<attribute name="MANUFACURER" value="ON Semiconductor" x="48.9" y="21.1" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MANUFACTURER" value="ON Semiconductor" x="48.9" y="21.1" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="ORDERING-CODE" value="MCH3481-TL-W" x="48.9" y="21.1" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="NAME" x="50.2" y="23.6" size="1.27" layer="51" rot="R270"/>
 </element>
@@ -1243,7 +1247,7 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="NAME" x="37.425" y="89.815" size="1.27" layer="25"/>
 </element>
 <element name="U11:Q1" library="firefly" package="MCPH3" value="FET-NMCPH3" x="187" y="70">
-<attribute name="MANUFACURER" value="ON Semiconductor" x="187" y="70" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER" value="ON Semiconductor" x="187" y="70" size="1.778" layer="27" display="off"/>
 <attribute name="ORDERING-CODE" value="MCH3481-TL-W" x="187" y="70" size="1.778" layer="27" display="off"/>
 </element>
 <element name="U11:U1" library="firefly" package="TXS2SA" value="TXS2SA" x="150" y="91.1" smashed="yes" rot="R90">
@@ -1286,13 +1290,13 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="ORDERING-CODE" value="GRM21BR61E475KA12L" x="179.6" y="18.6" size="1.778" layer="27" display="off"/>
 </element>
 <element name="C5" library="firefly" package="C0805" value="22pF" x="188.7" y="38.5" smashed="yes" rot="R270">
-<attribute name="ORDERING-CODE" value="CL21C220FBANNNC" x="188.7" y="38.5" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="MANUFACTURER" value="Samsung Electro-Mechanics America, Inc." x="188.7" y="38.5" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="ORDERING-CODE" value="C0805C220F5GACTU" x="188.7" y="38.5" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MANUFACTURER" value="KEMET" x="188.7" y="38.5" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="NAME" x="190.462" y="39.535" size="1.27" layer="25" rot="R270"/>
 </element>
 <element name="C6" library="firefly" package="C0805" value="22pF" x="188.7" y="34.5" smashed="yes" rot="R90">
-<attribute name="ORDERING-CODE" value="CL21C220FBANNNC" x="188.7" y="34.5" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MANUFACTURER" value="Samsung Electro-Mechanics America, Inc." x="188.7" y="34.5" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="ORDERING-CODE" value="C0805C220F5GACTU" x="188.7" y="34.5" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MANUFACTURER" value="KEMET" x="188.7" y="34.5" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="191.638" y="33.265" size="1.27" layer="25" rot="R90"/>
 </element>
 <element name="C8" library="firefly" package="C0805" value="4.7uF" x="172" y="46.4" rot="R180">
@@ -1326,7 +1330,7 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="NAME" x="164.938" y="10.716" size="1.27" layer="25"/>
 <attribute name="VALUE" x="165.238" y="10.714" size="1.27" layer="27"/>
 </element>
-<element name="U12" library="firefly" package="SOT-23-5" value="AP7331" x="157.2" y="19" smashed="yes" rot="R180">
+<element name="U12" library="firefly" package="SOT-23-5" value="VREG-ADJAP7331-WG-7" x="157.2" y="19" smashed="yes" rot="R180">
 <attribute name="ORDERING-CODE" value="AP7331-WG-7" x="165.1" y="9.2" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MANUFACTURER" value="Diodes Incorporated" x="165.1" y="9.2" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="NAME" x="158.855" y="16.525" size="1.27" layer="25" rot="R180"/>
@@ -1358,9 +1362,9 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="MAUFACTURER" value="Harwin" x="159.5" y="2.9" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="153.8" y="1.3" size="1.27" layer="21"/>
 </element>
-<element name="X1" library="firefly" package="TXC_7A" value="XTAL2TXC_7A" x="185.6" y="36.5" smashed="yes" rot="R90">
-<attribute name="ORDERING-CODE" value="7A-8.000MAAE-T" x="185.6" y="36.5" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MANUFACTURER" value="TXC CORPORATION" x="185.6" y="36.5" size="1.778" layer="27" rot="R90" display="off"/>
+<element name="X1" library="firefly" package="CX5032GA" value="XTAL2CX5032GA" x="185.6" y="36.5" smashed="yes" rot="R90">
+<attribute name="ORDERING-CODE" value="CX5032GA08000H0PST02" x="185.6" y="36.5" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MANUFACTURER" value="AVX Corp/Kyocera Corp" x="185.6" y="36.5" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="186.4" y="31.6" size="1.27" layer="25" rot="R90"/>
 <attribute name="VALUE" x="188.3" y="33.3" size="1.27" layer="27" rot="R90"/>
 </element>
@@ -1442,7 +1446,7 @@ Please make sure your boards conform to these design rules.</description>
 </element>
 <element name="J14" library="firefly" package="CT3151" value="CON-1CT3151" x="15.7" y="17.9" rot="R180">
 <attribute name="MANUFACTURER" value="B&amp;K Precision" x="15.7" y="17.9" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="ORDERING-CODE" value="CT3151-0" x="15.7" y="17.9" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="ORDERING-CODE" value="CT3151SP-0" x="15.7" y="17.9" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="C16" library="firefly" package="PM118" value="1F" x="121.9" y="44" rot="R180">
 <attribute name="ORDERING-CODE" value="PM-5R0V105-R" x="121.9" y="44" size="1.778" layer="27" rot="R180" display="off"/>
@@ -1461,7 +1465,7 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="ORDERING-CODE" value="RCL122549R9FKEG" x="123.7" y="43.8" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="U15:Q1" library="firefly" package="MCPH3" value="FET-NMCPH3" x="187" y="60">
-<attribute name="MANUFACURER" value="ON Semiconductor" x="176.4" y="77" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER" value="ON Semiconductor" x="176.4" y="77" size="1.778" layer="27" display="off"/>
 <attribute name="ORDERING-CODE" value="MCH3481-TL-W" x="176.4" y="77" size="1.778" layer="27" display="off"/>
 </element>
 <element name="U15:U1" library="firefly" package="TXS2SA" value="TXS2SA" x="91" y="91" rot="R90">
@@ -1469,7 +1473,7 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="ORDERING-CODE" value="TXS2SA-3V-Z" x="78.2" y="80.4" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="U16:Q1" library="firefly" package="MCPH3" value="FET-NMCPH3" x="187" y="65">
-<attribute name="MANUFACURER" value="ON Semiconductor" x="176.4" y="94.8" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER" value="ON Semiconductor" x="176.4" y="94.8" size="1.778" layer="27" display="off"/>
 <attribute name="ORDERING-CODE" value="MCH3481-TL-W" x="176.4" y="94.8" size="1.778" layer="27" display="off"/>
 </element>
 <element name="U16:U1" library="firefly" package="TXS2SA" value="TXS2SA" x="111" y="91" rot="R90">
@@ -1804,7 +1808,7 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="183.15" y1="39.75" x2="183.5" y2="40.1" width="0.254" layer="1"/>
 <wire x1="183.5" y1="40.1" x2="184.35" y2="40.1" width="0.254" layer="1"/>
 <wire x1="184.35" y1="40.1" x2="184.9" y2="40.25" width="0.254" layer="1"/>
-<via x="184.5" y="33.2" extent="1-16" drill="0.3302"/>
+<via x="184.4" y="33" extent="1-16" drill="0.3302"/>
 <via x="189.9" y="34.5" extent="1-16" drill="0.3302"/>
 <via x="189.9" y="38.5" extent="1-16" drill="0.3302"/>
 <via x="189.6" y="40.7" extent="1-16" drill="0.3302"/>
@@ -3527,11 +3531,11 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="181.75" y1="36.75" x2="183.8" y2="36.75" width="0.254" layer="1"/>
 <wire x1="183.8" y1="36.75" x2="185.3" y2="38.3" width="0.254" layer="1"/>
 <wire x1="185.3" y1="38.3" x2="185.55" y2="38.3" width="0.254" layer="1"/>
-<wire x1="185.55" y1="38.3" x2="185.6" y2="38.35" width="0.254" layer="1"/>
+<wire x1="185.55" y1="38.3" x2="185.6" y2="38.55" width="0.254" layer="1"/>
 <wire x1="188.7" y1="39.45" x2="188.1" y2="39.1" width="0.254" layer="1"/>
 <wire x1="188.1" y1="39.1" x2="186.7" y2="39.1" width="0.254" layer="1"/>
 <wire x1="186.7" y1="39.1" x2="185.85" y2="38.6" width="0.254" layer="1"/>
-<wire x1="185.85" y1="38.6" x2="185.6" y2="38.35" width="0.254" layer="1"/>
+<wire x1="185.85" y1="38.6" x2="185.6" y2="38.55" width="0.254" layer="1"/>
 </signal>
 <signal name="N$6">
 <contactref element="U14" pad="5"/>
@@ -3540,12 +3544,12 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="181.75" y1="36.25" x2="183.75" y2="36.25" width="0.254" layer="1"/>
 <wire x1="183.75" y1="36.25" x2="185.1" y2="34.9" width="0.254" layer="1"/>
 <wire x1="185.1" y1="34.9" x2="185.55" y2="34.9" width="0.254" layer="1"/>
-<wire x1="185.55" y1="34.9" x2="185.6" y2="34.65" width="0.254" layer="1"/>
+<wire x1="185.55" y1="34.9" x2="185.6" y2="34.45" width="0.254" layer="1"/>
 <wire x1="188.7" y1="33.55" x2="188.1" y2="33.9" width="0.254" layer="1"/>
 <wire x1="188.1" y1="33.9" x2="186.7" y2="33.9" width="0.254" layer="1"/>
 <wire x1="186.7" y1="33.9" x2="186.1" y2="34.6" width="0.254" layer="1"/>
 <wire x1="186.1" y1="34.6" x2="185.65" y2="34.6" width="0.254" layer="1"/>
-<wire x1="185.65" y1="34.6" x2="185.6" y2="34.65" width="0.254" layer="1"/>
+<wire x1="185.65" y1="34.6" x2="185.6" y2="34.45" width="0.254" layer="1"/>
 </signal>
 <signal name="N$10">
 <contactref element="C8" pad="1"/>
